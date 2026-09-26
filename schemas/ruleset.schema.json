@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://december-capital.github.io/konta-rulebook/schemas/ruleset.schema.json",
+  "title": "Konta fiscal rule set",
+  "description": "An immutable, effective-dated slice of Moldovan fiscal law. Every value must be traceable to a published act.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "jurisdiction",
+    "effectiveFrom",
+    "publishedOn",
+    "status",
+    "sources",
+    "values"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^md-[0-9]{4}(\\.[0-9]+)?$",
+      "description": "Stable identifier, e.g. md-2026 or md-2026.2 for an amendment."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "enum": ["MD"]
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date",
+      "description": "First date this set governs."
+    },
+    "effectiveTo": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Last date this set governs. Null while it is the current set."
+    },
+    "publishedOn": {
+      "type": "string",
+      "format": "date",
+      "description": "When WE published this set. Not the same as when it took legal effect: Moldova amends the Fiscal Code mid-year with retroactive effect, and reproducing what a filing looked like when it was filed requires both dates."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "approved", "superseded"],
+      "description": "Only 'approved' sets may be used to produce a filing."
+    },
+    "approvedBy": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The licensed accountant or auditor who signed this set off. Required once status is 'approved'."
+    },
+    "approvedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "The legal instruments this set encodes.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["act"],
+        "properties": {
+          "act": {
+            "type": "string",
+            "minLength": 1,
+            "description": "e.g. 'Codul fiscal nr. 1163/1997' or 'Legea nr. 287/2017'."
+          },
+          "article": {
+            "type": "string",
+            "description": "Article, point or annex, e.g. 'art. 15 lit. a)'."
+          },
+          "publication": {
+            "type": "string",
+            "description": "Monitorul Oficial reference."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "True only when a human has read the act itself, not a summary of it."
+          }
+        }
+      }
+    },
+    "values": {
+      "type": "object",
+      "description": "Namespaced rule values. Keys are lower_snake_case segments joined by dots, e.g. payroll.cnas.employer_rate.",
+      "propertyNames": {
+        "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["unit", "sourceIndex"],
+        "properties": {
+          "number": {
+            "type": ["number", "string"],
+            "description": "Numeric value, as a JSON number or a decimal string. Use a string for anything where binary floating point could lose precision."
+          },
+          "text": {
+            "type": "string",
+            "description": "Text value, for a code, form identifier or enumeration member."
+          },
+          "unit": {
+            "type": "string",
+            "enum": [
+              "ratio",
+              "MDL",
+              "MDL/month",
+              "MDL/year",
+              "days",
+              "working_days",
+              "months",
+              "count",
+              "code",
+              "text",
+              "date"
+            ]
+          },
+          "sourceIndex": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Index into this set's sources array. A value that cannot be cited does not belong here."
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["verified", "unverified"],
+            "default": "unverified",
+            "description": "'verified' means a human read the cited act. Only verified values may appear in an approved set."
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          { "required": ["number"] },
+          { "required": ["text"] }
+        ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "status": { "const": "approved" } },
+        "required": ["status"]
+      },
+      "then": {
+        "required": ["approvedBy", "approvedOn"]
+      }
+    }
+  ]
+}

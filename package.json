@@ -1,0 +1,35 @@
+{
+  "name": "konta-rulebook",
+  "version": "0.1.0",
+  "description": "Moldovan fiscal law as effective-dated, citable data. Rates, thresholds, deadlines and forms — published openly so anyone can verify the tax maths.",
+  "license": "CC-BY-4.0",
+  "type": "module",
+  "private": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/December-Capital/konta-rulebook.git"
+  },
+  "scripts": {
+    "validate": "node tools/validate.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "files": [
+    "data",
+    "schemas",
+    "tools"
+  ],
+  "keywords": [
+    "moldova",
+    "accounting",
+    "tax",
+    "fiscal",
+    "snc",
+    "contabilitate"
+  ]
+}

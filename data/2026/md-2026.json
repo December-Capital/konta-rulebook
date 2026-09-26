@@ -1,0 +1,149 @@
+{
+  "$schema": "../../schemas/ruleset.schema.json",
+  "id": "md-2026",
+  "jurisdiction": "MD",
+  "effectiveFrom": "2026-01-01",
+  "effectiveTo": "2026-12-31",
+  "publishedOn": "2026-09-26",
+  "status": "draft",
+  "notes": "DRAFT. Assembled from secondary sources during research on 2026-09-26 and NOT yet checked against the Fiscal Code or the Official Monitor. Every value is marked unverified. This set must not be used to produce a filing until the compliance owner has read each cited act and flipped it to approved. Deliberately incomplete: it carries only the values the research touched.",
+
+  "sources": [
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=79291&lang=ro",
+      "verified": false
+    },
+    {
+      "act": "Legea contabilitatii si raportarii financiare nr. 287/2017",
+      "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=125231",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 77/2016 cu privire la parcurile pentru tehnologia informatiei",
+      "url": "https://mitp.md/why-mitp/about-7-single-tax/",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finantelor nr. 118/2017 - factura fiscala",
+      "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=119580",
+      "verified": false
+    }
+  ],
+
+  "values": {
+    "tax.profit.standard_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Standard corporate income tax."
+    },
+    "tax.profit.ivao_rate": {
+      "number": "0.04",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "IVAO: tax on operational revenue for eligible SMEs, in place of profit tax."
+    },
+    "tax.dividend.rate": {
+      "number": "0.06",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Rises to 0.08 for profits generated from 2027 under the approved 2027 reform."
+    },
+    "tax.vat.standard_rate": {
+      "number": "0.20",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "tax.vat.registration_threshold": {
+      "number": "1200000",
+      "unit": "MDL",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "A rise to MDL 1,500,000 has been proposed. CONFIRM before relying on this."
+    },
+    "payroll.income_tax.rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "payroll.income_tax.personal_deduction_annual": {
+      "number": "29700",
+      "unit": "MDL/year",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "payroll.income_tax.personal_deduction_income_cap": {
+      "number": "360000",
+      "unit": "MDL/year",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Above this annual gross income the personal deduction is not available."
+    },
+    "payroll.cnas.employer_rate": {
+      "number": "0.24",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "OPEN QUESTION: secondary sources disagree on whether an employee CNAS share also applies in 2026. Check the Fiscal Code and the CNAS published rates directly before adding payroll.cnas.employee_rate."
+    },
+    "payroll.cnam.employee_rate": {
+      "number": "0.09",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "itpark.single_tax.rate": {
+      "number": "0.07",
+      "unit": "ratio",
+      "sourceIndex": 2,
+      "confidence": "unverified",
+      "note": "Replaces profit tax, payroll income tax, CNAS and CNAM. VAT applies separately."
+    },
+    "itpark.single_tax.min_per_employee_monthly": {
+      "number": "5220",
+      "unit": "MDL/month",
+      "sourceIndex": 2,
+      "confidence": "unverified",
+      "note": "Approximately 35% of the forecast average wage, per full-time employee. Recomputed annually."
+    },
+    "filing.tva12.due_day_of_month": {
+      "number": 25,
+      "unit": "count",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Shifts to the next working day when the 25th is a weekend or holiday."
+    },
+    "filing.ipc21.due_day_of_month": {
+      "number": 25,
+      "unit": "count",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "filing.iu17.due_day_of_month": {
+      "number": 25,
+      "unit": "count",
+      "sourceIndex": 2,
+      "confidence": "unverified"
+    },
+    "filing.ven12.due_date": {
+      "text": "--03-25",
+      "unit": "date",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "25 March following the reporting year."
+    },
+    "document.factura_fiscala.form_order": {
+      "text": "OMF 118/2017",
+      "unit": "code",
+      "sourceIndex": 3,
+      "confidence": "unverified",
+      "note": "Strict-regime standardised form with state-issued series and number."
+    }
+  }
+}

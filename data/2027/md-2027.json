@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schemas/ruleset.schema.json",
+  "id": "md-2027",
+  "jurisdiction": "MD",
+  "effectiveFrom": "2027-01-01",
+  "effectiveTo": null,
+  "publishedOn": "2026-09-26",
+  "status": "draft",
+  "notes": "DRAFT, and additionally PROVISIONAL: the 2027 fiscal policy was approved by Government and passed first reading, so figures may change before final adoption. Its purpose right now is to prove that the rulebook design survives a real reform — two sets, overlapping keys, different values, no code change. Do not file from it.",
+
+  "sources": [
+    {
+      "act": "Politica fiscala si vamala pentru anul 2027 (proiect aprobat de Guvern, prima lectura)",
+      "url": "https://www.mf.gov.md/ro/content/qa-privind-proiectul-politicii-fiscale-pentru-anul-2027",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=79291&lang=ro",
+      "verified": false
+    },
+    {
+      "act": "CAEM revizia 2.1 - clasificatorul activitatilor din economia Moldovei",
+      "url": "https://www.contabilsef.md/nouta-i-contabilsef",
+      "verified": false
+    }
+  ],
+
+  "values": {
+    "tax.profit.standard_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Unchanged."
+    },
+    "tax.dividend.rate": {
+      "number": "0.08",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Up from 0.06, and only for profits generated from 2027 onwards. This is a profit-vintage rule, not a payment-date rule: the engine must resolve the rate from the year the profit arose, which is exactly the kind of thing that gets hardcoded wrong."
+    },
+    "tax.gospodarie_tarneasca.rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Up from 0.07, aligning with individual enterprises."
+    },
+    "tax.independent_activity.rate": {
+      "number": "0.03",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Up from 0.01 of revenue. Preferential regime preserved only for those registered with SFS before 2026-07-01."
+    },
+    "tax.profit.undistributed_zero_rate_until": {
+      "text": "2029-12-31",
+      "unit": "date",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Zero rate on undistributed profit extended to 2029."
+    },
+    "tax.profit.undistributed_eligibility_ceiling": {
+      "number": "200000000",
+      "unit": "MDL",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Up from MDL 100,000,000."
+    },
+    "registration.intreprindere_individuala.closed_from": {
+      "text": "2027-01-01",
+      "unit": "date",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "No new registrations. Entities registered by 2026-12-31 keep their status, so the product must support a regime it cannot be newly assigned."
+    },
+    "registration.gospodarie_tarneasca.closed_from": {
+      "text": "2027-01-01",
+      "unit": "date",
+      "sourceIndex": 0,
+      "confidence": "unverified"
+    },
+    "classification.caem.revision": {
+      "text": "2.1",
+      "unit": "code",
+      "sourceIndex": 2,
+      "confidence": "unverified",
+      "note": "Applies from 2027-01-01, re-coding activity classifications on every entity record in the country."
+    },
+    "itpark.single_tax.rate": {
+      "number": "0.07",
+      "unit": "ratio",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Regime guaranteed by law to 2035. From 2026-01-01 local taxes, property tax and road tax are outside the single tax and paid separately."
+    }
+  }
+}
