@@ -6,7 +6,7 @@
   "effectiveTo": "2026-12-31",
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT. Assembled from secondary sources during research on 2026-09-26 and NOT yet checked against the Fiscal Code or the Official Monitor. Every value is marked unverified. This set must not be used to produce a filing until the compliance owner has read each cited act and flipped it to approved. Deliberately incomplete: it carries only the values the research touched.",
+  "notes": "DRAFT. Values are corroborated by Ministry of Finance and SFS publications, but nobody has yet read the cited articles in the Fiscal Code itself, so every confidence is still 'unverified'. The compliance owner flips these only after reading the acts. Deliberately incomplete: it carries only what research has touched. Note md-2026.2, which amends the VAT registration threshold from 1 March 2026 — this set stays valid for every key that amendment does not restate.",
 
   "sources": [
     {
@@ -27,6 +27,16 @@
     {
       "act": "Ordinul Ministerului Finantelor nr. 118/2017 - factura fiscala",
       "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=119580",
+      "verified": false
+    },
+    {
+      "act": "Modificarile efectuate in Codul fiscal pentru anul 2026 (Ministerul Finantelor)",
+      "url": "https://www.mf.gov.md/ro/content/modific%C4%83rile-efectuate-%C3%AEn-codul-fiscal-pentru-anul-2026-privind-impozitul-pe-venit-tva",
+      "verified": false
+    },
+    {
+      "act": "Legea bugetului asigurarilor sociale de stat pentru anul 2026 (LP320/2025)",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=152321&lang=ro",
       "verified": false
     }
   ],
@@ -51,7 +61,7 @@
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Rises to 0.08 for profits generated from 2027 under the approved 2027 reform."
+      "note": "Rises to 0.08 for profits GENERATED from 2027 under the approved 2027 reform. This is a profit-vintage rule, not a payment-date rule."
     },
     "tax.vat.standard_rate": {
       "number": "0.20",
@@ -60,11 +70,46 @@
       "confidence": "unverified"
     },
     "tax.vat.registration_threshold": {
-      "number": "1200000",
+      "number": "1500000",
       "unit": "MDL",
+      "sourceIndex": 4,
+      "confidence": "unverified",
+      "note": "CORRECTED. Raised from MDL 1,200,000 to MDL 1,500,000 with effect from 1 January 2026 (art. 112 para (1) and (4)). Raised again to MDL 1,700,000 from 1 March 2026 — see md-2026.2. Measured over the last 12 consecutive months, not a calendar year, so an entity can cross it at any point."
+    },
+    "tax.vat.deduction_requires_electronic_invoice": {
+      "text": "no",
+      "unit": "text",
+      "sourceIndex": 4,
+      "confidence": "unverified",
+      "note": "Art. 102 para (18), which restricted the right to deduct VAT on a non-electronic invoice issued by a supplier on the mandatory e-Factura list, is ABROGATED from 1 January 2026. So from 2026 a paper invoice from a list-obligated supplier no longer costs the buyer its deduction. This materially reduces the commercial pressure to adopt e-Factura and must not be modelled as a blocking validation."
+    },
+    "tax.vat.refund_ceiling_efactura_or_mev": {
+      "number": "0.70",
+      "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "A rise to MDL 1,500,000 has been proposed. CONFIRM before relying on this."
+      "note": "VAT refund ceiling reportedly raised from 20% to 70% for taxpayers using e-Factura and/or MEV-connected cash registers. Reported by secondary sources and NOT found in the Ministry of Finance summary of the 2026 changes — confirm before quoting it to a customer, because it is the strongest positive incentive we have."
+    },
+    "efactura.obligation.basis": {
+      "text": "art. 117 para (1^1) risk-based list; art. 117 para (14) since 2025-01-01",
+      "unit": "text",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "There is NO universal B2B mandate in force. Obligation arises three ways: B2G/public procurement; supplies to economic agents on Moldovan territory without fiscal relations with the budget system (art. 117(14), since 1 January 2025); and inclusion on the SFS risk-based list published at sfs.md. The list is small — reported at 69 entities."
+    },
+    "efactura.mandatory_list.selection_min_criteria": {
+      "number": 3,
+      "unit": "count",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "An entity is added when SFS risk analysis finds it meets at least 3 of 8 criteria simultaneously."
+    },
+    "efactura.mandatory_list.significant_supplies_monthly": {
+      "number": "500000",
+      "unit": "MDL/month",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "One of the 8 criteria: supplies of at least MDL 500,000 monthly without matching material or human assets."
     },
     "payroll.income_tax.rate": {
       "number": "0.12",
@@ -88,9 +133,16 @@
     "payroll.cnas.employer_rate": {
       "number": "0.24",
       "unit": "ratio",
-      "sourceIndex": 0,
+      "sourceIndex": 5,
       "confidence": "unverified",
-      "note": "OPEN QUESTION: secondary sources disagree on whether an employee CNAS share also applies in 2026. Check the Fiscal Code and the CNAS published rates directly before adding payroll.cnas.employee_rate."
+      "note": "Private sector, including state and municipal enterprises, non-commercial organisations and public education and medical institutions."
+    },
+    "payroll.cnas.employee_rate": {
+      "number": "0",
+      "unit": "ratio",
+      "sourceIndex": 5,
+      "confidence": "unverified",
+      "note": "RESOLVED. Since 1 January 2021 state social insurance contributions are paid entirely by the employer, so there is no general employee share. The 6% figure that circulates in secondary sources applies only to specific categories (daily remuneration for certain workers) and must be modelled as a category-specific exception, not a general rate."
     },
     "payroll.cnam.employee_rate": {
       "number": "0.09",
@@ -103,7 +155,7 @@
       "unit": "ratio",
       "sourceIndex": 2,
       "confidence": "unverified",
-      "note": "Replaces profit tax, payroll income tax, CNAS and CNAM. VAT applies separately."
+      "note": "Replaces profit tax, payroll income tax, CNAS and CNAM. VAT applies separately. From 1 January 2026 local taxes, property tax and road tax are excluded from the single tax and paid separately."
     },
     "itpark.single_tax.min_per_employee_monthly": {
       "number": "5220",
@@ -144,6 +196,13 @@
       "sourceIndex": 3,
       "confidence": "unverified",
       "note": "Strict-regime standardised form with state-issued series and number."
+    },
+    "register.general_invoice_register.in_force": {
+      "text": "no",
+      "unit": "text",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "RESOLVED. Art. 118^1 of the Fiscal Code, which required invoices above MDL 100,000 to be registered in the Registrul general electronic al facturilor fiscale within 10 working days under penalty of MDL 3,600 each, has been ABROGATED. Do not implement it."
     }
   }
 }

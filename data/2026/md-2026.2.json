@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/ruleset.schema.json",
+  "id": "md-2026.2",
+  "jurisdiction": "MD",
+  "effectiveFrom": "2026-03-01",
+  "effectiveTo": "2026-12-31",
+  "publishedOn": "2026-09-27",
+  "status": "draft",
+  "notes": "A sparse amendment, and the first real-world proof that the rulebook design works. Moldova raised the VAT registration threshold twice inside one year: to MDL 1.5m from 1 January 2026, then to MDL 1.7m from 1 March 2026. Rather than duplicating the whole year, this set carries ONLY the key that changed and overlaps md-2026 for the rest of the year. Because it was published later, it shadows md-2026 for dates both cover; every other key falls through to md-2026. A product that hardcoded the threshold would have had to ship a patch mid-year — twice.",
+
+  "sources": [
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997, art. 112 alin. (1) si (4)",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=79291&lang=ro",
+      "verified": false
+    }
+  ],
+
+  "values": {
+    "tax.vat.registration_threshold": {
+      "number": "1700000",
+      "unit": "MDL",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Raised from MDL 1,500,000 to MDL 1,700,000 with effect from 1 March 2026. The original proposal was MDL 3.2m; a phased increase was chosen instead, constrained by EU Directive 2006/112/EC, which caps the exemption threshold at roughly EUR 85,000. Expect further increases, so never treat this number as settled."
+    }
+  }
+}

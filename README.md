@@ -9,8 +9,8 @@ I know your tax maths is right?" The answer is: read it. Every rate here cites t
 from, and if we get one wrong you can open an issue or a pull request.
 
 > ⚠️ **Every rule set in this repository is currently `draft` and every value is marked
-> `unverified`.** They were assembled from secondary sources during research on 2026-09-26 and have
-> not been checked against the Fiscal Code or the Official Monitor. Nothing here may be used to
+> `unverified`.** Values are corroborated by Ministry of Finance, SFS and CNAS publications, but
+> nobody has yet read the cited articles in the Fiscal Code itself. Nothing here may be used to
 > produce a real filing until a licensed accountant has read each cited act and approved the set.
 
 ## Why it is a separate repository
@@ -30,7 +30,8 @@ Three reasons, all practical:
 
 ```
 schemas/ruleset.schema.json    the contract
-data/2026/md-2026.json         one set per period, plus amendments as md-2026.2 and so on
+data/2026/md-2026.json         the year's base set
+data/2026/md-2026.2.json       a sparse amendment: only the keys that changed mid-year
 data/2027/md-2027.json
 tools/validate.mjs             the gate: schema plus the cross-file rules JSON Schema can't express
 fixtures/                      anonymised golden-test datasets (Phase 1)
@@ -91,15 +92,25 @@ validator checks it resolves. A value nobody can trace to a published act does n
    approved set contain unverified values.
 5. `npm run validate` must pass. Golden tests in the product must still pass.
 
-## Known open questions
+## Open questions
 
-These are recorded rather than guessed at. Resolving them is Phase 0 work.
+Recorded rather than guessed at. Resolving them is Phase 0 work.
+
+### Resolved on 2026-09-26
+
+| Question | Answer |
+| --- | --- |
+| Does an employee CNAS contribution apply in 2026? | **No.** Since 1 Jan 2021 contributions are paid entirely by the employer, 24% in the private sector. The 6% in circulation applies only to specific categories on daily remuneration. |
+| Is the VAT registration threshold still MDL 1.2m? | **No — it moved twice in 2026.** MDL 1.5m from 1 Jan, MDL 1.7m from 1 Mar. Modelled as `md-2026` plus the sparse amendment `md-2026.2`. |
+| Is art. 118¹ invoice registration still in force? | **No, abrogated.** Do not implement the MDL 100,000 invoice register. |
+| Does a paper invoice from a list-obligated supplier still cost the buyer its VAT deduction? | **No.** Art. 102(18) is abrogated from 1 Jan 2026, which *removes* that restriction. |
+
+### Still open
 
 | Question | Why it matters |
 | --- | --- |
-| Does an employee CNAS contribution apply in 2026? | Secondary sources disagree; it changes every payroll calculation. |
-| Is the VAT registration threshold MDL 1.2m or has the proposed 1.5m passed? | Decides who must register. |
-| Is Fiscal Code art. 118¹ invoice registration still in force? | A real obligation with MDL 3,600 fines per invoice, or dead law we must not implement. |
+| Is a universal B2B e-Factura mandate coming, and when? | No Moldovan legal act found for the widely reported 1 October 2026 date. The obligation today reaches only B2G, supplies to agents without fiscal relations with the budget system, and a risk-based list of roughly 69 entities. |
+| Is the VAT refund ceiling really 70% for e-Factura and MEV users? | Reported by secondary sources, absent from the Ministry of Finance summary of the 2026 changes. It is the strongest positive incentive to adopt e-Factura. |
 | Final 2027 figures | The set is based on a project approved at first reading, not final adoption. |
 
 ## Licence
