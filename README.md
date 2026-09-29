@@ -33,6 +33,6 @@ Formatul datelor și regulile pentru modificări: [docs/FORMAT.md](docs/FORMAT.m
 
 ---
 
-Datele din `data/` sunt sub licența [CC BY 4.0](LICENSE) — pot fi folosite liber, inclusiv
+Datele din `data/` sunt sub licența [CC BY 4.0](LICENSE): pot fi folosite liber, inclusiv
 comercial, cu menționarea sursei. Instrumentele și schemele sunt sub licența MIT.
 © 2026 December Capital.
