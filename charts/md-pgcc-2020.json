@@ -34,6 +34,7 @@
       "code": "1",
       "name": "ACTIVE IMOBILIZATE",
       "section": "bilanț",
+      "nature": "activ",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -579,6 +580,7 @@
       "code": "2",
       "name": "ACTIVE CIRCULANTE",
       "section": "bilanț",
+      "nature": "activ",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -1211,6 +1213,7 @@
       "code": "3",
       "name": "CAPITAL PROPRIU",
       "section": "bilanț",
+      "nature": "pasiv",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -1441,6 +1444,7 @@
       "code": "4",
       "name": "DATORII PE TERMEN LUNG",
       "section": "bilanț",
+      "nature": "pasiv",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -1654,6 +1658,7 @@
       "code": "5",
       "name": "DATORII CURENTE",
       "section": "bilanț",
+      "nature": "pasiv",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -2040,6 +2045,7 @@
       "code": "6",
       "name": "VENITURI",
       "section": "rezultate",
+      "nature": "pasiv",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -2283,6 +2289,7 @@
       "code": "7",
       "name": "CHELTUIELI",
       "section": "rezultate",
+      "nature": "activ",
       "doubleEntry": true,
       "accountsMandatory": true,
       "entityMayAdd": [
@@ -2620,6 +2627,7 @@
       "code": "8",
       "name": "CONTURI DE GESTIUNE",
       "section": "gestiune",
+      "nature": "activ",
       "doubleEntry": true,
       "accountsMandatory": false,
       "entityMayAdd": [

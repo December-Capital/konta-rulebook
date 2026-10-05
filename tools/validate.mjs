@@ -218,6 +218,10 @@ for (const { file, chart } of charts) {
   for (const cls of chart.classes) {
     codes.push(cls.code);
 
+    if (cls.doubleEntry !== Boolean(cls.nature)) {
+      fail(file, `class ${cls.code} ${cls.doubleEntry ? "is double-entry but has no nature" : "is single-entry but has a nature"}.`);
+    }
+
     if (Boolean(cls.groups?.length) === Boolean(cls.accounts?.length)) {
       fail(file, `class ${cls.code} must hold either groups or accounts directly, not both or neither.`);
     }

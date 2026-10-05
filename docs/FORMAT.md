@@ -109,9 +109,10 @@ Each account carries what the ledger needs from the act:
   opening does (`class`, for classes 6 and 7), or only chapter I's general rule (`general-rule`).
 - `history`: the act's own amendment notes for the account.
 
-And each class carries chapter I's rules: whether its synthetic accounts are mandatory (classes
-1-7), what an entity may add to its own working chart (subaccounts in 1-7; accounts and subaccounts
-in 8-9), and whether it is double-entry (all but class 9).
+And each class carries chapter I's rules: its general side (`nature`: activ for 1, 2, 7 and 8,
+pasiv for 3 to 6, which is also the side of an account an entity adds there), whether its synthetic
+accounts are mandatory (classes 1-7), what an entity may add to its own working chart (subaccounts
+in 1-7; accounts and subaccounts in 8-9), and whether it is double-entry (all but class 9).
 
 A later amendment is a new file with a later `effectiveFrom`, never an edit to an approved one.
 
