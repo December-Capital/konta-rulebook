@@ -1,0 +1,2806 @@
+{
+  "$schema": "../schemas/chart.schema.json",
+  "id": "md-pgcc-2020",
+  "jurisdiction": "MD",
+  "title": "Planul general de conturi contabile",
+  "effectiveFrom": "2020-01-01",
+  "effectiveTo": null,
+  "publishedOn": "2026-10-05",
+  "status": "draft",
+  "notes": "Chapter II (the nomenclature) as restated by OMF 100/2019 and amended by OMF 171/2019, in force from 1 January 2020, transcribed from the Ministry of Finance's consolidated text. Each account's nature (activ or pasiv, and whether it is rectificativ, de calculație or de colectare – repartizare) is from its own sentence in chapter III where there is one, from the opening of classes 6 and 7 otherwise, and from chapter I's general rule for the three accounts that state none (172, 262, 344). Not yet read: OMF 111/2021 (descriptions of 143, 254, 316; the nomenclature is not known to change) and OMF 135/2019 (amends OMF 188/2014; legis.md has no page of its own for it, so its effect has to be read from 188/2014's consolidated text). Abrogated in 2019 and so absent: accounts 312 and 413, subaccount 7143. Names keep the act's spelling (î, \"sînt\"); the PDF's cedilla ş and ţ are written as ș and ț.",
+  "sources": [
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "article": "cap. I-III, as consolidated by the Ministry of Finance (PDF, Last-Modified 2020-05-28, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab)",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 100 din 28.06.2019 cu privire la aprobarea modificărilor la Ordinul nr. 119/2013",
+      "publication": "Monitorul Oficial nr. 230-237, art. 1275",
+      "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=115293",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 171 din 19.12.2019 cu privire la aprobarea modificărilor la ordinele nr. 48/2019 și 100/2019",
+      "publication": "Monitorul Oficial nr. 388-392, art. 2125, 27.12.2019",
+      "url": "https://monitorul.gov.md/ro/monitor/2170",
+      "verified": false
+    }
+  ],
+  "classes": [
+    {
+      "code": "1",
+      "name": "ACTIVE IMOBILIZATE",
+      "section": "bilanț",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "11",
+          "name": "IMOBILIZĂRI NECORPORALE",
+          "accounts": [
+            {
+              "code": "111",
+              "name": "Imobilizări necorporale în curs de execuție",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "112",
+              "name": "Imobilizări necorporale în exploatare",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1121",
+                  "name": "Concesiuni, licențe și mărci"
+                },
+                {
+                  "code": "1122",
+                  "name": "Drepturi de autor și titluri de protecție"
+                },
+                {
+                  "code": "1123",
+                  "name": "Programe informatice"
+                },
+                {
+                  "code": "1124",
+                  "name": "Alte imobilizări necorporale"
+                }
+              ],
+              "note": "Chapter III, not restated in 2019, still heads it \"Imobilizări necorporale\"; the nomenclature (chapter II, restated by OMF 100/2019) wins."
+            },
+            {
+              "code": "113",
+              "name": "Amortizarea imobilizărilor necorporale",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "1131",
+                  "name": "Amortizarea concesiunilor, licențelor și mărcilor"
+                },
+                {
+                  "code": "1132",
+                  "name": "Amortizarea drepturilor de autor și titlurilor de protecție"
+                },
+                {
+                  "code": "1133",
+                  "name": "Amortizarea programelor informatice"
+                },
+                {
+                  "code": "1134",
+                  "name": "Amortizarea altor imobilizări necorporale"
+                }
+              ]
+            },
+            {
+              "code": "114",
+              "name": "Deprecierea imobilizărilor necorporale",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            },
+            {
+              "code": "115",
+              "name": "Fond comercial pozitiv",
+              "nature": "activ",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            },
+            {
+              "code": "116",
+              "name": "Fond comercial negativ",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            },
+            {
+              "code": "117",
+              "name": "Deprecierea fondului comercial pozitiv",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "name": "IMOBILIZĂRI CORPORALE, TERENURI, MIJLOACE FIXE ȘI RESURSE MINERALE",
+          "note": "Chapter III, not restated in 2019, still heads it \"IMOBILIZĂRI CORPORALE\"; the nomenclature wins.",
+          "accounts": [
+            {
+              "code": "121",
+              "name": "Imobilizări corporale în curs de execuție",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1211",
+                  "name": "Construcții în curs de execuție"
+                },
+                {
+                  "code": "1212",
+                  "name": "Utilaj destinat instalării"
+                },
+                {
+                  "code": "1213",
+                  "name": "Imobilizări corporale pînă la punerea în utilizare"
+                },
+                {
+                  "code": "1214",
+                  "name": "Costuri ulterioare în curs de execuție"
+                }
+              ]
+            },
+            {
+              "code": "122",
+              "name": "Terenuri",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1221",
+                  "name": "Terenuri în curs de pregătire pentru utilizare prestabilită"
+                },
+                {
+                  "code": "1222",
+                  "name": "Terenuri fără construcții"
+                },
+                {
+                  "code": "1223",
+                  "name": "Terenuri cu construcții"
+                },
+                {
+                  "code": "1224",
+                  "name": "Terenuri cu zăcăminte"
+                },
+                {
+                  "code": "1225",
+                  "name": "Terenuri cu plantații perene"
+                },
+                {
+                  "code": "1226",
+                  "name": "Terenuri primite în gestiune economică"
+                },
+                {
+                  "code": "1227",
+                  "name": "Alte terenuri"
+                }
+              ]
+            },
+            {
+              "code": "123",
+              "name": "Mijloace fixe",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1231",
+                  "name": "Clădiri"
+                },
+                {
+                  "code": "1232",
+                  "name": "Construcții speciale"
+                },
+                {
+                  "code": "1233",
+                  "name": "Mașini, utilaje și instalații tehnice"
+                },
+                {
+                  "code": "1234",
+                  "name": "Mijloace de transport"
+                },
+                {
+                  "code": "1235",
+                  "name": "Inventar și mobilier"
+                },
+                {
+                  "code": "1236",
+                  "name": "Costuri ulterioare aferente obiectelor neînregistrate în bilanț"
+                },
+                {
+                  "code": "1237",
+                  "name": "Mijloace fixe primite în leasing financiar"
+                },
+                {
+                  "code": "1238",
+                  "name": "Mijloace fixe primite în gestiune economică"
+                },
+                {
+                  "code": "1239",
+                  "name": "Alte mijloace fixe",
+                  "note": "The PDF reads \"Alte mijloace fix\", a dropped letter; compare 1249 \"Amortizarea altor mijloace fixe\"."
+                }
+              ]
+            },
+            {
+              "code": "124",
+              "name": "Amortizarea mijloacelor fixe",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "1241",
+                  "name": "Amortizarea clădirilor"
+                },
+                {
+                  "code": "1242",
+                  "name": "Amortizarea construcțiilor speciale"
+                },
+                {
+                  "code": "1243",
+                  "name": "Amortizarea mașinilor, utilajelor și instalațiilor tehnice"
+                },
+                {
+                  "code": "1244",
+                  "name": "Amortizarea mijloacelor de transport"
+                },
+                {
+                  "code": "1245",
+                  "name": "Amortizarea inventarului și mobilierului"
+                },
+                {
+                  "code": "1246",
+                  "name": "Amortizarea costurilor ulterioare aferente obiectelor neînregistrate în bilanț"
+                },
+                {
+                  "code": "1247",
+                  "name": "Amortizarea mijloacelor fixe primite în leasing financiar"
+                },
+                {
+                  "code": "1248",
+                  "name": "Amortizarea mijloacelor fixe primite în gestiune economică"
+                },
+                {
+                  "code": "1249",
+                  "name": "Amortizarea altor mijloace fixe"
+                }
+              ]
+            },
+            {
+              "code": "125",
+              "name": "Resurse minerale",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "126",
+              "name": "Amortizarea și deprecierea resurselor minerale",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "127",
+              "name": "Deprecierea imobilizărilor corporale în curs de execuție",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "history": [
+                "completat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            },
+            {
+              "code": "128",
+              "name": "Deprecierea terenurilor",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "129",
+              "name": "Deprecierea mijloacelor fixe",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            }
+          ]
+        },
+        {
+          "code": "13",
+          "name": "ACTIVE BIOLOGICE IMOBILIZATE",
+          "accounts": [
+            {
+              "code": "131",
+              "name": "Active biologice imobilizate în curs de execuție",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "132",
+              "name": "Active biologice imobilizate în exploatare",
+              "nature": "activ",
+              "natureFrom": "account",
+              "note": "Chapter III, not restated in 2019, still heads it \"Active biologice imobilizate\"; the nomenclature (chapter II, restated by OMF 100/2019) wins."
+            },
+            {
+              "code": "133",
+              "name": "Amortizarea și deprecierea activelor biologice imobilizate",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "1331",
+                  "name": "Amortizarea activelor biologice imobilizate"
+                },
+                {
+                  "code": "1332",
+                  "name": "Deprecierea activelor biologice imobilizate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "14",
+          "name": "INVESTIȚII FINANCIARE PE TERMEN LUNG",
+          "accounts": [
+            {
+              "code": "141",
+              "name": "Investiții financiare pe termen lung în părți neafiliate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "1411",
+                  "name": "Valori mobiliare"
+                },
+                {
+                  "code": "1412",
+                  "name": "Cote de participație"
+                },
+                {
+                  "code": "1413",
+                  "name": "Depozite"
+                },
+                {
+                  "code": "1414",
+                  "name": "Împrumuturi acordate"
+                },
+                {
+                  "code": "1415",
+                  "name": "Alte investiții financiare"
+                }
+              ]
+            },
+            {
+              "code": "142",
+              "name": "Investiții financiare pe termen lung în părți afiliate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "1421",
+                  "name": "Acțiuni și cote de participație deținute în părțile afiliate"
+                },
+                {
+                  "code": "1422",
+                  "name": "Împrumuturi acordate părților afiliate"
+                },
+                {
+                  "code": "1423",
+                  "name": "Împrumuturi acordate aferente intereselor de participare"
+                },
+                {
+                  "code": "1424",
+                  "name": "Alte investiții financiare în părți afiliate"
+                }
+              ]
+            },
+            {
+              "code": "143",
+              "name": "Deprecierea investițiilor financiare pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "confidence": "unverified",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "1431",
+                  "name": "Deprecierea investițiilor financiare pe termen lung în părți neafiliate"
+                },
+                {
+                  "code": "1432",
+                  "name": "Deprecierea investițiilor financiare pe termen lung în părți afiliate"
+                }
+              ],
+              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "name": "INVESTIȚII IMOBILIARE",
+          "accounts": [
+            {
+              "code": "151",
+              "name": "Investiții imobiliare",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "152",
+              "name": "Amortizarea și deprecierea investițiilor imobiliare",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "1521",
+                  "name": "Amortizarea investițiilor imobiliare"
+                },
+                {
+                  "code": "1522",
+                  "name": "Deprecierea investițiilor imobiliare"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "16",
+          "name": "CREANȚE ȘI AVANSURI ACORDATE PE TERMEN LUNG",
+          "accounts": [
+            {
+              "code": "161",
+              "name": "Creanțe pe termen lung",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1611",
+                  "name": "Creanțe comerciale pe termen lung"
+                },
+                {
+                  "code": "1612",
+                  "name": "Creanțe pe termen lung privind leasingul"
+                },
+                {
+                  "code": "1613",
+                  "name": "Alte creanțe pe termen lung"
+                }
+              ]
+            },
+            {
+              "code": "162",
+              "name": "Creanțe ale părților afiliate pe termen lung",
+              "nature": "activ",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020, contul 162 devine 163",
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "1621",
+                  "name": "Creanțe aferente intereselor de participare"
+                },
+                {
+                  "code": "1622",
+                  "name": "Alte creanțe ale părților afiliate"
+                }
+              ]
+            },
+            {
+              "code": "163",
+              "name": "Avansuri acordate pe termen lung",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "1631",
+                  "name": "Avansuri acordate pentru imobilizări necorporale"
+                },
+                {
+                  "code": "1632",
+                  "name": "Avansuri acordate pentru imobilizări corporale"
+                },
+                {
+                  "code": "1633",
+                  "name": "Avansuri acordate pentru stocuri"
+                },
+                {
+                  "code": "1634",
+                  "name": "Alte avansuri acordate pe termen lung"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "17",
+          "name": "ALTE ACTIVE IMOBILIZATE",
+          "accounts": [
+            {
+              "code": "171",
+              "name": "Cheltuieli anticipate pe termen lung",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "172",
+              "name": "Alte active imobilizate",
+              "nature": "activ",
+              "natureFrom": "general-rule"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "name": "ACTIVE CIRCULANTE",
+      "section": "bilanț",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "21",
+          "name": "STOCURI",
+          "accounts": [
+            {
+              "code": "211",
+              "name": "Materiale",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2111",
+                  "name": "Materii prime și materiale de bază"
+                },
+                {
+                  "code": "2112",
+                  "name": "Materiale auxiliare"
+                },
+                {
+                  "code": "2113",
+                  "name": "Piese de schimb"
+                },
+                {
+                  "code": "2114",
+                  "name": "Combustibil"
+                },
+                {
+                  "code": "2115",
+                  "name": "Ambalaje"
+                },
+                {
+                  "code": "2116",
+                  "name": "Anvelope și acumulatoare procurate separat de mijloacele de transport"
+                },
+                {
+                  "code": "2117",
+                  "name": "Materiale cu destinația agricolă"
+                },
+                {
+                  "code": "2118",
+                  "name": "Materiale transmise temporar terților"
+                },
+                {
+                  "code": "2119",
+                  "name": "Alte materiale"
+                }
+              ]
+            },
+            {
+              "code": "212",
+              "name": "Active biologice circulante",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "213",
+              "name": "Obiecte de mică valoare și scurtă durată",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2131",
+                  "name": "Obiecte de mică valoare și scurtă durată în stoc"
+                },
+                {
+                  "code": "2132",
+                  "name": "Obiecte de mică valoare și scurtă durată în exploatare"
+                },
+                {
+                  "code": "2133",
+                  "name": "Construcții și dispozitive provizorii"
+                },
+                {
+                  "code": "2134",
+                  "name": "Obiecte de mică valoare și scurtă durată transmise temporar terților"
+                }
+              ]
+            },
+            {
+              "code": "214",
+              "name": "Uzura obiectelor de mică valoare și scurtă durată",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "2141",
+                  "name": "Uzura obiectelor de mică valoare și scurtă durată"
+                },
+                {
+                  "code": "2142",
+                  "name": "Uzura construcțiilor și dispozitivelor provizorii"
+                }
+              ]
+            },
+            {
+              "code": "215",
+              "name": "Producția în curs de execuție",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2151",
+                  "name": "Produse în curs de execuție"
+                },
+                {
+                  "code": "2152",
+                  "name": "Servicii în curs de execuție"
+                },
+                {
+                  "code": "2153",
+                  "name": "Lucrări în curs de execuție"
+                }
+              ]
+            },
+            {
+              "code": "216",
+              "name": "Produse",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2161",
+                  "name": "Produse finite"
+                },
+                {
+                  "code": "2162",
+                  "name": "Semifabricate din producție proprie"
+                },
+                {
+                  "code": "2163",
+                  "name": "Produse secundare"
+                },
+                {
+                  "code": "2164",
+                  "name": "Produse transmise temporar terților"
+                }
+              ]
+            },
+            {
+              "code": "217",
+              "name": "Mărfuri",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2171",
+                  "name": "Bunuri procurate în vederea revînzării"
+                },
+                {
+                  "code": "2172",
+                  "name": "Produse transmise spre vînzare magazinelor proprii"
+                },
+                {
+                  "code": "2173",
+                  "name": "Active imobilizate deținute pentru vînzare"
+                },
+                {
+                  "code": "2174",
+                  "name": "Mărfuri transmise temporar terților"
+                }
+              ]
+            },
+            {
+              "code": "218",
+              "name": "Ajustări pentru deprecierea stocurilor",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "2181",
+                  "name": "Ajustări pentru deprecierea materialelor"
+                },
+                {
+                  "code": "2182",
+                  "name": "Ajustări pentru deprecierea activelor biologice circulante"
+                },
+                {
+                  "code": "2183",
+                  "name": "Ajustări pentru deprecierea obiectelor de mică valoare și scurtă durată"
+                },
+                {
+                  "code": "2184",
+                  "name": "Ajustări pentru deprecierea producției în curs de execuție"
+                },
+                {
+                  "code": "2185",
+                  "name": "Ajustări pentru deprecierea produselor"
+                },
+                {
+                  "code": "2186",
+                  "name": "Ajustări pentru deprecierea mărfurilor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "22",
+          "name": "CREANȚE COMERCIALE ȘI CALCULATE",
+          "accounts": [
+            {
+              "code": "221",
+              "name": "Creanțe comerciale",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2211",
+                  "name": "Creanțe comerciale din țară"
+                },
+                {
+                  "code": "2212",
+                  "name": "Creanțe comerciale din străinătate"
+                },
+                {
+                  "code": "2213",
+                  "name": "Alte creanțe comerciale"
+                }
+              ]
+            },
+            {
+              "code": "222",
+              "name": "Corecții (provizioane) privind creanțele compromise",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "223",
+              "name": "Creanțe ale părților afiliate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2231",
+                  "name": "Creanțe aferente intereselor de participare"
+                },
+                {
+                  "code": "2232",
+                  "name": "Alte creanțe ale părților afiliate"
+                }
+              ]
+            },
+            {
+              "code": "224",
+              "name": "Avansuri acordate curente",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2241",
+                  "name": "Avansuri acordate pentru imobilizări necorporale"
+                },
+                {
+                  "code": "2242",
+                  "name": "Avansuri acordate pentru imobilizări corporale"
+                },
+                {
+                  "code": "2243",
+                  "name": "Avansuri acordate pentru stocuri"
+                },
+                {
+                  "code": "2244",
+                  "name": "Alte avansuri acordate curente"
+                }
+              ]
+            },
+            {
+              "code": "225",
+              "name": "Creanțe ale bugetului",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2251",
+                  "name": "Creanțe privind impozitul pe venit"
+                },
+                {
+                  "code": "2252",
+                  "name": "Creanțe privind taxa pe valoarea adăugată"
+                },
+                {
+                  "code": "2253",
+                  "name": "Creanțe privind accizele"
+                },
+                {
+                  "code": "2254",
+                  "name": "Creanțe privind alte impozite și taxe"
+                },
+                {
+                  "code": "2255",
+                  "name": "Alte creanțe ale bugetului"
+                }
+              ]
+            },
+            {
+              "code": "226",
+              "name": "Creanțe ale personalului",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2261",
+                  "name": "Creanțe ale titularilor de avans"
+                },
+                {
+                  "code": "2262",
+                  "name": "Creanțe privind recuperarea prejudiciului material"
+                },
+                {
+                  "code": "2263",
+                  "name": "Creanțe privind împrumuturile acordate personalului"
+                },
+                {
+                  "code": "2264",
+                  "name": "Alte creanțe ale personalului"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "23",
+          "name": "ALTE CREANȚE CURENTE",
+          "accounts": [
+            {
+              "code": "231",
+              "name": "Creanțe privind veniturile din utilizarea de către terți a activelor entității",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2311",
+                  "name": "Creanțe privind leasingul"
+                },
+                {
+                  "code": "2312",
+                  "name": "Creanțe privind dobînzile și redevențele calculate"
+                },
+                {
+                  "code": "2313",
+                  "name": "Creanțe privind dividendele calculate"
+                },
+                {
+                  "code": "2314",
+                  "name": "Alte creanțe privind veniturile"
+                }
+              ]
+            },
+            {
+              "code": "232",
+              "name": "Creanțe preliminate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2321",
+                  "name": "Creanțe preliminate privind decontările cu bugetul"
+                },
+                {
+                  "code": "2322",
+                  "name": "Creanțe preliminate privind leasingul"
+                },
+                {
+                  "code": "2323",
+                  "name": "Alte creanțe preliminate"
+                }
+              ]
+            },
+            {
+              "code": "233",
+              "name": "Creanțe curente privind asigurările",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "234",
+              "name": "Alte creanțe curente",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2341",
+                  "name": "Creanțe privind ieșirea activelor imobilizate"
+                },
+                {
+                  "code": "2342",
+                  "name": "Creanțe privind ieșirea altor active circulante"
+                },
+                {
+                  "code": "2343",
+                  "name": "Creanțe privind subvențiile"
+                },
+                {
+                  "code": "2344",
+                  "name": "Creanțe privind finanțările și încasările cu destinație specială"
+                },
+                {
+                  "code": "2345",
+                  "name": "Creanțele aferente parteneriatului public-privat"
+                },
+                {
+                  "code": "2346",
+                  "name": "Creanțe privind reclamațiile înaintate și recunoscute"
+                },
+                {
+                  "code": "2347",
+                  "name": "Creanțe privind alte operațiuni"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "24",
+          "name": "NUMERAR",
+          "accounts": [
+            {
+              "code": "241",
+              "name": "Casa",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2411",
+                  "name": "Casa în monedă națională"
+                },
+                {
+                  "code": "2412",
+                  "name": "Casa în valută străină"
+                },
+                {
+                  "code": "2413",
+                  "name": "Numerar în casierie legat"
+                }
+              ]
+            },
+            {
+              "code": "242",
+              "name": "Conturi curente în monedă națională",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2421",
+                  "name": "Numerar la conturi nelegat"
+                },
+                {
+                  "code": "2422",
+                  "name": "Numerar la conturi legat"
+                }
+              ]
+            },
+            {
+              "code": "243",
+              "name": "Conturi curente în valută străină",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2431",
+                  "name": "Numerar la conturi în țară"
+                },
+                {
+                  "code": "2432",
+                  "name": "Numerar la conturi în străinătate"
+                },
+                {
+                  "code": "2433",
+                  "name": "Numerar la conturi legat"
+                }
+              ]
+            },
+            {
+              "code": "244",
+              "name": "Alte conturi bancare",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2441",
+                  "name": "Acreditive"
+                },
+                {
+                  "code": "2442",
+                  "name": "Carduri bancare"
+                },
+                {
+                  "code": "2443",
+                  "name": "Numerar la alte conturi bancare"
+                }
+              ]
+            },
+            {
+              "code": "245",
+              "name": "Transferuri de numerar în expediție",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "246",
+              "name": "Documente bănești",
+              "nature": "activ",
+              "natureFrom": "account"
+            }
+          ]
+        },
+        {
+          "code": "25",
+          "name": "INVESTIȚII FINANCIARE CURENTE",
+          "accounts": [
+            {
+              "code": "251",
+              "name": "Investiții financiare curente în părți neafiliate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2511",
+                  "name": "Valori mobiliare"
+                },
+                {
+                  "code": "2512",
+                  "name": "Cote de participație"
+                },
+                {
+                  "code": "2513",
+                  "name": "Depozite"
+                },
+                {
+                  "code": "2514",
+                  "name": "Împrumuturi acordate"
+                },
+                {
+                  "code": "2515",
+                  "name": "Alte investiții financiare curente"
+                }
+              ]
+            },
+            {
+              "code": "252",
+              "name": "Investiții financiare curente în părți afiliate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "2521",
+                  "name": "Acțiuni și cote de participație deținute în părțile afiliate"
+                },
+                {
+                  "code": "2522",
+                  "name": "Împrumuturi acordate părților afiliate"
+                },
+                {
+                  "code": "2523",
+                  "name": "Împrumuturi acordate aferente intereselor de participare"
+                },
+                {
+                  "code": "2524",
+                  "name": "Alte investiții financiare în părți afiliate"
+                }
+              ]
+            },
+            {
+              "code": "253",
+              "name": "Provizioane pentru pierderi din împrumuturi neachitate la termen",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.26 din 04.03.2015, în vigoare 13.03.2015"
+              ]
+            },
+            {
+              "code": "254",
+              "name": "Ajustări pentru deprecierea investițiilor financiare curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "confidence": "unverified",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "2541",
+                  "name": "Ajustări pentru deprecierea investițiilor financiare curente în părți neafiliate"
+                },
+                {
+                  "code": "2542",
+                  "name": "Ajustări pentru deprecierea investițiilor financiare curente în părți afiliate"
+                }
+              ],
+              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+            }
+          ]
+        },
+        {
+          "code": "26",
+          "name": "ALTE ACTIVE CIRCULANTE",
+          "accounts": [
+            {
+              "code": "261",
+              "name": "Cheltuieli anticipate curente",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "262",
+              "name": "Alte active circulante",
+              "nature": "activ",
+              "natureFrom": "general-rule"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "name": "CAPITAL PROPRIU",
+      "section": "bilanț",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "31",
+          "name": "CAPITAL SOCIAL, NEÎNREGISTRAT ȘI PRIME DE CAPITAL",
+          "note": "Chapter III, not restated in 2019, still heads it \"CAPITAL SOCIAL ȘI SUPLIMENTAR\"; the nomenclature wins.",
+          "accounts": [
+            {
+              "code": "311",
+              "name": "Capital social",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "313",
+              "name": "Capital nevărsat",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "rectificativ",
+              "subaccounts": [
+                {
+                  "code": "3131",
+                  "name": "Capital nevărsat privind părțile sociale neachitate de proprietari"
+                },
+                {
+                  "code": "3132",
+                  "name": "Capital nevărsat privind acoperirea pierderilor anilor precedenți"
+                }
+              ]
+            },
+            {
+              "code": "314",
+              "name": "Capital neînregistrat",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "3141",
+                  "name": "Acțiuni neînregistrate emise la înființarea societății"
+                },
+                {
+                  "code": "3142",
+                  "name": "Părți sociale depuse pînă la înregistrarea de stat a majorării capitalului social"
+                }
+              ]
+            },
+            {
+              "code": "315",
+              "name": "Capital retras",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "316",
+              "name": "Patrimoniul primit de la stat cu drept de proprietate",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "confidence": "unverified",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+            },
+            {
+              "code": "317",
+              "name": "Prime de capital",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "name": "REZERVE",
+          "accounts": [
+            {
+              "code": "321",
+              "name": "Capital de rezervă",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "322",
+              "name": "Rezerve statutare",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "323",
+              "name": "Alte rezerve",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            }
+          ]
+        },
+        {
+          "code": "33",
+          "name": "PROFIT NEREPARTIZAT (PIERDERE NEACOPERITĂ)",
+          "accounts": [
+            {
+              "code": "331",
+              "name": "Corecții ale rezultatelor anilor precedenți",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "332",
+              "name": "Profit nerepartizat (pierdere neacoperită) al anilor precedenți",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "333",
+              "name": "Profit net (pierdere netă) al perioadei de gestiune",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "334",
+              "name": "Profit utilizat al perioadei de gestiune",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "335",
+              "name": "Rezultat din tranziția la noile reglementări contabile",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "336",
+              "name": "Excedent net (deficit net) al perioadei de gestiune",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "34",
+          "name": "ALTE ELEMENTE DE CAPITAL PROPRIU",
+          "accounts": [
+            {
+              "code": "341",
+              "name": "Fonduri",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "3411",
+                  "name": "Aporturi inițiale ale fondatorilor fundațiilor"
+                },
+                {
+                  "code": "3412",
+                  "name": "Fondul de active imobilizate"
+                },
+                {
+                  "code": "3413",
+                  "name": "Fondul de autofinanțare"
+                },
+                {
+                  "code": "3414",
+                  "name": "Alte fonduri"
+                }
+              ]
+            },
+            {
+              "code": "342",
+              "name": "Subvenții aferente activelor entităților cu proprietate publică",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            },
+            {
+              "code": "343",
+              "name": "Rezerve din reevaluare",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020, contul 343 devine 344"
+              ]
+            },
+            {
+              "code": "344",
+              "name": "Alte elemente de capital propriu",
+              "nature": "pasiv",
+              "natureFrom": "general-rule",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "35",
+          "name": "REZULTAT FINANCIAR TOTAL",
+          "accounts": [
+            {
+              "code": "351",
+              "name": "Rezultat financiar total",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "name": "DATORII PE TERMEN LUNG",
+      "section": "bilanț",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "41",
+          "name": "DATORII FINANCIARE PE TERMEN LUNG",
+          "accounts": [
+            {
+              "code": "411",
+              "name": "Credite bancare pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4111",
+                  "name": "Credite bancare în monedă națională"
+                },
+                {
+                  "code": "4112",
+                  "name": "Credite bancare în valută străină"
+                },
+                {
+                  "code": "4113",
+                  "name": "Datorii convertibile privind creditele bancare"
+                },
+                {
+                  "code": "4114",
+                  "name": "Alte credite bancare pe termen lung"
+                }
+              ]
+            },
+            {
+              "code": "412",
+              "name": "Împrumuturi pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4121",
+                  "name": "Împrumuturi din părți neafiliate"
+                },
+                {
+                  "code": "4122",
+                  "name": "Împrumuturi din părți afiliate"
+                },
+                {
+                  "code": "4123",
+                  "name": "Împrumuturi din emisiunea de obligațiuni"
+                },
+                {
+                  "code": "4124",
+                  "name": "Împrumuturi de la personalul entității"
+                },
+                {
+                  "code": "4125",
+                  "name": "Datorii convertibile privind împrumuturile"
+                },
+                {
+                  "code": "4126",
+                  "name": "Alte împrumuturi pe termen lung"
+                }
+              ]
+            },
+            {
+              "code": "414",
+              "name": "Datorii privind depunerile de economii pe termen lung ale membrilor asociațiilor de economii și împrumut",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.26 din 04.03.2015, în vigoare 13.03.2015"
+              ],
+              "subaccounts": [
+                {
+                  "code": "4141",
+                  "name": "Depuneri de economii pe termen lung ale membrilor asociațiilor de economii și împrumut"
+                },
+                {
+                  "code": "4142",
+                  "name": "Dobînzi aferente depunerilor de economii pe termen lung ale membrilor asociațiilor de economii și împrumut"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "42",
+          "name": "ALTE DATORII PE TERMEN LUNG",
+          "accounts": [
+            {
+              "code": "421",
+              "name": "Datorii comerciale pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4211",
+                  "name": "Datorii comerciale în țară"
+                },
+                {
+                  "code": "4212",
+                  "name": "Datorii comerciale în străinătate"
+                },
+                {
+                  "code": "4213",
+                  "name": "Datorii privind leasingul financiar"
+                },
+                {
+                  "code": "4214",
+                  "name": "Alte datorii comerciale pe termen lung"
+                }
+              ]
+            },
+            {
+              "code": "422",
+              "name": "Datorii față de părțile afiliate pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4221",
+                  "name": "Datorii aferente intereselor de participare"
+                },
+                {
+                  "code": "4222",
+                  "name": "Alte datorii față de părțile afiliate"
+                }
+              ]
+            },
+            {
+              "code": "423",
+              "name": "Avansuri primite pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4231",
+                  "name": "Avansuri primite din țară"
+                },
+                {
+                  "code": "4232",
+                  "name": "Avansuri primite din străinătate"
+                }
+              ]
+            },
+            {
+              "code": "424",
+              "name": "Venituri anticipate pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4241",
+                  "name": "Subvenții"
+                },
+                {
+                  "code": "4242",
+                  "name": "Alte venituri anticipate pe termen lung"
+                }
+              ]
+            },
+            {
+              "code": "425",
+              "name": "Finanțări și încasări cu destinație specială pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "426",
+              "name": "Provizioane pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "4261",
+                  "name": "Provizioane pentru beneficiile angajaților"
+                },
+                {
+                  "code": "4262",
+                  "name": "Provizioane pentru garanții acordate cumpărătorilor/clienților"
+                },
+                {
+                  "code": "4263",
+                  "name": "Provizioane pentru impozite"
+                },
+                {
+                  "code": "4264",
+                  "name": "Alte provizioane"
+                }
+              ]
+            },
+            {
+              "code": "427",
+              "name": "Datorii pe termen lung privind bunurile primite în gestiune economică",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "428",
+              "name": "Alte datorii pe termen lung",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "name": "DATORII CURENTE",
+      "section": "bilanț",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "51",
+          "name": "DATORII FINANCIARE CURENTE",
+          "accounts": [
+            {
+              "code": "511",
+              "name": "Credite bancare pe termen scurt",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5111",
+                  "name": "Credite bancare în monedă națională"
+                },
+                {
+                  "code": "5112",
+                  "name": "Credite bancare în valută străină"
+                },
+                {
+                  "code": "5113",
+                  "name": "Credite bancare în monedă națională restante"
+                },
+                {
+                  "code": "5114",
+                  "name": "Credite bancare în valută străină restante"
+                },
+                {
+                  "code": "5115",
+                  "name": "Alte credite bancare pe termen scurt"
+                },
+                {
+                  "code": "5116",
+                  "name": "Dobînzi aferente creditelor bancare"
+                }
+              ]
+            },
+            {
+              "code": "512",
+              "name": "Împrumuturi pe termen scurt",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5121",
+                  "name": "Împrumuturi de la părți neafiliate"
+                },
+                {
+                  "code": "5122",
+                  "name": "Împrumuturi de la părți afiliate"
+                },
+                {
+                  "code": "5123",
+                  "name": "Împrumuturi din emisiunea de obligațiuni"
+                },
+                {
+                  "code": "5124",
+                  "name": "Împrumuturi de la personalul entității"
+                },
+                {
+                  "code": "5125",
+                  "name": "Alte împrumuturi pe termen scurt"
+                },
+                {
+                  "code": "5126",
+                  "name": "Dobînzi aferente împrumuturilor"
+                }
+              ]
+            },
+            {
+              "code": "513",
+              "name": "Datorii privind depunerile de economii pe termen scurt ale membrilor asociațiilor de economii și împrumut",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.26 din 04.03.2015, în vigoare 13.03.2015",
+                "introdus prin Ordinul Ministerului Finanțelor nr.26 din 04.03.2015, în vigoare 13.03.2015"
+              ],
+              "subaccounts": [
+                {
+                  "code": "5131",
+                  "name": "Depuneri de economii pe termen scurt ale membrilor asociațiilor de economii și împrumut"
+                },
+                {
+                  "code": "5132",
+                  "name": "Dobînzi aferente depunerilor de economii pe termen scurt ale membrilor asociațiilor de economii și împrumut"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "52",
+          "name": "DATORII COMERCIALE CURENTE",
+          "accounts": [
+            {
+              "code": "521",
+              "name": "Datorii comerciale curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5211",
+                  "name": "Datorii comerciale în țară"
+                },
+                {
+                  "code": "5212",
+                  "name": "Datorii comerciale în străinătate"
+                },
+                {
+                  "code": "5213",
+                  "name": "Datorii privind leasingul"
+                },
+                {
+                  "code": "5214",
+                  "name": "Alte datorii comerciale curente"
+                }
+              ]
+            },
+            {
+              "code": "522",
+              "name": "Datorii curente față de părțile afiliate",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5221",
+                  "name": "Datorii aferente intereselor de participare"
+                },
+                {
+                  "code": "5222",
+                  "name": "Alte datorii față de părțile afiliate"
+                }
+              ]
+            },
+            {
+              "code": "523",
+              "name": "Avansuri primite curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5231",
+                  "name": "Avansuri primite din țară"
+                },
+                {
+                  "code": "5232",
+                  "name": "Avansuri primite din străinătate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "name": "DATORII CALCULATE CURENTE",
+          "accounts": [
+            {
+              "code": "531",
+              "name": "Datorii față de personal privind retribuirea muncii",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5311",
+                  "name": "Datorii salariale"
+                },
+                {
+                  "code": "5312",
+                  "name": "Datorii față de deponenți"
+                }
+              ]
+            },
+            {
+              "code": "532",
+              "name": "Datorii față de personal privind alte operații",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5321",
+                  "name": "Datorii față de titularii de avans"
+                },
+                {
+                  "code": "5322",
+                  "name": "Datorii față de personal privind alte operații"
+                }
+              ]
+            },
+            {
+              "code": "533",
+              "name": "Datorii privind asigurările sociale și medicale",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5331",
+                  "name": "Datorii față de bugetul asigurărilor sociale de stat"
+                },
+                {
+                  "code": "5332",
+                  "name": "Datorii față de fondurile asigurării obligatorii de asistență medicală"
+                },
+                {
+                  "code": "5333",
+                  "name": "Alte datorii privind asigurările sociale și medicale"
+                }
+              ]
+            },
+            {
+              "code": "534",
+              "name": "Datorii față de buget",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5341",
+                  "name": "Datorii privind impozitul pe venit din activitatea de întreprinzător și profesională"
+                },
+                {
+                  "code": "5342",
+                  "name": "Datorii privind impozitul pe venit din salariu"
+                },
+                {
+                  "code": "5343",
+                  "name": "Datorii privind impozitul pe venit reținut la sursa de plată"
+                },
+                {
+                  "code": "5344",
+                  "name": "Datorii privind taxa pe valoarea adăugată"
+                },
+                {
+                  "code": "5345",
+                  "name": "Datorii privind accizele"
+                },
+                {
+                  "code": "5346",
+                  "name": "Datorii privind alte impozite și taxe"
+                },
+                {
+                  "code": "5347",
+                  "name": "Datorii privind sancțiunile"
+                },
+                {
+                  "code": "5348",
+                  "name": "Alte datorii față de buget"
+                }
+              ]
+            },
+            {
+              "code": "535",
+              "name": "Venituri anticipate curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5351",
+                  "name": "Subvenții"
+                },
+                {
+                  "code": "5352",
+                  "name": "Valoarea activelor circulante intrate cu titlu gratuit"
+                },
+                {
+                  "code": "5353",
+                  "name": "Alte venituri anticipate curente"
+                }
+              ]
+            },
+            {
+              "code": "536",
+              "name": "Datorii față de proprietari",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5361",
+                  "name": "Datorii privind dividendele calculate"
+                },
+                {
+                  "code": "5362",
+                  "name": "Datorii privind alte operațiuni"
+                }
+              ]
+            },
+            {
+              "code": "537",
+              "name": "Finanțări și încasări cu destinație specială curente",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "538",
+              "name": "Provizioane curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5381",
+                  "name": "Provizioane pentru beneficiile angajaților"
+                },
+                {
+                  "code": "5382",
+                  "name": "Provizioane pentru garanții acordate cumpărătorilor/clienților"
+                },
+                {
+                  "code": "5383",
+                  "name": "Provizioane pentru impozite"
+                },
+                {
+                  "code": "5384",
+                  "name": "Alte provizioane"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "54",
+          "name": "ALTE DATORII CURENTE",
+          "accounts": [
+            {
+              "code": "541",
+              "name": "Datorii preliminate",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5411",
+                  "name": "Datorii preliminate privind decontările cu bugetul"
+                },
+                {
+                  "code": "5412",
+                  "name": "Datorii preliminate privind primele de asigurare obligatorie de asistență medicală"
+                },
+                {
+                  "code": "5413",
+                  "name": "Alte datorii preliminate"
+                }
+              ]
+            },
+            {
+              "code": "542",
+              "name": "Datorii privind asigurarea bunurilor și a persoanelor",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "543",
+              "name": "Datorii curente privind bunurile primite în gestiune economică",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "544",
+              "name": "Alte datorii curente",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "subaccounts": [
+                {
+                  "code": "5441",
+                  "name": "Datorii privind sancțiunile comerciale"
+                },
+                {
+                  "code": "5442",
+                  "name": "Datorii aferente mijloacelor nepredestinate în organizațiile necomerciale"
+                },
+                {
+                  "code": "5443",
+                  "name": "Alte datorii calculate curente"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "name": "VENITURI",
+      "section": "rezultate",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "61",
+          "name": "VENITURI DIN ACTIVITATEA OPERAȚIONALĂ",
+          "accounts": [
+            {
+              "code": "611",
+              "name": "Venituri din vînzări",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6111",
+                  "name": "Venituri din vînzarea produselor"
+                },
+                {
+                  "code": "6112",
+                  "name": "Venituri din vînzarea mărfurilor"
+                },
+                {
+                  "code": "6113",
+                  "name": "Venituri din prestarea serviciilor"
+                },
+                {
+                  "code": "6114",
+                  "name": "Venituri din executarea lucrărilor"
+                },
+                {
+                  "code": "6115",
+                  "name": "Venituri din contracte de construcție"
+                },
+                {
+                  "code": "6116",
+                  "name": "Venituri din contracte de leasing operațional și financiar (arendă, locațiune)"
+                },
+                {
+                  "code": "6117",
+                  "name": "Venituri din contracte de microfinanțare"
+                },
+                {
+                  "code": "6118",
+                  "name": "Alte venituri din vînzări"
+                }
+              ]
+            },
+            {
+              "code": "612",
+              "name": "Alte venituri din activitatea operațională",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6121",
+                  "name": "Venituri din ieșirea altor active circulante"
+                },
+                {
+                  "code": "6122",
+                  "name": "Venituri din sancțiuni"
+                },
+                {
+                  "code": "6123",
+                  "name": "Venituri din recuperarea prejudiciului material"
+                },
+                {
+                  "code": "6124",
+                  "name": "Venituri din plusurile de active imobilizate și circulante constatate la inventariere"
+                },
+                {
+                  "code": "6125",
+                  "name": "Venituri din decontarea datoriilor cu termen de prescripție expirat"
+                },
+                {
+                  "code": "6126",
+                  "name": "Venituri din ajustările privind deprecierea activelor circulante"
+                },
+                {
+                  "code": "6127",
+                  "name": "Venituri aferente diferențelor favorabile dintre cursul oficial al BNM și cursul de cumpărare-vînzare a valutei străine"
+                },
+                {
+                  "code": "6128",
+                  "name": "Alte venituri operaționale"
+                }
+              ]
+            },
+            {
+              "code": "613",
+              "name": "Venituri din dobînzile aferente împrumuturilor acordate",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6131",
+                  "name": "Venituri din dobînzile aferente împrumuturilor pe termen lung acordate"
+                },
+                {
+                  "code": "6132",
+                  "name": "Venituri din dobînzile aferente împrumuturilor pe termen scurt acordate"
+                }
+              ]
+            },
+            {
+              "code": "616",
+              "name": "Venituri aferente mijloacelor cu destinație specială",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            },
+            {
+              "code": "617",
+              "name": "Alte venituri (cu excepția veniturilor din activitatea economică)",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            },
+            {
+              "code": "618",
+              "name": "Venituri din activitatea economică",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "62",
+          "name": "VENITURI DIN ALTE ACTIVITĂȚI",
+          "accounts": [
+            {
+              "code": "621",
+              "name": "Venituri din operațiuni cu active imobilizate",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6211",
+                  "name": "Venituri din ieșirea imobilizărilor necorporale"
+                },
+                {
+                  "code": "6212",
+                  "name": "Venituri din ieșirea imobilizărilor corporale"
+                },
+                {
+                  "code": "6213",
+                  "name": "Venituri din ieșirea investițiilor imobiliare"
+                },
+                {
+                  "code": "6214",
+                  "name": "Venituri din ieșirea altor active imobilizate"
+                },
+                {
+                  "code": "6215",
+                  "name": "Venituri din reluarea pierderilor din deprecierea activelor imobilizate"
+                },
+                {
+                  "code": "6216",
+                  "name": "Venituri din decontarea fondului comercial negativ"
+                },
+                {
+                  "code": "6217",
+                  "name": "Alte venituri din operațiuni cu active imobilizate"
+                }
+              ]
+            },
+            {
+              "code": "622",
+              "name": "Venituri financiare",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6221",
+                  "name": "Venituri din interese de participare"
+                },
+                {
+                  "code": "6222",
+                  "name": "Venituri din dobînzi"
+                },
+                {
+                  "code": "6223",
+                  "name": "Venituri din alte investiții financiare pe termen lung"
+                },
+                {
+                  "code": "6224",
+                  "name": "Venituri aferente ajustărilor de valoare privind investițiile financiare pe termen lung și curente"
+                },
+                {
+                  "code": "6225",
+                  "name": "Venituri din ieșirea investițiilor financiare"
+                },
+                {
+                  "code": "6226",
+                  "name": "Venituri din diferențe de curs valutar"
+                },
+                {
+                  "code": "6227",
+                  "name": "Venituri din diferențe de sumă"
+                },
+                {
+                  "code": "6228",
+                  "name": "Alte venituri financiare"
+                }
+              ]
+            },
+            {
+              "code": "623",
+              "name": "Venituri excepționale",
+              "nature": "pasiv",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "6231",
+                  "name": "Venituri din compensarea pierderilor din calamități"
+                },
+                {
+                  "code": "6232",
+                  "name": "Venituri din compensarea pierderilor din alte evenimente excepționale"
+                },
+                {
+                  "code": "6233",
+                  "name": "Alte venituri excepționale"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "name": "CHELTUIELI",
+      "section": "rezultate",
+      "doubleEntry": true,
+      "accountsMandatory": true,
+      "entityMayAdd": [
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "71",
+          "name": "CHELTUIELI ALE ACTIVITĂȚII OPERAȚIONALE",
+          "accounts": [
+            {
+              "code": "711",
+              "name": "Costul vînzărilor",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7111",
+                  "name": "Valoarea contabilă a produselor vîndute"
+                },
+                {
+                  "code": "7112",
+                  "name": "Valoarea contabilă a mărfurilor vîndute"
+                },
+                {
+                  "code": "7113",
+                  "name": "Costul serviciilor prestate"
+                },
+                {
+                  "code": "7114",
+                  "name": "Costul lucrărilor executate terților"
+                },
+                {
+                  "code": "7115",
+                  "name": "Costuri aferente contractelor de construcție"
+                },
+                {
+                  "code": "7116",
+                  "name": "Costuri aferente contractelor de leasing operațional și financiar (arendă, locațiune)"
+                },
+                {
+                  "code": "7117",
+                  "name": "Costuri aferente contractelor de microfinanțare"
+                },
+                {
+                  "code": "7118",
+                  "name": "Alte costuri aferente veniturilor din vînzări"
+                }
+              ]
+            },
+            {
+              "code": "712",
+              "name": "Cheltuieli de distribuire",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7121",
+                  "name": "Cheltuieli cu personalul comercial"
+                },
+                {
+                  "code": "7122",
+                  "name": "Cheltuieli privind amortizarea, întreținerea și reparația activelor imobilizate cu destinație comercială"
+                },
+                {
+                  "code": "7123",
+                  "name": "Cheltuieli cu ambalajele și alte materiale utilizate la comercializarea produselor și mărfurilor"
+                },
+                {
+                  "code": "7124",
+                  "name": "Cheltuieli de transportare a produselor și mărfurilor"
+                },
+                {
+                  "code": "7125",
+                  "name": "Cheltuieli de publicitate și marketing"
+                },
+                {
+                  "code": "7126",
+                  "name": "Cheltuieli privind reparațiile și deservirea produselor și mărfurilor în perioada de garanție"
+                },
+                {
+                  "code": "7127",
+                  "name": "Cheltuieli privind creanțele comerciale compromise"
+                },
+                {
+                  "code": "7128",
+                  "name": "Cheltuieli privind returnările și reducerile"
+                },
+                {
+                  "code": "7129",
+                  "name": "Alte cheltuieli de distribuire"
+                }
+              ]
+            },
+            {
+              "code": "713",
+              "name": "Cheltuieli administrative",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7131",
+                  "name": "Cheltuieli cu personalul administrativ"
+                },
+                {
+                  "code": "7132",
+                  "name": "Cheltuieli privind amortizarea, întreținerea și reparația activelor imobilizate cu destinație administrativă"
+                },
+                {
+                  "code": "7133",
+                  "name": "Cheltuieli cu impozitele și taxele, cu excepția impozitului pe venit"
+                },
+                {
+                  "code": "7134",
+                  "name": "Cheltuieli în scopuri de filantropie și sponsorizare"
+                },
+                {
+                  "code": "7135",
+                  "name": "Cheltuieli privind serviciile cu destinație administrativă"
+                },
+                {
+                  "code": "7136",
+                  "name": "Cheltuieli de protocol (reprezentanță)"
+                },
+                {
+                  "code": "7137",
+                  "name": "Cheltuieli privind delegarea personalului administrativ"
+                },
+                {
+                  "code": "7138",
+                  "name": "Alte cheltuieli administrative"
+                }
+              ]
+            },
+            {
+              "code": "714",
+              "name": "Alte cheltuieli din activitatea operațională",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7141",
+                  "name": "Valoarea contabilă și cheltuielile aferente altor active circulante ieșite"
+                },
+                {
+                  "code": "7142",
+                  "name": "Cheltuieli privind sancțiunile"
+                },
+                {
+                  "code": "7144",
+                  "name": "Cheltuieli privind lipsurile și pierderile din deteriorarea activelor imobilizate și circulante"
+                },
+                {
+                  "code": "7145",
+                  "name": "Cheltuieli privind creanțele compromise decontate, cu excepția celor comerciale"
+                },
+                {
+                  "code": "7146",
+                  "name": "Cheltuieli aferente ajustărilor privind deprecierea activelor circulante"
+                },
+                {
+                  "code": "7147",
+                  "name": "Cheltuieli aferente diferențelor nefavorabile dintre cursul oficial al BNM și cursul de cumpărare-vînzare a valutei străine"
+                },
+                {
+                  "code": "7148",
+                  "name": "Alte cheltuieli operaționale"
+                }
+              ]
+            },
+            {
+              "code": "715",
+              "name": "Cheltuieli aferente dobînzilor calculate",
+              "nature": "activ",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.26 din 04.03.2015, în vigoare 13.03.2015"
+              ],
+              "subaccounts": [
+                {
+                  "code": "7151",
+                  "name": "Cheltuieli aferente dobînzilor calculate la depunerile de economii ale membrilor asociațiilor de economii și împrumut"
+                },
+                {
+                  "code": "7152",
+                  "name": "Cheltuieli aferente dobînzilor calculate la împrumuturile/creditele primite"
+                }
+              ]
+            },
+            {
+              "code": "716",
+              "name": "Cheltuieli aferente mijloacelor cu destinație specială",
+              "nature": "activ",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            },
+            {
+              "code": "717",
+              "name": "Alte cheltuieli (cu excepția cheltuielilor din activitatea economică)",
+              "nature": "activ",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            },
+            {
+              "code": "718",
+              "name": "Cheltuieli din activitatea economică",
+              "nature": "activ",
+              "natureFrom": "class",
+              "history": [
+                "introdus prin Ordinul Ministerului Finanțelor nr.188 din 30.12.2014, în vigoare 01.01.2015"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "72",
+          "name": "CHELTUIELI ALE ALTOR ACTIVITĂȚI",
+          "accounts": [
+            {
+              "code": "721",
+              "name": "Cheltuieli cu active imobilizate",
+              "nature": "activ",
+              "natureFrom": "class",
+              "history": [
+                "modificat prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+              ],
+              "subaccounts": [
+                {
+                  "code": "7211",
+                  "name": "Valoarea contabilă și cheltuielile aferente imobilizărilor necorporale ieșite"
+                },
+                {
+                  "code": "7212",
+                  "name": "Valoarea contabilă și cheltuielile aferente imobilizărilor corporale ieșite"
+                },
+                {
+                  "code": "7213",
+                  "name": "Valoarea contabilă și cheltuielile aferente investițiilor imobiliare ieșite"
+                },
+                {
+                  "code": "7214",
+                  "name": "Valoarea contabilă și cheltuielile aferente altor active imobilizate ieșite"
+                },
+                {
+                  "code": "7215",
+                  "name": "Pierderi din deprecierea activelor imobilizate"
+                },
+                {
+                  "code": "7216",
+                  "name": "Pierderi din decontarea fondului comercial pozitiv"
+                },
+                {
+                  "code": "7217",
+                  "name": "Cheltuieli privind provizioanele aferente activelor imobilizate"
+                },
+                {
+                  "code": "7218",
+                  "name": "Alte cheltuieli cu active imobilizate"
+                }
+              ]
+            },
+            {
+              "code": "722",
+              "name": "Cheltuieli financiare",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7221",
+                  "name": "Cheltuieli privind dobînzile"
+                },
+                {
+                  "code": "7222",
+                  "name": "Cheltuieli aferente ajustărilor de valoare privind investițiile financiare pe termen lung și curente"
+                },
+                {
+                  "code": "7223",
+                  "name": "Cheltuieli aferente ieșirii investițiilor financiare"
+                },
+                {
+                  "code": "7224",
+                  "name": "Cheltuieli din diferențe de curs valutar"
+                },
+                {
+                  "code": "7225",
+                  "name": "Cheltuieli din diferențe de sumă"
+                },
+                {
+                  "code": "7226",
+                  "name": "Alte cheltuieli financiare"
+                }
+              ]
+            },
+            {
+              "code": "723",
+              "name": "Cheltuieli excepționale",
+              "nature": "activ",
+              "natureFrom": "class",
+              "subaccounts": [
+                {
+                  "code": "7231",
+                  "name": "Cheltuieli privind calamitățile"
+                },
+                {
+                  "code": "7232",
+                  "name": "Cheltuieli privind alte evenimente excepționale"
+                },
+                {
+                  "code": "7233",
+                  "name": "Alte cheltuieli excepționale"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "73",
+          "name": "CHELTUIELI PRIVIND IMPOZITUL PE VENIT",
+          "accounts": [
+            {
+              "code": "731",
+              "name": "Cheltuieli privind impozitul pe venit",
+              "nature": "activ",
+              "natureFrom": "class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "name": "CONTURI DE GESTIUNE",
+      "section": "gestiune",
+      "doubleEntry": true,
+      "accountsMandatory": false,
+      "entityMayAdd": [
+        "accounts",
+        "subaccounts"
+      ],
+      "groups": [
+        {
+          "code": "81",
+          "name": "CONTURI DE CALCULAȚIE",
+          "accounts": [
+            {
+              "code": "811",
+              "name": "Activități de bază",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "calculație"
+            },
+            {
+              "code": "812",
+              "name": "Activități auxiliare",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "calculație"
+            }
+          ]
+        },
+        {
+          "code": "82",
+          "name": "CONTURI DE REPARTIZARE",
+          "accounts": [
+            {
+              "code": "821",
+              "name": "Costuri indirecte de producție",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "colectare – repartizare"
+            },
+            {
+              "code": "822",
+              "name": "Costuri indirecte aferente contractelor de construcție",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "colectare – repartizare"
+            },
+            {
+              "code": "823",
+              "name": "Costuri de regie aferente contractelor de construcție",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "colectare – repartizare"
+            },
+            {
+              "code": "824",
+              "name": "Alte costuri repartizabile",
+              "nature": "activ",
+              "natureFrom": "general-rule",
+              "qualifier": "colectare – repartizare",
+              "note": "Chapter III calls it \"un cont de colectare – repartizare\" without saying activ or pasiv; activ by chapter I's rule for class 8."
+            }
+          ]
+        },
+        {
+          "code": "83",
+          "name": "ALTE CONTURI DE GESTIUNE",
+          "accounts": [
+            {
+              "code": "831",
+              "name": "Adaos comercial",
+              "nature": "pasiv",
+              "natureFrom": "account",
+              "qualifier": "rectificativ"
+            },
+            {
+              "code": "832",
+              "name": "Încasări din vînzarea bunurilor în numerar",
+              "nature": "pasiv",
+              "natureFrom": "account"
+            },
+            {
+              "code": "833",
+              "name": "Returnarea și reducerea prețurilor la bunurile vîndute",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "834",
+              "name": "Costuri aferente bunurilor transmise spre prelucrare terților",
+              "nature": "activ",
+              "natureFrom": "account"
+            },
+            {
+              "code": "835",
+              "name": "Producții și unități de deservire",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "calculație"
+            },
+            {
+              "code": "836",
+              "name": "Costuri refacturate",
+              "nature": "activ",
+              "natureFrom": "account",
+              "qualifier": "colectare – repartizare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "name": "CONTURI EXTRABILANȚIERE",
+      "section": "extrabilanțier",
+      "doubleEntry": false,
+      "accountsMandatory": false,
+      "entityMayAdd": [
+        "accounts",
+        "subaccounts"
+      ],
+      "accounts": [
+        {
+          "code": "911",
+          "name": "Imobilizări corporale primite în leasing (arendă, locațiune) operațional"
+        },
+        {
+          "code": "912",
+          "name": "Bunuri primite pentru montare"
+        },
+        {
+          "code": "913",
+          "name": "Imobilizări corporale transmise în leasing financiar"
+        },
+        {
+          "code": "914",
+          "name": "Bunuri primite în custodie"
+        },
+        {
+          "code": "915",
+          "name": "Bunuri primite spre prelucrare sau reparare"
+        },
+        {
+          "code": "916",
+          "name": "Bunuri primite în baza contractelor de comision"
+        },
+        {
+          "code": "917",
+          "name": "Bunuri obținute din materialele prelucrate ale terților"
+        },
+        {
+          "code": "918",
+          "name": "Formulare cu regim special"
+        },
+        {
+          "code": "919",
+          "name": "Creanțe compromise decontate"
+        },
+        {
+          "code": "920",
+          "name": "Creanțe contingente"
+        },
+        {
+          "code": "921",
+          "name": "Datorii contingente"
+        },
+        {
+          "code": "922",
+          "name": "Garanții acordate"
+        },
+        {
+          "code": "923",
+          "name": "Garanții primite"
+        },
+        {
+          "code": "924",
+          "name": "Pierderi fiscale"
+        },
+        {
+          "code": "925",
+          "name": "Facilități fiscale"
+        }
+      ]
+    }
+  ]
+}

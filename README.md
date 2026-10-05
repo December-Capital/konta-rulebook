@@ -20,6 +20,9 @@ sunt calculate corect?”* Răspunsul nostru: citiți-le aici. Dacă găsiți o 
   s-a schimbat de două ori în 2026; fiecare schimbare este un set separat, cu data ei.
 - **Ce a fost aprobat nu se modifică.** O corectură se adaugă ca set nou, ca să se poată vedea
   oricând ce reguli s-au aplicat la o declarație deja depusă.
+- **Planul general de conturi este transcris, nu reconstituit.** În `charts/` se află planul
+  aprobat prin Ordinul nr. 119/2013, în redacția în vigoare din 1 ianuarie 2020: clase, grupe,
+  conturi și subconturi, fiecare cont cu caracterul lui (de activ sau de pasiv) așa cum îl dă actul.
 
 ## Întrebări încă deschise
 
@@ -33,6 +36,6 @@ Formatul datelor și regulile pentru modificări: [docs/FORMAT.md](docs/FORMAT.m
 
 ---
 
-Datele din `data/` sunt sub licența [CC BY 4.0](LICENSE): pot fi folosite liber, inclusiv
+Datele din `data/` și `charts/` sunt sub licența [CC BY 4.0](LICENSE): pot fi folosite liber, inclusiv
 comercial, cu menționarea sursei. Instrumentele și schemele sunt sub licența MIT.
 © 2026 December Capital.

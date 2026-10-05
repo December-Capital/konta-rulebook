@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://december-capital.github.io/konta-rulebook/schemas/chart.schema.json",
+  "title": "Konta chart of accounts",
+  "description": "An immutable, effective-dated version of a published chart of accounts, transcribed from the act. Classes, groups, synthetic accounts (gradul I) and subaccounts (gradul II), each named as the act names it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "jurisdiction", "title", "effectiveFrom", "publishedOn", "status", "sources", "classes"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^md-pgcc-[0-9]{4}(\\.[0-9]+)?$",
+      "description": "md-pgcc-<year the version took force>, e.g. md-pgcc-2020, or md-pgcc-2020.2 for a later amendment in force the same year."
+    },
+    "jurisdiction": { "type": "string", "enum": ["MD"] },
+    "title": { "type": "string", "minLength": 1 },
+    "effectiveFrom": { "type": "string", "format": "date", "description": "First date this version governs." },
+    "effectiveTo": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Last date this version governs. Null while it is the current version."
+    },
+    "publishedOn": { "type": "string", "format": "date", "description": "When WE published this version." },
+    "status": { "type": "string", "enum": ["draft", "approved", "superseded"] },
+    "approvedBy": { "type": "string", "minLength": 1 },
+    "approvedOn": { "type": "string", "format": "date" },
+    "notes": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "ruleset.schema.json#/properties/sources/items" }
+    },
+    "classes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/class" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "approved" } }, "required": ["status"] },
+      "then": { "required": ["approvedBy", "approvedOn"] }
+    }
+  ],
+  "$defs": {
+    "name": { "type": "string", "minLength": 1, "pattern": "^\\S(.*\\S)?$" },
+    "class": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "name", "section", "doubleEntry", "accountsMandatory", "entityMayAdd"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[1-9]$" },
+        "name": { "$ref": "#/$defs/name" },
+        "section": {
+          "enum": ["bilanț", "rezultate", "gestiune", "extrabilanțier"],
+          "description": "Balance sheet, results (income and expenses), management, or off-balance."
+        },
+        "doubleEntry": {
+          "type": "boolean",
+          "description": "False for off-balance accounts, which are kept in single entry with no corresponding account."
+        },
+        "accountsMandatory": {
+          "type": "boolean",
+          "description": "Whether the synthetic accounts are obligatory. Subaccounts are always recommendations."
+        },
+        "entityMayAdd": {
+          "type": "array",
+          "items": { "enum": ["accounts", "subaccounts"] },
+          "uniqueItems": true,
+          "description": "What an entity may add to this class in its own working chart."
+        },
+        "groups": { "type": "array", "items": { "$ref": "#/$defs/group" } },
+        "accounts": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/account" },
+          "description": "Accounts directly under the class, for a class the act does not divide into groups (class 9)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "name", "accounts"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[1-9][0-9]$" },
+        "name": { "$ref": "#/$defs/name" },
+        "accounts": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/account" } },
+        "note": { "type": "string" }
+      }
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "name"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[1-9][0-9]{2}$" },
+        "name": { "$ref": "#/$defs/name" },
+        "nature": {
+          "enum": ["activ", "pasiv"],
+          "description": "activ: increases on the debit, balance on the debit. pasiv: increases on the credit, balance on the credit. Absent for single-entry accounts."
+        },
+        "qualifier": {
+          "enum": ["rectificativ", "calculație", "colectare – repartizare"],
+          "description": "rectificativ: a contra account, reducing the value of another."
+        },
+        "natureFrom": {
+          "enum": ["account", "class", "general-rule"],
+          "description": "Where the nature is stated: the account's own sentence, its class's opening, or the act's general rule for its class."
+        },
+        "confidence": {
+          "enum": ["verified", "unverified"],
+          "description": "Set on an account when it is less certain than the rest of the version, and once a human has read it."
+        },
+        "history": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "The act's own amendment notes for this account, verbatim."
+        },
+        "subaccounts": { "type": "array", "items": { "$ref": "#/$defs/subaccount" } },
+        "note": { "type": "string" }
+      },
+      "dependentRequired": { "nature": ["natureFrom"], "natureFrom": ["nature"] }
+    },
+    "subaccount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "name"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[1-9][0-9]{3}$" },
+        "name": { "$ref": "#/$defs/name" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "konta-rulebook",
   "version": "0.1.0",
-  "description": "Moldovan fiscal law as effective-dated, citable data. Rates, thresholds, deadlines and forms — published openly so anyone can verify the tax maths.",
+  "description": "Moldovan fiscal law as effective-dated, citable data. Rates, thresholds, deadlines and forms \u2014 published openly so anyone can verify the tax maths.",
   "license": "CC-BY-4.0",
   "type": "module",
   "private": false,
@@ -21,6 +21,7 @@
     "ajv-formats": "^3.0.1"
   },
   "files": [
+    "charts",
     "data",
     "schemas",
     "sources",

@@ -35,6 +35,8 @@ schemas/ruleset.schema.json    the contract
 data/2026/md-2026.json         the year's base set
 data/2026/md-2026.2.json       a sparse amendment: only the keys that changed mid-year
 data/2027/md-2027.json
+charts/md-pgcc-2020.json       Planul general de conturi contabile, in force from 1 January 2020
+schemas/chart.schema.json      the contract for a chart of accounts
 tools/validate.mjs             the gate: schema plus the cross-file rules JSON Schema can't express
 tools/watch-sources.mjs        reports changes in the official sources that nobody has read yet
 sources/watch.json             the acts it watches, and what has already been read
@@ -85,6 +87,33 @@ Ratios are fractions: `0.12`, never `12`.
 
 **Nothing enters without a citation.** `sourceIndex` points into the set's own `sources`, and the
 validator checks it resolves. A value nobody can trace to a published act does not belong here.
+
+## The chart of accounts
+
+`charts/` holds the *Planul general de conturi contabile* (OMF 119/2013) as published, one file per
+version in force, with the same dates, citations and draft/approved status as a rule set. It is a
+tree: 9 classes, their groups, synthetic accounts (gradul I, three digits) and subaccounts (gradul
+II, four digits). Class 9 has no groups in the act, so its accounts sit directly under the class.
+
+It is **transcribed, never reconstructed.** `md-pgcc-2020` was parsed from the Ministry of
+Finance's consolidated PDF (its SHA-256 is in the first source) and checked against itself: every
+code under its parent and in order, and every account's name compared with the heading chapter III
+gives it. Four headings in chapter III were not restated in 2019 and differ; the nomenclature wins
+and the account carries a `note`. One typo in the PDF is corrected, with a `note` saying so.
+
+Each account carries what the ledger needs from the act:
+
+- `nature`: `activ` (debit side) or `pasiv` (credit side), with `qualifier` `rectificativ` for a
+  contra account, `calculație` or `colectare – repartizare` for class 8.
+- `natureFrom`: whether the account's own sentence in chapter III says so (`account`), its class's
+  opening does (`class`, for classes 6 and 7), or only chapter I's general rule (`general-rule`).
+- `history`: the act's own amendment notes for the account.
+
+And each class carries chapter I's rules: whether its synthetic accounts are mandatory (classes
+1-7), what an entity may add to its own working chart (subaccounts in 1-7; accounts and subaccounts
+in 8-9), and whether it is double-entry (all but class 9).
+
+A later amendment is a new file with a later `effectiveFrom`, never an edit to an approved one.
 
 ## Adding or changing a rule
 
