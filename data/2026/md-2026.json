@@ -263,6 +263,20 @@
       "sourceIndex": 6,
       "confidence": "unverified",
       "note": "Chapter III: account 534 Datorii față de buget is credited for VAT charged on sales (subaccount 5344 in the act)."
+    },
+    "ledger.purchases.payable_account": {
+      "text": "521",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Account 521 Datorii comerciale curente is credited with a supplier invoice's total. Taken from common practice and the account's name; chapter III's description of 521 not yet read for it. A company may post to its subaccounts instead."
+    },
+    "ledger.purchases.vat_account": {
+      "text": "534",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Deductible VAT on a supplier invoice is debited to 534 (subaccount 5344), reducing the VAT owed. Common Moldovan practice, not yet read from chapter III; some companies keep it on 2252 Creanțe privind TVA until the return. VAT that cannot be deducted is not posted here but added to the cost of what was bought."
     }
   }
 }
