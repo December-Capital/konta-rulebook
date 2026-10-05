@@ -7,7 +7,6 @@
   "publishedOn": "2026-09-26",
   "status": "draft",
   "notes": "DRAFT. Values are corroborated by Ministry of Finance and SFS publications, but nobody has yet read the cited articles in the Fiscal Code itself, so every confidence is still 'unverified'. The compliance owner flips these only after reading the acts. Deliberately incomplete: it carries only what research has touched. Note md-2026.2, which amends the VAT registration threshold from 1 March 2026 — this set stays valid for every key that amendment does not restate.",
-
   "sources": [
     {
       "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
@@ -38,9 +37,21 @@
       "act": "Legea bugetului asigurarilor sociale de stat pentru anul 2026 (LP320/2025)",
       "url": "https://www.legis.md/cautare/getResults?doc_id=152321&lang=ro",
       "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "article": "cap. III, conturile 221, 534 și 611",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "verified": false
+    },
+    {
+      "act": "Ghid de integrare semiautomatizat SIA „e-Factura” (Serviciul Fiscal de Stat, 2025)",
+      "article": "calculul TVA pe rând (TotalTVA)",
+      "url": "https://efactura.sfs.md/Help/Ghid_integrare_Semi_Automatizata.pdf",
+      "verified": false
     }
   ],
-
   "values": {
     "tax.profit.standard_rate": {
       "number": "0.12",
@@ -203,6 +214,55 @@
       "sourceIndex": 0,
       "confidence": "unverified",
       "note": "RESOLVED. Art. 118^1 of the Fiscal Code, which required invoices above MDL 100,000 to be registered in the Registrul general electronic al facturilor fiscale within 10 working days under penalty of MDL 3,600 each, has been ABROGATED. Do not implement it."
+    },
+    "tax.vat.reduced_rate": {
+      "number": "0.08",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Art. 96 lit. b): bread and bakery products and milk and dairy products at the listed tariff positions, medicines at 3001-3004 in the State Nomenclature, natural and liquefied gas at 2711, and agricultural produce in natural form. Corroborated by secondary sources (dataset.gov.md summary of art. 96; runat.md, 2026), not read from the Code. Whether a 12% rate for HoReCa services still applies in 2026 is an open question and is deliberately not encoded."
+    },
+    "tax.vat.zero_rate": {
+      "number": "0",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Art. 104: supplies taxed at zero with the right to deduct input VAT (exports, among others). Distinct from exempt supplies under art. 103, which carry no VAT and no right to deduct; the product names those as exempt rather than as a rate."
+    },
+    "tax.vat.line_rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 7,
+      "confidence": "unverified",
+      "note": "VAT is computed per invoice line and rounded to two decimals (tax.vat.line_rounding_decimals). Half away from zero is ordinary commercial rounding; konta-efactura currently rounds half to even. The two must agree with what SIA e-Factura computes, to be confirmed on the first round trip with a test account."
+    },
+    "tax.vat.line_rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 7,
+      "confidence": "unverified",
+      "note": "Lei and bani: amounts on an invoice have two decimals."
+    },
+    "ledger.sales.receivable_account": {
+      "text": "221",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 221 Creanțe comerciale is debited for goods and services sold, in correspondence with 611 and 534. A company may post to its subaccounts instead."
+    },
+    "ledger.sales.revenue_account": {
+      "text": "611",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 611 Venituri din vînzări is credited for sales. The default for an invoice line; a line may name another revenue account or subaccount."
+    },
+    "ledger.sales.vat_account": {
+      "text": "534",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 534 Datorii față de buget is credited for VAT charged on sales (subaccount 5344 in the act)."
     }
   }
 }

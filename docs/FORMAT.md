@@ -168,6 +168,9 @@ Recorded rather than guessed at. Resolving them is Phase 0 work.
 | Is a universal B2B e-Factura mandate coming, and when? | No Moldovan legal act found for the widely reported 1 October 2026 date. The obligation today reaches only B2G, supplies to agents without fiscal relations with the budget system, and a risk-based list of roughly 69 entities. |
 | Is the VAT refund ceiling really 70% for e-Factura and MEV users? | Reported by secondary sources, absent from the Ministry of Finance summary of the 2026 changes. It is the strongest positive incentive to adopt e-Factura. |
 | Final 2027 figures | The set is based on a project approved at first reading, not final adoption. |
+| Is the 12% VAT rate for HoReCa services in force in 2026? | Not found in a source we could read; deliberately not encoded. Invoices of a restaurant or hotel depend on it. |
+| How does SIA e-Factura round VAT per line? | `tax.vat.line_rounding` says half away from zero; konta-efactura rounds half to even. They must agree with the platform; confirm on the first test round trip. |
+| The VAT rates for 2027 | `md-2027` carries none yet. Documents dated 2027 are refused until it does. |
 
 ## Licence
 
