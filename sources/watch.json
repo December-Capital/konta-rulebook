@@ -1,0 +1,103 @@
+{
+  "$comment": "Official sources tools/watch-sources.mjs checks for changes. 'known' lists what a human has already read: anything the watcher finds that is not listed here is reported as new. After reading a new act, add it here in the same commit as the data it changes.",
+  "acts": [
+    {
+      "id": "planul-general-de-conturi",
+      "title": "Planul general de conturi contabile",
+      "act": "Ordinul Ministrului Finanțelor nr. 119 din 06.08.2013",
+      "published": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "since": "2013",
+      "official": {
+        "legis": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=130817",
+        "mfPage": "https://mf.gov.md/ro/content/planul-general-de-conturi-contabile-aprobat-prin-ordinul-nr119",
+        "mfPdf": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf"
+      },
+      "match": [
+        "planul\\w* general\\w* de conturi",
+        "\\b119/2013\\b",
+        "nr\\.?\\s*119\\s+din\\s+(?:0?6\\s+august|06\\.08\\.)\\s*2013"
+      ],
+      "exclude": [
+        "sistemul bugetar",
+        "sectorul public"
+      ],
+      "related": [
+        "standard\\w* nationa\\w* de contabilitate"
+      ],
+      "known": {
+        "amendments": [
+          {
+            "order": "146/2013",
+            "key": "nr. 146, 16 octombrie 2013",
+            "inForce": "2014-01-01",
+            "inMfPdf": true
+          },
+          {
+            "order": "166/2013",
+            "key": "nr. 166, 28 noiembrie 2013",
+            "inForce": "2014-01-01",
+            "inMfPdf": true
+          },
+          {
+            "order": "188/2014",
+            "key": "nr. 188, 30 decembrie 2014",
+            "inForce": "2015-01-01",
+            "inMfPdf": true
+          },
+          {
+            "order": "26/2015",
+            "key": "nr. 26, 4 martie 2015",
+            "inMfPdf": true
+          },
+          {
+            "order": "100/2019",
+            "key": "nr. 100, 28 iunie 2019",
+            "gazette": "Monitorul Oficial nr. 230-237, art. 1275",
+            "inForce": "2020-01-01",
+            "inMfPdf": true
+          },
+          {
+            "order": "135/2019",
+            "key": "nr. 135, 15 octombrie 2019",
+            "gazette": "Monitorul Oficial nr. 320-325, art. 1824",
+            "note": "Amends OMF 188/2014, which completed the chart and approved the methodological indications for non-commercial organisations. Not read yet: whether it touches the chart itself"
+          },
+          {
+            "order": "171/2019",
+            "key": "nr. 171, 19 decembrie 2019",
+            "gazette": "Monitorul Oficial nr. 388-392, art. 2125, 27.12.2019",
+            "note": "Amends OMF 48/2019 and 100/2019 rather than 119/2013 directly; removes account 7143",
+            "inMfPdf": true
+          },
+          {
+            "order": "111/2021",
+            "key": "nr. 111, 13 septembrie 2021",
+            "gazette": "Monitorul Oficial nr. 219-225, art. 1128, 17.09.2021",
+            "inForce": "2021-09-17",
+            "note": "Descriptions of accounts 143, 254 and 316",
+            "inMfPdf": false
+          }
+        ],
+        "related": [
+          "nr. 194, 30 noiembrie 2018",
+          "nr. 93, 7 iunie 2019",
+          "nr. 155, 9 decembrie 2020"
+        ],
+        "mfPdf": "0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab",
+        "mfLinks": [
+          "https://mf.gov.md/ro/content/planul-general-de-conturi-contabile-aprobat-prin-ordinul-nr119",
+          "https://mf.gov.md/ro/content/ordinul-nr1002019-cu-privire-la-aprobarea-modific%C4%83rilor-la-ordinul-ministrului-finan%C8%9Belor",
+          "https://mf.gov.md/ro/content/ordin-cu-privire-la-aprobarea-indica%C5%A3iilor-metodice-privind-particularit%C4%83%C5%A3ile-contabilit%C4%83%C5%A3ii"
+        ]
+      }
+    }
+  ],
+  "gazette": {
+    "issue": "https://monitorul.gov.md/ro/monitor/{id}",
+    "home": "https://monitorul.gov.md/ro"
+  },
+  "mfListings": [
+    "https://mf.gov.md/ro/lex/contabilitate-%C8%99i-audit",
+    "https://mf.gov.md/ro/contabilitate-%C8%99i-audit/acte-legislative"
+  ]
+}

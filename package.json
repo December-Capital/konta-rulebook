@@ -13,7 +13,8 @@
     "url": "git+https://github.com/December-Capital/konta-rulebook.git"
   },
   "scripts": {
-    "validate": "node tools/validate.mjs"
+    "validate": "node tools/validate.mjs",
+    "watch": "node tools/watch-sources.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",
@@ -22,6 +23,7 @@
   "files": [
     "data",
     "schemas",
+    "sources",
     "tools"
   ],
   "keywords": [
@@ -31,5 +33,8 @@
     "fiscal",
     "snc",
     "contabilitate"
-  ]
+  ],
+  "devDependencies": {
+    "nodemailer": "^7.0.13"
+  }
 }

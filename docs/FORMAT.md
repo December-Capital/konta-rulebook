@@ -36,6 +36,8 @@ data/2026/md-2026.json         the year's base set
 data/2026/md-2026.2.json       a sparse amendment: only the keys that changed mid-year
 data/2027/md-2027.json
 tools/validate.mjs             the gate: schema plus the cross-file rules JSON Schema can't express
+tools/watch-sources.mjs        reports changes in the official sources that nobody has read yet
+sources/watch.json             the acts it watches, and what has already been read
 fixtures/                      anonymised golden-test datasets (Phase 1)
 ```
 
@@ -93,6 +95,28 @@ validator checks it resolves. A value nobody can trace to a published act does n
 4. Keep `status: "draft"` until the compliance owner approves it. The validator refuses to let an
    approved set contain unverified values.
 5. `npm run validate` must pass. Golden tests in the product must still pass.
+
+## Knowing when the law changes
+
+`npm run watch` checks the official sources behind each act listed in `sources/watch.json` and
+reports anything a person has not read yet:
+
+- **Monitorul Oficial**, issue by issue (`monitorul.gov.md/ro/monitor/{id}`). An amending order
+  has no force until it is published there, so this is the signal that matters. Every issue the
+  watcher has not seen is read; an act matching the patterns and missing from `known` is new.
+- **The Ministry of Finance's consolidated PDF**, by its SHA-256. The ministry updates it late
+  (the copy online in 2026 stops at its 2019 amendments), so it is a second signal, never a source
+  of truth on its own.
+- **The ministry's legislation listings**, for new links about the act.
+- **legis.md** holds the authoritative consolidated text but answers automated requests with a
+  Cloudflare challenge. It is tried and the refusal reported; read it by hand.
+
+Its state (the last gazette issue read, what was already reported) lives outside the repository,
+in `~/.local/state/konta-rulebook/` or `KONTA_WATCH_STATE`. With `--mail --mail-env <konta .env>`
+it mails the report through the konta.md mailboxes when there is something new, or when a source
+has failed three runs in a row. On the VPS behind app.konta.md it runs from cron every morning,
+mailing `mail@konta.md`, logging to `/var/log/konta-rulebook-watch.log`. It never changes `data/`: after reading a new act, change the data
+and add the act to `known` in the same commit.
 
 ## Open questions
 
