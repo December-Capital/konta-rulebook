@@ -277,6 +277,13 @@
       "sourceIndex": 6,
       "confidence": "unverified",
       "note": "Deductible VAT on a supplier invoice is debited to 534 (subaccount 5344), reducing the VAT owed. Common Moldovan practice, not yet read from chapter III; some companies keep it on 2252 Creanțe privind TVA until the return. VAT that cannot be deducted is not posted here but added to the cost of what was bought."
+    },
+    "ledger.payments.bank_account": {
+      "text": "242",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 242 Conturi curente în monedă națională is debited for money received into a current account in correspondence with 221 among others, and credited for money paid out in correspondence with 521 among others. The default for a bank payment in the company's currency; a payment may name a subaccount (2421) or another account the company keeps its money on."
     }
   }
 }
