@@ -7,7 +7,7 @@
   "effectiveTo": null,
   "publishedOn": "2026-10-05",
   "status": "draft",
-  "notes": "Chapter II (the nomenclature) as restated by OMF 100/2019 and amended by OMF 171/2019, in force from 1 January 2020, transcribed from the Ministry of Finance's consolidated text. Each account's nature (activ or pasiv, and whether it is rectificativ, de calculație or de colectare – repartizare) is from its own sentence in chapter III where there is one, from the opening of classes 6 and 7 otherwise, and from chapter I's general rule for the three accounts that state none (172, 262, 344). Not yet read: OMF 111/2021 (descriptions of 143, 254, 316; the nomenclature is not known to change) and OMF 135/2019 (amends OMF 188/2014; legis.md has no page of its own for it, so its effect has to be read from 188/2014's consolidated text). Abrogated in 2019 and so absent: accounts 312 and 413, subaccount 7143. Names keep the act's spelling (î, \"sînt\"); the PDF's cedilla ş and ţ are written as ș and ț.",
+  "notes": "Chapter II (the nomenclature) as restated by OMF 100/2019 and amended by OMF 171/2019, in force from 1 January 2020, transcribed from the Ministry of Finance's consolidated text. Each account's nature (activ or pasiv, and whether it is rectificativ, de calculație or de colectare – repartizare) is from its own sentence in chapter III where there is one, from the opening of classes 6 and 7 otherwise, and from chapter I's general rule for the three accounts that state none (172, 262, 344). OMF 111/2021 is read: it changed only correspondent accounts in the descriptions of 143, 254 and 316, nothing this file holds. Not yet read: OMF 135/2019 (amends OMF 188/2014; legis.md has no page of its own for it, so its effect has to be read from 188/2014's consolidated text). Abrogated in 2019 and so absent: accounts 312 and 413, subaccount 7143. Names keep the act's spelling (î, \"sînt\"); the PDF's cedilla ş and ţ are written as ș and ț.",
   "sources": [
     {
       "act": "Ordinul Ministrului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
@@ -439,9 +439,9 @@
               "nature": "pasiv",
               "natureFrom": "account",
               "qualifier": "rectificativ",
-              "confidence": "unverified",
               "history": [
-                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020",
+                "descriere modificată prin Ordinul Ministerului Finanțelor nr.111 din 13.09.2021, în vigoare 17.09.2021"
               ],
               "subaccounts": [
                 {
@@ -453,7 +453,7 @@
                   "name": "Deprecierea investițiilor financiare pe termen lung în părți afiliate"
                 }
               ],
-              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+              "note": "OMF 111/2021 (read 2026-10-06) changed only the correspondent accounts in its description (721 to 722 for the debit, 621 to 622 for the credit); its name and its nature, from the PDF, stand."
             }
           ]
         },
@@ -1171,9 +1171,9 @@
               "nature": "pasiv",
               "natureFrom": "account",
               "qualifier": "rectificativ",
-              "confidence": "unverified",
               "history": [
-                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020",
+                "descriere modificată prin Ordinul Ministerului Finanțelor nr.111 din 13.09.2021, în vigoare 17.09.2021"
               ],
               "subaccounts": [
                 {
@@ -1185,7 +1185,7 @@
                   "name": "Ajustări pentru deprecierea investițiilor financiare curente în părți afiliate"
                 }
               ],
-              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+              "note": "OMF 111/2021 (read 2026-10-06) changed only the correspondent accounts in its description (714 to 722 for the debit, 612 to 622 for the credit); its name and its nature, from the PDF, stand."
             }
           ]
         },
@@ -1279,11 +1279,11 @@
               "name": "Patrimoniul primit de la stat cu drept de proprietate",
               "nature": "pasiv",
               "natureFrom": "account",
-              "confidence": "unverified",
               "history": [
-                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020"
+                "introdus prin Ordinul Ministerului Finanțelor nr.100 din 28.06.2019, în vigoare 01.01.2020",
+                "descriere modificată prin Ordinul Ministerului Finanțelor nr.111 din 13.09.2021, în vigoare 17.09.2021"
               ],
-              "note": "OMF 111/2021 rewrote this account's description after the ministry's PDF was made. Its nature here is from the PDF until 111/2021 is read."
+              "note": "OMF 111/2021 (read 2026-10-06) changed only the correspondent accounts of its second paragraph (332, 427, 543 became 421, 427, 428, 511, 521, 531, 533, 536, 543, 544); its name and its nature, from the PDF, stand."
             },
             {
               "code": "317",
