@@ -50,6 +50,29 @@
       "article": "calculul TVA pe rând (TotalTVA)",
       "url": "https://efactura.sfs.md/Help/Ghid_integrare_Semi_Automatizata.pdf",
       "verified": false
+    },
+    {
+      "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
+      "article": "art. 1 și anexa nr. 1: prima procentuală de 9,0%",
+      "publication": "Monitorul Oficial nr. 659-661, art. 798, 2025",
+      "url": "https://monitorul.fisc.md/valoarea-primei-de-asigurare-medicala-obligatorie-in-suma-fixa-pentru-anul-2026/",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 697/2014 cu privire la aprobarea Regulamentului privind reținerea impozitului pe venit din salariu și din alte plăți efectuate de către patron în folosul angajatului",
+      "article": "metoda cumulativă de la începutul anului fiscal sau de la data angajării; scutirile din luna următoare cererii; valori întregi în fișa personală, cu zecimale în sistemele automatizate",
+      "url": "https://www.contabilsef.md/determinarea-si-retinerea-impozitului-pe-venit-din-salariu-de-catre-patron-informatii-utile",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului cu privire la cuantumul salariului minim pe țară pentru anul 2026 (aprobată la 17.12.2025)",
+      "url": "https://gov.md/ro/node/5613",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997, art. 33-35 (scutiri), cu cuantumurile pentru 2026 reluate în circulara Ministerului Finanțelor privind elaborarea bugetelor locale",
+      "url": "https://particip.gov.md/ro/download_attachment/34158",
+      "verified": false
     }
   ],
   "values": {
@@ -131,15 +154,16 @@
     "payroll.income_tax.personal_deduction_annual": {
       "number": "29700",
       "unit": "MDL/year",
-      "sourceIndex": 0,
-      "confidence": "unverified"
+      "sourceIndex": 11,
+      "confidence": "unverified",
+      "note": "Scutirea personală (art. 33), unchanged from 2025. Granted monthly as one twelfth, cumulatively, from the month after the employee asks for it at their main place of work."
     },
     "payroll.income_tax.personal_deduction_income_cap": {
       "number": "360000",
       "unit": "MDL/year",
-      "sourceIndex": 0,
+      "sourceIndex": 11,
       "confidence": "unverified",
-      "note": "Above this annual gross income the personal deduction is not available."
+      "note": "Above this annual income the personal exemption is not available (art. 33). How an employer withdraws an exemption already granted once salary passes the cap within the year is NOT confirmed: the product withdraws the whole year's exemption, cumulatively, from the month the year's salary passes it. To be confirmed by the compliance owner."
     },
     "payroll.cnas.employer_rate": {
       "number": "0.24",
@@ -158,8 +182,9 @@
     "payroll.cnam.employee_rate": {
       "number": "0.09",
       "unit": "ratio",
-      "sourceIndex": 0,
-      "confidence": "unverified"
+      "sourceIndex": 8,
+      "confidence": "unverified",
+      "note": "Prima de asigurare obligatorie de asistență medicală as a percentage of salary, withheld from the employee. 9.0% for 2026 under Law 321/2025. Deducted from the employee's income before income tax (payroll.income_tax.medical_premium_deductible)."
     },
     "itpark.single_tax.rate": {
       "number": "0.07",
@@ -284,6 +309,89 @@
       "sourceIndex": 6,
       "confidence": "unverified",
       "note": "Chapter III: account 242 Conturi curente în monedă națională is debited for money received into a current account in correspondence with 221 among others, and credited for money paid out in correspondence with 521 among others. The default for a bank payment in the company's currency; a payment may name a subaccount (2421) or another account the company keeps its money on."
+    },
+    "payroll.income_tax.dependant_deduction_annual": {
+      "number": "9900",
+      "unit": "MDL/year",
+      "sourceIndex": 11,
+      "confidence": "unverified",
+      "note": "Scutirea pentru persoanele întreținute (art. 35 alin. (1)), per dependant. The higher amount for dependants with severe or accentuated disabilities is not encoded. The major personal exemption (art. 33 alin. (2)) and the spouse's exemption (art. 34) are deliberately not encoded: two secondary sources give 34,620 and 34,650 for the first."
+    },
+    "payroll.income_tax.withholding_method": {
+      "text": "cumulative",
+      "unit": "text",
+      "sourceIndex": 9,
+      "confidence": "unverified",
+      "note": "Taxable income and the tax to withhold are computed cumulatively from the start of the fiscal year, or from the date of hiring: the year's salary, less the year's medical premiums and the exemptions granted so far, times the rate, less what was already withheld. Exemptions accumulate monthly whether or not salary was paid that month."
+    },
+    "payroll.income_tax.medical_premium_deductible": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 9,
+      "confidence": "unverified",
+      "note": "The employee's medical insurance premium is deducted from salary before income tax, as in SFS's and the professional press's worked examples (gross 10,000; premium 900; exemption 2,475; taxable 6,625; tax 795). The Fiscal Code article not yet identified."
+    },
+    "payroll.rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 9,
+      "confidence": "unverified",
+      "note": "Contributions, premiums and tax are computed in lei and bani. HG 697/2014 has the personal card hold whole lei during the year and decimals in the last entry, and allows decimals throughout in an automated system; the product keeps bani throughout."
+    },
+    "payroll.rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 9,
+      "confidence": "unverified"
+    },
+    "payroll.minimum_wage.monthly": {
+      "number": "6300",
+      "unit": "MDL/month",
+      "sourceIndex": 10,
+      "confidence": "unverified",
+      "note": "Salariul minim pe țară from 1 January 2026, for a full programme of 169 hours a month on average (37.28 lei an hour). Up from 5,500."
+    },
+    "payroll.average_wage.forecast_monthly": {
+      "number": "17400",
+      "unit": "MDL/month",
+      "sourceIndex": 10,
+      "confidence": "unverified",
+      "note": "Salariul mediu lunar pe economie prognozat pentru 2026, approved by the Government on 17 December 2025 (up from 16,100). Used as a ceiling in several tax rules, none of them built yet."
+    },
+    "ledger.payroll.salaries_payable_account": {
+      "text": "5311",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: 531 Datorii față de personal privind retribuirea muncii is credited for salaries in correspondence with 712, 713, 714, 811 and others, and debited in correspondence with 533 and 534 for what is withheld and with 242 for what is paid out. Subaccount 5311 Datorii salariale."
+    },
+    "ledger.payroll.social_insurance_account": {
+      "text": "5331",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: 533 is credited for contributions in correspondence with the expense accounts. Subaccount 5331 Datorii față de bugetul asigurărilor sociale de stat, for the employer's CNAS contribution."
+    },
+    "ledger.payroll.medical_insurance_account": {
+      "text": "5332",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: 533 is credited in correspondence with 531 for the premium withheld. Subaccount 5332 Datorii față de fondurile asigurării obligatorii de asistență medicală."
+    },
+    "ledger.payroll.income_tax_account": {
+      "text": "5342",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: 534 is credited in correspondence with 531 for tax withheld. Subaccount 5342 Datorii privind impozitul pe venit din salariu."
+    },
+    "ledger.payroll.expense_account": {
+      "text": "713",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "The default expense for a salary and its CNAS contribution, administrative (713). Chapter III lets 531 correspond with 712, 713, 714, 811, 812 and others; which one is the employee's function, so each employee may name their own. The default is a convenience, not a rule of the act."
     }
   }
 }
