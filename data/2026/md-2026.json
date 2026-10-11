@@ -26,7 +26,9 @@
     {
       "act": "Ordinul Ministerului Finantelor nr. 118/2017 - factura fiscala",
       "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=119580",
-      "verified": false
+      "verified": false,
+      "publication": "Monitorul Oficial nr. 340-351, art. 1750, 2017",
+      "article": "modificat prin OMF nr. 135/2025 (Monitorul Oficial nr. 620-622, art. 1102, de la 1 ianuarie 2026: mențiunea „Taxare inversă”) și OMF nr. 47/2026 (Monitorul Oficial nr. 156-159, art. 281)"
     },
     {
       "act": "Modificarile efectuate in Codul fiscal pentru anul 2026 (Ministerul Finantelor)",
@@ -78,7 +80,7 @@
     },
     {
       "act": "Legea nr. 214/2024 pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală și vamală)",
-      "article": "art. II pct. 11-13 (Codul fiscal art. 33 alin. (1) și (2), art. 34 alin. (2), art. 35 alin. (1) și (2)) și pct. 26 (art. 88 alin. (1)), în vigoare de la 1 ianuarie 2025",
+      "article": "art. II pct. 11-13 (Codul fiscal art. 33 alin. (1) și (2), art. 34 alin. (2), art. 35 alin. (1) și (2)), pct. 26 (art. 88 alin. (1)) și pct. 35 (art. 117 alin. (14)), în vigoare de la 1 ianuarie 2025; pct. 31 (abrogă art. 102 alin. (18)), în vigoare de la 1 ianuarie 2026 (art. XVII alin. (1) lit. c))",
       "publication": "Monitorul Oficial nr. 355-357, art. 545, 15.08.2024",
       "url": "https://monitorul.gov.md/ro/monitor/2946",
       "verified": false
@@ -102,6 +104,33 @@
       "publication": "Monitorul Oficial nr. 620-622, art. 785, 18.12.2025",
       "url": "https://monitorul.gov.md/ro/monitor/3193",
       "verified": false
+    },
+    {
+      "act": "Legea nr. 318/2025 pentru modificarea unor acte normative (politica fiscală și vamală pentru 2026)",
+      "article": "art. I pct. 8 (Codul fiscal art. 54^1 alin. (3) lit. a) și (3^1)) și pct. 14 (art. 112 alin. (1) și (4)), în vigoare de la 1 ianuarie 2026 (art. XIII)",
+      "publication": "Monitorul Oficial nr. 659-661, art. 792, 31.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 496/2025 pentru modificarea Regulamentului aprobat prin HG nr. 93/2013 (restituirea TVA)",
+      "article": "pct. 4.4 (pct. 47^3 subpct. 1) din Regulament: „20%” devine „70%”), în vigoare la publicare",
+      "publication": "Monitorul Oficial nr. 430-433, art. 513, 14.08.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3141",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 171/2019 pentru modificarea unor acte normative",
+      "article": "art. I pct. 56: „Articolul 118^1 se abrogă”, în vigoare de la 1 ianuarie 2020",
+      "publication": "Monitorul Oficial nr. 393-399, art. 319, 2019",
+      "url": "https://monitorul.gov.md/ro/monitor/2171",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Serviciului Fiscal de Stat nr. 645/2018 privind aprobarea Instrucțiunii cu privire la modul de selectare a contribuabililor obligați să aplice facturile fiscale electronice",
+      "article": "criteriile a)-h); criteriul a): livrări de cel puțin 500 mii lei lunar fără active materiale sau umane",
+      "publication": "Monitorul Oficial nr. 448-460, art. 1762, 2018",
+      "verified": false
     }
   ],
   "values": {
@@ -124,7 +153,7 @@
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Rises to 0.08 for profits GENERATED from 2027 under the approved 2027 reform. This is a profit-vintage rule, not a payment-date rule."
+      "note": "The 2027 bill (approved by Government 8 September 2026, not adopted) keeps 6% in art. 90^1 alin. (3^1) lit. a) for profits generated before 2027 and sets 8% for profits generated from 2027. A profit-vintage rule, not a payment-date rule."
     },
     "tax.vat.standard_rate": {
       "number": "0.20",
@@ -135,44 +164,44 @@
     "tax.vat.registration_threshold": {
       "number": "1500000",
       "unit": "MDL",
-      "sourceIndex": 4,
+      "sourceIndex": 16,
       "confidence": "unverified",
-      "note": "CORRECTED. Raised from MDL 1,200,000 to MDL 1,500,000 with effect from 1 January 2026 (art. 112 para (1) and (4)). Raised again to MDL 1,700,000 from 1 March 2026 — see md-2026.2. Measured over the last 12 consecutive months, not a calendar year, so an entity can cross it at any point."
+      "note": "Art. 112 alin. (1) and (4): raised from MDL 1,200,000 to MDL 1,500,000 from 1 January 2026 by Law 318/2025, and again to MDL 1,700,000 from 1 March 2026 (md-2026.2). Measured over the last 12 consecutive months, not a calendar year, so an entity can cross it at any point; that wording of art. 112 is not read yet."
     },
     "tax.vat.deduction_requires_electronic_invoice": {
       "text": "no",
       "unit": "text",
-      "sourceIndex": 4,
+      "sourceIndex": 12,
       "confidence": "unverified",
       "note": "Art. 102 para (18), which restricted the right to deduct VAT on a non-electronic invoice issued by a supplier on the mandatory e-Factura list, is ABROGATED from 1 January 2026. So from 2026 a paper invoice from a list-obligated supplier no longer costs the buyer its deduction. This materially reduces the commercial pressure to adopt e-Factura and must not be modelled as a blocking validation."
     },
     "tax.vat.refund_ceiling_efactura_or_mev": {
       "number": "0.70",
       "unit": "ratio",
-      "sourceIndex": 0,
+      "sourceIndex": 17,
       "confidence": "unverified",
-      "note": "VAT refund ceiling reportedly raised from 20% to 70% for taxpayers using e-Factura and/or MEV-connected cash registers. Reported by secondary sources and NOT found in the Ministry of Finance summary of the 2026 changes — confirm before quoting it to a customer, because it is the strongest positive incentive we have."
+      "note": "Not in the Fiscal Code: the Regulation approved by HG 93/2013, pct. 47^3 subpct. 1), caps the refund under art. 101^6 at a share of the VAT that buyers paid, documented through SIA e-Factura and through cash registers connected to MEV. HG 496/2025 raised that share from 20% to 70%, in force on publication, 14 August 2025, so it was already 70% before 2026."
     },
     "efactura.obligation.basis": {
       "text": "art. 117 para (1^1) risk-based list; art. 117 para (14) since 2025-01-01",
       "unit": "text",
-      "sourceIndex": 0,
+      "sourceIndex": 12,
       "confidence": "unverified",
-      "note": "There is NO universal B2B mandate in force. Obligation arises three ways: B2G/public procurement; supplies to economic agents on Moldovan territory without fiscal relations with the budget system (art. 117(14), since 1 January 2025); and inclusion on the SFS risk-based list published at sfs.md. The list is small — reported at 69 entities."
+      "note": "There is NO universal B2B mandate in force. Obligation arises in these cases: B2G and public procurement (art. 117 alin. (12), restated by Law 187/2025 from 18 July 2025); supplies to economic agents on Moldovan territory without fiscal relations with its budget system (art. 117 alin. (14), Law 214/2024, since 1 January 2025); supplies for the projects of art. 104 lit. c^1) (art. 117 alin. (15)); and inclusion on the SFS risk-based list (art. 117 alin. (1^1), Order SFS 645/2018), changed by SFS Orders 141/2026 and 494/2026. The list size, reported at 69 entities, is from secondary sources."
     },
     "efactura.mandatory_list.selection_min_criteria": {
       "number": 3,
       "unit": "count",
-      "sourceIndex": 0,
+      "sourceIndex": 19,
       "confidence": "unverified",
-      "note": "An entity is added when SFS risk analysis finds it meets at least 3 of 8 criteria simultaneously."
+      "note": "An entity is added when SFS finds it meets at least three criteria at once („întrunesc concomitent cel puțin trei criterii”). Order SFS 645/2018 lists criteria a) to h); an SFS order of 8 June 2022 reportedly added i) and j), making ten, found only in secondary sources."
     },
     "efactura.mandatory_list.significant_supplies_monthly": {
       "number": "500000",
       "unit": "MDL/month",
-      "sourceIndex": 0,
+      "sourceIndex": 19,
       "confidence": "unverified",
-      "note": "One of the 8 criteria: supplies of at least MDL 500,000 monthly without matching material or human assets."
+      "note": "Criterion a) of Order SFS 645/2018: supplies of at least 500 thousand lei a month without material or human assets (fewer than 2 employees), over the last 3 months."
     },
     "payroll.income_tax.rate": {
       "number": "0.12",
@@ -220,21 +249,21 @@
       "unit": "ratio",
       "sourceIndex": 2,
       "confidence": "unverified",
-      "note": "Replaces profit tax, payroll income tax, CNAS and CNAM. VAT applies separately. From 1 January 2026 local taxes, property tax and road tax are excluded from the single tax and paid separately."
+      "note": "Art. 370 alin. (1): 7% of sales revenue, not less than the minimum per employee. Replaces profit tax, payroll income tax, CNAS and CNAM; VAT applies separately. SFS's Q&A 37.5 (Order SFS 119/2024) still counts local taxes, property tax and road tax among the taxes it replaces (art. 372 alin. (1)); the earlier note that they are paid separately from 2026 was found only in a 2023 draft."
     },
     "itpark.single_tax.min_per_employee_monthly": {
       "number": "5220",
       "unit": "MDL/month",
       "sourceIndex": 2,
       "confidence": "unverified",
-      "note": "Approximately 35% of the forecast average wage, per full-time employee. Recomputed annually."
+      "note": "Art. 370 alin. (2), per SFS's Q&A 37.3: 30% of the forecast average monthly wage, per employee: 30% of 17,400 is 5,220. Recomputed annually."
     },
     "filing.tva12.due_day_of_month": {
       "number": 25,
       "unit": "count",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Shifts to the next working day when the 25th is a weekend or holiday."
+      "note": "Art. 115 alin. (1), as quoted by SFS: no later than the 25th of the month after the tax period. That it shifts to the next working day when the 25th is a weekend or holiday is not read yet."
     },
     "filing.ipc21.due_day_of_month": {
       "number": 25,
@@ -246,42 +275,43 @@
       "number": 25,
       "unit": "count",
       "sourceIndex": 2,
-      "confidence": "unverified"
+      "confidence": "unverified",
+      "note": "Art. 373, as quoted by SFS: by the 25th of the month after the month of management."
     },
     "filing.ven12.due_date": {
       "text": "--03-25",
       "unit": "date",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "25 March following the reporting year."
+      "note": "Art. 83 alin. (2) lit. c), as quoted by SFS: by the 25th of the third month after the end of the fiscal period, so 25 March when the fiscal year is the calendar year."
     },
     "document.factura_fiscala.form_order": {
       "text": "OMF 118/2017",
       "unit": "code",
       "sourceIndex": 3,
       "confidence": "unverified",
-      "note": "Strict-regime standardised form with state-issued series and number."
+      "note": "Strict-regime standardised form with state-issued series and number. From 1 January 2026 OMF 135/2025 adds the mention „Taxare inversă” for supplies under art. 101^7; OMF 47/2026 makes signatures optional on utility invoices."
     },
     "register.general_invoice_register.in_force": {
       "text": "no",
       "unit": "text",
-      "sourceIndex": 0,
+      "sourceIndex": 18,
       "confidence": "unverified",
-      "note": "RESOLVED. Art. 118^1 of the Fiscal Code, which required invoices above MDL 100,000 to be registered in the Registrul general electronic al facturilor fiscale within 10 working days under penalty of MDL 3,600 each, has been ABROGATED. Do not implement it."
+      "note": "Art. 118^1 of the Fiscal Code, which required invoices above MDL 100,000 to be registered in the Registrul general electronic al facturilor fiscale, was abrogated from 1 January 2020 by Law 171/2019. Do not implement it."
     },
     "tax.vat.reduced_rate": {
       "number": "0.08",
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Art. 96 lit. b): bread and bakery products and milk and dairy products at the listed tariff positions, medicines at 3001-3004 in the State Nomenclature, natural and liquefied gas at 2711, and agricultural produce in natural form. Corroborated by secondary sources (dataset.gov.md summary of art. 96; runat.md, 2026), not read from the Code. Whether a 12% rate for HoReCa services still applies in 2026 is an open question and is deliberately not encoded."
+      "note": "Art. 96 lit. b). Read in the amending acts: accommodation, and food and non-alcoholic drinks served under section I of the classifier (HoReCa), at 8% since 10 August 2023 (Law 212/2023 replaced 12%), so no 12% rate applies in 2026; natural gas and liquefied gas at 2711 with their transport and distribution (Law 139/2025, from 2026); medical devices in the State Register (Law 187/2025, from 2026). From secondary sources only: bread and bakery products, milk and dairy products at the listed positions, medicines at 3001-3004, agricultural produce in natural form. The 2027 bill would bring HoReCa back to 12%."
     },
     "tax.vat.zero_rate": {
       "number": "0",
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Art. 104: supplies taxed at zero with the right to deduct input VAT (exports, among others). Distinct from exempt supplies under art. 103, which carry no VAT and no right to deduct; the product names those as exempt rather than as a rate."
+      "note": "Art. 104: supplies taxed at zero with the right to deduct input VAT (exports, among others); Law 139/2025 added lit. b^1), imports of gas and electricity through networks, from 2026. Distinct from exempt supplies under art. 103, which carry no VAT and no right to deduct; the product names those as exempt rather than as a rate. The general text of art. 104 was not read."
     },
     "tax.vat.line_rounding": {
       "text": "half_away_from_zero",
@@ -449,6 +479,13 @@
       "sourceIndex": 12,
       "confidence": "unverified",
       "note": "Art. 35 alin. (2) lit. b): a person whose own annual income is above this is not a dependant. 12,400 since 2025 (Law 214/2024 replaced 11,280). Not used by the product yet."
+    },
+    "tax.profit.ivao_revenue_ceiling": {
+      "number": "1500000",
+      "unit": "MDL",
+      "sourceIndex": 16,
+      "confidence": "unverified",
+      "note": "Art. 54^1 alin. (3) lit. a) and (3^1): 1.2 million became 1.5 million from 1 January 2026 (Law 318/2025). Read as the IVAO regime's revenue ceiling from the amending text; the consolidated wording is not read. Law 12/2026 moved the VAT threshold to 1.7 million from March but this figure stayed: to be confirmed by the compliance owner."
     }
   }
 }

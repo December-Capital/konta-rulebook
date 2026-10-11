@@ -6,12 +6,11 @@
   "effectiveTo": null,
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL: the 2027 fiscal policy was approved by Government and passed first reading, so figures may change before final adoption. Its purpose right now is to prove that the rulebook design survives a real reform — two sets, overlapping keys, different values, no code change. Do not file from it.",
-
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), approved on 8 September 2026 and reported passed in first reading on 10 September; not published in Monitorul Oficial as of 9 October 2026, so figures may change before adoption. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Not yet encoded from the bill: the personal and major exemptions to 40,020, HoReCa VAT back to 12%, a 12% VAT band for some agricultural produce, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, and 18% profit tax for section K. Do not file from it. It is also far from complete: none of the keys the product reads for invoices, payments and payroll is here, so from 1 January 2027 they have no value.",
   "sources": [
     {
-      "act": "Politica fiscala si vamala pentru anul 2027 (proiect aprobat de Guvern, prima lectura)",
-      "url": "https://www.mf.gov.md/ro/content/qa-privind-proiectul-politicii-fiscale-pentru-anul-2027",
+      "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
+      "url": "https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2026-09/NU-599-MF-2026_0.pdf",
       "verified": false
     },
     {
@@ -25,76 +24,55 @@
       "verified": false
     }
   ],
-
   "values": {
     "tax.profit.standard_rate": {
       "number": "0.12",
       "unit": "ratio",
       "sourceIndex": 1,
       "confidence": "unverified",
-      "note": "Unchanged."
+      "note": "Art. 15 lit. b) untouched by the bill. Its art. IV would set 18% for 2027 for legal entities in section K (financial and insurance activities), by derogation in Law 1164/1997 art. 24 alin. (38); not encoded."
     },
     "tax.dividend.rate": {
       "number": "0.08",
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Up from 0.06, and only for profits generated from 2027 onwards. This is a profit-vintage rule, not a payment-date rule: the engine must resolve the rate from the year the profit arose, which is exactly the kind of thing that gets hardcoded wrong."
+      "note": "Bill, art. 90^1 alin. (3^1) lit. b) (and art. 91 alin. (1) lit. c) for non-residents): 8% on dividends from profits generated from 2027 onwards; 6% stays for earlier profits. A profit-vintage rule, not a payment-date rule: the engine must resolve the rate from the year the profit arose."
     },
     "tax.gospodarie_tarneasca.rate": {
       "number": "0.12",
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Up from 0.07, aligning with individual enterprises."
-    },
-    "tax.independent_activity.rate": {
-      "number": "0.03",
-      "unit": "ratio",
-      "sourceIndex": 0,
-      "confidence": "unverified",
-      "note": "Up from 0.01 of revenue. Preferential regime preserved only for those registered with SFS before 2026-07-01."
-    },
-    "tax.profit.undistributed_zero_rate_until": {
-      "text": "2029-12-31",
-      "unit": "date",
-      "sourceIndex": 0,
-      "confidence": "unverified",
-      "note": "Zero rate on undistributed profit extended to 2029."
+      "note": "Bill pct. 4 adds peasant farms to art. 15 lit. a), so 12% instead of 7%. No explicit repeal of art. 15 lit. c) was seen: to be checked."
     },
     "tax.profit.undistributed_eligibility_ceiling": {
       "number": "200000000",
       "unit": "MDL",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Up from MDL 100,000,000."
-    },
-    "registration.intreprindere_individuala.closed_from": {
-      "text": "2027-01-01",
-      "unit": "date",
-      "sourceIndex": 0,
-      "confidence": "unverified",
-      "note": "No new registrations. Entities registered by 2026-12-31 keep their status, so the product must support a regime it cannot be newly assigned."
-    },
-    "registration.gospodarie_tarneasca.closed_from": {
-      "text": "2027-01-01",
-      "unit": "date",
-      "sourceIndex": 0,
-      "confidence": "unverified"
+      "note": "Bill: at most 249 employees and annual turnover or total assets of up to 200 million lei, up from 100 million (Law 318/2025 for 2026). The 249-employee condition is not encoded."
     },
     "classification.caem.revision": {
       "text": "2.1",
       "unit": "code",
       "sourceIndex": 2,
       "confidence": "unverified",
-      "note": "Applies from 2027-01-01, re-coding activity classifications on every entity record in the country."
+      "note": "Applies from 2027-01-01 per secondary sources, re-coding activity classifications on every entity record. Not found in a primary text: the bill and MF Order 106/2025 refer to CAEM-2."
     },
     "itpark.single_tax.rate": {
       "number": "0.07",
       "unit": "ratio",
       "sourceIndex": 1,
       "confidence": "unverified",
-      "note": "Regime guaranteed by law to 2035. From 2026-01-01 local taxes, property tax and road tax are outside the single tax and paid separately."
+      "note": "Art. 370 alin. (1) untouched by the bill. Law 415/2023 art. 15 alin. (4) lets residents keep working under the rules in force until 2035 inclusive if the rules change: a grandfathering right, not a fixed rate."
+    },
+    "tax.profit.undistributed_deferral_until": {
+      "text": "2029-12-31",
+      "unit": "date",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "A deferral, not a zero rate. Bill: new art. 87 alin. (1^2), tax on profit earned in 2027-2029 is paid by the 25th of the month after the month dividends are paid; art. 84 alin. (6) changes 2023-2026 to 2023-2029."
     }
   }
 }
