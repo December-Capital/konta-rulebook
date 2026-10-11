@@ -59,8 +59,10 @@
           {
             "order": "135/2019",
             "key": "nr. 135, 15 octombrie 2019",
-            "gazette": "Monitorul Oficial nr. 320-325, art. 1824",
-            "note": "Amends OMF 188/2014, which completed the chart and approved the methodological indications for non-commercial organisations. Not read yet: whether it touches the chart itself. legis.md has no page of its own for it (its list goes from OMF101/2019 to OMF146/2019); read its effect in the consolidated text of OMF 188/2014"
+            "gazette": "Monitorul Oficial nr. 320-325, art. 1824, 01.11.2019",
+            "inForce": "2020-01-01",
+            "note": "Amends only the methodological indications for non-commercial organisations approved by OMF 188/2014, chiefly extending them to representative offices of non-resident entities; no account or subaccount is added, removed or renamed, and the funds its pct. 75^1 names are already 3412 and 3413. Read 2026-10-11 from the text in Monitorul Oficial (monitorul.gov.md/ro/monitor/2156, pages 71-74)",
+            "inMfPdf": false
           },
           {
             "order": "171/2019",
