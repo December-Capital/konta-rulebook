@@ -40,7 +40,7 @@
     },
     {
       "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
-      "article": "cap. III, conturile 221, 534 și 611",
+      "article": "cap. III, conturile 221, 242, 521, 531, 533, 534, 611 și 713",
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
@@ -53,25 +53,54 @@
     },
     {
       "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
-      "article": "art. 1 și anexa nr. 1: prima procentuală de 9,0%",
+      "article": "art. 4 alin. (1): prima procentuală de 9,0%",
       "publication": "Monitorul Oficial nr. 659-661, art. 798, 2025",
-      "url": "https://monitorul.fisc.md/valoarea-primei-de-asigurare-medicala-obligatorie-in-suma-fixa-pentru-anul-2026/",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
       "verified": false
     },
     {
       "act": "Hotărârea Guvernului nr. 697/2014 cu privire la aprobarea Regulamentului privind reținerea impozitului pe venit din salariu și din alte plăți efectuate de către patron în folosul angajatului",
-      "article": "metoda cumulativă de la începutul anului fiscal sau de la data angajării; scutirile din luna următoare cererii; valori întregi în fișa personală, cu zecimale în sistemele automatizate",
-      "url": "https://www.contabilsef.md/determinarea-si-retinerea-impozitului-pe-venit-din-salariu-de-catre-patron-informatii-utile",
+      "article": "pct. 9-10, 18 și 38 și fișa personală (coloanele 7.7-7.10), în redacția HG nr. 1029/2023 (Monitorul Oficial nr. 502-504, art. 1239, 2023) și HG nr. 901/2024 (Monitorul Oficial nr. 564-568, art. 1018, 2024)",
+      "url": "https://monitorul.gov.md/ro/monitor/2828",
       "verified": false
     },
     {
-      "act": "Hotărârea Guvernului cu privire la cuantumul salariului minim pe țară pentru anul 2026 (aprobată la 17.12.2025)",
-      "url": "https://gov.md/ro/node/5613",
+      "act": "Hotărârea Guvernului nr. 771/2025 cu privire la cuantumul salariului minim pe țară",
+      "article": "pct. 1",
+      "publication": "Monitorul Oficial nr. 620-622, art. 783, 18.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3193",
       "verified": false
     },
     {
       "act": "Codul fiscal al Republicii Moldova nr. 1163/1997, art. 33-35 (scutiri), cu cuantumurile pentru 2026 reluate în circulara Ministerului Finanțelor privind elaborarea bugetelor locale",
       "url": "https://particip.gov.md/ro/download_attachment/34158",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 214/2024 pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală și vamală)",
+      "article": "art. II pct. 11-13 (Codul fiscal art. 33 alin. (1) și (2), art. 34 alin. (2), art. 35 alin. (1) și (2)) și pct. 26 (art. 88 alin. (1)), în vigoare de la 1 ianuarie 2025",
+      "publication": "Monitorul Oficial nr. 355-357, art. 545, 15.08.2024",
+      "url": "https://monitorul.gov.md/ro/monitor/2946",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 212/2023 pentru modificarea unor acte normative",
+      "article": "art. II pct. 7 (Codul fiscal art. 35² alin. (1)), în vigoare de la 1 ianuarie 2024",
+      "publication": "Monitorul Oficial nr. 297-301, art. 514, 2023",
+      "url": "https://monitorul.gov.md/ro/monitor/2758",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "article": "anexa nr. 1 pct. 1.1, în redacția Legii nr. 60/2020, art. VI pct. 20, în vigoare de la 1 ianuarie 2021",
+      "publication": "Monitorul Oficial nr. 108-109, art. 186, 2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2204",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 773/2025 privind salariul mediu lunar pe economie prognozat pentru anul 2026",
+      "publication": "Monitorul Oficial nr. 620-622, art. 785, 18.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3193",
       "verified": false
     }
   ],
@@ -154,37 +183,37 @@
     "payroll.income_tax.personal_deduction_annual": {
       "number": "29700",
       "unit": "MDL/year",
-      "sourceIndex": 11,
+      "sourceIndex": 12,
       "confidence": "unverified",
-      "note": "Scutirea personală (art. 33), unchanged from 2025. Granted monthly as one twelfth, cumulatively, from the month after the employee asks for it at their main place of work."
+      "note": "Scutirea personală (art. 33 alin. (1)): 29,700 since 1 January 2025, when Law 214/2024 replaced 27,000; unchanged for 2026. Granted monthly as one twelfth from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work of the employee's choosing: the main job, a second job, where services are provided, or dual education (pct. 9-10), and never at two."
     },
     "payroll.income_tax.personal_deduction_income_cap": {
       "number": "360000",
       "unit": "MDL/year",
-      "sourceIndex": 11,
+      "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Above this annual income the personal exemption is not available (art. 33). How an employer withdraws an exemption already granted once salary passes the cap within the year is NOT confirmed: the product withdraws the whole year's exemption, cumulatively, from the month the year's salary passes it. To be confirmed by the compliance owner."
+      "note": "Art. 33 alin. (1): the exemption belongs to a resident whose annual taxable income is under 360,000, art. 90^1 income excepted; from 2026 art. 33 alin. (1^1) counts chapter 10^2 and 10^3 income too. The test is the year's taxable income from every source, not one employer's salary. Art. 88 alin. (1), completed by Law 214/2024: 'Angajatorul nu are obligația să urmărească pierderea dreptului de utilizare a scutirii personale.' Whoever used it and earned more files the annual return (art. 83 alin. (2) lit. a^2)). The product today withdraws the whole year's exemption, cumulatively, from the month salary paid here passes the cap; the act does not ask for that. To be decided by the compliance owner. Dependant exemptions (art. 35) are not lost with it."
     },
     "payroll.cnas.employer_rate": {
       "number": "0.24",
       "unit": "ratio",
-      "sourceIndex": 5,
+      "sourceIndex": 14,
       "confidence": "unverified",
-      "note": "Private sector, including state and municipal enterprises, non-commercial organisations and public education and medical institutions."
+      "note": "Law 489/1999 annex 1 pct. 1.1, as restated by Law 60/2020 from 1 January 2021: 24% of the salaries and rewards computed each month, for private-sector employers and higher-education and medical institutions ('învățământ superior', not all public education). Budget and public-authority employers pay 29%, not encoded. Law 320/2025, the 2026 social insurance budget, carries no rate."
     },
     "payroll.cnas.employee_rate": {
       "number": "0",
       "unit": "ratio",
-      "sourceIndex": 5,
+      "sourceIndex": 14,
       "confidence": "unverified",
-      "note": "RESOLVED. Since 1 January 2021 state social insurance contributions are paid entirely by the employer, so there is no general employee share. The 6% figure that circulates in secondary sources applies only to specific categories (daily remuneration for certain workers) and must be modelled as a category-specific exception, not a general rate."
+      "note": "Law 60/2020 abrogated art. 21 of Law 489/1999, the individual contribution, from 1 January 2021, so contributions are paid entirely by the employer. The 6% figure that circulates in secondary sources applies only to specific categories (daily remuneration for certain workers) and must be modelled as a category-specific exception, not a general rate."
     },
     "payroll.cnam.employee_rate": {
       "number": "0.09",
       "unit": "ratio",
       "sourceIndex": 8,
       "confidence": "unverified",
-      "note": "Prima de asigurare obligatorie de asistență medicală as a percentage of salary, withheld from the employee. 9.0% for 2026 under Law 321/2025. Deducted from the employee's income before income tax (payroll.income_tax.medical_premium_deductible)."
+      "note": "Prima de asigurare obligatorie de asistență medicală as a percentage of salary, withheld from the employee: 9.0% for 2026 under Law 321/2025 art. 4 alin. (1); Law 212/2026 amended that law without changing it. Deducted from the employee's income before income tax (payroll.income_tax.medical_premium_deductible). No minimum base found."
     },
     "itpark.single_tax.rate": {
       "number": "0.07",
@@ -294,14 +323,14 @@
       "unit": "code",
       "sourceIndex": 6,
       "confidence": "unverified",
-      "note": "Account 521 Datorii comerciale curente is credited with a supplier invoice's total. Taken from common practice and the account's name; chapter III's description of 521 not yet read for it. A company may post to its subaccounts instead."
+      "note": "Chapter III: 521 Datorii comerciale curente is credited in correspondence with 211, 213, 713 and others as goods and services are received, and debited in correspondence with 242 and others as they are paid. A company may post to its subaccounts instead."
     },
     "ledger.purchases.vat_account": {
       "text": "534",
       "unit": "code",
       "sourceIndex": 6,
       "confidence": "unverified",
-      "note": "Deductible VAT on a supplier invoice is debited to 534 (subaccount 5344), reducing the VAT owed. Common Moldovan practice, not yet read from chapter III; some companies keep it on 2252 Creanțe privind TVA until the return. VAT that cannot be deducted is not posted here but added to the cost of what was bought."
+      "note": "Chapter III prescribes neither choice. 521's credit lists no 534 and no 225; 534 is debited in correspondence with 225 among others, and 225 is debited against 534, so holding deductible VAT on 2252 Creanțe privind TVA and offsetting it against 5344 is the act's own path. Debiting 534 (5344) directly, as the product does, is common Moldovan practice. To be decided by the compliance owner. VAT that cannot be deducted is not posted here but added to the cost of what was bought."
     },
     "ledger.payments.bank_account": {
       "text": "242",
@@ -313,30 +342,30 @@
     "payroll.income_tax.dependant_deduction_annual": {
       "number": "9900",
       "unit": "MDL/year",
-      "sourceIndex": 11,
+      "sourceIndex": 12,
       "confidence": "unverified",
-      "note": "Scutirea pentru persoanele întreținute (art. 35 alin. (1)), per dependant. The higher amount for dependants with severe or accentuated disabilities is not encoded. The major personal exemption (art. 33 alin. (2)) and the spouse's exemption (art. 34) are deliberately not encoded: two secondary sources give 34,620 and 34,650 for the first."
+      "note": "Art. 35 alin. (1): 9,900 a year per dependant since 2025 (Law 214/2024 replaced 9,000), unchanged for 2026. The higher amount is payroll.income_tax.dependant_deduction_disability_annual; a person with income above payroll.income_tax.dependant_income_ceiling_annual is not a dependant."
     },
     "payroll.income_tax.withholding_method": {
       "text": "cumulative",
       "unit": "text",
       "sourceIndex": 9,
       "confidence": "unverified",
-      "note": "Taxable income and the tax to withhold are computed cumulatively from the start of the fiscal year, or from the date of hiring: the year's salary, less the year's medical premiums and the exemptions granted so far, times the rate, less what was already withheld. Exemptions accumulate monthly whether or not salary was paid that month."
+      "note": "HG 697/2014 pct. 38, as restated by HG 1029/2023: taxable income and the tax are computed cumulatively from the start of the fiscal year, or from the date of hiring. The fișa personală floors the year's taxable income at zero (column 7.8), but the month's tax is the difference between the last two cumulative figures (column 7.10, 'reținerii (rambursării)'), so a month can give back tax withheld earlier. The product never refunds through payroll today: to be decided by the compliance owner. Exemptions accumulate for every month the person counts as employed, whether or not salary was paid (column 7.5)."
     },
     "payroll.income_tax.medical_premium_deductible": {
       "text": "yes",
       "unit": "text",
-      "sourceIndex": 9,
+      "sourceIndex": 13,
       "confidence": "unverified",
-      "note": "The employee's medical insurance premium is deducted from salary before income tax, as in SFS's and the professional press's worked examples (gross 10,000; premium 900; exemption 2,475; taxable 6,625; tax 795). The Fiscal Code article not yet identified."
+      "note": "Codul fiscal art. 35^2 alin. (1), added by Law 212/2023 from 1 January 2024: 'Se permite deducerea, în cuantumurile stabilite de legislație, a sumelor pentru primele de asigurare obligatorie de asistență medicală achitate de persoanele fizice'. HG 697/2014's fișa personală deducts it in column 7.7. SFS's worked example: gross 10,000; premium 900; exemption 2,475; taxable 6,625; tax 795."
     },
     "payroll.rounding": {
       "text": "half_away_from_zero",
       "unit": "text",
       "sourceIndex": 9,
       "confidence": "unverified",
-      "note": "Contributions, premiums and tax are computed in lei and bani. HG 697/2014 has the personal card hold whole lei during the year and decimals in the last entry, and allows decimals throughout in an automated system; the product keeps bani throughout."
+      "note": "No rounding rule was found in the acts read: HG 1029/2023 rewrote the fișa personală's instructions, and the whole-lei rule that secondary sources describe is not in the new text. Bani throughout, half away from zero, is our choice. To be confirmed by the compliance owner."
     },
     "payroll.rounding_decimals": {
       "number": "2",
@@ -354,7 +383,7 @@
     "payroll.average_wage.forecast_monthly": {
       "number": "17400",
       "unit": "MDL/month",
-      "sourceIndex": 10,
+      "sourceIndex": 15,
       "confidence": "unverified",
       "note": "Salariul mediu lunar pe economie prognozat pentru 2026, approved by the Government on 17 December 2025 (up from 16,100). Used as a ceiling in several tax rules, none of them built yet."
     },
@@ -392,6 +421,34 @@
       "sourceIndex": 6,
       "confidence": "unverified",
       "note": "The default expense for a salary and its CNAS contribution, administrative (713). Chapter III lets 531 correspond with 712, 713, 714, 811, 812 and others; which one is the employee's function, so each employee may name their own. The default is a convenience, not a rule of the act."
+    },
+    "payroll.income_tax.major_personal_deduction_annual": {
+      "number": "34620",
+      "unit": "MDL/year",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Scutirea personală majoră (art. 33 alin. (2)), for the categories that paragraph lists, in place of the ordinary one: 34,620 since 2025 (Law 214/2024 replaced 31,500). Not used by the product yet."
+    },
+    "payroll.income_tax.spouse_deduction_annual": {
+      "number": "21780",
+      "unit": "MDL/year",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Art. 34 alin. (2), the spouse's exemption in the case that paragraph covers: 21,780 since 2025 (Law 214/2024 replaced 19,800). Which case it is has to be read in the consolidated text. Not used by the product yet."
+    },
+    "payroll.income_tax.dependant_deduction_disability_annual": {
+      "number": "21780",
+      "unit": "MDL/year",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Art. 35 alin. (1), the higher amount per dependant: 21,780 since 2025 (Law 214/2024 replaced 19,800). That it covers severe or accentuated, congenital or childhood disability comes from secondary sources. Not used by the product yet."
+    },
+    "payroll.income_tax.dependant_income_ceiling_annual": {
+      "number": "12400",
+      "unit": "MDL/year",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Art. 35 alin. (2) lit. b): a person whose own annual income is above this is not a dependant. 12,400 since 2025 (Law 214/2024 replaced 11,280). Not used by the product yet."
     }
   }
 }
