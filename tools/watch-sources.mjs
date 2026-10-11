@@ -310,7 +310,12 @@ async function watchListings() {
     const html = await response.text();
     for (const match of html.matchAll(/<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
       const text = textOf(match[2]);
-      const href = new URL(decode(match[1]), url).href;
+      // A page is its path: on 2026-10-11 the ministry's links briefly carried "?language=ru",
+      // and three pages already read came back as new.
+      const link = new URL(decode(match[1]), url);
+      link.search = "";
+      link.hash = "";
+      const href = link.href;
       for (const act of config.acts) {
         if (classify(act, text) !== "amendments") continue;
         if (act.known.mfLinks.includes(href)) continue;
