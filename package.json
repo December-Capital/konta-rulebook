@@ -1,7 +1,7 @@
 {
   "name": "konta-rulebook",
   "version": "0.1.0",
-  "description": "Moldovan fiscal law as effective-dated, citable data. Rates, thresholds, deadlines and forms \u2014 published openly so anyone can verify the tax maths.",
+  "description": "Moldovan fiscal law as effective-dated, citable data. Rates, thresholds, deadlines and forms — published openly so anyone can verify the tax maths.",
   "license": "CC-BY-4.0",
   "type": "module",
   "private": false,
@@ -36,6 +36,6 @@
     "contabilitate"
   ],
   "devDependencies": {
-    "nodemailer": "^7.0.13"
+    "nodemailer": "^10.1.1"
   }
 }
