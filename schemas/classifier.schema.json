@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://december-capital.github.io/konta-rulebook/schemas/classifier.schema.json",
+  "title": "Konta classifier",
+  "description": "A list of codes a state system prescribes (units of measure, VAT rate codes), transcribed from the file the authority publishes, with the dates it applies to and a citation. Entries are never typed from memory: a code that is subtly wrong is refused by the system that receives it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "jurisdiction", "title", "effectiveFrom", "publishedOn", "status", "sources", "lists"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable identifier, e.g. sfs-efactura-2026."
+    },
+    "jurisdiction": { "type": "string", "enum": ["MD"] },
+    "title": { "type": "string", "minLength": 1 },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date",
+      "description": "First date the lists are known to apply. When the authority does not date its file, the day we received it, never earlier."
+    },
+    "effectiveTo": { "type": ["string", "null"], "format": "date" },
+    "publishedOn": { "type": "string", "format": "date", "description": "When WE published this file." },
+    "status": { "type": "string", "enum": ["draft", "approved", "superseded"] },
+    "approvedBy": { "type": "string", "minLength": 1 },
+    "approvedOn": { "type": "string", "format": "date" },
+    "notes": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "ruleset.schema.json#/properties/sources/items" }
+    },
+    "lists": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z][a-zA-Z0-9]*$" },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "sourceIndex", "entries"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1, "description": "The list's name in the source, e.g. the worksheet's." },
+          "sourceIndex": { "type": "integer", "minimum": 0 },
+          "notes": { "type": "string" },
+          "entries": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "code"],
+              "properties": {
+                "id": { "type": "integer", "minimum": 0, "description": "The authority's own identifier." },
+                "code": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "What the authority's documents carry for it, exactly as in the source (e-Factura's UnitOfMeasure and TVA attributes)."
+                },
+                "rate": {
+                  "type": ["string", "null"],
+                  "pattern": "^(0|0\\.[0-9]+|1)$",
+                  "description": "For a VAT rate code, the ratio it stands for as a decimal string; null when the code is not a rate."
+                },
+                "note": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

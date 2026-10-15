@@ -6,7 +6,7 @@
   "effectiveTo": null,
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), approved on 8 September 2026 and reported passed in first reading on 10 September; not published in Monitorul Oficial as of 9 October 2026, so figures may change before adoption. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Not yet encoded from the bill: the personal and major exemptions to 40,020, HoReCa VAT back to 12%, a 12% VAT band for some agricultural produce, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, and 18% profit tax for section K. Do not file from it. It is also far from complete: none of the keys the product reads for invoices, payments and payroll is here, so from 1 January 2027 they have no value.",
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), approved on 8 September 2026 and reported passed in first reading on 10 September; not published in Monitorul Oficial as of 9 October 2026, so figures may change before adoption. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Not yet encoded from the bill: the personal and major exemptions to 40,020, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, and 18% profit tax for section K. Do not file from it. It is also far from complete: of the keys the product reads for invoices, payments and payroll only the VAT rates are here (from the bill's art. 96, added 2026-10-15); VAT rounding, the ledger accounts and every payroll figure are not, so from 1 January 2027 invoices, payments and payroll are still refused for want of them.",
   "sources": [
     {
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
@@ -21,6 +21,12 @@
     {
       "act": "CAEM revizia 2.1 - clasificatorul activitatilor din economia Moldovei",
       "url": "https://www.contabilsef.md/nouta-i-contabilsef",
+      "verified": false
+    },
+    {
+      "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
+      "article": "art. III pct. 30 (Codul fiscal art. 96 în redacție nouă: alin. (1) cota-standard 20%; alin. (2) pct. 1) cota redusă 12%, pct. 2) cota redusă 8%), pct. 31 și pct. 37 (art. 96 alin. (2) pct. 2) lit. d) și art. 104, de la 1 aprilie 2027), în vigoare de la 1 ianuarie 2027 (art. XVIII alin. (1)); read 2026-10-15 in the Government's PDF, SHA-256 2afc21eae25b1cbb78735dfb84ca4e70c58253fe8b2d2f7b973870fb0f41b93f, pages 8-11 (art. III pct. 30-37), art. XVIII on page 40",
+      "url": "https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2026-09/NU-599-MF-2026_0.pdf",
       "verified": false
     }
   ],
@@ -73,6 +79,34 @@
       "sourceIndex": 0,
       "confidence": "unverified",
       "note": "A deferral, not a zero rate. Bill: new art. 87 alin. (1^2), tax on profit earned in 2027-2029 is paid by the 25th of the month after the month dividends are paid; art. 84 alin. (6) changes 2023-2026 to 2023-2029."
+    },
+    "tax.vat.standard_rate": {
+      "number": "0.20",
+      "unit": "ratio",
+      "sourceIndex": 3,
+      "confidence": "unverified",
+      "note": "Art. 96 alin. (1) as the bill rewrites it: 20%, as in 2026. The bill is not adopted."
+    },
+    "tax.vat.higher_reduced_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 3,
+      "confidence": "unverified",
+      "note": "Art. 96 alin. (2) pct. 1) as the bill rewrites it, the higher of two reduced rates: (a) food, prepared or not, with services allowing its immediate consumption, in activities under section I of CAEM (HoReCa); (b) accommodation in a hotel, motel, guest house, camping, holiday village or camp, under section I of CAEM; (c) livestock, crop and horticultural produce in natural form at the tariff positions listed; (d) fresh fruit at 080840000 and 081030. (a) and (b) are 8% until then: Law 212/2023 art. II pct. 22 replaced 12% by 8% at art. 96 lit. b), dashes eight and nine, from 10 August 2023 (Monitorul Oficial nr. 297-301, art. 514). Which goods and services a line is, the person entering it decides; the product offers the rate, it does not classify. The bill is not adopted."
+    },
+    "tax.vat.reduced_rate": {
+      "number": "0.08",
+      "unit": "ratio",
+      "sourceIndex": 3,
+      "confidence": "unverified",
+      "note": "Art. 96 alin. (2) pct. 2) as the bill rewrites it: bread and the listed dairy products, medicines and medical alcohol, medical devices and disinfectants at the positions listed, natural and liquefied gas with its transport and distribution, solid biofuel, listed fresh vegetables and fruit, eggs, chicken meat, and hygiene goods. From 1 April 2027 (pct. 31) gas only to final consumers, up to 150 m3 a month per dwelling's point of consumption; that scope is not encoded. The bill is not adopted."
+    },
+    "tax.vat.zero_rate": {
+      "number": "0",
+      "unit": "ratio",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Art. 104: zero rate with the right to deduct. The bill (art. III pct. 37) changes what it covers, lit. b) from 1 April 2027 and a new lit. j) for books and periodicals, not the rate."
     }
   }
 }

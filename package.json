@@ -22,6 +22,7 @@
   },
   "files": [
     "charts",
+    "classifiers",
     "data",
     "schemas",
     "sources",

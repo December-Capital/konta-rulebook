@@ -37,6 +37,8 @@ data/2026/md-2026.2.json       a sparse amendment: only the keys that changed mi
 data/2027/md-2027.json
 charts/md-pgcc-2020.json       Planul general de conturi contabile, in force from 1 January 2020
 schemas/chart.schema.json      the contract for a chart of accounts
+classifiers/sfs-efactura-2026.json  e-Factura's units of measure and VAT rate codes, from SFS's workbook
+schemas/classifier.schema.json the contract for a classifier
 tools/validate.mjs             the gate: schema plus the cross-file rules JSON Schema can't express
 tools/watch-sources.mjs        reports changes in the official sources that nobody has read yet
 sources/watch.json             the acts it watches, and what has already been read
@@ -116,6 +118,24 @@ in 1-7; accounts and subaccounts in 8-9), and whether it is double-entry (all bu
 
 A later amendment is a new file with a later `effectiveFrom`, never an edit to an approved one.
 
+## Classifiers
+
+`classifiers/` holds lists of codes a state system prescribes, transcribed from the file the
+authority publishes: `sfs-efactura-2026.json` has the two lists of SFS's e-Factura workbook
+(`Classificators.xlsx`, received with the integration package on 2026-10-06, its SHA-256 in the
+source): 74 units of measure, each the code an invoice line carries in `UnitOfMeasure` (`buc`,
+`kg`, `m2`), and the VAT rate codes a line carries in `TVA` (`0`, `8`, `12`, `20`, `10` and `-`),
+each with the ratio it stands for. Entries keep SFS's own ids and spelling (`Nuton` among them)
+and the workbook's order; the workbook gives no names, and none are invented.
+
+SFS does not date the workbook, so `effectiveFrom` is the day it reached us. Which rate applies to
+a supply on a date is a rule set's value (`tax.vat.*`); the classifier says only how e-Factura
+writes it. `npm run validate` refuses an id or a code twice, ids out of the source's order, a
+list citing a source the file lacks, and a VAT code whose ratio is not its percentage.
+
+When SFS sends a new workbook: a new file with a later `effectiveFrom`, never an edit of an
+approved one.
+
 ## Adding or changing a rule
 
 1. Never edit an approved set in place — the numbers it produced are in filings that have been
@@ -161,6 +181,12 @@ Recorded rather than guessed at. Resolving them is Phase 0 work.
 | Is art. 118¹ invoice registration still in force? | **No, abrogated.** Do not implement the MDL 100,000 invoice register. |
 | Does a paper invoice from a list-obligated supplier still cost the buyer its VAT deduction? | **No.** Art. 102(18) is abrogated from 1 Jan 2026, which *removes* that restriction. |
 
+### Resolved on 2026-10-15
+
+| Question | Answer |
+| --- | --- |
+| Is the 12% VAT rate for HoReCa services in force in 2026? | **No, 8%.** Law 212/2023 art. II pct. 22 replaced 12% by 8% for accommodation and HoReCa food (art. 96 lit. b), dashes eight and nine) from 10 August 2023, read in Monitorul Oficial nr. 297-301/2023. The Government's 2027 bill (NU-599) rewrites art. 96 with a 12% band again, for HoReCa, accommodation and some farm produce and fruit: in `md-2027` as `tax.vat.higher_reduced_rate`, provisional until the law is published. |
+
 ### Still open
 
 | Question | Why it matters |
@@ -168,9 +194,8 @@ Recorded rather than guessed at. Resolving them is Phase 0 work.
 | Is a universal B2B e-Factura mandate coming, and when? | No Moldovan legal act found for the widely reported 1 October 2026 date. The obligation today reaches only B2G, supplies to agents without fiscal relations with the budget system, and a risk-based list of roughly 69 entities. |
 | Is the VAT refund ceiling really 70% for e-Factura and MEV users? | Reported by secondary sources, absent from the Ministry of Finance summary of the 2026 changes. It is the strongest positive incentive to adopt e-Factura. |
 | Final 2027 figures | The set is based on a project approved at first reading, not final adoption. |
-| Is the 12% VAT rate for HoReCa services in force in 2026? | Not found in a source we could read; deliberately not encoded. Invoices of a restaurant or hotel depend on it. |
 | How does SIA e-Factura round VAT per line? | `tax.vat.line_rounding` says half away from zero; konta-efactura rounds half to even. They must agree with the platform; confirm on the first test round trip. |
-| The VAT rates for 2027 | `md-2027` carries none yet. Documents dated 2027 are refused until it does. |
+| The VAT rates for 2027 | `md-2027` carries the rates of the bill's art. 96 (20%, 12%, 8%) and the zero rate, provisional. Not the VAT rounding, the ledger accounts or payroll, so documents dated 2027 are still refused until it does. |
 
 ## Licence
 

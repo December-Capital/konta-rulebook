@@ -16,6 +16,8 @@ import process from "node:process";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
+import { validateClassifiers } from "./validate-classifiers.mjs";
+
 const root = resolve(import.meta.dirname, "..");
 const dataDir = join(root, "data");
 const chartsDir = join(root, "charts");
@@ -290,6 +292,10 @@ if (duplicateChart) {
   problems.push(`duplicate chart id: ${duplicateChart}`);
 }
 
+// --- Classifiers (units of measure, VAT rate codes) ----------------------------------------
+
+const classifierSummary = await validateClassifiers({ root, ajv, fail, warn });
+
 for (const warning of warnings) {
   console.warn(`warn  ${warning}`);
 }
@@ -309,3 +315,4 @@ for (const { chart } of charts) {
   const subaccounts = accounts.reduce((total, a) => total + (a.subaccounts?.length ?? 0), 0);
   console.log(`ok    chart ${chart.id}: ${accounts.length} accounts, ${subaccounts} subaccounts validated.`);
 }
+for (const line of classifierSummary) console.log(line);

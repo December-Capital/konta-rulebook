@@ -1,0 +1,361 @@
+{
+  "$schema": "../schemas/classifier.schema.json",
+  "id": "sfs-efactura-2026",
+  "jurisdiction": "MD",
+  "title": "Clasificatoarele SIA e-Factura: unități de măsură și cote TVA",
+  "effectiveFrom": "2026-10-06",
+  "effectiveTo": null,
+  "publishedOn": "2026-10-15",
+  "status": "draft",
+  "notes": "The two lists in the classifier workbook of SFS's e-Factura integration package, parsed from the workbook (not typed) by reading its two worksheets in order: 74 units of measure (ids 4 to 77) and 6 VAT rate codes. An e-Factura invoice line carries a unit's code in UnitOfMeasure (\"buc\", \"kg\") and a rate's code in TVA (\"20\"); the product list import (Classificator.xml in the same package) refers to them by id. SFS does not date the workbook, so effectiveFrom is the day the package reached us, not when SFS began using it. The units are abbreviations only: the workbook gives no names, Romanian or Russian, and none are added here. Which VAT rate applies to a supply on a date is the rule sets' business (tax.vat.*); this list says only how e-Factura writes each rate. Its 10% code matches no rate in md-2026 or md-2027.",
+  "sources": [
+    {
+      "act": "Serviciul Fiscal de Stat, pachetul de integrare SIA „e-Factura”: Classificators.xlsx (foile „Unitati de Masura” și „Valoarea TVA”)",
+      "article": "received 2026-10-06 with the integration guides dated 2025-09-08; SHA-256 5921880aa8f6dfc6e2ab0f75d1b34c4d769eaa527c492aa40ba1742e90b6c453; a copy in konta-efactura/spec/sfs/",
+      "url": "https://github.com/December-Capital/konta-efactura/blob/main/spec/sfs/Classificators.xlsx",
+      "verified": false
+    }
+  ],
+  "lists": {
+    "unitsOfMeasure": {
+      "title": "Unitati de Masura",
+      "sourceIndex": 0,
+      "entries": [
+        {
+          "id": 4,
+          "code": "hg"
+        },
+        {
+          "id": 5,
+          "code": "mg"
+        },
+        {
+          "id": 6,
+          "code": "carat"
+        },
+        {
+          "id": 7,
+          "code": "g"
+        },
+        {
+          "id": 8,
+          "code": "kg"
+        },
+        {
+          "id": 9,
+          "code": "mln carate"
+        },
+        {
+          "id": 10,
+          "code": "t"
+        },
+        {
+          "id": 11,
+          "code": "mie t"
+        },
+        {
+          "id": 12,
+          "code": "kt"
+        },
+        {
+          "id": 13,
+          "code": "cg"
+        },
+        {
+          "id": 14,
+          "code": "t-registru brut"
+        },
+        {
+          "id": 15,
+          "code": "t metr. cap. incarc."
+        },
+        {
+          "id": 16,
+          "code": "mm"
+        },
+        {
+          "id": 17,
+          "code": "cm"
+        },
+        {
+          "id": 18,
+          "code": "dm"
+        },
+        {
+          "id": 19,
+          "code": "m"
+        },
+        {
+          "id": 20,
+          "code": "km"
+        },
+        {
+          "id": 21,
+          "code": "cm lin."
+        },
+        {
+          "id": 22,
+          "code": "in"
+        },
+        {
+          "id": 23,
+          "code": "ft"
+        },
+        {
+          "id": 24,
+          "code": "yd"
+        },
+        {
+          "id": 25,
+          "code": "n mile"
+        },
+        {
+          "id": 26,
+          "code": "mm2"
+        },
+        {
+          "id": 27,
+          "code": "cm2"
+        },
+        {
+          "id": 28,
+          "code": "dm2"
+        },
+        {
+          "id": 29,
+          "code": "m2"
+        },
+        {
+          "id": 30,
+          "code": "daa"
+        },
+        {
+          "id": 31,
+          "code": "ha"
+        },
+        {
+          "id": 32,
+          "code": "km2"
+        },
+        {
+          "id": 33,
+          "code": "in2"
+        },
+        {
+          "id": 34,
+          "code": "ft2"
+        },
+        {
+          "id": 35,
+          "code": "yd2"
+        },
+        {
+          "id": 36,
+          "code": "a"
+        },
+        {
+          "id": 37,
+          "code": "mm3"
+        },
+        {
+          "id": 38,
+          "code": "cm3"
+        },
+        {
+          "id": 39,
+          "code": "ml"
+        },
+        {
+          "id": 40,
+          "code": "l"
+        },
+        {
+          "id": 41,
+          "code": "dm3"
+        },
+        {
+          "id": 42,
+          "code": "m3"
+        },
+        {
+          "id": 43,
+          "code": "dal"
+        },
+        {
+          "id": 44,
+          "code": "dl"
+        },
+        {
+          "id": 45,
+          "code": "hl"
+        },
+        {
+          "id": 46,
+          "code": "Ml"
+        },
+        {
+          "id": 47,
+          "code": "in3"
+        },
+        {
+          "id": 48,
+          "code": "ft3"
+        },
+        {
+          "id": 49,
+          "code": "yd3"
+        },
+        {
+          "id": 50,
+          "code": "W"
+        },
+        {
+          "id": 51,
+          "code": "kW"
+        },
+        {
+          "id": 52,
+          "code": "MW"
+        },
+        {
+          "id": 53,
+          "code": "GW"
+        },
+        {
+          "id": 54,
+          "code": "kV"
+        },
+        {
+          "id": 55,
+          "code": "MV"
+        },
+        {
+          "id": 56,
+          "code": "VA"
+        },
+        {
+          "id": 57,
+          "code": "kVA"
+        },
+        {
+          "id": 58,
+          "code": "MVA"
+        },
+        {
+          "id": 59,
+          "code": "kcal"
+        },
+        {
+          "id": 60,
+          "code": "Gcal"
+        },
+        {
+          "id": 61,
+          "code": "cal"
+        },
+        {
+          "id": 62,
+          "code": "Wh"
+        },
+        {
+          "id": 63,
+          "code": "kWh"
+        },
+        {
+          "id": 64,
+          "code": "MWh"
+        },
+        {
+          "id": 65,
+          "code": "GWh"
+        },
+        {
+          "id": 66,
+          "code": "CP"
+        },
+        {
+          "id": 67,
+          "code": "bit"
+        },
+        {
+          "id": 68,
+          "code": "byt"
+        },
+        {
+          "id": 69,
+          "code": "kbyt"
+        },
+        {
+          "id": 70,
+          "code": "Mbyt"
+        },
+        {
+          "id": 71,
+          "code": "bod"
+        },
+        {
+          "id": 72,
+          "code": "Gbyt"
+        },
+        {
+          "id": 73,
+          "code": "A"
+        },
+        {
+          "id": 74,
+          "code": "kJ"
+        },
+        {
+          "id": 75,
+          "code": "Nuton",
+          "note": "As spelled in the source; the newton."
+        },
+        {
+          "id": 76,
+          "code": "ora"
+        },
+        {
+          "id": 77,
+          "code": "buc"
+        }
+      ]
+    },
+    "vatRates": {
+      "title": "Valoarea TVA",
+      "sourceIndex": 0,
+      "entries": [
+        {
+          "id": 1,
+          "code": "0",
+          "rate": "0"
+        },
+        {
+          "id": 2,
+          "code": "8",
+          "rate": "0.08"
+        },
+        {
+          "id": 3,
+          "code": "12",
+          "rate": "0.12"
+        },
+        {
+          "id": 4,
+          "code": "20",
+          "rate": "0.20"
+        },
+        {
+          "id": 8,
+          "code": "-",
+          "rate": null,
+          "note": "Not a rate. SFS does not say which supplies carry it; the guides' examples never use it."
+        },
+        {
+          "id": 10,
+          "code": "10",
+          "rate": "0.10"
+        }
+      ]
+    }
+  }
+}

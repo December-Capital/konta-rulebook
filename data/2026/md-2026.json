@@ -87,7 +87,7 @@
     },
     {
       "act": "Legea nr. 212/2023 pentru modificarea unor acte normative",
-      "article": "art. II pct. 7 (Codul fiscal art. 35² alin. (1)), în vigoare de la 1 ianuarie 2024",
+      "article": "art. II pct. 7 (Codul fiscal art. 35² alin. (1)), în vigoare de la 1 ianuarie 2024; pct. 22 (art. 96 lit. b), liniuțele a opta și a noua: „12%” devine „8%”), în vigoare la data publicării, 10 august 2023 (art. XVI alin. (1) lit. a)), read 2026-10-15 in the issue",
       "publication": "Monitorul Oficial nr. 297-301, art. 514, 2023",
       "url": "https://monitorul.gov.md/ro/monitor/2758",
       "verified": false
@@ -304,7 +304,7 @@
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Art. 96 lit. b). Read in the amending acts: accommodation, and food and non-alcoholic drinks served under section I of the classifier (HoReCa), at 8% since 10 August 2023 (Law 212/2023 replaced 12%), so no 12% rate applies in 2026; natural gas and liquefied gas at 2711 with their transport and distribution (Law 139/2025, from 2026); medical devices in the State Register (Law 187/2025, from 2026). From secondary sources only: bread and bakery products, milk and dairy products at the listed positions, medicines at 3001-3004, agricultural produce in natural form. The 2027 bill would bring HoReCa back to 12%."
+      "note": "Art. 96 lit. b). Read in the amending acts: accommodation, and food and non-alcoholic drinks served under section I of the classifier (HoReCa), at 8% since 10 August 2023 (Law 212/2023 art. II pct. 22 replaced 12%, source 13), so no 12% rate applies in 2026; natural gas and liquefied gas at 2711 with their transport and distribution (Law 139/2025, from 2026); medical devices in the State Register (Law 187/2025, from 2026). From secondary sources only: bread and bakery products, milk and dairy products at the listed positions, medicines at 3001-3004, agricultural produce in natural form. The 2027 bill would bring HoReCa back to 12%."
     },
     "tax.vat.zero_rate": {
       "number": "0",
