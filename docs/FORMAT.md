@@ -39,6 +39,8 @@ charts/md-pgcc-2020.json       Planul general de conturi contabile, in force fro
 schemas/chart.schema.json      the contract for a chart of accounts
 classifiers/sfs-efactura-2026.json  e-Factura's units of measure and VAT rate codes, from SFS's workbook
 schemas/classifier.schema.json the contract for a classifier
+forms/md-factura-fiscala-2026.json  the factură fiscală's layout (OMF 118/2017 as amended), what a print shows
+schemas/form.schema.json       the contract for a document form
 calendar/md-holidays.json      the weekend, the Labour Code's public holidays, each year's transfers of rest days
 calendar/md-deadlines.json     filing and payment deadlines, who they apply to, the rule for a non-working day
 calendar/md-changes.json       changes in the law: from when, the value before and after, the act
@@ -149,6 +151,25 @@ list citing a source the file lacks, and a VAT code whose ratio is not its perce
 
 When SFS sends a new workbook: a new file with a later `effectiveFrom`, never an edit of an
 approved one.
+
+## Document forms
+
+`forms/` holds the layout of a primary document as its act prescribes it, so the product prints in
+the act's own numbering and words and never in labels of its own (rule 1). `md-factura-fiscala-2026`
+is the factură fiscală of OMF 118/2017, with every amendment found in Monitorul Oficial applied by
+us and the seven that touch it listed with each PDF's SHA-256: the title and every row and column a
+sales invoice of goods or services fills, in Romanian and in Russian as the bilingual form (Anexa
+nr. 1, read from the page image) prints them; who assigns the series and number (the State Tax
+Service, Instrucțiunea pct. 7); the languages it may be printed in (Romanian always, Ordinul pct. 5
+as OMF 66/2022 rewrote it); the zero rate's "0" and the reverse-charge mention; and the
+Instrucțiunea's sentence behind each, with its page. The transport rows and columns 10.10-10.12 are
+not encoded. `tools/validate-forms.mjs` refuses a citation of a source the form does not list, an id
+twice, columns out of the act's order, a total or the reverse-charge mention naming a column the form
+lacks, and a required language it may not be printed in.
+
+To read by hand: the Instrucțiune approved by HG 294/1998 (pct. 10 of OMF 118's Instrucțiune refers
+to it for the mandatory indicators) and Codul fiscal art. 117; and the consolidated text on legis.md,
+to confirm no amendment was missed by reading Monitorul Oficial's tables of contents.
 
 ## Adding or changing a rule
 

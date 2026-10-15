@@ -1,0 +1,449 @@
+{
+  "$schema": "../schemas/form.schema.json",
+  "id": "md-factura-fiscala-2026",
+  "form": "factura_fiscala",
+  "jurisdiction": "MD",
+  "title": {
+    "ro": "FACTURĂ FISCALĂ",
+    "ru": "НАЛОГОВАЯ НАКЛАДНАЯ"
+  },
+  "effectiveFrom": "2026-01-01",
+  "effectiveTo": null,
+  "publishedOn": "2026-10-15",
+  "status": "draft",
+  "notes": "DRAFT. The factură fiscală as OMF 118/2017 lays it out (Anexa nr. 1, the bilingual form, read from the page image because the PDF's text layer is broken; Anexa nr. 2, the Instrucțiune), with every later amendment found in Monitorul Oficial's tables of contents from September 2017 to October 2026 applied by us: 143/2017, 39/2018, 72/2019, 88/2019, 170/2019, 96/2021, 66/2022, 28/2024, 158/2024, 135/2025 and 47/2026 (the seven that touch what is here are in sources). No consolidated text was read (legis.md refuses automated requests). Only what a sales invoice of goods or services fills is encoded: the transport rows (3, 5-9, 15, 16, 18-22) and columns 10.10-10.12 are not. The Instrucțiune approved by HG 294/1998, to which pct. 10 refers for the mandatory indicators, and Codul fiscal art. 117 were not read. Page numbers are the physical pages of the PDF named in each source.",
+  "sources": [
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 28.08.2017 cu privire la factura fiscală (ordinul, Anexa nr. 1 formularul, Anexa nr. 2 Instrucțiunea)",
+      "publication": "Monitorul Oficial nr. 340-351, art. 1750, 22.09.2017",
+      "article": "PDF of the issue, p. 74-80, SHA-256 58a69d13391754d32ceea28647b3b19499db07fc805d522278deac6088b5dac9",
+      "url": "https://monitorul.gov.md/ro/monitor/1993",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 143 din 23.11.2017",
+      "publication": "Monitorul Oficial nr. 434-439, art. 2240",
+      "article": "p. 207, SHA-256 680de68a333864e099153edeaa33084b6a4bf19c0f75f7e5ef79039c5aab5da3",
+      "url": "https://monitorul.gov.md/ro/monitor/2010",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 39 din 05.02.2018",
+      "publication": "Monitorul Oficial nr. 48-57, art. 198",
+      "article": "p. 145, SHA-256 a3a7137110a42da100a74a0aa2b16a9bc35406d8179105482c543862542785b4",
+      "url": "https://monitorul.gov.md/ro/monitor/2022",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 66 din 01.06.2022",
+      "publication": "Monitorul Oficial nr. 170-176, art. 666",
+      "article": "partea 3, p. 14-15, SHA-256 b41e38631d5ef8b4246e51134ab2800ab94f8282f9815fd9e7185d29c264544d",
+      "url": "https://monitorul.gov.md/ro/monitor/2453",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 28 din 28.02.2024",
+      "publication": "Monitorul Oficial nr. 89-92, art. 199",
+      "article": "partea 3, p. 1-2, SHA-256 0321e0fd35920b29fb2b921a0c66619a60d1003491364be8cde5410c3bc6bc1a",
+      "url": "https://monitorul.gov.md/ro/monitor/2865",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 135 din 10.12.2025",
+      "publication": "Monitorul Oficial nr. 620-622, art. 1102, 18.12.2025",
+      "article": "partea 3, p. 32, SHA-256 30b91eb4bdf3576fed76254f66c05731471ec5af0f00763b6d4ec24de1b37ed2; aplicabil de la 1 ianuarie 2026",
+      "url": "https://monitorul.gov.md/ro/monitor/3193",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 47 din 27.03.2026",
+      "publication": "Monitorul Oficial nr. 156-159, art. 281, 09.04.2026",
+      "article": "partea 3, p. 1-2, SHA-256 cdd44cf5f07bfe9e35c90b5bb190a875810452e819757d3273142fdb1eddf9ef",
+      "url": "https://monitorul.gov.md/ro/monitor/3256",
+      "verified": false
+    }
+  ],
+  "series": {
+    "assignedBy": "SFS",
+    "source": {
+      "sourceIndex": 0,
+      "article": "Instrucțiunea, pct. 7",
+      "page": 77,
+      "quote": "Sistemul unitar de înseriere și numerotare a formularelor facturii fiscale se asigură de către Serviciul Fiscal de Stat."
+    },
+    "selfPrinting": {
+      "sourceIndex": 3,
+      "article": "Ordinul, pct. 5, în redacția OMF 66/2022",
+      "page": 14,
+      "quote": "imprimă de sine stătător facturi fiscale cu atribuirea seriei și diapazonului de numere pe toată perioada activității de întreprinzător, cu excepția perioadei în care entitatea a fost inclusă în lista privind utilizarea obligatorie a facturii fiscale electronice (e-factura)"
+    }
+  },
+  "languages": {
+    "required": "ro",
+    "allowed": [
+      "ro",
+      "ru"
+    ],
+    "source": {
+      "sourceIndex": 3,
+      "article": "Ordinul, pct. 5, în redacția OMF 66/2022",
+      "page": 14,
+      "quote": "Se permite imprimarea de sine stătător a formularului facturii fiscale într-o singură limbă, dar obligatoriu în limba de stat."
+    }
+  },
+  "fields": [
+    {
+      "id": "seriesNumber",
+      "code": "",
+      "label": {
+        "ro": "Seria, Nr.",
+        "ru": "Серия, №"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Anexa nr. 1",
+        "page": 75,
+        "quote": "FACTURĂ FISCALĂ ___________Seria, Nr."
+      }
+    },
+    {
+      "id": "date",
+      "code": "",
+      "label": {
+        "ro": "Data eliberării/data livrării",
+        "ru": "Дата выписки/дата поставки"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 1), 13 subpct. 1)",
+        "page": 78,
+        "quote": "În rîndul „Data eliberării/data livrării” furnizorul indică respectiv ziua, luna, anul eliberării facturii fiscale și efectuării livrării."
+      }
+    },
+    {
+      "id": "supplier",
+      "code": "1",
+      "label": {
+        "ro": "Furnizor",
+        "ru": "Поставщик"
+      },
+      "required": true,
+      "parts": [
+        "name",
+        "legalAddress",
+        "fiscalCode",
+        "vatCode",
+        "iban"
+      ],
+      "optionalParts": [
+        "iban"
+      ],
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 2), 13 subpct. 2)",
+        "page": 78,
+        "quote": "În rîndul 1 „Furnizor” – denumirea entității care efectuează livrarea de mărfuri, specificate în coloana 10.1, adresa juridică (la necesitate, codul IBAN, codul băncii), codul fiscal și numărul de înregistrare ca plătitor de TVA, dacă acesta deține statut de plătitor de TVA."
+      }
+    },
+    {
+      "id": "buyer",
+      "code": "2",
+      "label": {
+        "ro": "Cumpărător/beneficiar",
+        "ru": "Покупатель/получатель"
+      },
+      "required": true,
+      "parts": [
+        "name",
+        "legalAddress",
+        "fiscalCode",
+        "vatCode"
+      ],
+      "optionalParts": [],
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 3), 13 subpct. 3), completat prin OMF 28/2024",
+        "page": 78,
+        "quote": "În rîndul 2 „Cumpărător/beneficiar” – denumirea entității căreia i se livrează mărfuri specificate în coloana 10.1, adresa juridică, codul fiscal, numărul de înregistrare ca plătitor de TVA, dacă acesta deține statut de plătitor de TVA"
+      }
+    },
+    {
+      "id": "partyCodes",
+      "code": "",
+      "label": {
+        "ro": "c.f./nr.TVA",
+        "ru": "ф.к./код НДС"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Anexa nr. 1",
+        "page": 75,
+        "quote": "c.f./ nr.TVA"
+      }
+    },
+    {
+      "id": "attachedDocuments",
+      "code": "4",
+      "label": {
+        "ro": "Documente anexate",
+        "ru": "Прилагаемые документы"
+      },
+      "required": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 5), 13 subpct. 4)",
+        "page": 78,
+        "quote": "În rîndul 4 „Documente anexate” – denumirea și numărul documentelor anexate la factura fiscală"
+      }
+    }
+  ],
+  "columns": [
+    {
+      "code": "10.1",
+      "id": "name",
+      "label": {
+        "ro": "Denumirea mărfurilor/activelor, serviciilor și codul poziției tarifare al mărfii/activului",
+        "ru": "Наименование товаров/активов, услуг и код товарной позиции товара/актива"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 11), 13 subpct. 5)",
+        "page": 79,
+        "quote": "În coloana 10.1 [...] se indică corespunzător pentru fiecare tip de marfă denumirea mărfurilor livrate."
+      }
+    },
+    {
+      "code": "10.2",
+      "id": "unit",
+      "label": {
+        "ro": "Unitatea de măsură",
+        "ru": "Единица измерения"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 12)",
+        "page": 79,
+        "quote": "În coloana 10.2 „Unitatea de măsură” – se indică corespunzător pentru fiecare tip de marfă unitatea de măsură."
+      }
+    },
+    {
+      "code": "10.3",
+      "id": "quantity",
+      "label": {
+        "ro": "Cantitatea mărfurilor/activelor, volumul serviciilor",
+        "ru": "Количество товаров/активов, объем услуг"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 13), 13 subpct. 6)",
+        "page": 79,
+        "quote": "În coloana 10.3 [...] se indică corespunzător pentru fiecare tip de marfă cantitatea mărfurilor."
+      }
+    },
+    {
+      "code": "10.4",
+      "id": "unitPrice",
+      "label": {
+        "ro": "Preț unitar fără TVA, lei",
+        "ru": "Цена единицы без НДС, леев"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 14)",
+        "page": 79,
+        "quote": "În coloana 10.4 „Preț unitar fără TVA, lei”– [...] prețul unitar fără TVA"
+      }
+    },
+    {
+      "code": "10.5",
+      "id": "net",
+      "label": {
+        "ro": "Valoarea totală fără TVA, lei",
+        "ru": "Общая сумма без НДС, леев"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 15), 13 subpct. 7)",
+        "page": 79,
+        "quote": "În coloana 10.5 „Valoarea totală fără TVA, lei” – [...] determinată ca produs al indicatorilor din coloanele 10.3 și 10.4."
+      }
+    },
+    {
+      "code": "10.6",
+      "id": "vatRate",
+      "label": {
+        "ro": "Cota TVA, %",
+        "ru": "Ставка НДС, %"
+      },
+      "vatPayersOnly": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 16), 13 subpct. 8)",
+        "page": 79,
+        "quote": "Coloana în cauză se completează de către entitățile ce dețin statut de plătitor de TVA pentru livrările impozabile"
+      }
+    },
+    {
+      "code": "10.7",
+      "id": "vat",
+      "label": {
+        "ro": "Suma totală a TVA, lei",
+        "ru": "Общая сумма НДС, леев"
+      },
+      "vatPayersOnly": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 17), 13 subpct. 9)",
+        "page": 79,
+        "quote": "În coloana 10.7 „Suma totală a TVA, lei”– se include suma totală a TVA, determinată ca produs al indicatorilor din coloanele 10.5 și 10.6."
+      }
+    },
+    {
+      "code": "10.8",
+      "id": "total",
+      "label": {
+        "ro": "Valoarea mărfurilor/activelor, serviciilor, lei",
+        "ru": "Стоимость товаров/активов, услуг, леев"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 18), 13 subpct. 10)",
+        "page": 79,
+        "quote": "În coloana 10.8 „Valoarea mărfurilor/activelor, serviciilor, lei” – se include valoarea totală a mărfurilor, determinată ca sumă a indicatorilor din coloanele 10.5 și 10.7."
+      }
+    },
+    {
+      "code": "10.9",
+      "id": "other",
+      "label": {
+        "ro": "Altă informație",
+        "ru": "Другая информация"
+      },
+      "vatPayersOnly": false,
+      "source": {
+        "sourceIndex": 5,
+        "article": "Instrucțiunea, pct. 11 subpct. 19), completat prin OMF 135/2025",
+        "page": 32,
+        "quote": "În cazul tranzacțiilor efectuate în conformitate cu prevederile art. 95 alin. (1) lit. e) și lit. f) și art. 101⁷ din Codul fiscal, în coloana respectivă se indică mențiunea „Taxare inversă”"
+      }
+    }
+  ],
+  "zeroRate": {
+    "text": "0",
+    "source": {
+      "sourceIndex": 2,
+      "article": "Instrucțiunea, pct. 11 subpct. 16), completat prin OMF 39/2018",
+      "page": 145,
+      "quote": "În cazul livrărilor scutite de TVA cu drept de deducere se va înscrie cifra „0”."
+    }
+  },
+  "reverseCharge": {
+    "column": "10.9",
+    "text": {
+      "ro": "Taxare inversă",
+      "ru": "Taxare inversă"
+    },
+    "source": {
+      "sourceIndex": 5,
+      "article": "Instrucțiunea, pct. 11 subpct. 19), în redacția OMF 135/2025",
+      "page": 32,
+      "quote": "în coloana respectivă se indică mențiunea „Taxare inversă”"
+    }
+  },
+  "totals": [
+    {
+      "code": "12",
+      "id": "invoiceTotal",
+      "label": {
+        "ro": "TOTAL (pe factura fiscală)",
+        "ru": "Всего (по налоговой накладной)"
+      },
+      "columns": [
+        "10.5",
+        "10.7",
+        "10.8"
+      ],
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 24), 13 subpct. 12)",
+        "page": 80,
+        "quote": "Entitățile neînregistrate în calitate de plătitori de T.V.A completează doar coloanele 10.5 și 10.8."
+      }
+    }
+  ],
+  "signatures": [
+    {
+      "code": "13",
+      "id": "release",
+      "label": {
+        "ro": "Permis eliberarea",
+        "ru": "Отпуск разрешил"
+      },
+      "for": [
+        "goods"
+      ],
+      "stamp": true,
+      "source": {
+        "sourceIndex": 3,
+        "article": "Instrucțiunea, pct. 11 subpct. 25), completat prin OMF 66/2022",
+        "page": 15,
+        "quote": "Aplicarea ștampilei nu este obligatorie, cu excepția cazurilor prevăzute de legislație."
+      }
+    },
+    {
+      "code": "14",
+      "id": "handedOver",
+      "label": {
+        "ro": "Predat mărfurile/activele (serviciile)",
+        "ru": "Сдал товары/активы (услуги)"
+      },
+      "for": [
+        "goods",
+        "services"
+      ],
+      "stamp": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 26), 13 subpct. 13)",
+        "page": 80,
+        "quote": "pe toate exemplarele facturii fiscale semnează persoana responsabilă de expedierea mărfii."
+      }
+    },
+    {
+      "code": "17",
+      "id": "received",
+      "label": {
+        "ro": "Primit mărfurile/activele (serviciile) cumpărătorul/beneficiarul",
+        "ru": "Принял товары/активы (услуги) покупатель/получатель"
+      },
+      "for": [
+        "goods",
+        "services"
+      ],
+      "stamp": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "Instrucțiunea, pct. 11 subpct. 28), 13 subpct. 14)",
+        "page": 80,
+        "quote": "pe primul exemplar al facturii fiscale beneficiarul certifică prin semnătură [...] faptul beneficierii serviciilor."
+      }
+    }
+  ],
+  "signatureCaption": {
+    "ro": "Funcția, numele, prenumele și semnătura",
+    "ru": "Должность, фамилия, имя и подпись"
+  },
+  "stampMark": {
+    "ro": "L.Ș.",
+    "ru": "М.П."
+  }
+}

@@ -19,6 +19,7 @@ import addFormats from "ajv-formats";
 
 import { validateCalendar } from "./validate-calendar.mjs";
 import { validateClassifiers } from "./validate-classifiers.mjs";
+import { validateForms } from "./validate-forms.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const dataDir = join(root, "data");
@@ -344,6 +345,7 @@ const calendarSummary = await validateCalendar({ root, ajv, sets, fail, warn });
 
 // --- Classifiers (units of measure, VAT rate codes) ----------------------------------------
 
+const formSummary = await validateForms({ root, ajv, fail, warn });
 const classifierSummary = await validateClassifiers({ root, ajv, fail, warn });
 
 for (const warning of warnings) {
@@ -367,3 +369,4 @@ for (const { chart } of charts) {
 }
 for (const line of calendarSummary) console.log(line);
 for (const line of classifierSummary) console.log(line);
+for (const line of formSummary) console.log(line);

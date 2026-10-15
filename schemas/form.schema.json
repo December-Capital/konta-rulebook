@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://december-capital.github.io/konta-rulebook/schemas/form.schema.json",
+  "title": "Konta document form",
+  "description": "The layout of a primary document as its act prescribes it: its title, which fields and columns it carries in the act's own numbering and words (Romanian and Russian, as the bilingual form prints them), who assigns its series and number, in which languages it may be printed, and the sentence of the act behind each. The product prints from this, never from labels of its own.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "form",
+    "jurisdiction",
+    "title",
+    "effectiveFrom",
+    "publishedOn",
+    "status",
+    "sources",
+    "series",
+    "languages",
+    "fields",
+    "columns",
+    "totals",
+    "signatures",
+    "signatureCaption"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^md-[a-z-]+-[0-9]{4}(\\.[0-9]+)?$"
+    },
+    "form": {
+      "type": "string",
+      "enum": [
+        "factura_fiscala"
+      ]
+    },
+    "jurisdiction": {
+      "type": "string",
+      "enum": [
+        "MD"
+      ]
+    },
+    "title": {
+      "$ref": "#/$defs/text"
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date"
+    },
+    "effectiveTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "publishedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "approved",
+        "superseded"
+      ]
+    },
+    "approvedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approvedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "ruleset.schema.json#/properties/sources/items"
+      }
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assignedBy",
+        "source"
+      ],
+      "properties": {
+        "assignedBy": {
+          "type": "string",
+          "enum": [
+            "SFS",
+            "entity"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/citation"
+        },
+        "selfPrinting": {
+          "$ref": "#/$defs/citation"
+        }
+      }
+    },
+    "languages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "allowed",
+        "source"
+      ],
+      "properties": {
+        "required": {
+          "type": "string",
+          "enum": [
+            "ro",
+            "ru"
+          ]
+        },
+        "allowed": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ro",
+              "ru"
+            ]
+          }
+        },
+        "source": {
+          "$ref": "#/$defs/citation"
+        }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "code",
+          "label",
+          "required",
+          "source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][A-Za-z]*$"
+          },
+          "code": {
+            "type": "string"
+          },
+          "label": {
+            "$ref": "#/$defs/text"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "name",
+                "legalAddress",
+                "fiscalCode",
+                "vatCode",
+                "iban"
+              ]
+            }
+          },
+          "optionalParts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "$ref": "#/$defs/citation"
+          }
+        }
+      }
+    },
+    "columns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "id",
+          "label",
+          "vatPayersOnly",
+          "source"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^10\\.[0-9]{1,2}$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][A-Za-z]*$"
+          },
+          "label": {
+            "$ref": "#/$defs/text"
+          },
+          "vatPayersOnly": {
+            "type": "boolean"
+          },
+          "source": {
+            "$ref": "#/$defs/citation"
+          }
+        }
+      }
+    },
+    "zeroRate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "source"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/citation"
+        }
+      }
+    },
+    "reverseCharge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "column",
+        "text",
+        "source"
+      ],
+      "properties": {
+        "column": {
+          "type": "string"
+        },
+        "text": {
+          "$ref": "#/$defs/text"
+        },
+        "source": {
+          "$ref": "#/$defs/citation"
+        }
+      }
+    },
+    "totals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "id",
+          "label",
+          "columns",
+          "source"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "$ref": "#/$defs/text"
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "$ref": "#/$defs/citation"
+          }
+        }
+      }
+    },
+    "signatures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "id",
+          "label",
+          "for",
+          "stamp",
+          "source"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "$ref": "#/$defs/text"
+          },
+          "for": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "goods",
+                "services"
+              ]
+            }
+          },
+          "stamp": {
+            "type": "boolean"
+          },
+          "source": {
+            "$ref": "#/$defs/citation"
+          }
+        }
+      }
+    },
+    "signatureCaption": {
+      "$ref": "#/$defs/text"
+    },
+    "stampMark": {
+      "$ref": "#/$defs/text"
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ro",
+        "ru"
+      ],
+      "properties": {
+        "ro": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ru": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceIndex",
+        "article",
+        "page",
+        "quote"
+      ],
+      "properties": {
+        "sourceIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "article": {
+          "type": "string",
+          "minLength": 1
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    }
+  }
+}
