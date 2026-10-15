@@ -258,6 +258,50 @@ for (const { file, chart } of charts) {
     }
   }
 
+  // The closing entries: every class and account they name exists, income classes are on the
+  // liability side and expense classes on the asset side as the act says, and each movement goes
+  // the way its kind says, so a code swapped here fails before it closes anybody's year.
+  if (chart.closing) {
+    const closing = chart.closing;
+    const classOf = new Map(chart.classes.map((c) => [c.code, c]));
+    const accountCodes = new Set(
+      chart.classes.flatMap((c) => [...(c.groups ?? []).flatMap((g) => g.accounts), ...(c.accounts ?? [])]).map((a) => a.code),
+    );
+    const sides = { incomeClasses: "pasiv", expenseClasses: "activ" };
+
+    for (const [key, nature] of Object.entries(sides)) {
+      for (const code of closing[key]) {
+        if (!classOf.has(code)) fail(file, `closing.${key} names class ${code}, which the chart does not have.`);
+        else if (classOf.get(code).nature !== nature) fail(file, `closing.${key}: class ${code} is not ${nature}.`);
+      }
+    }
+    for (const code of closing.managementClasses ?? []) {
+      if (!classOf.has(code)) fail(file, `closing.managementClasses names class ${code}, which the chart does not have.`);
+    }
+    for (const key of ["resultAccount", "netResultAccount"]) {
+      if (!accountCodes.has(closing[key])) fail(file, `closing.${key} ${closing[key]} is not an account of the chart.`);
+    }
+
+    const result = closing.resultAccount;
+    const net = closing.netResultAccount;
+    const expected = {
+      income: (m) => closing.incomeClasses.includes(m.debit) && m.credit === result,
+      expenses: (m) => m.debit === result && closing.expenseClasses.includes(m.credit),
+      profit: (m) => m.debit === result && m.credit === net,
+      loss: (m) => m.debit === net && m.credit === result,
+    };
+    const kinds = closing.movements.map((m) => m.kind);
+    if (new Set(kinds).size !== kinds.length) fail(file, "closing.movements names a kind twice.");
+    for (const movement of closing.movements) {
+      if (!expected[movement.kind](movement)) {
+        fail(file, `closing movement ${movement.kind} (D ${movement.debit} / C ${movement.credit}) does not go the way its kind does.`);
+      }
+    }
+    for (const cite of [...closing.movements.map((m) => m.source), closing.resultHasNoBalance, closing.managementAccountsFirst].filter(Boolean)) {
+      if (!sources[cite.sourceIndex]) fail(file, `closing cites source ${cite.sourceIndex}, which the chart does not list.`);
+    }
+  }
+
   // Decimal codes walked as a tree come out in plain string order: 1, 11, 111, 1121, 113.
   const ordered = codes.every((code, index) => index === 0 || codes[index - 1] < code);
   if (!ordered) fail(file, "codes are not in the act's order.");

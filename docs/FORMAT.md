@@ -121,6 +121,15 @@ pasiv for 3 to 6, which is also the side of an account an entity adds there), wh
 accounts are mandatory (classes 1-7), what an entity may add to its own working chart (subaccounts
 in 1-7; accounts and subaccounts in 8-9), and whether it is double-entry (all but class 9).
 
+And the chart carries its year-end closing (`closing`), as chapters I and III state it: which
+classes are income (6) and expenses (7), settled at the end of the reporting period into the result
+account (351, which then has no balance), whose balance goes to the net result (333); and which
+classes are management accounts (8), closed first by the entity's own calculation. Each of the four
+movements (income, expenses, profit, loss) quotes chapter III's sentence word for word, with its
+page in the ministry's PDF. The validator refuses a class on the wrong side, an account the chart
+does not have, and a movement that does not go the way its kind does. The product reads only this:
+no account number is written in its code. A non-commercial organisation's 336 is not encoded.
+
 A later amendment is a new file with a later `effectiveFrom`, never an edit to an approved one.
 
 ## Classifiers

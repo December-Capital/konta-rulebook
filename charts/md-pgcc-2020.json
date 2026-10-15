@@ -29,6 +29,78 @@
       "verified": false
     }
   ],
+  "closing": {
+    "notes": "The closing entries at the end of the reporting period (perioada de gestiune), as chapters I and III state them: income (class 6) and expenses (class 7) settled into 351, whose balance is the period's net result and goes to 333, so 351 ends the period with no balance. Class 8's management accounts close into balance-sheet or result accounts by the entity's own calculation, before this. A non-commercial organisation uses 336 where a company uses 333 (chapter III, account 336); not encoded here. Page numbers are the physical pages of the Ministry of Finance's consolidated PDF named in sources[0].",
+    "incomeClasses": [
+      "6"
+    ],
+    "expenseClasses": [
+      "7"
+    ],
+    "managementClasses": [
+      "8"
+    ],
+    "resultAccount": "351",
+    "netResultAccount": "333",
+    "movements": [
+      {
+        "kind": "income",
+        "debit": "6",
+        "credit": "351",
+        "source": {
+          "sourceIndex": 0,
+          "article": "cap. III, clasa 6 „Venituri”",
+          "page": 50,
+          "quote": "Conturile din clasa 6 “Venituri” sînt conturi de pasiv. În creditul acestor conturi pe parcursul perioadei de gestiune se înregistrează cu total cumulativ de la începutul perioadei veniturile recunoscute în conformitate cu standardele de contabilitate, iar în debit – decontarea la finele perioadei de gestiune a veniturilor acumulate la rezultatul financiar total."
+        }
+      },
+      {
+        "kind": "expenses",
+        "debit": "351",
+        "credit": "7",
+        "source": {
+          "sourceIndex": 0,
+          "article": "cap. III, clasa 7 „Cheltuieli”",
+          "page": 53,
+          "quote": "Conturile din clasa 7 “Cheltuieli” sînt conturi de activ. În debitul acestor conturi pe parcursul perioadei de gestiune se înregistrează cu total cumulativ de la începutul perioadei cheltuielile recunoscute în conformitate cu standardele de contabilitate, iar în credit – decontarea la finele perioadei de gestiune a cheltuielilor acumulate la rezultatul financiar total."
+        }
+      },
+      {
+        "kind": "profit",
+        "debit": "351",
+        "credit": "333",
+        "source": {
+          "sourceIndex": 0,
+          "article": "cap. III, contul 351 „Rezultat financiar total”",
+          "page": 41,
+          "quote": "În debitul contului 351 “Rezultat financiar total” se înregistrează decontarea cheltuielilor suportate și profitului net al perioadei de gestiune în corespondență cu creditul conturilor: 333, 711, 712, 713, 714, 721, 722, 723, 731 etc."
+        }
+      },
+      {
+        "kind": "loss",
+        "debit": "333",
+        "credit": "351",
+        "source": {
+          "sourceIndex": 0,
+          "article": "cap. III, contul 351 „Rezultat financiar total”",
+          "page": 41,
+          "quote": "În creditul acestui cont se înregistrează decontarea veniturilor acumulate și pierderii nete a perioadei de gestiune în corespondență cu debitul conturilor: 333, 611, 612, 621, 622, 623 etc."
+        }
+      }
+    ],
+    "resultHasNoBalance": {
+      "sourceIndex": 0,
+      "article": "cap. III, contul 351",
+      "page": 41,
+      "quote": "Contul 351 “Rezultat financiar total” la sfîrșitul perioadei de gestiune nu are sold."
+    },
+    "managementAccountsFirst": {
+      "sourceIndex": 0,
+      "article": "cap. I; cap. III, clasa 8 „Conturi de gestiune”",
+      "page": 57,
+      "quote": "La data raportării conturile de gestiune se închid cu conturile de bilanț și/sau de rezultate."
+    }
+  },
   "classes": [
     {
       "code": "1",
