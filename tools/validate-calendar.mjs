@@ -75,6 +75,12 @@ export async function validateCalendar({ root, ajv, sets, fail, warn }) {
         if (source && !source.article) fail(file, `holiday ${h.id} cites ${source.act} without an article.`);
       }
 
+      for (const l of data.localDays ?? []) {
+        cite(`local day ${l.date}`, l.sourceIndex);
+        const basis = cite(`local day ${l.date} basis`, l.basisIndex);
+        if (basis && basis.readIn !== "act") fail(file, `local day ${l.date}: its basis must be read in the act.`);
+      }
+
       const calendar = new WorkingCalendar(data);
       for (const [year, entry] of Object.entries(data.years)) {
         cite(`year ${year}`, entry.sourceIndex);

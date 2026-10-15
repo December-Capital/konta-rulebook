@@ -47,6 +47,22 @@
             "minItems": 1,
             "items": { "$ref": "#/$defs/holiday" }
           },
+          "localDays": {
+            "type": "array",
+            "description": "Days off in some localities only (a church's patron saint's day, Labour Code art. 111 lit. j)), as an authority announced them for a year. Shown on the calendar; never used to move a deadline.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["date", "name", "places", "basisIndex", "sourceIndex"],
+              "properties": {
+                "date": { "type": "string", "format": "date" },
+                "name": { "$ref": "#/$defs/words" },
+                "places": { "$ref": "#/$defs/words" },
+                "basisIndex": { "$ref": "#/$defs/sourceIndex", "description": "The rule that makes such a day non-working." },
+                "sourceIndex": { "$ref": "#/$defs/sourceIndex", "description": "Who announced this day for this year." }
+              }
+            }
+          },
           "years": {
             "type": "object",
             "description": "One entry per year whose transfers of rest days have been read. A year missing here is shown with the Labour Code's holidays and a warning that a decision may still move days.",

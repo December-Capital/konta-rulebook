@@ -5,14 +5,18 @@
   "jurisdiction": "MD",
   "publishedOn": "2026-10-15",
   "status": "draft",
-  "notes": "DRAFT. The days that are not working days in the Republic of Moldova: Saturday and Sunday, the public holidays of the Labour Code art. 111, and each year's transfers of rest days. Art. 111 is reconstructed from its 2003 text and the eight amending laws, each read in Monitorul Oficial on 2026-10-15; the consolidated text on legis.md was out of reach and has to be checked by hand. A holiday falling on a weekend is not moved (art. 111 alin. (1^1), Law 19/2019). The local 'hram' day (art. 111 lit. j)) is non-working only in its locality and is not on a national calendar. Since Law 69/2020 a Government transfer of rest days binds only public authorities and institutions; a private employer may transfer days itself after consulting its employees' representatives. No Government transfer was published for 2024, 2025 or 2026 (Monitorul Oficial searched month by month up to nr. 508-511 of 13.10.2026). Orthodox Easter is computed by tools/calendar.mjs (Julian computus); 12 April 2026 and 2 May 2027.",
+  "notes": "DRAFT. The days that are not working days in the Republic of Moldova: Saturday and Sunday, the public holidays of the Labour Code art. 111, and each year's transfers of rest days. Art. 111 is reconstructed from its 2003 text and the eight amending laws, each read in Monitorul Oficial on 2026-10-15; the consolidated text on legis.md was out of reach and has to be checked by hand. A holiday falling on a weekend is not moved (art. 111 alin. (1^1), Law 19/2019). The local 'hram' day (art. 111 lit. j)) is non-working only in its locality: localDays records those an authority has announced, which never move a national deadline. Since Law 69/2020 a Government transfer of rest days binds only public authorities and institutions; a private employer may transfer days itself after consulting its employees' representatives. No Government transfer was published for 2024, 2025 or 2026 (Monitorul Oficial searched month by month up to nr. 508-511 of 13.10.2026). Orthodox Easter is computed by tools/calendar.mjs (Julian computus); 12 April 2026 and 2 May 2027.",
   "sources": [
     {
       "act": "Codul muncii al Republicii Moldova nr. 154/2003",
       "article": "art. 111 alin. (1) lit. a)-g), în redacția inițială",
       "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
       "url": "https://monitorul.gov.md/ro/monitor/1148",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1)", "ru": "Трудовой кодекс, ст. 111 ч. (1)", "en": "Labour Code, art. 111(1)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1)",
+        "en": "Labour Code, art. 111(1)"
+      },
       "quote": "(1) În Republica Moldova, zile de sărbătoare nelucrătoare [...] sînt: a) 1 ianuarie - Anul Nou; b) 7 și 8 ianuarie - Nașterea lui Isus Hristos (Crăciunul); c) 8 martie - Ziua internațională a femeii; d) prima și a doua zi de Paște conform calendarului bisericesc; e) ziua de luni la o săptămînă după Paște (Paștele Blajinilor); f) 1 mai - Ziua internațională a solidarității oamenilor muncii; g) 9 mai - Ziua Victoriei și a comemorării eroilor căzuți pentru independența Patriei;",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -23,7 +27,11 @@
       "article": "art. I (art. 111 alin. (1) lit. h))",
       "publication": "Monitorul Oficial nr. 61, art. 179, 26.04.2010",
       "url": "https://monitorul.gov.md/ro/monitor/1606",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1) lit. h)", "ru": "Трудовой кодекс, ст. 111 ч. (1) п. h)", "en": "Labour Code, art. 111(1)(h)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. h)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. h)",
+        "en": "Labour Code, art. 111(1)(h)"
+      },
       "quote": "h) 27 august - Ziua Independenţei;",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -34,7 +42,11 @@
       "article": "art. I (art. 111 alin. (1) lit. b) și lit. i^1))",
       "publication": "Monitorul Oficial nr. 14-16, art. 30, 21.01.2014",
       "url": "https://monitorul.gov.md/ro/monitor/1929",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1) lit. i¹)", "ru": "Трудовой кодекс, ст. 111 ч. (1) п. i¹)", "en": "Labour Code, art. 111(1)(i¹)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. i¹)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. i¹)",
+        "en": "Labour Code, art. 111(1)(i¹)"
+      },
       "quote": "i1) 25 decembrie - Naşterea lui Iisus Hristos (Crăciunul pe stil nou);",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -45,7 +57,11 @@
       "article": "art. I (art. 111 alin. (1) lit. g^1))",
       "publication": "Monitorul Oficial nr. 462-466, art. 768, 12.12.2018",
       "url": "https://monitorul.gov.md/ro/monitor/2083",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1) lit. g¹)", "ru": "Трудовой кодекс, ст. 111 ч. (1) п. g¹)", "en": "Labour Code, art. 111(1)(g¹)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. g¹)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. g¹)",
+        "en": "Labour Code, art. 111(1)(g¹)"
+      },
       "quote": "g1) 9 mai - Ziua Europei;",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -56,7 +72,11 @@
       "article": "art. III (art. 111 alin. (1) lit. i))",
       "publication": "Monitorul Oficial nr. 97-99, art. 150, 24.03.2023",
       "url": "https://monitorul.gov.md/ro/monitor/2624",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1) lit. i)", "ru": "Трудовой кодекс, ст. 111 ч. (1) п. i)", "en": "Labour Code, art. 111(1)(i)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. i)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. i)",
+        "en": "Labour Code, art. 111(1)(i)"
+      },
       "quote": "în art. 111 alin. (1) lit. i), textul „Limba noastră” se substituie cu textul „Ziua Limbii Române”",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -67,7 +87,11 @@
       "article": "art. I (art. 111 alin. (1) lit. g^2))",
       "publication": "Monitorul Oficial nr. 223-226, art. 392, 30.06.2023",
       "url": "https://monitorul.gov.md/ro/monitor/2734",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (1) lit. g²)", "ru": "Трудовой кодекс, ст. 111 ч. (1) п. g²)", "en": "Labour Code, art. 111(1)(g²)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. g²)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. g²)",
+        "en": "Labour Code, art. 111(1)(g²)"
+      },
       "quote": "g2) 1 iunie - Ziua Internațională a Copilului;",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -78,7 +102,11 @@
       "article": "art. 389",
       "publication": "Monitorul Oficial nr. 66-75, art. 132, 01.03.2019",
       "url": "https://monitorul.gov.md/ro/monitor/2103",
-      "cite": { "ro": "Codul civil, art. 389", "ru": "Гражданский кодекс, ст. 389", "en": "Civil Code, art. 389" },
+      "cite": {
+        "ro": "Codul civil, art. 389",
+        "ru": "Гражданский кодекс, ст. 389",
+        "en": "Civil Code, art. 389"
+      },
       "quote": "Articolul 389. Expirarea termenului într-o zi de odihnă. Dacă ultima zi a termenului este o zi de duminică, de sîmbătă sau o zi care, în conformitate cu legea în vigoare, la locul executării obligaţiei este zi de odihnă, termenul expiră în următoarea zi lucrătoare.",
       "readIn": "act",
       "readOn": "2026-10-15",
@@ -89,79 +117,171 @@
       "article": "art. I pct. 4 (Codul muncii art. 111 alin. (5))",
       "publication": "Monitorul Oficial nr. 124-125, art. 222, 26.05.2020",
       "url": "https://monitorul.gov.md/ro/monitor/2209",
-      "cite": { "ro": "Codul muncii, art. 111 alin. (5)", "ru": "Трудовой кодекс, ст. 111 ч. (5)", "en": "Labour Code, art. 111(5)" },
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (5)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (5)",
+        "en": "Labour Code, art. 111(5)"
+      },
       "quote": "În scopul utilizării optime de către salariați a zilelor de repaus și de sărbătoare nelucrătoare, conducătorul unității, după consultarea reprezentanților salariaților, este în drept să transfere zilele de repaus (de lucru) în alte zile. Pentru autoritățile și instituțiile publice, dreptul de a transfera zilele de repaus (de lucru) în alte zile, inclusiv prin modificarea duratei zilnice a timpului de muncă, aparține Guvernului.",
       "readIn": "act",
       "readOn": "2026-10-15",
       "verified": false
+    },
+    {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "article": "art. 111 alin. (1) lit. j)",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "url": "https://monitorul.gov.md/ro/monitor/1148",
+      "cite": {
+        "ro": "Codul muncii, art. 111 alin. (1) lit. j)",
+        "ru": "Трудовой кодекс, ст. 111 ч. (1) п. j)",
+        "en": "Labour Code, art. 111(1)(j)"
+      },
+      "quote": "j) ziua Hramului bisericii din localitatea respectivă, declarată în modul stabilit de primăria municipiului, orașului, comunei, satului.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "The 2003 text; a 2016 consolidated copy reads 'consiliul local' for 'primăria'. A hram day is a day off only in its locality, so it never moves a national deadline here.",
+      "verified": false
+    },
+    {
+      "act": "Instituția Publică Cadastrul Bunurilor Imobile · Cu ocazia Hramului localităților din data de 14.10.2025",
+      "article": "comunicat",
+      "url": "https://www.ipcbi.gov.md/ro/print/pdf/node/1314",
+      "cite": {
+        "ro": "Cadastrul Bunurilor Imobile, comunicat (14.10.2025)",
+        "ru": "Кадастр недвижимого имущества, сообщение (14.10.2025)",
+        "en": "Real Estate Cadastre, notice (14.10.2025)"
+      },
+      "quote": "În legătură cu celebrarea Hramului localităților, Instituția Publică Cadastrul Bunurilor Imobile informează că pentru Serviciile cadastrale teritoriale din orașele Chișinău, Briceni, Florești, Rezina și Vulcănești, ziua de 14 octombrie, este declarată zi de odihnă.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Agenția Servicii Publice · programul subdiviziunilor la 14 octombrie 2026, de Hramul municipiului Chișinău",
+      "article": "comunicat",
+      "url": "https://unimedia.info/ro/news/101b4bef67d3594b/atentie-cetateni-cum-vor-functiona-centrele-asp-pe-14-octombrie-de-hramul-chisinaului-si-al-altor-5-localitati.html",
+      "cite": {
+        "ro": "Agenția Servicii Publice, comunicat (14.10.2026)",
+        "ru": "Агентство государственных услуг, сообщение (14.10.2026)",
+        "en": "Public Services Agency, notice (14.10.2026)"
+      },
+      "quote": "Cu prilejul Hramului municipiului Chișinău și al orașelor Briceni, Florești, Rezina, Vulcănești și Bender, marcat la data de 14 octombrie, Agenția Servicii Publice informează că, pentru subdiviziunile teritoriale din localitățile menționate, ziua de 14 octombrie 2026 va fi declarată zi de odihnă.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "ASP's notice as relayed word for word by UNIMEDIA on 12.10.2026; asp.gov.md did not answer the request. The press also reports the city hall declaring the day non-working in Chișinău; its decision was not found.",
+      "verified": false
     }
   ],
   "weekend": {
-    "days": [6, 7],
+    "days": [
+      6,
+      7
+    ],
     "sourceIndex": 6,
     "note": "Saturday and Sunday, as the Civil Code names them for the end of a term. For working time and payroll proration the Labour Code's own rule on the weekly rest days (art. 107) is still to be read and cited."
   },
   "holidays": [
     {
       "id": "new_year",
-      "name": { "ro": "Anul Nou", "ru": "Новый год", "en": "New Year's Day" },
+      "name": {
+        "ro": "Anul Nou",
+        "ru": "Новый год",
+        "en": "New Year's Day"
+      },
       "date": "--01-01",
       "sourceIndex": 0
     },
     {
       "id": "christmas_old_1",
-      "name": { "ro": "Crăciunul pe stil vechi", "ru": "Рождество Христово по старому стилю", "en": "Christmas, Orthodox calendar" },
+      "name": {
+        "ro": "Crăciunul pe stil vechi",
+        "ru": "Рождество Христово по старому стилю",
+        "en": "Christmas, Orthodox calendar"
+      },
       "date": "--01-07",
       "sourceIndex": 0,
       "note": "Art. 111 alin. (1) lit. b): 7 and 8 January; 'pe stil vechi' added by Law 310/2013."
     },
     {
       "id": "christmas_old_2",
-      "name": { "ro": "Crăciunul pe stil vechi, a doua zi", "ru": "Рождество Христово по старому стилю, второй день", "en": "Christmas, Orthodox calendar, second day" },
+      "name": {
+        "ro": "Crăciunul pe stil vechi, a doua zi",
+        "ru": "Рождество Христово по старому стилю, второй день",
+        "en": "Christmas, Orthodox calendar, second day"
+      },
       "date": "--01-08",
       "sourceIndex": 0
     },
     {
       "id": "womens_day",
-      "name": { "ro": "Ziua internațională a femeii", "ru": "Международный женский день", "en": "International Women's Day" },
+      "name": {
+        "ro": "Ziua internațională a femeii",
+        "ru": "Международный женский день",
+        "en": "International Women's Day"
+      },
       "date": "--03-08",
       "sourceIndex": 0
     },
     {
       "id": "easter",
-      "name": { "ro": "Paștele", "ru": "Пасха", "en": "Easter Sunday" },
+      "name": {
+        "ro": "Paștele",
+        "ru": "Пасха",
+        "en": "Easter Sunday"
+      },
       "easterOffset": 0,
       "sourceIndex": 0,
       "note": "Lit. d): 'prima și a doua zi de Paște conform calendarului bisericesc', Orthodox Easter by the Julian computus."
     },
     {
       "id": "easter_monday",
-      "name": { "ro": "Paștele, a doua zi", "ru": "Пасха, второй день", "en": "Easter Monday" },
+      "name": {
+        "ro": "Paștele, a doua zi",
+        "ru": "Пасха, второй день",
+        "en": "Easter Monday"
+      },
       "easterOffset": 1,
       "sourceIndex": 0
     },
     {
       "id": "memorial_day",
-      "name": { "ro": "Paștele Blajinilor", "ru": "Радоница (Пасха блаженных)", "en": "Memorial Day (Paștele Blajinilor)" },
+      "name": {
+        "ro": "Paștele Blajinilor",
+        "ru": "Радоница (Пасха блаженных)",
+        "en": "Memorial Day (Paștele Blajinilor)"
+      },
       "easterOffset": 8,
       "sourceIndex": 0,
       "note": "Lit. e): 'ziua de luni la o săptămînă după Paște', Easter Sunday plus eight days."
     },
     {
       "id": "labour_day",
-      "name": { "ro": "Ziua internațională a solidarității oamenilor muncii", "ru": "Международный день солидарности трудящихся", "en": "International Workers' Day" },
+      "name": {
+        "ro": "Ziua internațională a solidarității oamenilor muncii",
+        "ru": "Международный день солидарности трудящихся",
+        "en": "International Workers' Day"
+      },
       "date": "--05-01",
       "sourceIndex": 0
     },
     {
       "id": "victory_day",
-      "name": { "ro": "Ziua Victoriei și a comemorării eroilor căzuți pentru independența Patriei", "ru": "День Победы и памяти героев, павших за независимость Родины", "en": "Victory Day and Remembrance of the heroes who fell for the independence of the Homeland" },
+      "name": {
+        "ro": "Ziua Victoriei și a comemorării eroilor căzuți pentru independența Patriei",
+        "ru": "День Победы и памяти героев, павших за независимость Родины",
+        "en": "Victory Day and Remembrance of the heroes who fell for the independence of the Homeland"
+      },
       "date": "--05-09",
       "sourceIndex": 0
     },
     {
       "id": "europe_day",
-      "name": { "ro": "Ziua Europei", "ru": "День Европы", "en": "Europe Day" },
+      "name": {
+        "ro": "Ziua Europei",
+        "ru": "День Европы",
+        "en": "Europe Day"
+      },
       "date": "--05-09",
       "effectiveFrom": "2018-12-12",
       "sourceIndex": 3,
@@ -169,27 +289,43 @@
     },
     {
       "id": "childrens_day",
-      "name": { "ro": "Ziua Internațională a Copilului", "ru": "Международный день защиты детей", "en": "International Children's Day" },
+      "name": {
+        "ro": "Ziua Internațională a Copilului",
+        "ru": "Международный день защиты детей",
+        "en": "International Children's Day"
+      },
       "date": "--06-01",
       "effectiveFrom": "2023-06-30",
       "sourceIndex": 5
     },
     {
       "id": "independence_day",
-      "name": { "ro": "Ziua Independenței", "ru": "День независимости", "en": "Independence Day" },
+      "name": {
+        "ro": "Ziua Independenței",
+        "ru": "День независимости",
+        "en": "Independence Day"
+      },
       "date": "--08-27",
       "sourceIndex": 1
     },
     {
       "id": "romanian_language_day",
-      "name": { "ro": "Ziua Limbii Române", "ru": "День румынского языка", "en": "Romanian Language Day" },
+      "name": {
+        "ro": "Ziua Limbii Române",
+        "ru": "День румынского языка",
+        "en": "Romanian Language Day"
+      },
       "date": "--08-31",
       "sourceIndex": 4,
       "note": "Lit. i), named 'Limba noastră' until Law 52/2023."
     },
     {
       "id": "christmas_new",
-      "name": { "ro": "Crăciunul pe stil nou", "ru": "Рождество Христово по новому стилю", "en": "Christmas" },
+      "name": {
+        "ro": "Crăciunul pe stil nou",
+        "ru": "Рождество Христово по новому стилю",
+        "en": "Christmas"
+      },
       "date": "--12-25",
       "effectiveFrom": "2014-01-21",
       "sourceIndex": 2
@@ -216,5 +352,37 @@
         "en": "The Government has transferred no rest days in 2026, as of 13 October. A Government transfer binds only public authorities and institutions; a private employer may transfer days itself after consulting its employees."
       }
     }
-  }
+  },
+  "localDays": [
+    {
+      "date": "2025-10-14",
+      "name": {
+        "ro": "Hramul localităților",
+        "ru": "Храмовый праздник населённых пунктов",
+        "en": "Patron saint's day of the localities"
+      },
+      "places": {
+        "ro": "Chișinău, Briceni, Florești, Rezina, Vulcănești",
+        "ru": "Кишинёв, Бричень, Флорешть, Резина, Вулкэнешть",
+        "en": "Chișinău, Briceni, Florești, Rezina, Vulcănești"
+      },
+      "basisIndex": 8,
+      "sourceIndex": 9
+    },
+    {
+      "date": "2026-10-14",
+      "name": {
+        "ro": "Hramul localităților",
+        "ru": "Храмовый праздник населённых пунктов",
+        "en": "Patron saint's day of the localities"
+      },
+      "places": {
+        "ro": "Chișinău, Briceni, Florești, Rezina, Vulcănești, Bender",
+        "ru": "Кишинёв, Бричень, Флорешть, Резина, Вулкэнешть, Бендеры",
+        "en": "Chișinău, Briceni, Florești, Rezina, Vulcănești, Bender"
+      },
+      "basisIndex": 8,
+      "sourceIndex": 10
+    }
+  ]
 }

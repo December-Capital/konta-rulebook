@@ -255,6 +255,10 @@ export async function expand({ from, to, dir } = {}) {
       if (date >= from && date <= to) days.push({ date, worked: { restDay: t.restDay, sourceIndex: t.sourceIndex } });
     }
   }
+  // Days off in some localities only: on the calendar, never in the working-day arithmetic.
+  for (const l of holidays.localDays ?? []) {
+    if (l.date >= from && l.date <= to) days.push({ date: l.date, local: [l] });
+  }
   days.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
   const deadlines = loaded.deadlines.flatMap((file) =>
