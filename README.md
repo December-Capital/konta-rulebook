@@ -34,8 +34,20 @@ Tot aici sunt termenele de depunere și de plată (TVA12, IPC21, VEN12, IU17, co
 primele CNAM, rapoartele statistice și celelalte), zilele de sărbătoare din Codul muncii și
 schimbările din lege, fiecare cu actul și articolul din care vine. Un termen care cade într-o zi de
 odihnă se mută doar când actul o cere, iar un program verifică datele calculate cu cele publicate de
-SFS și CNAS. Din aceleași fișiere se va genera calendarul de pe konta.md, cu abonament în
-calendarul telefonului și flux RSS al schimbărilor.
+SFS și CNAS. Din aceleași fișiere se generează calendarul de pe
+[konta.md/calendar](https://konta.md/calendar/), cu abonament în calendarul telefonului și flux RSS
+al schimbărilor.
+
+## Exemple de calcul al salariului
+
+În `vectors/payroll-md-2026.json` sunt exemple de salarii calculate lună de lună după metoda
+cumulativă din HG nr. 697/2014, cu valorile din `md-2026`: primul este exemplul publicat de SFS
+(brut 10.000 lei, primă 900, scutire 2.475, venit impozabil 6.625, impozit 795, net 8.305,
+CNAS 2.400), apoi persoane întreținute, plafonul scutirii personale și rotunjirea la ban. Aceleași
+exemple le trec două programe scrise separat: calculul salariilor din aplicația Konta și
+calculatorul de pe [konta.md/calculator-salariu](https://konta.md/calculator-salariu/). Dacă unul
+dintre ele diferă cu un ban, testele lui cad. Fișierul nu repetă cotele: cine îl rulează le citește
+din acest registru, așa că o cotă schimbată aici face exemplele să cadă până sunt recalculate.
 
 ## Ce nu știm încă
 

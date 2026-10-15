@@ -1,0 +1,715 @@
+{
+  "about": "Payroll vectors for the 2026 rules: one employee, month by month, by the cumulative method of HG 697/2014. Each case runs its months in order from the start of the year; a month's year-to-date is the sum of the months before it. The rules are not repeated here: whoever runs the vectors reads them from this rulebook as of asOf (md-2026), so a value that changes there fails the vectors until they are recomputed and checked again. Amounts are lei as decimal strings with two decimals. Read by konta (backend/tests/Konta.Golden.Tests/PayrollVectorsTests.cs, over Konta.Domain.Payroll.PayrollArithmetic) and by konta-www (tools/test-salary.mjs, over assets/salary.js, the konta.md salary calculator), which must agree to the ban.",
+  "asOf": "2026-01-31",
+  "method": "cumulative",
+  "fields": {
+    "gross": "the month's salary",
+    "personalMonths": "months of the year through this one the personal exemption is owed for",
+    "dependantMonths": "dependant-months owed through this one",
+    "medical": "CNAM premium withheld",
+    "exemption": "exemptions granted this month (negative when the personal exemption is withdrawn)",
+    "taxable": "this month's share of the year's taxable income",
+    "incomeTax": "income tax withheld",
+    "net": "paid to the employee",
+    "social": "the employer's CNAS contribution"
+  },
+  "cases": [
+    {
+      "id": "sfs-worked-example",
+      "about": "The worked example SFS and the professional press publish: 10,000 a month with the personal exemption.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Computes_the_published_worked_example",
+      "months": [
+        {
+          "gross": "10000.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "2475.00",
+            "taxable": "6625.00",
+            "incomeTax": "795.00",
+            "net": "8305.00",
+            "social": "2400.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "second-month",
+      "about": "A second month at the same salary withholds the year so far less what January withheld, which comes to the same.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.A_second_month_withholds_the_year_so_far_less_what_was_withheld",
+      "months": [
+        {
+          "gross": "10000.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "2475.00",
+            "taxable": "6625.00",
+            "incomeTax": "795.00",
+            "net": "8305.00",
+            "social": "2400.00"
+          }
+        },
+        {
+          "gross": "10000.00",
+          "personalMonths": 2,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "2475.00",
+            "taxable": "6625.00",
+            "incomeTax": "795.00",
+            "net": "8305.00",
+            "social": "2400.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "two-dependants",
+      "about": "Two dependants for one month add 2 x 9,900 / 12 = 1,650 to the personal 2,475.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Dependants_add_their_exemption_per_month",
+      "months": [
+        {
+          "gross": "10000.00",
+          "personalMonths": 1,
+          "dependantMonths": 2,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "4125.00",
+            "taxable": "4975.00",
+            "incomeTax": "597.00",
+            "net": "8503.00",
+            "social": "2400.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-exemption",
+      "about": "Without the personal exemption the whole salary less the premium is taxed.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Without_the_personal_exemption_the_whole_salary_less_the_premium_is_taxed",
+      "months": [
+        {
+          "gross": "10000.00",
+          "personalMonths": 0,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "0.00",
+            "taxable": "9100.00",
+            "incomeTax": "1092.00",
+            "net": "8008.00",
+            "social": "2400.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "three-months-owed",
+      "about": "Hired in January, first paid in March: three months of exemption against March.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Exemptions_owed_for_months_without_salary_are_granted_when_salary_comes",
+      "months": [
+        {
+          "gross": "10000.00",
+          "personalMonths": 3,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "900.00",
+            "exemption": "7425.00",
+            "taxable": "1675.00",
+            "incomeTax": "201.00",
+            "net": "8899.00",
+            "social": "2400.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exemption-exceeds-salary",
+      "about": "A month whose exemption exceeds its salary withholds no tax.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.A_month_whose_exemption_exceeds_its_salary_withholds_nothing",
+      "months": [
+        {
+          "gross": "2000.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "180.00",
+            "exemption": "2475.00",
+            "taxable": "0.00",
+            "incomeTax": "0.00",
+            "net": "1820.00",
+            "social": "480.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "passing-the-cap",
+      "about": "40,000 a month: through September the year is at 360,000 and the exemption is owed; October passes the cap and gives the nine months back as tax; November and December have none.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Passing_the_cap_withdraws_the_year_s_personal_exemption (extended to December)",
+      "months": [
+        {
+          "gross": "40000.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 2,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 3,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 4,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 5,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 6,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 7,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 8,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 9,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "2475.00",
+            "taxable": "33925.00",
+            "incomeTax": "4071.00",
+            "net": "32329.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 10,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "-22275.00",
+            "taxable": "58675.00",
+            "incomeTax": "7041.00",
+            "net": "29359.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 11,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "0.00",
+            "taxable": "36400.00",
+            "incomeTax": "4368.00",
+            "net": "32032.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 12,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "0.00",
+            "taxable": "36400.00",
+            "incomeTax": "4368.00",
+            "net": "32032.00",
+            "social": "9600.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "at-the-cap",
+      "about": "30,000 a month: the year reaches 360,000 and does not pass it, so the exemption stays every month.",
+      "months": [
+        {
+          "gross": "30000.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 2,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 3,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 4,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 5,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 6,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 7,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 8,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 9,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 10,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 11,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        },
+        {
+          "gross": "30000.00",
+          "personalMonths": 12,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "2700.00",
+            "exemption": "2475.00",
+            "taxable": "24825.00",
+            "incomeTax": "2979.00",
+            "net": "24321.00",
+            "social": "7200.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cap-keeps-dependants",
+      "about": "40,000 a month with one dependant: passing the cap withdraws the personal exemption, never the dependant's.",
+      "months": [
+        {
+          "gross": "40000.00",
+          "personalMonths": 1,
+          "dependantMonths": 1,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 2,
+          "dependantMonths": 2,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 3,
+          "dependantMonths": 3,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 4,
+          "dependantMonths": 4,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 5,
+          "dependantMonths": 5,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 6,
+          "dependantMonths": 6,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 7,
+          "dependantMonths": 7,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 8,
+          "dependantMonths": 8,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 9,
+          "dependantMonths": 9,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "3300.00",
+            "taxable": "33100.00",
+            "incomeTax": "3972.00",
+            "net": "32428.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 10,
+          "dependantMonths": 10,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "-21450.00",
+            "taxable": "57850.00",
+            "incomeTax": "6942.00",
+            "net": "29458.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 11,
+          "dependantMonths": 11,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "825.00",
+            "taxable": "35575.00",
+            "incomeTax": "4269.00",
+            "net": "32131.00",
+            "social": "9600.00"
+          }
+        },
+        {
+          "gross": "40000.00",
+          "personalMonths": 12,
+          "dependantMonths": 12,
+          "expect": {
+            "medical": "3600.00",
+            "exemption": "825.00",
+            "taxable": "35575.00",
+            "incomeTax": "4269.00",
+            "net": "32131.00",
+            "social": "9600.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rounding-to-the-ban",
+      "about": "Premium, contribution and tax each rounded to the ban: 111.1113, 296.2968, 134.8152.",
+      "alsoIn": "konta: backend/tests/Konta.Domain.Tests/PayrollArithmeticTests.Premiums_and_contributions_are_rounded_to_the_ban",
+      "months": [
+        {
+          "gross": "1234.57",
+          "personalMonths": 0,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "111.11",
+            "exemption": "0.00",
+            "taxable": "1123.46",
+            "incomeTax": "134.82",
+            "net": "988.64",
+            "social": "296.30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "half-a-ban",
+      "about": "The premium lands on half a ban, 1,111.185, and rounds away from zero to 1,111.19; half to even would give 1,111.18.",
+      "months": [
+        {
+          "gross": "12346.50",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "1111.19",
+            "exemption": "2475.00",
+            "taxable": "8760.31",
+            "incomeTax": "1051.24",
+            "net": "10184.07",
+            "social": "2963.16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "minimum-wage",
+      "about": "The 2026 minimum wage, 6,300, with the personal exemption.",
+      "months": [
+        {
+          "gross": "6300.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "567.00",
+            "exemption": "2475.00",
+            "taxable": "3258.00",
+            "incomeTax": "390.96",
+            "net": "5342.04",
+            "social": "1512.00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nothing-paid",
+      "about": "No salary in the month: nothing withheld, nothing paid, the exemption still owed.",
+      "months": [
+        {
+          "gross": "0.00",
+          "personalMonths": 1,
+          "dependantMonths": 0,
+          "expect": {
+            "medical": "0.00",
+            "exemption": "2475.00",
+            "taxable": "0.00",
+            "incomeTax": "0.00",
+            "net": "0.00",
+            "social": "0.00"
+          }
+        }
+      ]
+    }
+  ]
+}

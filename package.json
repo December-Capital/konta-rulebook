@@ -28,7 +28,8 @@
     "data",
     "schemas",
     "sources",
-    "tools"
+    "tools",
+    "vectors"
   ],
   "keywords": [
     "moldova",
