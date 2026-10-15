@@ -1,0 +1,1572 @@
+{
+  "$schema": "../schemas/calendar.schema.json",
+  "id": "md-deadlines",
+  "kind": "deadlines",
+  "jurisdiction": "MD",
+  "publishedOn": "2026-10-15",
+  "status": "draft",
+  "notes": "DRAFT. Filing and payment deadlines a working accountant checks each month, as rules, from 2026. Read on 2026-10-15: where the act's own text was found in Monitorul Oficial (an amending law quoting the article), readIn is 'act'; where only the authority's own words were reachable (SFS's monthly notices and its Q&A base, relayed word for word on monitorul.fisc.md because sfs.md refuses automated requests; CNAS notices on cnas.gov.md; BNS's forms pages), readIn is 'authority' and the note says where the article's wording was seen. Every article is to be read by hand in the consolidated text on legis.md before this file is approved; the list is in docs/FORMAT.md. Deliberately not here: the excise, environment, wine, gas-fuel, oversize-vehicle and dividend returns of particular trades (ACZ09, POLMED25, EMPOLDEP19, CFV21, TGN07, TDL13, DDP24, TFSP20, TRN21), road tax (paid at the vehicle's inspection, no calendar date), and individuals' own returns. They are in SFS's calendar on sfs.md.",
+  "sources": [
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 129 pct. 8)",
+      "url": "https://monitorul.fisc.md/questions/5-32119-care-termen-de-stingere-a-obligatiei-fiscale-.html",
+      "cite": {
+        "ro": "Codul fiscal, art. 129 pct. 8)",
+        "ru": "Налоговый кодекс, ст. 129 п. 8)",
+        "en": "Fiscal Code, art. 129 item 8)"
+      },
+      "quote": "8) Termen de stingere a obligaţiei fiscale - perioadă, stabilită conform legislaţiei fiscale, în care trebuie să fie executată obligaţia fiscală, incluzînd şi ultima sa zi în orele de program ale Serviciului Fiscal de Stat. Dacă ultima zi a perioadei este una de odihnă, se va considera o ultimă zi prima zi lucrătoare care urmează după ziua de odihnă. În cazul prezentării dărilor de seamă în format electronic, ultima zi se consideră ziua deplină. În mod analogic se determină şi termenele de executare a altor acţiuni prevăzute de legislaţia fiscală.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "Quoted by SFS's Baza generalizată a practicii fiscale (item 32.1.19), relayed on monitorul.fisc.md; the same words in FISC.md's consolidated Fiscal Code (2017, 2020). Not restated by any amending law found in Monitorul Oficial. SFS applies it to every deadline: 25.12.2025 to 26.12.2025, 25.01.2026 to 26.01.2026, 25.07.2026 to 27.07.2026, 31.08.2026 to 01.09.2026. The Civil Code art. 389 (Monitorul Oficial nr. 66-75/2019, art. 132) says the same for terms in general.",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 115 alin. (1) și (2)",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-februarie-2026/",
+      "cite": {
+        "ro": "Codul fiscal, art. 115 alin. (1) și (2)",
+        "ru": "Налоговый кодекс, ст. 115 ч. (1) и (2)",
+        "en": "Fiscal Code, art. 115(1) and (2)"
+      },
+      "quote": "Serviciul Fiscal de Stat informează despre faptul că, termenul limită de prezentare a dărilor de seamă fiscale, precum și termenul de achitare a impozitelor, taxelor, primelor de asigurare obligatorie de asistență medicală și a contribuțiilor de asigurări sociale este data de 25 februarie 2026. [...] Taxei pe valoare adăugată, accizelor (Forma TVA12, Forma ACZ09)",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "SFS's notice for February 2026. The article's words, read in FISC.md's consolidated text: alin. (1) 'Declaraţia se întocmeşte pe un formular oficial, care este prezentat la Serviciul Fiscal de Stat nu mai tîrziu de data de 25 a lunii care urmează după încheierea perioadei fiscale'; alin. (2) VAT is paid 'cel tîrziu la data stabilită pentru prezentarea declaraţiei pe această perioadă'. Law 171/2019 art. I pct. 53-54 (Monitorul Oficial nr. 393-399/2019, art. 319) amended only the list of subjects in alin. (1).",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 92 alin. (1) și (2)",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-iulie-2026/",
+      "cite": {
+        "ro": "Codul fiscal, art. 92 alin. (1) și (2)",
+        "ru": "Налоговый кодекс, ст. 92 ч. (1) и (2)",
+        "en": "Fiscal Code, art. 92(1) and (2)"
+      },
+      "quote": "termenul limită de prezentare a dărilor de seamă fiscale pentru luna iunie 2026 și termenul de achitare a impozitelor, taxelor, primelor de asigurare obligatorie de asistență medicală și contribuțiilor de asigurări sociale de stat obligatorii aferente plăților salariale, este data de 27 iulie 2026. Dările de seamă fiscale care urmează să fie prezentate către data menționată, sunt aferente: Impozitului pe venit (Forma IPC21, Forma IU17)",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "SFS's notice for July 2026. The article's words, read in FISC.md's consolidated text: '(1) Impozitul reţinut conform art. 88-91 se achită la buget de către persoana care a efectuat reţinerea pînă la data de 25 a lunii următoare lunii în care au fost efectuate plăţile. (2) Dările de seamă fiscale privind veniturile achitate şi impozitul pe venit reţinut la sursa de plată se prezintă [...] pînă la data de 25 a lunii următoare lunii în care au fost efectuate plăţile'.",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale, anexa nr. 1, în redacția Legii nr. 257/2020",
+      "article": "anexa nr. 1 pct. 1.1, coloana „Termenele de virare”; art. 20 alin. (5)",
+      "publication": "Monitorul Oficial nr. 353-357, art. 288, 22.12.2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2264",
+      "cite": {
+        "ro": "Legea 489/1999, anexa 1 pct. 1.1",
+        "ru": "Закон 489/1999, приложение 1 п. 1.1",
+        "en": "Law 489/1999, annex 1 item 1.1"
+      },
+      "quote": "24% la suma salariilor și recompenselor calculate lunar pentru toți angajații - pentru angajatorii sectorului privat [...] | Lunar, până la data de 25 a lunii următoare lunii de gestiune",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
+      "article": "art. 4 alin. (1)",
+      "publication": "Monitorul Oficial nr. 659-661, art. 798, 31.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
+      "cite": {
+        "ro": "Legea 321/2025, art. 4 alin. (1)",
+        "ru": "Закон 321/2025, ст. 4 ч. (1)",
+        "en": "Law 321/2025, art. 4(1)"
+      },
+      "quote": "Prima de asigurare obligatorie de asistență medicală în formă de contribuție procentuală la salariu și la alte recompense [...] se stabilește în mărime de 9,0%.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "The 25th for the premium is in Law 1593/2002 art. 20 alin. (1) and art. 26 alin. (1), read only in secondary text; SFS's notices give the same day for 'primelor de asigurare obligatorie de asistență medicală'.",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 94/2020 cu privire la aprobarea formularului IPC21",
+      "article": "anexa nr. 2 pct. 2 și 7",
+      "publication": "Monitorul Oficial nr. 199-204, art. 687, 07.08.2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2232",
+      "cite": {
+        "ro": "Ordinul MF nr. 94/2020 (formularul IPC21)",
+        "ru": "Приказ МФ № 94/2020 (форма IPC21)",
+        "en": "Ministry of Finance Order 94/2020 (form IPC21)"
+      },
+      "quote": "Darea de seamă nominalizată se prezintă, în termenul stabilit de legislaţia fiscală, subdiviziunilor Serviciului Fiscal de Stat [...] angajatorii care în luna de gestiune nu efectuează plăţi în folosul persoanelor fizice, nu calculează contribuţii de asigurări sociale şi nu au angajaţi, nu au obligaţia de a prezenta darea de seamă (Forma IPC21) pentru luna de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 145/2017 pentru modificarea și completarea unor acte legislative (Codul fiscal, titlul X, impozitul unic al rezidenților parcurilor IT)",
+      "article": "art. I pct. 15 (Codul fiscal art. 373 alin. (1) și (2))",
+      "publication": "Monitorul Oficial nr. 277-288, art. 473, 04.08.2017",
+      "url": "https://monitorul.gov.md/ro/monitor/1985",
+      "cite": {
+        "ro": "Codul fiscal, art. 373 alin. (1) și (2)",
+        "ru": "Налоговый кодекс, ст. 373 ч. (1) и (2)",
+        "en": "Fiscal Code, art. 373(1) and (2)"
+      },
+      "quote": "Calculul și raportarea impozitului unic se efectuează de către rezidenții parcurilor pentru tehnologia informației lunar, prin prezentarea unei dări de seamă către Serviciul Fiscal de Stat, pînă la data de 25 a lunii următoare lunii de gestiune. [...] Impozitul unic se achită integral la bugetul de stat de către rezidenţii parcurilor pentru tehnologia informaţiei lunar, pînă la data de 25 a lunii următoare lunii de gestiune",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 281/2016 pentru modificarea și completarea unor acte legislative",
+      "article": "art. I pct. 51 (Codul fiscal art. 83 alin. (4))",
+      "publication": "Monitorul Oficial nr. 472-477, art. 947, 27.12.2016",
+      "url": "https://monitorul.gov.md/ro/monitor/210",
+      "cite": {
+        "ro": "Codul fiscal, art. 83 alin. (4)",
+        "ru": "Налоговый кодекс, ст. 83 ч. (4)",
+        "en": "Fiscal Code, art. 83(4)"
+      },
+      "quote": "Declaraţia cu privire la impozitul pe venit se prezintă Serviciului Fiscal de Stat nu mai tîrziu de data de 25 a lunii a treia după finele perioadei fiscale de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "Law 288/2017 art. I pct. 38 (Monitorul Oficial nr. 464-470/2017, art. 808) restated alin. (4) in two letters, keeping 'data de 25 a lunii a treia după finele perioadei fiscale de gestiune' for legal entities.",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 84 alin. (1) și (4)",
+      "url": "https://monitorul.fisc.md/questions/291119-cum-urmeaza-a-fi-aplicate-prevederile-art-84-din-codul-fiscal-in-cazul-in-care-agentul-economic-si-a-schimbat-regimul-cu-privire-la-impozitul-pe-venit-pe-parcursul-anului-din-regimul-general-de-aplicare-a-impozitului-pe-venit-la-regimul-simm-sau-invers_2.html",
+      "cite": {
+        "ro": "Codul fiscal, art. 84 alin. (1)",
+        "ru": "Налоговый кодекс, ст. 84 ч. (1)",
+        "en": "Fiscal Code, art. 84(1)"
+      },
+      "quote": "agenții economici sînt obligați să achite, nu mai tîrziu de 25 martie, 25 iunie, 25 septembrie și 25 decembrie ale anului fiscal, sume egale cu 1/4 din: (a) suma calculată drept impozit ce urmează a fi plătit, conform prezentului titlu, pentru anul respectiv; sau (b) impozitul ce urma să fie plătit, conform prezentului titlu, pentru anul precedent.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "Quoted by SFS's Baza generalizată a practicii fiscale (item 29.1.11.9, 20.12.2021), relayed on monitorul.fisc.md; the same words in FISC.md's consolidated text. Alin. (4): not for the IVAO regime (cap. 7^1). Alin. (6) (Law 356/2022, Monitorul Oficial nr. 456-459/2022, art. 813) exempted the SMEs of art. 87 alin. (1^1) for 2023-2025; Law 318/2025 extended art. 87 alin. (1^1) to 2026 but no extension of art. 84 alin. (6) was found: to be read on legis.md.",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 92 alin. (3)",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-ianuarie-2026/",
+      "cite": {
+        "ro": "Codul fiscal, art. 92 alin. (3)",
+        "ru": "Налоговый кодекс, ст. 92 ч. (3)",
+        "en": "Fiscal Code, art. 92(3)"
+      },
+      "quote": "termenul limită de prezentare a dărilor de seamă fiscale [...] este data de 26 ianuarie [...] IALS21 [...] INR14 [...] ISAPTI17",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "SFS's notice for January 2026 (it misprints the year as 2025). The article's words, read in FISC.md's consolidated text: 'vor prezenta Serviciului Fiscal de Stat, pînă la data de 25 a lunii următoare încheierii anului fiscal, o dare de seamă'. Law 60/2020 art. I pct. 8 (Monitorul Oficial nr. 108-109/2020) amended its exceptions only.",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "article": "art. 54^4 alin. (2)",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-iulie-2026/",
+      "cite": {
+        "ro": "Codul fiscal, art. 54⁴ alin. (2)",
+        "ru": "Налоговый кодекс, ст. 54⁴ ч. (2)",
+        "en": "Fiscal Code, art. 54⁴(2)"
+      },
+      "quote": "dările de seamă fiscale care urmează să fie prezentate și/sau achitate impozitele către data de 27 iulie 2026, pentru trimestrul II al anului 2026, sunt aferente: [...] Impozitului pe venitul agenților economici subiecți ai sectorului întreprinderilor mici și mijlocii",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "SFS's notice for July 2026. The article's words, read in FISC.md's consolidated text (2017) and lex.md: '(2) Calcularea impozitului se efectuează anual. Achitarea impozitului la buget se efectuează în rate, trimestrial, pînă la data de 25 a lunii următoare trimestrului corespunzător. (3) Darea de seamă privind impozitul pe venit se prezintă nu mai tîrziu de 25 martie a anului următor perioadei fiscale de declarare.'",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 228/2025 pentru modificarea unor acte normative (privind activitatea economică independentă a persoanelor fizice)",
+      "article": "art. I pct. 4 (Codul fiscal art. 69^26 alin. (2))",
+      "publication": "Monitorul Oficial nr. 452-455, art. 623, 29.08.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3147",
+      "cite": {
+        "ro": "Codul fiscal, art. 69²⁶ alin. (2)",
+        "ru": "Налоговый кодекс, ст. 69²⁶ ч. (2)",
+        "en": "Fiscal Code, art. 69²⁶(2)"
+      },
+      "quote": "Calcularea impozitului unic se efectuează lunar de către Serviciul Fiscal de Stat, prin remiterea avizelor de plată până la data de 10 a lunii următoare lunii de gestiune. Achitarea impozitului unic se efectuează lunar, până la data de 25 a lunii următoare lunii de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "In force 1 January 2026 (art. VI alin. (1)).",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 71/2018 (anexele 5-6 la Ordinul nr. 126/2017, formularul CAS18-AN)",
+      "article": "anexa nr. 6 pct. 5",
+      "publication": "Monitorul Oficial nr. 108-112, art. 428, 30.03.2018",
+      "url": "https://monitorul.gov.md/ro/monitor/2031",
+      "cite": {
+        "ro": "Ordinul MF nr. 71/2018, anexa 6 pct. 5",
+        "ru": "Приказ МФ № 71/2018, приложение 6 п. 5",
+        "en": "Ministry of Finance Order 71/2018, annex 6 item 5"
+      },
+      "quote": "Termenul de prezentare este pînă la data de 15 ianuarie a anului următor celui de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "Who files was amended several times (last by OMF 56/2026, Monitorul Oficial nr. 186-189/2026, art. 334); SFS's notice of 13.01.2026 names founders of individual enterprises and of peasant farms without employees.",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale, anexa nr. 1, în redacția Legii nr. 257/2020",
+      "article": "anexa nr. 1 pct. 1.6",
+      "publication": "Monitorul Oficial nr. 353-357, art. 288, 22.12.2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2264",
+      "cite": {
+        "ro": "Legea 489/1999, anexa 1 pct. 1.6",
+        "ru": "Закон 489/1999, приложение 1 п. 1.6",
+        "en": "Law 489/1999, annex 1 item 1.6"
+      },
+      "quote": "Taxă fixă în conformitate cu legea bugetului asigurărilor sociale de stat anuală | Lunar, câte 1/12 din suma anuală, până la data de 25 a lunii următoare lunii de gestiune",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "Founders of individual enterprises and peasant farms named in pct. 1.6 by Law 51/2022 (Monitorul Oficial nr. 88-95/2022, art. 146).",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală",
+      "article": "art. 22 alin. (1)",
+      "publication": "citat în Hotărârea Curții Constituționale nr. 160/2023, Monitorul Oficial nr. 399-400, 25.10.2023",
+      "url": "https://monitorul.gov.md/ro/monitor/2792",
+      "cite": {
+        "ro": "Legea 1593/2002, art. 22 alin. (1)",
+        "ru": "Закон 1593/2002, ст. 22 ч. (1)",
+        "en": "Law 1593/2002, art. 22(1)"
+      },
+      "quote": "Persoanele fizice incluse la începutul anului de gestiune în una din categoriile de plătitori prevăzute la anexa nr.2 vor achita integral o primă de asigurare obligatorie de asistenţă medicală în sumă fixă în termen de pînă la data de 31 martie a anului de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "The law's own words, quoted in a decision published in Monitorul Oficial; the 2023 text. CNAM's notice for 2026 (relayed on monitorul.fisc.md, 05.01.2026) applies the same 31 March.",
+      "verified": false
+    },
+    {
+      "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
+      "article": "art. 4 alin. (2)-(4)",
+      "publication": "Monitorul Oficial nr. 659-661, art. 798, 31.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
+      "cite": {
+        "ro": "Legea 321/2025, art. 4 alin. (2)-(4)",
+        "ru": "Закон 321/2025, ст. 4 ч. (2)-(4)",
+        "en": "Law 321/2025, art. 4(2)-(4)"
+      },
+      "quote": "(2) [...] prima de asigurare obligatorie de asistență medicală în sumă fixă [...] se stabilește în mărime de 12 636 de lei. (3) Pentru persoanele fizice prevăzute la pct. 1, 3 și 4 din anexa nr. 2 [...], cu excepția nomazilor digitali, care achită prima în termenul stabilit la art. 22 alin. (1) [...] se stabilește în cuantum de 2 527 de lei",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 214/2024 pentru modificarea unor acte normative",
+      "article": "art. II pct. 98 (Codul fiscal, anexa la titlul VII, coloana a patra, lit. a)-j))",
+      "publication": "Monitorul Oficial nr. 355-357, art. 545, 15.08.2024",
+      "url": "https://monitorul.gov.md/ro/monitor/2946",
+      "cite": {
+        "ro": "Codul fiscal, anexa la titlul VII",
+        "ru": "Налоговый кодекс, приложение к разделу VII",
+        "en": "Fiscal Code, annex to title VII"
+      },
+      "quote": "textul „Trimestrial, până la data de 25 a lunii imediat următoare trimestrului gestionar” se substituie cu textul „Semestrial, până la data de 25 a lunii imediat următoare semestrului gestionar”",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "In force 1 January 2025. Not for the sanitation and parking taxes (lit. p) and others), which keep their own terms.",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 356/2022 pentru modificarea unor acte normative",
+      "article": "art. III pct. 86-87 (Codul fiscal art. 281^1 alin. (1) și art. 282 alin. (1) și (4))",
+      "publication": "Monitorul Oficial nr. 456-459, art. 813, 30.12.2022",
+      "url": "https://monitorul.gov.md/ro/monitor/2589",
+      "cite": {
+        "ro": "Codul fiscal, art. 281¹ alin. (1) și art. 282",
+        "ru": "Налоговый кодекс, ст. 281¹ ч. (1) и ст. 282",
+        "en": "Fiscal Code, art. 281¹(1) and art. 282"
+      },
+      "quote": "(1) Persoanele juridice, persoanele fizice înregistrate în calitate de întreprinzător sunt obligate să prezinte calculul impozitului pe bunurile imobiliare până la 25 septembrie inclusiv a perioadei fiscale respective pentru bunurile imobiliare dobândite până la data de 31 august inclusiv. Pentru bunurile imobiliare dobândite după 31 august a perioadei fiscale respective, calculul impozitului pe bunurile imobiliare se prezintă la Serviciul Fiscal de Stat nu mai târziu de 25 martie a perioadei fiscale următoare celei de gestiune.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "Law 214/2024 art. II pct. 85-86 (Monitorul Oficial nr. 355-357/2024, art. 545) added persons with a professional activity in justice or health and moved the small-enterprise threshold to 5 employees. Payment by the same dates: art. 282 alin. (1) and (4), read in SFS's own presentation of the consolidated text.",
+      "verified": false
+    },
+    {
+      "act": "Legea contabilității și raportării financiare nr. 287/2017",
+      "article": "art. 33 alin. (3)",
+      "url": "https://statistica.gov.md/ro/situatii-financiare-66.html",
+      "cite": {
+        "ro": "Legea 287/2017, art. 33 alin. (3)",
+        "ru": "Закон 287/2017, ст. 33 ч. (3)",
+        "en": "Law 287/2017, art. 33(3)"
+      },
+      "quote": "În conformitate cu alin. (3), art.33 al Legii contabilității și raportării financiare 287/2017, termenul de prezentare a situațiilor financiare individuale, raportului conducerii și raportului auditorului constituie: pentru entitățile de interes public - 120 zile de la ultima zi a perioadei de gestiune (30 aprilie); pentru restul entităților - 150 zile de la ultima zi a perioadei de gestiune (30 mai).",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "note": "BNS's own page. The 2018 text in Monitorul Oficial (nr. 1-6/2018, art. 22) gave 120 days for every entity; the law that introduced 150 days for the rest was not found in Monitorul Oficial and has to be read on legis.md. Filed with BNS on paper or through raportare.gov.md.",
+      "verified": false
+    },
+    {
+      "act": "Biroul Național de Statistică · Formulare statistice 2026",
+      "article": "formularele M1, M3",
+      "url": "https://statistica.gov.md/ro/forta-de-munca-si-castigul-salarial-10183_62280.html",
+      "cite": {
+        "ro": "BNS, formularele statistice 2026 (M1, M3)",
+        "ru": "НБС, статистические формы 2026 (M1, M3)",
+        "en": "NBS, 2026 statistical forms (M1, M3)"
+      },
+      "quote": "M1 „Câștigurile salariale și locurile de muncă vacante”, aprobat prin Ordinul BNS nr. 26 din 31 martie 2026 [...] trimestrial, până la data de 25 a lunii următoare trimestrului de raportare [...] de către unitățile incluse în cercetare. M3 „Câştigurile salariale şi costul forţei de muncă”, aprobat prin Ordinul BNS nr. 135 din 01 decembrie 2025 [...] anual, până la data de 31 martie",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Biroul Național de Statistică · Formulare statistice 2026",
+      "article": "formularul 2-INV",
+      "url": "https://statistica.gov.md/ro/investitii-constructii-si-fondul-locativ-10183_62176.html",
+      "cite": {
+        "ro": "BNS, formularul 2-INV",
+        "ru": "НБС, форма 2-INV",
+        "en": "NBS, form 2-INV"
+      },
+      "quote": "Nr. 2-INV anual „Cu privire la investiţii” [...] anual, până la data de 1 aprilie după anul de referinţă [...] de către entităţile, indiferent de genul de activitate, care realizează investiţii în active imobilizate.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Biroul Național de Statistică · Formulare statistice 2026",
+      "article": "formularele EI-7, EI-8",
+      "url": "https://statistica.gov.md/ro/export-si-import-de-servicii-10183_62278.html",
+      "cite": {
+        "ro": "BNS, formularele EI-7 și EI-8",
+        "ru": "НБС, формы EI-7 и EI-8",
+        "en": "NBS, forms EI-7 and EI-8"
+      },
+      "quote": "Nr. EI-7 ”Export de servicii” [...] trimestrial - până la data de 25 a lunii următoare perioadei de raport [...] de către toți agenții economici, care prestează servicii de export",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Biroul Național de Statistică · Formulare statistice 2026",
+      "article": "formularul ASA",
+      "url": "https://statistica.gov.md/ro/antreprenoriat-10183_62261.html",
+      "cite": {
+        "ro": "BNS, formularul ASA",
+        "ru": "НБС, форма ASA",
+        "en": "NBS, form ASA"
+      },
+      "quote": "ASA „Ancheta Structurală Anuală în întreprinderi”, aprobat prin Ordinul BNS nr. 146 din 12 decembrie 2025 [...] anual, până la 31 mai [...] de către agenții economici.",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 93/2017 cu privire la statistica oficială",
+      "article": "art. 15 alin. (3)",
+      "publication": "Monitorul Oficial nr. 216-228, art. 349, 30.06.2017",
+      "url": "https://monitorul.gov.md/ro/monitor/1978",
+      "cite": {
+        "ro": "Legea 93/2017, art. 15 alin. (3)",
+        "ru": "Закон 93/2017, ст. 15 ч. (3)",
+        "en": "Law 93/2017, art. 15(3)"
+      },
+      "quote": "La efectuarea cercetărilor, conform programului de lucrări statistice, respondenţii sînt obligaţi: a) să prezinte, în mod gratuit, producătorilor de statistici oficiale date veridice şi complete în modul stabilit de producătorul de statistici oficiale respectiv;",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "note": "The 2026 programme: HG 758/2025, Monitorul Oficial nr. 601-604/2025, art. 768. Each unit sees its own forms by IDNO at webapp.statistica.md/repForm.",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 60/2020 pentru modificarea unor acte normative",
+      "article": "art. V pct. 3 (Legea nr. 1585/1998 art. 10 alin. (3))",
+      "publication": "Monitorul Oficial nr. 108-109, art. 186, 25.04.2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2204",
+      "cite": {
+        "ro": "Legea 1585/1998, art. 10 alin. (3)",
+        "ru": "Закон 1585/1998, ст. 10 ч. (3)",
+        "en": "Law 1585/1998, art. 10(3)"
+      },
+      "quote": "Angajatorul este obligat să prezinte Serviciului Fiscal de Stat informația aferentă raporturilor de muncă pentru stabilirea drepturilor sociale și medicale, potrivit formei și modului aprobate de Ministerul Finanțelor, în termen de până la 10 zile lucrătoare de la data angajării sau a modificării/încetării raporturilor de muncă, a emiterii ordinului de acordare a concediului de îngrijire a copilului sau a concediului paternal.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală",
+      "article": "art. 23 alin. (1)",
+      "publication": "citat în Hotărârea Curții Constituționale nr. 19/2025, Monitorul Oficial nr. 96-99, 27.02.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3041",
+      "cite": {
+        "ro": "Legea 1593/2002, art. 23 alin. (1)",
+        "ru": "Закон 1593/2002, ст. 23 ч. (1)",
+        "en": "Law 1593/2002, art. 23(1)"
+      },
+      "quote": "Persoanele fizice care se includ în una din categoriile de plătitori prevăzute în anexa nr.2, după expirarea termenului stabilit la art. 22 alin. (1), vor achita, în termen de 30 de zile calendaristice de la data includerii în categoria respectivă, prima de asigurare obligatorie de asistenţă medicală în sumă fixă, în cuantum proporţional numărului de zile ale anului de gestiune în care nu au avut statut de persoană asigurată",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea bugetului asigurărilor sociale de stat pe anul 2026 nr. 320/2025",
+      "article": "art. 3 alin. (1)",
+      "publication": "Monitorul Oficial nr. 659-661, art. 796, 31.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
+      "cite": {
+        "ro": "Legea 320/2025, art. 3 alin. (1)",
+        "ru": "Закон 320/2025, ст. 3 ч. (1)",
+        "en": "Law 320/2025, art. 3(1)"
+      },
+      "quote": "Contribuția de asigurări sociale de stat obligatorii în sumă fixă anuală (taxa fixă anuală) calculată pentru plătitorii specificați la pct. 1.6, 1.7 și 1.8 din anexa nr. 1 la Legea nr. 489/1999 [...] se stabilește în mărime de 22878 de lei.",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 145/2017 pentru modificarea și completarea unor acte legislative (Codul fiscal, titlul X)",
+      "article": "art. I pct. 15 (Codul fiscal art. 374 alin. (1) lit. a))",
+      "publication": "Monitorul Oficial nr. 277-288, art. 473, 04.08.2017",
+      "url": "https://monitorul.gov.md/ro/monitor/1985",
+      "cite": {
+        "ro": "Codul fiscal, art. 374 alin. (1) lit. a)",
+        "ru": "Налоговый кодекс, ст. 374 ч. (1) п. a)",
+        "en": "Fiscal Code, art. 374(1)(a)"
+      },
+      "quote": "Nota în cauză se prezintă Serviciului Fiscal de Stat anual, pînă la data de 25 ianuarie a anului următor anului calendaristic în care au fost efectuate plăți în folosul angajaților",
+      "readIn": "act",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna decembrie 2025",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-decembrie-2025-/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, decembrie 2025",
+        "ru": "ГНС, налоговый календарь, декабрь 2025",
+        "en": "SFS, tax calendar, December 2025"
+      },
+      "quote": "termenul limită [...] este data de 26 decembrie 2025",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna ianuarie 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-ianuarie-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, ianuarie 2026",
+        "ru": "ГНС, налоговый календарь, январь 2026",
+        "en": "SFS, tax calendar, January 2026"
+      },
+      "quote": "termenul limită [...] este data de 26 ianuarie 2026",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna februarie 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-februarie-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, februarie 2026",
+        "ru": "ГНС, налоговый календарь, февраль 2026",
+        "en": "SFS, tax calendar, February 2026"
+      },
+      "quote": "termenul limită de prezentare a dărilor de seamă fiscale [...] este data de 25 februarie 2026",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna martie 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-martie-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, martie 2026",
+        "ru": "ГНС, налоговый календарь, март 2026",
+        "en": "SFS, tax calendar, March 2026"
+      },
+      "quote": "Declarațiile fiscale aferente impozitului pe venit, care urmează să fie prezentate și/sau achitate către data menționată [25 martie 2026] pentru anul 2025, sunt: Forma VEN12 [...] Impozitul pe bunurile imobiliare (Forma BIJ17) - de către persoanele juridice pentru bunurile imobiliare dobândite după 31 august 2025",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna mai 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-mai-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, mai 2026",
+        "ru": "ГНС, налоговый календарь, май 2026",
+        "en": "SFS, tax calendar, May 2026"
+      },
+      "quote": "termenul limită [...] este data de 25 mai 2026",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna iulie 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-iulie-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, iulie 2026",
+        "ru": "ГНС, налоговый календарь, июль 2026",
+        "en": "SFS, tax calendar, July 2026"
+      },
+      "quote": "termenul limită de prezentare a dărilor de seamă fiscale pentru luna iunie 2026 [...] este data de 27 iulie 2026. [...] către data de 27 iulie 2026, urmează să fie prezentate pentru semestrul I al anului 2026 dările de seamă aferente taxelor locale (Forma TL13)",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna august 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-august-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, august 2026",
+        "ru": "ГНС, налоговый календарь, август 2026",
+        "en": "SFS, tax calendar, August 2026"
+      },
+      "quote": "termenul limită [...] este data de 25 august 2026",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · Calendarul fiscal al contribuabilului pentru luna septembrie 2026",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/calendarul-fiscal-al-contribuabilului-pentru-luna-septembrie-2026/",
+      "cite": {
+        "ro": "SFS, calendarul fiscal, septembrie 2026",
+        "ru": "ГНС, налоговый календарь, сентябрь 2026",
+        "en": "SFS, tax calendar, September 2026"
+      },
+      "quote": "la data de 25 septembrie 2026 expiră termenul limită de achitare a impozitului pe venit în rate pentru trimestrul III al anului 2026 [...] Calculul impozitului pe bunurile imobiliare (Forma BIJ17) [...] pentru bunurile imobiliare dobândite până la data de 31 august 2026 inclusiv, cu achitarea în același termen",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Casa Națională de Asigurări Sociale · comunicat privind termenul de achitare a contribuțiilor pentru martie 2026",
+      "article": "comunicatul CNAS",
+      "url": "https://cnas.gov.md/ro/node/638",
+      "cite": {
+        "ro": "CNAS, comunicat (27 aprilie 2026)",
+        "ru": "НКСС, сообщение (27 апреля 2026)",
+        "en": "CNAS, notice (27 April 2026)"
+      },
+      "quote": "contribuţiile [...] calculate pentru luna martie 2026 pînă la data de 27 aprilie 2026 inclusiv",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Casa Națională de Asigurări Sociale · comunicat privind termenul de achitare a contribuțiilor pentru august 2026",
+      "article": "comunicatul CNAS",
+      "url": "https://cnas.gov.md/ro/node/720",
+      "cite": {
+        "ro": "CNAS, comunicat (25 septembrie 2026)",
+        "ru": "НКСС, сообщение (25 сентября 2026)",
+        "en": "CNAS, notice (25 September 2026)"
+      },
+      "quote": "Categoriile de angajatori specificaţi la pct. 1.1, 1.2, 1.3, 1.5 [...] au obligaţia să declare [...] (Forma IPC21) şi să achite contribuţiile [...] calculate pentru luna august 2026 pînă la data de 25 septembrie 2026 inclusiv. [...] 1/12 din taxa fixă anuală stabilita la art. 3 alin. (1) din Legea nr. 320/2025 [...] ce constituie suma de 1906,50 lei, pînă la data de 25 septembrie 2026 inclusiv",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Casa Națională de Asigurări Sociale · comunicat din 15.10.2026 privind termenele de achitare pentru octombrie-decembrie 2026",
+      "article": "comunicatul CNAS",
+      "url": "https://cnas.gov.md/ro/node/729",
+      "cite": {
+        "ro": "CNAS, comunicat din 15 octombrie 2026",
+        "ru": "НКСС, сообщение от 15 октября 2026",
+        "en": "CNAS, notice of 15 October 2026"
+      },
+      "quote": "25 noiembrie 2026 (pentru octombrie), 28 decembrie 2026 (pentru noiembrie), 25 ianuarie 2027 (pentru decembrie)",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat · 15 ianuarie 2026, termenul-limită de prezentare a dării de seamă CAS18-AN pentru perioada fiscală 2025",
+      "article": "comunicatul SFS",
+      "url": "https://monitorul.fisc.md/15-ianuarie-2026--termenul-limita-de-prezentare-a-darii-de-seama-cas18-an-pentru-perioada-fiscala-2025/",
+      "cite": {
+        "ro": "SFS, comunicat (15 ianuarie 2026)",
+        "ru": "ГНС, сообщение (15 января 2026)",
+        "en": "SFS, notice (15 January 2026)"
+      },
+      "quote": "la data de 15 ianuarie 2026 survine termenul-limită de prezentare a dării de seamă Forma CAS18-AN pentru perioada fiscală 2025",
+      "readIn": "authority",
+      "readOn": "2026-10-15",
+      "verified": false
+    }
+  ],
+  "profiles": [
+    {
+      "id": "vat_payer",
+      "name": {
+        "ro": "Plătitor de TVA",
+        "ru": "Плательщик НДС",
+        "en": "VAT payer"
+      }
+    },
+    {
+      "id": "employer",
+      "name": {
+        "ro": "Angajator",
+        "ru": "Работодатель",
+        "en": "Employer"
+      }
+    },
+    {
+      "id": "profit_tax",
+      "name": {
+        "ro": "Impozit pe venit, regim general",
+        "ru": "Подоходный налог, общий режим",
+        "en": "Income tax, general regime"
+      },
+      "note": {
+        "ro": "Persoane juridice și întreprinzători care plătesc impozitul pe venit în regimul general.",
+        "ru": "Юридические лица и предприниматели, уплачивающие подоходный налог в общем режиме.",
+        "en": "Legal entities and entrepreneurs paying income tax under the general regime."
+      }
+    },
+    {
+      "id": "ivao",
+      "name": {
+        "ro": "Regimul IVAO",
+        "ru": "Режим IVAO",
+        "en": "IVAO regime"
+      },
+      "note": {
+        "ro": "Impozitul pe venitul din activitatea operațională, pentru întreprinderile mici și mijlocii.",
+        "ru": "Налог на доход от операционной деятельности для малых и средних предприятий.",
+        "en": "Tax on operating revenue, for small and medium enterprises."
+      }
+    },
+    {
+      "id": "itpark",
+      "name": {
+        "ro": "Rezident al parcului IT",
+        "ru": "Резидент IT-парка",
+        "en": "IT Park resident"
+      }
+    },
+    {
+      "id": "ii",
+      "name": {
+        "ro": "Întreprindere individuală sau gospodărie țărănească",
+        "ru": "Индивидуальное предприятие или крестьянское хозяйство",
+        "en": "Sole trader or peasant farm"
+      }
+    },
+    {
+      "id": "independent",
+      "name": {
+        "ro": "Antreprenor independent",
+        "ru": "Независимый предприниматель",
+        "en": "Independent entrepreneur"
+      }
+    },
+    {
+      "id": "property",
+      "name": {
+        "ro": "Proprietar de bunuri imobiliare",
+        "ru": "Владелец недвижимости",
+        "en": "Owner of real estate"
+      }
+    },
+    {
+      "id": "local_taxes",
+      "name": {
+        "ro": "Plătitor de taxe locale",
+        "ru": "Плательщик местных сборов",
+        "en": "Local taxes payer"
+      }
+    },
+    {
+      "id": "accounts",
+      "name": {
+        "ro": "Situații financiare anuale",
+        "ru": "Годовая финансовая отчётность",
+        "en": "Annual financial statements"
+      },
+      "note": {
+        "ro": "Entitățile care țin contabilitatea în partidă dublă.",
+        "ru": "Субъекты, ведущие учёт по двойной записи.",
+        "en": "Entities keeping double-entry books."
+      }
+    },
+    {
+      "id": "statistics",
+      "name": {
+        "ro": "Rapoarte statistice (BNS)",
+        "ru": "Статистические отчёты (НБС)",
+        "en": "Statistical reports (NBS)"
+      },
+      "note": {
+        "ro": "Doar unitățile incluse de Biroul Național de Statistică în cercetare; lista proprie, după IDNO, pe webapp.statistica.md/repForm.",
+        "ru": "Только единицы, включённые Национальным бюро статистики в обследование; свой список по IDNO на webapp.statistica.md/repForm.",
+        "en": "Only the units the National Bureau of Statistics has included in a survey; each unit's own list, by IDNO, at webapp.statistica.md/repForm."
+      }
+    }
+  ],
+  "shift": {
+    "rule": "next_working_day",
+    "sourceIndex": 0,
+    "note": "A fiscal deadline on a rest day or public holiday moves to the first working day after it. Rest days are Saturday, Sunday and the holidays of the Labour Code art. 111; a Saturday a Government decision makes a working day for public institutions is not used, since such a decision binds only them and SFS has never pulled a deadline onto one. Deadlines of BNS, of the financial statements and of CNAM's fixed premium are not fiscal obligations under the Fiscal Code and are not moved here: where one falls on a rest day the page says so."
+  },
+  "deadlines": [
+    {
+      "id": "tva12",
+      "form": "TVA12",
+      "name": {
+        "ro": "Declarația privind TVA și plata TVA",
+        "ru": "Декларация по НДС и уплата НДС",
+        "en": "VAT return and VAT payment"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "vat_payer"
+      ],
+      "who": {
+        "ro": "Plătitorii de TVA, cei care importă servicii și cumpărătorii prevăzuți la art. 94 din Codul fiscal. Se depune doar electronic.",
+        "ru": "Плательщики НДС, импортёры услуг и покупатели, указанные в ст. 94 Налогового кодекса. Подаётся только электронно.",
+        "en": "VAT payers, importers of services and the buyers named in art. 94 of the Fiscal Code. Filed electronically only."
+      },
+      "schedule": {
+        "every": "month",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025-11",
+          "date": "2025-12-26",
+          "sourceIndex": 28
+        },
+        {
+          "period": "2025-12",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        },
+        {
+          "period": "2026-01",
+          "date": "2026-02-25",
+          "sourceIndex": 30
+        },
+        {
+          "period": "2026-02",
+          "date": "2026-03-25",
+          "sourceIndex": 31
+        },
+        {
+          "period": "2026-04",
+          "date": "2026-05-25",
+          "sourceIndex": 32
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        },
+        {
+          "period": "2026-07",
+          "date": "2026-08-25",
+          "sourceIndex": 34
+        },
+        {
+          "period": "2026-08",
+          "date": "2026-09-25",
+          "sourceIndex": 35
+        }
+      ]
+    },
+    {
+      "id": "ipc21",
+      "form": "IPC21",
+      "name": {
+        "ro": "Darea de seamă IPC21 și plata impozitului pe venit reținut, a primelor CNAM și a contribuțiilor CNAS",
+        "ru": "Отчёт IPC21 и уплата удержанного подоходного налога, взносов CNAM и CNAS",
+        "en": "IPC21 return and payment of the income tax withheld, CNAM premiums and CNAS contributions"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "employer"
+      ],
+      "who": {
+        "ro": "Angajatorii și ceilalți plătitori de venituri care rețin impozit. Nu se depune pentru o lună fără plăți, fără contribuții calculate și fără angajați.",
+        "ru": "Работодатели и другие плательщики доходов, удерживающие налог. Не подаётся за месяц без выплат, без начисленных взносов и без работников.",
+        "en": "Employers and other payers of income who withhold tax. Not filed for a month with no payments, no contributions and no employees."
+      },
+      "schedule": {
+        "every": "month",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 2,
+      "formSourceIndex": 5,
+      "alsoSourceIndexes": [
+        3,
+        4
+      ],
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025-11",
+          "date": "2025-12-26",
+          "sourceIndex": 28
+        },
+        {
+          "period": "2025-12",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        },
+        {
+          "period": "2026-01",
+          "date": "2026-02-25",
+          "sourceIndex": 30
+        },
+        {
+          "period": "2026-03",
+          "date": "2026-04-27",
+          "sourceIndex": 36
+        },
+        {
+          "period": "2026-04",
+          "date": "2026-05-25",
+          "sourceIndex": 32
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        },
+        {
+          "period": "2026-08",
+          "date": "2026-09-25",
+          "sourceIndex": 37
+        },
+        {
+          "period": "2026-10",
+          "date": "2026-11-25",
+          "sourceIndex": 38
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-12-28",
+          "sourceIndex": 38
+        },
+        {
+          "period": "2026-12",
+          "date": "2027-01-25",
+          "sourceIndex": 38
+        }
+      ]
+    },
+    {
+      "id": "iu17",
+      "form": "IU17",
+      "name": {
+        "ro": "Darea de seamă și plata impozitului unic",
+        "ru": "Отчёт и уплата единого налога",
+        "en": "Single tax return and payment"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "itpark"
+      ],
+      "who": {
+        "ro": "Rezidenții parcurilor pentru tehnologia informației care aplică regimul impozitului unic.",
+        "ru": "Резиденты парков информационных технологий, применяющие режим единого налога.",
+        "en": "Residents of information technology parks under the single tax regime."
+      },
+      "schedule": {
+        "every": "month",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025-12",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        }
+      ]
+    },
+    {
+      "id": "ven12",
+      "form": "VEN12",
+      "name": {
+        "ro": "Declarația anuală cu privire la impozitul pe venit",
+        "ru": "Годовая декларация по подоходному налогу",
+        "en": "Annual income tax return"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "profit_tax",
+        "ivao",
+        "ii"
+      ],
+      "who": {
+        "ro": "Persoanele juridice și întreprinzătorii, pentru anul trecut. După regim, formularul este VEN12, SIMM24 (IVAO), UNIF25 (întreprinderi individuale și gospodării țărănești mici, neplătitoare de TVA) sau ONG17.",
+        "ru": "Юридические лица и предприниматели, за прошлый год. В зависимости от режима форма VEN12, SIMM24 (IVAO), UNIF25 (малые ИП и крестьянские хозяйства, не плательщики НДС) или ONG17.",
+        "en": "Legal entities and entrepreneurs, for last year. Depending on the regime the form is VEN12, SIMM24 (IVAO), UNIF25 (small sole traders and peasant farms outside VAT) or ONG17."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--03-25"
+        ],
+        "yearsAfter": 1
+      },
+      "sourceIndex": 7,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "date": "2026-03-25",
+          "sourceIndex": 31
+        }
+      ]
+    },
+    {
+      "id": "profit_tax_advance",
+      "name": {
+        "ro": "Plata impozitului pe venit în rate",
+        "ru": "Уплата подоходного налога частями",
+        "en": "Income tax instalment"
+      },
+      "what": "pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "profit_tax"
+      ],
+      "who": {
+        "ro": "Agenții economici în regimul general: câte 1/4 din impozitul estimat pe anul curent sau din cel datorat pe anul trecut. Nu pentru regimul IVAO.",
+        "ru": "Хозяйствующие субъекты в общем режиме: по 1/4 от налога, рассчитанного на текущий год, или от налога за прошлый год. Не для режима IVAO.",
+        "en": "Economic agents under the general regime: 1/4 of the tax estimated for this year or of last year's tax. Not for the IVAO regime."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--03-25",
+          "--06-25",
+          "--09-25",
+          "--12-25"
+        ],
+        "yearsAfter": 0
+      },
+      "sourceIndex": 8,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "installment": 4,
+          "date": "2025-12-26",
+          "sourceIndex": 28
+        },
+        {
+          "period": "2026",
+          "installment": 3,
+          "date": "2026-09-25",
+          "sourceIndex": 35
+        }
+      ]
+    },
+    {
+      "id": "ivao_quarterly",
+      "name": {
+        "ro": "Plata trimestrială a impozitului IVAO",
+        "ru": "Ежеквартальная уплата налога IVAO",
+        "en": "IVAO quarterly payment"
+      },
+      "what": "pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "ivao"
+      ],
+      "who": {
+        "ro": "Întreprinderile în regimul impozitului pe venitul din activitatea operațională.",
+        "ru": "Предприятия в режиме налога на доход от операционной деятельности.",
+        "en": "Enterprises under the tax on operating revenue."
+      },
+      "schedule": {
+        "every": "quarter",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 10,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2026-Q2",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        }
+      ]
+    },
+    {
+      "id": "ials21",
+      "form": "IALS21",
+      "name": {
+        "ro": "Nota de informare privind salariul și alte plăți",
+        "ru": "Информационная записка о зарплате и других выплатах",
+        "en": "Information note on salaries and other payments"
+      },
+      "what": "file",
+      "authority": "SFS",
+      "appliesTo": [
+        "employer"
+      ],
+      "who": {
+        "ro": "Cei care rețin impozit din plățile către persoane fizice, pentru anul trecut. Pentru nerezidenți INR14.",
+        "ru": "Удерживающие налог с выплат физическим лицам, за прошлый год. Для нерезидентов INR14.",
+        "en": "Those who withhold tax from payments to individuals, for last year. For non-residents INR14."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--01-25"
+        ],
+        "yearsAfter": 1
+      },
+      "sourceIndex": 9,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        }
+      ]
+    },
+    {
+      "id": "isapti17",
+      "form": "ISAPTI17",
+      "name": {
+        "ro": "Nota de informare a rezidentului parcului IT",
+        "ru": "Информационная записка резидента IT-парка",
+        "en": "IT Park resident's information note"
+      },
+      "what": "file",
+      "authority": "SFS",
+      "appliesTo": [
+        "itpark"
+      ],
+      "who": {
+        "ro": "Rezidenții parcurilor IT, despre plățile făcute angajaților în anul trecut.",
+        "ru": "Резиденты IT-парков, о выплатах работникам за прошлый год.",
+        "en": "IT Park residents, on last year's payments to employees."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--01-25"
+        ],
+        "yearsAfter": 1
+      },
+      "sourceIndex": 27,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        }
+      ]
+    },
+    {
+      "id": "independent_single_tax",
+      "name": {
+        "ro": "Plata impozitului unic al antreprenorului independent",
+        "ru": "Уплата единого налога независимого предпринимателя",
+        "en": "Independent entrepreneur's single tax"
+      },
+      "what": "pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "independent"
+      ],
+      "who": {
+        "ro": "Antreprenorii independenți, pe avizul de plată trimis de SFS până la data de 10. Nu țin contabilitate și nu depun dări de seamă.",
+        "ru": "Независимые предприниматели, по платёжному извещению, которое ГНС присылает до 10 числа. Не ведут учёт и не подают отчёты.",
+        "en": "Independent entrepreneurs, on the payment notice SFS sends by the 10th. They keep no books and file no returns."
+      },
+      "schedule": {
+        "every": "month",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "effectiveFrom": "2026-02-01",
+      "sourceIndex": 11,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2026-01",
+          "date": "2026-02-25",
+          "sourceIndex": 30
+        },
+        {
+          "period": "2026-06",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        }
+      ]
+    },
+    {
+      "id": "tl13",
+      "form": "TL13",
+      "name": {
+        "ro": "Darea de seamă și plata taxelor locale",
+        "ru": "Отчёт и уплата местных сборов",
+        "en": "Local taxes return and payment"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "local_taxes"
+      ],
+      "who": {
+        "ro": "Plătitorii taxelor locale de la lit. a)-j) din anexa la titlul VII (de exemplu, taxa pentru amenajarea teritoriului), pe semestru. Întreprinderile individuale mici, neplătitoare de TVA, le declară în UNIF25.",
+        "ru": "Плательщики местных сборов по п. a)-j) приложения к разделу VII (например, сбор за благоустройство территории), за полугодие. Малые ИП, не плательщики НДС, декларируют их в UNIF25.",
+        "en": "Payers of the local taxes in items a)-j) of the annex to title VII (the territorial development tax, for one), per half-year. Small sole traders outside VAT declare them in UNIF25."
+      },
+      "schedule": {
+        "every": "half",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 16,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025-H2",
+          "date": "2026-01-26",
+          "sourceIndex": 29
+        },
+        {
+          "period": "2026-H1",
+          "date": "2026-07-27",
+          "sourceIndex": 33
+        }
+      ]
+    },
+    {
+      "id": "bij17",
+      "form": "BIJ17",
+      "name": {
+        "ro": "Calculul și plata impozitului pe bunurile imobiliare",
+        "ru": "Расчёт и уплата налога на недвижимость",
+        "en": "Real estate tax calculation and payment"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "property"
+      ],
+      "who": {
+        "ro": "Persoanele juridice și întreprinzătorii, pentru bunurile imobiliare avute sau dobândite până la 31 august al anului.",
+        "ru": "Юридические лица и предприниматели, за недвижимость, которой они владели или которую приобрели до 31 августа года.",
+        "en": "Legal entities and entrepreneurs, for real estate held or acquired by 31 August of the year."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--09-25"
+        ],
+        "yearsAfter": 0
+      },
+      "sourceIndex": 17,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2026",
+          "date": "2026-09-25",
+          "sourceIndex": 35
+        }
+      ]
+    },
+    {
+      "id": "bij17_late",
+      "form": "BIJ17",
+      "name": {
+        "ro": "Impozitul pe bunurile imobiliare dobândite după 31 august",
+        "ru": "Налог на недвижимость, приобретённую после 31 августа",
+        "en": "Real estate tax on property acquired after 31 August"
+      },
+      "what": "file_and_pay",
+      "authority": "SFS",
+      "appliesTo": [
+        "property"
+      ],
+      "who": {
+        "ro": "Persoanele juridice și întreprinzătorii, pentru bunurile imobiliare dobândite după 31 august al anului trecut.",
+        "ru": "Юридические лица и предприниматели, за недвижимость, приобретённую после 31 августа прошлого года.",
+        "en": "Legal entities and entrepreneurs, for real estate acquired after 31 August of last year."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--03-25"
+        ],
+        "yearsAfter": 1
+      },
+      "sourceIndex": 17,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "date": "2026-03-25",
+          "sourceIndex": 31
+        }
+      ]
+    },
+    {
+      "id": "cas18an",
+      "form": "CAS18-AN",
+      "name": {
+        "ro": "Darea de seamă anuală privind contribuțiile de asigurări sociale",
+        "ru": "Годовой отчёт о взносах социального страхования",
+        "en": "Annual social insurance contributions return"
+      },
+      "what": "file",
+      "authority": "CNAS",
+      "appliesTo": [
+        "ii"
+      ],
+      "who": {
+        "ro": "Fondatorii întreprinderilor individuale și ai gospodăriilor țărănești fără angajați, pentru anul trecut. Se depune electronic, la SFS.",
+        "ru": "Учредители индивидуальных предприятий и крестьянских хозяйств без работников, за прошлый год. Подаётся электронно в ГНС.",
+        "en": "Founders of sole traders and peasant farms without employees, for last year. Filed electronically with SFS."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--01-15"
+        ],
+        "yearsAfter": 1
+      },
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2025",
+          "date": "2026-01-15",
+          "sourceIndex": 39
+        }
+      ]
+    },
+    {
+      "id": "cnas_fixed_monthly",
+      "name": {
+        "ro": "Contribuția CNAS în sumă fixă, rata lunară",
+        "ru": "Фиксированный взнос CNAS, ежемесячная часть",
+        "en": "Fixed CNAS contribution, monthly part"
+      },
+      "what": "pay",
+      "authority": "CNAS",
+      "appliesTo": [
+        "ii"
+      ],
+      "who": {
+        "ro": "Fondatorii întreprinderilor individuale și ai gospodăriilor țărănești și ceilalți plătitori de la pct. 1.6: 1/12 din taxa fixă anuală de 22 878 lei, adică 1 906,50 lei pe lună în 2026. Nu pentru pensionari, persoane cu dizabilități sau cei asigurați deja ca angajați.",
+        "ru": "Учредители индивидуальных предприятий и крестьянских хозяйств и другие плательщики по п. 1.6: 1/12 годового фиксированного взноса 22 878 леев, то есть 1 906,50 лея в месяц в 2026 году. Не для пенсионеров, лиц с ограниченными возможностями и уже застрахованных как работники.",
+        "en": "Founders of sole traders and peasant farms and the other payers of item 1.6: 1/12 of the annual fixed contribution of 22,878 lei, so 1,906.50 lei a month in 2026. Not for pensioners, persons with disabilities or those already insured as employees."
+      },
+      "schedule": {
+        "every": "month",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "sourceIndex": 13,
+      "alsoSourceIndexes": [
+        26
+      ],
+      "confidence": "unverified",
+      "checks": [
+        {
+          "period": "2026-08",
+          "date": "2026-09-25",
+          "sourceIndex": 37
+        }
+      ]
+    },
+    {
+      "id": "cnam_fixed_premium",
+      "name": {
+        "ro": "Prima CNAM în sumă fixă, pe tot anul",
+        "ru": "Фиксированный взнос CNAM за весь год",
+        "en": "Fixed CNAM premium for the year"
+      },
+      "what": "pay",
+      "authority": "CNAM",
+      "appliesTo": [
+        "ii"
+      ],
+      "who": {
+        "ro": "Persoanele care se asigură singure la începutul anului: 2 527 lei în 2026 dacă plătesc la timp fondatorii de întreprinderi individuale, proprietarii și arendașii de terenuri agricole, titularii de patentă și celelalte categorii de la pct. 1, 3 și 4 din anexa 2; 12 636 lei pentru notari, avocați și celelalte profesii de la pct. 2 și 2¹. După termen, 12 636 lei și penalitate.",
+        "ru": "Лица, страхующиеся сами в начале года: в 2026 году 2 527 леев при своевременной уплате для учредителей ИП, собственников и арендаторов сельхозземель, обладателей патента и других категорий по п. 1, 3 и 4 приложения 2; 12 636 леев для нотариусов, адвокатов и других профессий по п. 2 и 2¹. После срока 12 636 леев и пеня.",
+        "en": "People insuring themselves at the start of the year: in 2026, 2,527 lei on time for founders of sole traders, owners and lessees of farmland, patent holders and the other categories of items 1, 3 and 4 of annex 2; 12,636 lei for notaries, lawyers and the other professions of items 2 and 2¹. Late, 12,636 lei and a penalty."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--03-31"
+        ],
+        "yearsAfter": 0
+      },
+      "shift": "none",
+      "sourceIndex": 14,
+      "alsoSourceIndexes": [
+        15
+      ],
+      "confidence": "unverified"
+    },
+    {
+      "id": "financial_statements",
+      "name": {
+        "ro": "Situațiile financiare anuale",
+        "ru": "Годовая финансовая отчётность",
+        "en": "Annual financial statements"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "accounts"
+      ],
+      "who": {
+        "ro": "Entitățile care nu sunt de interes public, pentru anul trecut: situațiile financiare, raportul conducerii și raportul auditorului, după caz, la BNS, pe hârtie sau prin raportare.gov.md. Entitățile de interes public, în 120 de zile (30 aprilie).",
+        "ru": "Субъекты, не являющиеся субъектами публичного интереса, за прошлый год: финансовая отчётность, отчёт руководства и отчёт аудитора, если требуется, в НБС, на бумаге или через raportare.gov.md. Субъекты публичного интереса в течение 120 дней (30 апреля).",
+        "en": "Entities that are not of public interest, for last year: the financial statements, the management report and the auditor's report where required, to NBS, on paper or through raportare.gov.md. Public-interest entities within 120 days (30 April)."
+      },
+      "schedule": {
+        "every": "year",
+        "daysAfter": 150
+      },
+      "shift": "none",
+      "sourceIndex": 18,
+      "confidence": "unverified"
+    },
+    {
+      "id": "bns_m1",
+      "form": "M1",
+      "name": {
+        "ro": "Câștigurile salariale și locurile de muncă vacante",
+        "ru": "Заработная плата и вакантные места",
+        "en": "Earnings and job vacancies"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "statistics"
+      ],
+      "who": {
+        "ro": "Unitățile incluse în cercetare (eșantion de unități cu 4 și mai mulți angajați și toate instituțiile bugetare).",
+        "ru": "Единицы, включённые в обследование (выборка единиц с 4 и более работниками и все бюджетные учреждения).",
+        "en": "Units included in the survey (a sample of units with 4 or more employees, and every budget institution)."
+      },
+      "schedule": {
+        "every": "quarter",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "shift": "none",
+      "sourceIndex": 19,
+      "alsoSourceIndexes": [
+        23
+      ],
+      "confidence": "unverified"
+    },
+    {
+      "id": "bns_m3",
+      "form": "M3",
+      "name": {
+        "ro": "Câștigurile salariale și costul forței de muncă",
+        "ru": "Заработная плата и стоимость рабочей силы",
+        "en": "Earnings and labour cost"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "statistics"
+      ],
+      "who": {
+        "ro": "Unitățile incluse în cercetare, pentru anul trecut.",
+        "ru": "Единицы, включённые в обследование, за прошлый год.",
+        "en": "Units included in the survey, for last year."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--03-31"
+        ],
+        "yearsAfter": 1
+      },
+      "shift": "none",
+      "sourceIndex": 19,
+      "confidence": "unverified"
+    },
+    {
+      "id": "bns_2inv_annual",
+      "form": "2-INV",
+      "name": {
+        "ro": "Cu privire la investiții, anual",
+        "ru": "Об инвестициях, годовая",
+        "en": "Investment, annual"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "statistics"
+      ],
+      "who": {
+        "ro": "Toate entitățile, indiferent de activitate, care fac investiții în active imobilizate, pentru anul trecut.",
+        "ru": "Все субъекты, независимо от вида деятельности, осуществляющие инвестиции в долгосрочные активы, за прошлый год.",
+        "en": "Every entity, whatever its activity, that invests in fixed assets, for last year."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--04-01"
+        ],
+        "yearsAfter": 1
+      },
+      "shift": "none",
+      "sourceIndex": 20,
+      "confidence": "unverified"
+    },
+    {
+      "id": "bns_ei",
+      "form": "EI-7, EI-8",
+      "name": {
+        "ro": "Exportul și importul de servicii",
+        "ru": "Экспорт и импорт услуг",
+        "en": "Exports and imports of services"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "statistics"
+      ],
+      "who": {
+        "ro": "Toți agenții economici care exportă (EI-7) sau importă (EI-8) servicii.",
+        "ru": "Все хозяйствующие субъекты, экспортирующие (EI-7) или импортирующие (EI-8) услуги.",
+        "en": "Every economic agent exporting (EI-7) or importing (EI-8) services."
+      },
+      "schedule": {
+        "every": "quarter",
+        "day": 25,
+        "monthsAfter": 1
+      },
+      "shift": "none",
+      "sourceIndex": 21,
+      "confidence": "unverified"
+    },
+    {
+      "id": "bns_asa",
+      "form": "ASA",
+      "name": {
+        "ro": "Ancheta structurală anuală în întreprinderi",
+        "ru": "Годовое структурное обследование предприятий",
+        "en": "Annual structural business survey"
+      },
+      "what": "file",
+      "authority": "BNS",
+      "appliesTo": [
+        "statistics"
+      ],
+      "who": {
+        "ro": "Agenții economici incluși în cercetare (toți cei cu peste 19 angajați, eșantion pentru cei mai mici), pentru anul trecut.",
+        "ru": "Хозяйствующие субъекты, включённые в обследование (все с числом работников более 19, выборка для меньших), за прошлый год.",
+        "en": "Economic agents included in the survey (all with more than 19 employees, a sample of the smaller ones), for last year."
+      },
+      "schedule": {
+        "every": "year",
+        "dates": [
+          "--05-31"
+        ],
+        "yearsAfter": 1
+      },
+      "shift": "none",
+      "sourceIndex": 22,
+      "confidence": "unverified"
+    },
+    {
+      "id": "irm19",
+      "form": "IRM19",
+      "name": {
+        "ro": "Informația privind raporturile de muncă",
+        "ru": "Информация о трудовых отношениях",
+        "en": "Employment relationship information"
+      },
+      "what": "file",
+      "authority": "SFS",
+      "appliesTo": [
+        "employer"
+      ],
+      "who": {
+        "ro": "Angajatorul, la SFS, pentru drepturile sociale și medicale ale salariatului.",
+        "ru": "Работодатель, в ГНС, для социальных и медицинских прав работника.",
+        "en": "The employer, to SFS, for the employee's social and medical rights."
+      },
+      "schedule": {
+        "every": "event",
+        "event": {
+          "ro": "angajare, modificarea sau încetarea raporturilor de muncă, ordinul de concediu de îngrijire a copilului sau paternal",
+          "ru": "приём на работу, изменение или прекращение трудовых отношений, приказ об отпуске по уходу за ребёнком или отцовском отпуске",
+          "en": "a hiring, a change or end of employment, an order granting childcare or paternity leave"
+        },
+        "within": {
+          "workingDays": 10
+        }
+      },
+      "sourceIndex": 24,
+      "confidence": "unverified"
+    },
+    {
+      "id": "cnam_new_payer",
+      "name": {
+        "ro": "Prima CNAM în sumă fixă, pentru cine devine plătitor în cursul anului",
+        "ru": "Фиксированный взнос CNAM для тех, кто становится плательщиком в течение года",
+        "en": "Fixed CNAM premium for those who become payers during the year"
+      },
+      "what": "pay",
+      "authority": "CNAM",
+      "appliesTo": [
+        "ii"
+      ],
+      "who": {
+        "ro": "De exemplu fondatorul unei întreprinderi individuale înregistrate după 31 martie: prima proporțională cu zilele rămase din an.",
+        "ru": "Например, учредитель индивидуального предприятия, зарегистрированного после 31 марта: взнос пропорционально оставшимся дням года.",
+        "en": "For example the founder of a sole trader registered after 31 March: the premium in proportion to the days left in the year."
+      },
+      "schedule": {
+        "every": "event",
+        "event": {
+          "ro": "intrarea într-o categorie de plătitori din anexa 2 la Legea 1593/2002",
+          "ru": "вхождение в категорию плательщиков из приложения 2 к Закону 1593/2002",
+          "en": "joining a category of payers in annex 2 to Law 1593/2002"
+        },
+        "within": {
+          "days": 30
+        }
+      },
+      "sourceIndex": 25,
+      "confidence": "unverified"
+    }
+  ]
+}

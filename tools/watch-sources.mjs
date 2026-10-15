@@ -4,7 +4,8 @@
  *
  * Run: npm run watch -- [--from-id N] [--mail] [--mail-env PATH] [--mail-to ADDRESS] [--dry-run]
  *
- * Three places are checked for every act in sources/watch.json:
+ * Three places are checked for every act in sources/watch.json (the fiscal calendar's acts, being
+ * many with no consolidated text, only in the gazette):
  *
  *  - Monitorul Oficial, issue by issue. An amending order has no force until it is published
  *    there, so this is the signal that matters. Each issue's table of contents is public HTML at
@@ -68,21 +69,26 @@ for (const act of config.acts) {
   act.excludes = (act.exclude ?? []).map((p) => new RegExp(p, "i"));
   act.since = Number(act.since ?? 0);
   act.relatedPatterns = (act.related ?? []).map((p) => new RegExp(p, "i"));
+  // Acts whose title names nothing we could match, but whose issuer is enough: an order of SFS
+  // may change a form or the e-Factura list whatever it is called.
+  act.underPatterns = (act.matchUnder ?? []).map((p) => new RegExp(p, "i"));
   // An order amending an amending order changes the act too, and its title need not name the act:
   // OMF 171/2019 amended "ordinele nr.48/2019 și 100/2019" and so the chart, without saying so.
-  for (const amendment of act.known.amendments) {
+  // Not for the calendar, whose known acts are many and unrelated to each other.
+  for (const amendment of act.followAmendments === false ? [] : act.known.amendments) {
     act.patterns.push(new RegExp(`\\b${amendment.order.replace("/", "\\/")}\\b`, "i"));
   }
   act.knownKeys = {
     amendments: act.known.amendments.map((a) => fold(a.key)),
-    related: act.known.related.map(fold),
+    related: (act.known.related ?? []).map(fold),
   };
 }
 
 await attempt("gazette", watchGazette);
 for (const act of config.acts) {
-  await attempt(`mf-pdf:${act.id}`, () => watchPdf(act));
-  await attempt(`legis:${act.id}`, () => watchLegis(act));
+  // The calendar watches the gazette only: it is many acts, with no one consolidated text.
+  if (act.official?.mfPdf) await attempt(`mf-pdf:${act.id}`, () => watchPdf(act));
+  if (act.official?.legis) await attempt(`legis:${act.id}`, () => watchLegis(act));
 }
 await attempt("mf-listings", watchListings);
 
@@ -172,10 +178,11 @@ function textOf(html) {
   return decode(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
-function classify(act, text) {
+function classify(act, text, heading = "") {
   const folded = fold(text);
   if (act.excludes.some((p) => p.test(folded))) return null;
   if (act.patterns.some((p) => p.test(folded))) return "amendments";
+  if (act.underPatterns.some((p) => p.test(fold(heading)))) return "amendments";
   if (act.relatedPatterns.some((p) => p.test(folded))) return "related";
   return null;
 }
@@ -247,7 +254,7 @@ function readIssue(id, url, html) {
       continue;
     }
     for (const act of config.acts) {
-      const kind = classify(act, line);
+      const kind = classify(act, line, heading);
       if (!kind) continue;
       const key = actKey(line);
       if (act.knownKeys[kind].includes(key)) continue;
@@ -317,6 +324,7 @@ async function watchListings() {
       link.hash = "";
       const href = link.href;
       for (const act of config.acts) {
+        if (!act.official?.mfPdf) continue; // the listings are about the chart's own act
         if (classify(act, text) !== "amendments") continue;
         if (act.known.mfLinks.includes(href)) continue;
         record("mf-link", act, href, { where: `Ministerul Finanțelor, ${url}`, text, url: href });
@@ -368,7 +376,10 @@ function render() {
       : "Nothing new in the official sources.",
   );
   for (const finding of findings) {
-    const label = { "gazette-amendments": "amends the act", "gazette-related": "related" }[finding.kind] ?? finding.kind;
+    const act = config.acts.find((a) => a.id === finding.act);
+    const label =
+      (finding.kind === "gazette-amendments" && act?.report) ||
+      ({ "gazette-amendments": "amends the act", "gazette-related": "related" }[finding.kind] ?? finding.kind);
     lines.push("", `[${finding.act} · ${label}] ${finding.where}`, `  ${finding.text}`, `  ${finding.url}`);
   }
   if (failures.length > 0) {
@@ -381,8 +392,8 @@ function render() {
   if (findings.length > 0) {
     lines.push(
       "",
-      "Read each act, change data/ if it changes the rulebook, and add it to `known` in",
-      "sources/watch.json in the same commit.",
+      "Read each act, change data/ or calendar/ if it changes the rulebook, and add it to",
+      "`known` in sources/watch.json in the same commit.",
     );
   }
   return lines.join("\n");

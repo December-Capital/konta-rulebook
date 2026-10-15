@@ -28,6 +28,15 @@ Planul de conturi, adică lista oficială a conturilor în care o firmă își �
 este copiat din textul ordinului Ministerului Finanțelor nr. 119/2013, așa cum se aplică din
 1 ianuarie 2020. Un program verifică apoi să nu lipsească și să nu se repete niciun cont.
 
+## Calendarul fiscal
+
+Tot aici sunt termenele de depunere și de plată (TVA12, IPC21, VEN12, IU17, contribuțiile CNAS și
+primele CNAM, rapoartele statistice și celelalte), zilele de sărbătoare din Codul muncii și
+schimbările din lege, fiecare cu actul și articolul din care vine. Un termen care cade într-o zi de
+odihnă se mută doar când actul o cere, iar un program verifică datele calculate cu cele publicate de
+SFS și CNAS. Din aceleași fișiere se va genera calendarul de pe konta.md, cu abonament în
+calendarul telefonului și flux RSS al schimbărilor.
+
 ## Ce nu știm încă
 
 - Dacă e-Factura va deveni obligatorie pentru toate firmele, și de când.

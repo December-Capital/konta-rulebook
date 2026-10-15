@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://december-capital.github.io/konta-rulebook/schemas/calendar.schema.json",
+  "title": "Konta fiscal calendar",
+  "description": "The calendar as data: non-working days, filing and payment deadlines, and changes in the law, each traceable to a published act. Three kinds of file share the same header and the same sources.",
+  "type": "object",
+  "required": ["id", "kind", "jurisdiction", "publishedOn", "status", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^md-[a-z0-9-]+$" },
+    "kind": { "enum": ["holidays", "deadlines", "changes"] },
+    "jurisdiction": { "enum": ["MD"] },
+    "publishedOn": { "type": "string", "format": "date" },
+    "status": { "enum": ["draft", "approved"] },
+    "approvedBy": { "type": "string", "minLength": 1 },
+    "approvedOn": { "type": "string", "format": "date" },
+    "notes": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "holidays" } } },
+      "then": {
+        "required": ["weekend", "holidays", "years"],
+        "properties": {
+          "id": true, "kind": true, "jurisdiction": true, "publishedOn": true, "status": true,
+          "approvedBy": true, "approvedOn": true, "notes": true, "sources": true,
+          "weekend": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["days", "sourceIndex"],
+            "properties": {
+              "days": {
+                "type": "array",
+                "items": { "type": "integer", "minimum": 1, "maximum": 7 },
+                "description": "ISO weekday numbers, 6 Saturday and 7 Sunday."
+              },
+              "sourceIndex": { "$ref": "#/$defs/sourceIndex" },
+              "note": { "type": "string" }
+            }
+          },
+          "holidays": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/holiday" }
+          },
+          "years": {
+            "type": "object",
+            "description": "One entry per year whose transfers of rest days have been read. A year missing here is shown with the Labour Code's holidays and a warning that a decision may still move days.",
+            "propertyNames": { "pattern": "^20[0-9]{2}$" },
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["transfers", "checkedOn"],
+              "properties": {
+                "transfers": { "type": "array", "items": { "$ref": "#/$defs/transfer" } },
+                "checkedOn": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "When the gazette was last read for this year's decisions."
+                },
+                "sourceIndex": { "$ref": "#/$defs/sourceIndex", "description": "The rule on who may transfer rest days, when the note relies on it." },
+                "note": { "$ref": "#/$defs/words" }
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "deadlines" } } },
+      "then": {
+        "required": ["profiles", "shift", "deadlines"],
+        "properties": {
+          "id": true, "kind": true, "jurisdiction": true, "publishedOn": true, "status": true,
+          "approvedBy": true, "approvedOn": true, "notes": true, "sources": true,
+          "profiles": {
+            "type": "array",
+            "minItems": 1,
+            "description": "Who a deadline applies to, as a person filtering the calendar thinks of themselves.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "name"],
+              "properties": {
+                "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+                "name": { "$ref": "#/$defs/words" },
+                "note": { "$ref": "#/$defs/words" }
+              }
+            }
+          },
+          "shift": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["rule", "sourceIndex"],
+            "description": "What happens to a deadline falling on a non-working day, from the act that says so.",
+            "properties": {
+              "rule": { "enum": ["next_working_day", "none"] },
+              "sourceIndex": { "$ref": "#/$defs/sourceIndex" },
+              "note": { "type": "string" }
+            }
+          },
+          "deadlines": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/deadline" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "changes" } } },
+      "then": {
+        "required": ["changes"],
+        "properties": {
+          "id": true, "kind": true, "jurisdiction": true, "publishedOn": true, "status": true,
+          "approvedBy": true, "approvedOn": true, "notes": true, "sources": true,
+          "changes": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/change" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "approved" } }, "required": ["status"] },
+      "then": { "required": ["approvedBy", "approvedOn"] }
+    }
+  ],
+  "$defs": {
+    "sourceIndex": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Index into this file's sources. Nothing here stands without one."
+    },
+    "words": {
+      "type": "object",
+      "description": "The same text in Romanian, Russian and English, at parity.",
+      "additionalProperties": false,
+      "required": ["ro", "ru", "en"],
+      "properties": {
+        "ro": { "type": "string", "minLength": 1 },
+        "ru": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "confidence": {
+      "enum": ["verified", "unverified", "secondary"],
+      "description": "'verified': a licensed accountant read the act. 'unverified': read by us in the act's own text (Monitorul Oficial) or in the authority's own publication, not yet by an accountant; shown as 'în verificare'. 'secondary': found only in secondary sources; kept for the record, never published as a date."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["act", "cite", "readIn"],
+      "properties": {
+        "act": { "type": "string", "minLength": 1, "description": "The act's full title as published, in Romanian." },
+        "cite": { "$ref": "#/$defs/words", "description": "The short citation printed next to an item: act, article, paragraph." },
+        "article": { "type": "string", "minLength": 1 },
+        "publication": { "type": "string", "description": "Monitorul Oficial reference." },
+        "url": { "type": "string", "format": "uri" },
+        "quote": { "type": "string", "description": "The words of the act the item rests on, as read." },
+        "readIn": {
+          "enum": ["act", "authority", "secondary"],
+          "description": "Where the words were read: the act as published (Monitorul Oficial, gov.md), the authority's own publication (SFS, CNAS, BNS, the ministry), or only a secondary source."
+        },
+        "readOn": { "type": "string", "format": "date" },
+        "note": { "type": "string", "description": "What the reader of the source should know: where else the wording was seen, what is still to check." },
+        "verified": {
+          "type": "boolean",
+          "description": "True only when a licensed accountant has read the act itself."
+        }
+      }
+    },
+    "holiday": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "sourceIndex"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+        "name": { "$ref": "#/$defs/words" },
+        "date": { "type": "string", "pattern": "^--(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$", "description": "Every year on this day, as --MM-DD." },
+        "easterOffset": { "type": "integer", "description": "Days after Orthodox Easter Sunday." },
+        "effectiveFrom": { "type": "string", "format": "date" },
+        "effectiveTo": { "type": "string", "format": "date" },
+        "sourceIndex": { "$ref": "#/$defs/sourceIndex" },
+        "note": { "type": "string" }
+      },
+      "oneOf": [{ "required": ["date"] }, { "required": ["easterOffset"] }]
+    },
+    "transfer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["restDay", "workDay", "name", "sourceIndex"],
+      "properties": {
+        "restDay": { "type": "string", "format": "date" },
+        "workDay": { "type": "string", "format": "date" },
+        "name": { "$ref": "#/$defs/words" },
+        "sourceIndex": { "$ref": "#/$defs/sourceIndex" },
+        "note": { "type": "string" }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "what", "authority", "appliesTo", "schedule", "sourceIndex", "confidence"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+        "form": { "type": "string", "description": "The form's code, as the authority prints it: TVA12, IPC21." },
+        "name": { "$ref": "#/$defs/words", "description": "Short name of the obligation." },
+        "what": { "enum": ["file", "pay", "file_and_pay"] },
+        "authority": { "enum": ["SFS", "CNAS", "CNAM", "BNS", "MF", "ASP"] },
+        "appliesTo": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Profile ids, from this file's profiles."
+        },
+        "who": { "$ref": "#/$defs/words", "description": "Who exactly, in the act's terms, with any size or regime condition." },
+        "schedule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["every"],
+          "properties": {
+            "every": { "enum": ["month", "quarter", "half", "year", "event"], "description": "half: the two halves of the calendar year; event: a term counted from something that happens (a hiring), never dated." },
+            "daysAfter": { "type": "integer", "minimum": 1, "maximum": 366, "description": "For a yearly obligation: days after the period's last day, where the act counts days (120 days), instead of dates." },
+            "event": { "$ref": "#/$defs/words", "description": "For every: event, what the term is counted from." },
+            "within": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "days": { "type": "integer", "minimum": 1 },
+                "workingDays": { "type": "integer", "minimum": 1 }
+              },
+              "minProperties": 1,
+              "maxProperties": 1
+            },
+            "day": { "type": "integer", "minimum": 1, "maximum": 31, "description": "Day of the month the obligation falls due." },
+            "monthsAfter": { "type": "integer", "minimum": 0, "maximum": 12, "description": "Months after the period's last month: 1 is the following month." },
+            "dates": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "pattern": "^--(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+              "description": "For a yearly obligation: the days in the year it falls due, as --MM-DD."
+            },
+            "yearsAfter": { "type": "integer", "minimum": 0, "maximum": 1, "description": "For a yearly obligation: 1 when it is due in the year after the period (an annual return), 0 when in the year itself (advance payments)." }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "every": { "const": "year" } } },
+              "then": { "anyOf": [{ "required": ["dates", "yearsAfter"] }, { "required": ["daysAfter"] }] }
+            },
+            {
+              "if": { "properties": { "every": { "enum": ["month", "quarter", "half"] } } },
+              "then": { "required": ["day", "monthsAfter"] }
+            },
+            {
+              "if": { "properties": { "every": { "const": "event" } } },
+              "then": { "required": ["event", "within"] }
+            }
+          ]
+        },
+        "shift": { "enum": ["next_working_day", "none"], "description": "Overrides the file's shift rule, only where the act says otherwise." },
+        "effectiveFrom": { "type": "string", "format": "date" },
+        "effectiveTo": { "type": "string", "format": "date" },
+        "sourceIndex": { "$ref": "#/$defs/sourceIndex", "description": "The act and article that set the deadline. Required: a deadline without a citation fails validation." },
+        "formSourceIndex": { "$ref": "#/$defs/sourceIndex", "description": "The act approving the form, when it is not the one setting the deadline." },
+        "alsoSourceIndexes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceIndex" },
+          "description": "Other acts the obligation rests on (the contribution's own law beside the return's), printed after the main one."
+        },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "checks": {
+          "type": "array",
+          "description": "Dates the authority itself published for this deadline: the validator recomputes each and fails on a difference.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["period", "date", "sourceIndex"],
+            "properties": {
+              "period": { "type": "string", "pattern": "^20[0-9]{2}(-(0[1-9]|1[0-2]|Q[1-4]|H[12]))?$" },
+              "date": { "type": "string", "format": "date" },
+              "installment": { "type": "integer", "minimum": 1 },
+              "sourceIndex": { "$ref": "#/$defs/sourceIndex" }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "effectiveFrom", "recordedOn", "topic", "title", "state", "sourceIndex"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "effectiveFrom": { "type": "string", "format": "date" },
+        "recordedOn": { "type": "string", "format": "date", "description": "When the rulebook recorded it; the RSS item's date." },
+        "topic": { "enum": ["rate", "threshold", "wage", "abrogation", "form", "efactura", "deadline", "holiday", "other"] },
+        "title": { "$ref": "#/$defs/words" },
+        "detail": { "$ref": "#/$defs/words" },
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)*$",
+          "description": "The rule-set value this change is about. The validator checks that 'after' is what the rule sets say on effectiveFrom."
+        },
+        "before": { "type": "string", "pattern": "^-?[0-9]+(\\.[0-9]+)?$" },
+        "after": { "type": "string", "pattern": "^-?[0-9]+(\\.[0-9]+)?$" },
+        "unit": { "enum": ["ratio", "MDL", "MDL/month", "MDL/year"] },
+        "state": {
+          "enum": ["law", "bill"],
+          "description": "law: published in Monitorul Oficial, in force from effectiveFrom (whether that day has come is the reader's date, not the data's); bill: not adopted, may still change."
+        },
+        "sourceIndex": { "$ref": "#/$defs/sourceIndex" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

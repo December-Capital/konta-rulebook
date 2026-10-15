@@ -39,6 +39,11 @@ charts/md-pgcc-2020.json       Planul general de conturi contabile, in force fro
 schemas/chart.schema.json      the contract for a chart of accounts
 classifiers/sfs-efactura-2026.json  e-Factura's units of measure and VAT rate codes, from SFS's workbook
 schemas/classifier.schema.json the contract for a classifier
+calendar/md-holidays.json      the weekend, the Labour Code's public holidays, each year's transfers of rest days
+calendar/md-deadlines.json     filing and payment deadlines, who they apply to, the rule for a non-working day
+calendar/md-changes.json       changes in the law: from when, the value before and after, the act
+schemas/calendar.schema.json   the contract for the three calendar files
+tools/calendar.mjs             expands the calendar into dated items (npm run calendar -- --from --to)
 tools/validate.mjs             the gate: schema plus the cross-file rules JSON Schema can't express
 tools/watch-sources.mjs        reports changes in the official sources that nobody has read yet
 sources/watch.json             the acts it watches, and what has already been read
@@ -167,6 +172,80 @@ it mails the report through the konta.md mailboxes when there is something new, 
 has failed three runs in a row. On the VPS behind app.konta.md it runs from cron every morning,
 mailing `mail@konta.md`, logging to `/var/log/konta-rulebook-watch.log`. It never changes `data/`: after reading a new act, change the data
 and add the act to `known` in the same commit.
+
+The fiscal calendar is watched in the gazette only, as one entry (`fiscal-calendar`) with its own
+patterns: transfers of rest days and the Labour Code, the Fiscal Code and fiscal policy, returns
+and forms, invoices and e-Factura, wages, the social and health insurance budgets, financial
+statements and statistics, and every act of SFS whatever its title (`matchUnder`, on the issue's
+heading). Opinions on bills, securities issues, Constitutional Court inadmissibility decisions and
+medical-service orders are excluded. Over the ten months to October 2026 it would have reported
+about two acts a month.
+
+## The fiscal calendar
+
+`calendar/` holds the dates an accountant works to, as data, never as text on a page: the days
+that are not working days, the deadlines, and the changes in the law (layout above).
+`tools/validate-calendar.mjs` is the calendar's half of `npm run validate`.
+
+konta.md/calendar, its `.ics` feeds and the RSS of changes are generated from `tools/calendar.mjs`'s
+output when the site is packaged, and the product's deadline calendar and payroll proration will read
+the same files. One engine computes a date; nothing copies one.
+
+**No deadline without a citation.** Every deadline's `sourceIndex` must resolve to a source with the
+act, the article, and a Monitorul Oficial reference or a link; a source says where its words were
+read (`readIn`: the act as published, the authority's own publication, or only a secondary text) and
+carries the short citation printed next to the date (`cite`, in Romanian, Russian and English). The
+validator fails a deadline that cites nothing, cites no article, or rests on a secondary text without
+being marked `"confidence": "secondary"`. A secondary deadline is kept for the record and listed on
+the site as "not shown yet", never dated.
+
+**The moved deadline is the act's rule, not ours.** `shift` says what happens to a deadline falling
+on a non-working day and cites the article that says so. Non-working days are the weekend, the
+Labour Code's holidays (fixed dates, and Easter and Memorial Day counted from Orthodox Easter, which
+`tools/calendar.mjs` computes), and each year's transfers by Government decision. A year missing
+from `years` has not had its transfers read: the site shows its holidays with a warning.
+
+**The authority's own dates are tests.** A deadline's `checks` are dates SFS (or another authority)
+published for a given period; the validator recomputes each one and fails on any difference, so a
+wrong holiday, transfer or shift rule shows up before it reaches a calendar.
+
+**A change in the law agrees with the rule sets.** A change tied to a rule value (`key`) must say
+what the rule sets say on its `effectiveFrom`, and what they said the day before. A change built on
+a bill is `"state": "bill"` until the act is published.
+
+**Adding a deadline:** read the article in the act, or in the authority's own text when the act is
+out of reach, add the source with its quote, the deadline with its profiles and schedule, and a
+check for every date the authority has published. `npm run validate`. The daily watcher
+(`npm run watch`) reports gazette acts that may change the calendar under `fiscal-calendar`; after
+reading one, change the data and add the act to `known` in `sources/watch.json` in the same commit.
+
+**Where the 2026 data was read.** On 2026-10-15, in Monitorul Oficial wherever an amending law
+quotes the article (`readIn: "act"`), otherwise in the authority's own words (`"authority"`): SFS's
+monthly notices and its Q&A base, relayed word for word on monitorul.fisc.md because sfs.md refuses
+automated requests; CNAS's notices on cnas.gov.md; BNS's forms pages. No Government decision
+transferred rest days in 2024, 2025 or 2026 (the gazette searched month by month), and since Law
+69/2020 such a decision binds only public institutions.
+
+### To read by hand on legis.md before the calendar is approved
+
+legis.md answers automated requests with a challenge, so these were not read in their consolidated
+wording. Each is cited in the data with what was read instead.
+
+1. Codul fiscal art. 129 pct. 8) (a deadline on a rest day moves to the next working day), and
+   whether "zi de odihnă" is defined; Codul civil art. 389 says the same and was read.
+2. Codul fiscal art. 115 alin. (1)-(2) (TVA12), art. 92 alin. (1)-(3) (IPC21, IALS21), art. 84
+   alin. (1), (4), (6) (instalments; whether the SME exemption of alin. (6) was extended to 2026),
+   art. 54^4 alin. (2)-(3) (IVAO), art. 87 alin. (1) (payment by the return's date).
+3. Codul fiscal art. 281^1 and 282 as consolidated after Law 214/2024 (real estate tax).
+4. Codul muncii art. 111 as consolidated (the list rebuilt from eight amending laws; lit. j)
+   "consiliul local"), art. 102 (shorter day before a holiday), art. 107 (weekly rest days).
+5. Legea 287/2017 art. 33 alin. (3): which law brought the 150 days for entities not of public
+   interest (BNS's page says so; the 2018 text says 120 days for all).
+6. Legea 1593/2002 art. 20 alin. (1), art. 22, art. 23 and annex 2 (CNAM premiums), and art. 26
+   alin. (1) (the employer's monthly return); Legea 489/1999 annex 1 as in force on 1 January and
+   1 July 2026.
+7. Ordinul MF nr. 126/2017 annex 6 pct. 5 as consolidated (who files CAS18-AN in 2026).
+8. Any 2026 Government decision on rest days, again in late November and December 2026 for 2027.
 
 ## Open questions
 

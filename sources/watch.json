@@ -92,6 +92,152 @@
           "https://mf.gov.md/ro/content/ordin-cu-privire-la-aprobarea-indica%C5%A3iilor-metodice-privind-particularit%C4%83%C5%A3ile-contabilit%C4%83%C5%A3ii"
         ]
       }
+    },
+    {
+      "id": "fiscal-calendar",
+      "title": "Calendarul fiscal: termene, zile nelucrătoare, schimbări în lege",
+      "report": "may change the fiscal calendar (calendar/)",
+      "since": "2025",
+      "followAmendments": false,
+      "match": [
+        "transfer\\w* (?:a |al )?(?:unor |unei )?zil\\w* de (?:odihn|repaus)",
+        "zil\\w* de (?:odihn|repaus|sarbatoare)",
+        "sarbatori\\w* nelucratoare",
+        "\\bcodul\\w* muncii\\b",
+        "\\bcodul\\w* fiscal\\b",
+        "\\bpolitic\\w* fiscal\\w*",
+        "\\badministrar\\w* fiscal\\w*",
+        "dar\\w* de seama",
+        "declaratie\\w* (?:fiscal|privind|cu privire la impozit)",
+        "factur\\w* fiscal\\w*",
+        "e-factura",
+        "calendar\\w* fiscal",
+        "termene\\w* de prezentare",
+        "salariului minim",
+        "salariului mediu",
+        "bugetul\\w* asigurarilor sociale",
+        "asigurarii obligatorii de asistenta medicala",
+        "primelor de asigurare obligatorie",
+        "contributii\\w* de asigurari sociale",
+        "contabilitatii si raportarii financiare",
+        "situatii\\w* financiare",
+        "lucrari\\w* statistice",
+        "statistica oficiala"
+      ],
+      "matchUnder": [
+        "^acte ale serviciului fiscal de stat"
+      ],
+      "exclude": [
+        "blocare a fondurilor",
+        "blocarea fondurilor",
+        "echipamentului de casa",
+        "sistemul bugetar",
+        "sectorul public",
+        "\\bdecret\\b",
+        "registrul emitentilor",
+        "decizie de inadmisibilitate",
+        "interdictiilor asupra tranzactiilor",
+        "prestatorilor de servicii medicale",
+        "programului unic al asigurarii",
+        "^\\d+[a-z]?\\. aviz\\b",
+        "medicamente",
+        "dispozitive\\w* medicale",
+        "servicii\\w* medicale",
+        "raportul de audit",
+        "raportul situatiilor financiare"
+      ],
+      "known": {
+        "amendments": [
+          {
+            "act": "HG 771/2025",
+            "key": "nr. 771, 17 decembrie 2025"
+          },
+          {
+            "act": "HG 773/2025",
+            "key": "nr. 773, 17 decembrie 2025"
+          },
+          {
+            "act": "HG 758/2025",
+            "key": "nr. 758, 3 decembrie 2025"
+          },
+          {
+            "act": "Legea 318/2025",
+            "key": "nr. 318, 29 decembrie 2025"
+          },
+          {
+            "act": "Legea 320/2025",
+            "key": "nr. 320, 29 decembrie 2025"
+          },
+          {
+            "act": "Legea 321/2025",
+            "key": "nr. 321, 29 decembrie 2025"
+          },
+          {
+            "act": "Legea 335/2025",
+            "key": "nr. 335, 29 decembrie 2025"
+          },
+          {
+            "act": "Legea 12/2026",
+            "key": "nr. 12, 19 februarie 2026"
+          },
+          {
+            "act": "Legea 86/2026",
+            "key": "nr. 86, 21 mai 2026"
+          },
+          {
+            "act": "Legea 228/2025",
+            "key": "nr. 228, 10 iulie 2025"
+          },
+          {
+            "act": "Legea 187/2025",
+            "key": "nr. 187, 10 iulie 2025"
+          },
+          {
+            "act": "Legea 139/2025",
+            "key": "nr. 139, 13 iunie 2025"
+          },
+          {
+            "act": "OMF 135/2025",
+            "key": "nr. 135, 10 decembrie 2025"
+          },
+          {
+            "act": "OMF 131/2025",
+            "key": "nr. 131, 5 decembrie 2025"
+          },
+          {
+            "act": "OMF 47/2026",
+            "key": "nr. 47, 27 martie 2026"
+          },
+          {
+            "act": "Ordinul SFS 121/2026",
+            "key": "nr. 121, 4 martie 2026"
+          },
+          {
+            "act": "Ordinul SFS 141/2026",
+            "key": "nr. 141, 18 martie 2026"
+          },
+          {
+            "act": "Ordinul SFS 494/2026",
+            "key": "nr. 494, 2 octombrie 2026"
+          },
+          {
+            "act": "Legea 211/2026",
+            "key": "nr. 211, 17 septembrie 2026",
+            "note": "Amends Law 320/2025's totals and adds art. 14^1; no rate, amount or deadline. Read 2026-10-15."
+          },
+          {
+            "act": "Legea 212/2026",
+            "key": "nr. 212, 17 septembrie 2026",
+            "note": "Amends Law 321/2025's totals and annexes, not art. 4. Read 2026-10-15."
+          },
+          {
+            "act": "Hotărârea Parlamentului 175/2026",
+            "key": "nr. 175, 30 iulie 2026",
+            "note": "Adds a commemorative day to HP 433/1990; not a non-working day under the Labour Code art. 111. Read 2026-10-15."
+          }
+        ],
+        "related": []
+      }
     }
   ],
   "gazette": {

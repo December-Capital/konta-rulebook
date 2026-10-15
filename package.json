@@ -14,13 +14,15 @@
   },
   "scripts": {
     "validate": "node tools/validate.mjs",
-    "watch": "node tools/watch-sources.mjs"
+    "watch": "node tools/watch-sources.mjs",
+    "calendar": "node tools/calendar.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1"
   },
   "files": [
+    "calendar",
     "charts",
     "classifiers",
     "data",

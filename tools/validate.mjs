@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
- * Validates every rule set in data/ against schemas/ruleset.schema.json and every chart of
- * accounts in charts/ against schemas/chart.schema.json, then applies the cross-file rules a
- * JSON Schema cannot express.
+ * Validates every rule set in data/ against schemas/ruleset.schema.json, every chart of
+ * accounts in charts/ against schemas/chart.schema.json and the fiscal calendar in calendar/
+ * against schemas/calendar.schema.json, then applies the cross-file rules a JSON Schema cannot
+ * express (the calendar's in tools/validate-calendar.mjs).
  *
  * Run: npm run validate
  *
@@ -16,6 +17,7 @@ import process from "node:process";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
+import { validateCalendar } from "./validate-calendar.mjs";
 import { validateClassifiers } from "./validate-classifiers.mjs";
 
 const root = resolve(import.meta.dirname, "..");
@@ -292,6 +294,10 @@ if (duplicateChart) {
   problems.push(`duplicate chart id: ${duplicateChart}`);
 }
 
+// --- The fiscal calendar ----------------------------------------------------------------------
+
+const calendarSummary = await validateCalendar({ root, ajv, sets, fail, warn });
+
 // --- Classifiers (units of measure, VAT rate codes) ----------------------------------------
 
 const classifierSummary = await validateClassifiers({ root, ajv, fail, warn });
@@ -315,4 +321,5 @@ for (const { chart } of charts) {
   const subaccounts = accounts.reduce((total, a) => total + (a.subaccounts?.length ?? 0), 0);
   console.log(`ok    chart ${chart.id}: ${accounts.length} accounts, ${subaccounts} subaccounts validated.`);
 }
+for (const line of calendarSummary) console.log(line);
 for (const line of classifierSummary) console.log(line);
