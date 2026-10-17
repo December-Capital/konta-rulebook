@@ -117,6 +117,7 @@
               "MDL/year",
               "days",
               "working_days",
+              "hours",
               "months",
               "count",
               "code",

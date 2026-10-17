@@ -131,6 +131,13 @@
       "article": "criteriile a)-h); criteriul a): livrări de cel puțin 500 mii lei lunar fără active materiale sau umane",
       "publication": "Monitorul Oficial nr. 448-460, art. 1762, 2018",
       "verified": false
+    },
+    {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
+      "article": "art. 97 alin. (3), art. 100 alin. (1), art. 102, art. 128 alin. (1); textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025), citit la 17.10.2026",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "verified": false
     }
   ],
   "values": {
@@ -486,6 +493,27 @@
       "sourceIndex": 16,
       "confidence": "unverified",
       "note": "Art. 54^1 alin. (3) lit. a) and (3^1): 1.2 million became 1.5 million from 1 January 2026 (Law 318/2025). Read as the IVAO regime's revenue ceiling from the amending text; the consolidated wording is not read. Law 12/2026 moved the VAT threshold to 1.7 million from March but this figure stayed: to be confirmed by the compliance owner."
+    },
+    "labour.working_time.daily_hours": {
+      "number": "8",
+      "unit": "hours",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 100 alin. (1): 'Durata zilnică normală a timpului de muncă constituie 8 ore', within art. 95 alin. (2)'s 40 hours a week. Shorter days for minors, harmful conditions and disability (art. 96, art. 100 alin. (2)-(4)) are not modelled. A month's norm in hours is this times its working days, less payroll's pre-holiday reduction."
+    },
+    "labour.working_time.pre_holiday_reduction_hours": {
+      "number": "1",
+      "unit": "hours",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 102 alin. (1): the working day before a non-working public holiday 'se reduce cu cel puţin o oră' for everybody but those already on reduced time (art. 96) or part time (art. 97). At least one hour: alin. (3) leaves the exact length to the collective agreement, the internal rules or the employer's order, which a company cannot set in Konta yet. Alin. (2): a transferred eve keeps the reduction."
+    },
+    "payroll.proration.method": {
+      "text": "working_days",
+      "unit": "text",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "A monthly salary for part of a month (hired or leaving mid-month, unpaid leave) is the salary times the days worked over the month's working days from calendar/md-holidays.json. Codul muncii art. 128 alin. (1) pays salary for work done and art. 97 alin. (3) pays part time 'proporţional timpului lucrat'; no act read prescribes working days rather than hours or calendar days for an incomplete month. Working days is our choice, the usual practice: to be confirmed by the compliance owner."
     }
   }
 }
