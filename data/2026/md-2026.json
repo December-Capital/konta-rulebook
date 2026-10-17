@@ -486,6 +486,34 @@
       "sourceIndex": 16,
       "confidence": "unverified",
       "note": "Art. 54^1 alin. (3) lit. a) and (3^1): 1.2 million became 1.5 million from 1 January 2026 (Law 318/2025). Read as the IVAO regime's revenue ceiling from the amending text; the consolidated wording is not read. Law 12/2026 moved the VAT threshold to 1.7 million from March but this figure stayed: to be confirmed by the compliance owner."
+    },
+    "ledger.advances.received_account": {
+      "text": "523",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 523 Avansuri primite curente is credited for advances received in correspondence with 241, 242, 243 among others, and debited when they are settled in correspondence with 221 among others (subaccounts 5231 from Moldova, 5232 from abroad). Read in the ministry's PDF of OMF 119/2013 (SHA-256 0b2271eb...), 17.10.2026."
+    },
+    "ledger.advances.paid_account": {
+      "text": "224",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III: account 224 Avansuri acordate curente is debited for advances paid in correspondence with 241, 242, 243 among others, and credited when they are settled in correspondence with 521 among others (subaccounts 2241-2244 by what the advance is for). Read in the ministry's PDF of OMF 119/2013, 17.10.2026."
+    },
+    "ledger.advances.received_vat_account": {
+      "text": "225",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Where the VAT due on an advance received waits until the supply: chapter III debits account 225 Creanțe ale bugetului in correspondence with 534 among others and credits it in correspondence with 534 (subaccount 2252, VAT). Debited against ledger.sales.vat_account when the advance is received, credited back in each settlement's share, since the invoice charges VAT on the whole supply. The act lists the correspondence, not this use of it: the usual practice, to be confirmed by the compliance owner."
+    },
+    "tax.vat.advance_received_taxable": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Codul fiscal art. 108 alin. (5): 'Dacă factura fiscală este eliberată sau plata este primită până la momentul efectuării livrării, data livrării se consideră data eliberării facturii fiscale sau data primirii plăţii, în dependenţă de ce are loc mai înainte.' So VAT is due on an advance received, at the supply's rate. Read on legis.md in the version as amended by Law 112/2026 (in force 25.06.2026), 17.10.2026. Alin. (6)-(8) set other dates for regular supplies, leasing and services settled by acts of acceptance, not modelled. The buyer's deduction on an advance paid is not modelled either."
     }
   }
 }
