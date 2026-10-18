@@ -132,6 +132,15 @@ page in the ministry's PDF. The validator refuses a class on the wrong side, an 
 does not have, and a movement that does not go the way its kind does. The product reads only this:
 no account number is written in its code. A non-commercial organisation's 336 is not encoded.
 
+Every class, group, account and subaccount also carries its name in the act's Russian text
+(`nameRu`), from the same two orders as published in Monitorul Oficial's Russian edition (OMF
+100/2019's chapter II, OMF 171/2019's removal of 7143), never translated by us; `translations.ru`
+names those sources. The table's text layer there is in a font with shifted Cyrillic code points,
+so the names were decoded and checked against the rendered pages; misprints are kept as printed.
+The validator refuses a chart where some nodes have a Russian name and others do not, and a name
+whose capitals differ between the two languages (class and group names are in capitals in both),
+which is how a name placed on the wrong level shows.
+
 A later amendment is a new file with a later `effectiveFrom`, never an edit to an approved one.
 
 ## Classifiers
