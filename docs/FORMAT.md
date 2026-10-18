@@ -302,9 +302,9 @@ Recorded rather than guessed at. Resolving them is Phase 0 work.
 | --- | --- |
 | Is a universal B2B e-Factura mandate coming, and when? | No Moldovan legal act found for the widely reported 1 October 2026 date. The obligation today reaches only B2G, supplies to agents without fiscal relations with the budget system, and a risk-based list of roughly 69 entities. |
 | Is the VAT refund ceiling really 70% for e-Factura and MEV users? | Reported by secondary sources, absent from the Ministry of Finance summary of the 2026 changes. It is the strongest positive incentive to adopt e-Factura. |
-| Final 2027 figures | The set is based on a project approved at first reading, not final adoption. |
+| Final 2027 figures | `md-2027` follows bill nr. 326 of 8 September 2026 as passed in first reading (10 September). On 18 October 2026 it awaited the plenary vote in second reading; the Government's opinion on the amendments (Monitorul Oficial nr. 512-515, 16 October 2026) backs 46,680 for the major personal exemption and 11,040 for children, not yet encoded. Re-read the set against the law when it is published. |
 | How does SIA e-Factura round VAT per line? | `tax.vat.line_rounding` says half away from zero; konta-efactura rounds half to even. They must agree with the platform; confirm on the first test round trip. |
-| The VAT rates for 2027 | `md-2027` carries the rates of the bill's art. 96 (20%, 12%, 8%) and the zero rate, provisional. Not the VAT rounding, the ledger accounts or payroll, so documents dated 2027 are still refused until it does. |
+| The 2027 values that come from acts not yet adopted | `md-2027` carries every key the product reads, so documents and payroll dated 2027 are no longer refused. It changes only what the bill changes (the VAT rates of art. 96, the personal exemption at 40,020); the rest is carried over from `md-2026` with a note saying why. Two are carried over only provisionally: the CNAM premium (9%, the 2027 fund law is not in Parliament yet) and the minimum wage (6,300, until the Government sets the 2027 one, usually in December). |
 
 ## Licence
 
