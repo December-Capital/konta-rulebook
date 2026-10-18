@@ -6,7 +6,7 @@
   "effectiveTo": null,
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), approved on 8 September 2026 and reported passed in first reading on 10 September; not published in Monitorul Oficial as of 9 October 2026, so figures may change before adoption. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Not yet encoded from the bill: the personal and major exemptions to 40,020, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, and 18% profit tax for section K. Do not file from it. It is also far from complete: of the keys the product reads for invoices, payments and payroll only the VAT rates are here (from the bill's art. 96, added 2026-10-15); VAT rounding, the ledger accounts and every payroll figure are not, so from 1 January 2027 invoices, payments and payroll are still refused for want of them.",
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'). Status read on parlament.md on 2026-10-18: passed in first reading on 10 September 2026; status 'Lectura a doua', the Economy, Budget and Finance Committee met on it for the second reading on 8 October 2026; no plenary vote in second reading yet; not published in Monitorul Oficial. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) backs raising the major personal exemption to 46,680 (the bill says 40,020) and the exemption for children from 9,900 to 11,040, keeping wheat, maize and sunflower at 8% VAT until 1 January 2028 with a reverse charge, and repealing art. 15 lit. c); none of that is voted, so none of it is encoded, and the figures below may still change. Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the bill: 18% profit tax for section K, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, the vice tax. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it.",
   "sources": [
     {
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
@@ -27,6 +27,115 @@
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
       "article": "art. III pct. 30 (Codul fiscal art. 96 în redacție nouă: alin. (1) cota-standard 20%; alin. (2) pct. 1) cota redusă 12%, pct. 2) cota redusă 8%), pct. 31 și pct. 37 (art. 96 alin. (2) pct. 2) lit. d) și art. 104, de la 1 aprilie 2027), în vigoare de la 1 ianuarie 2027 (art. XVIII alin. (1)); read 2026-10-15 in the Government's PDF, SHA-256 2afc21eae25b1cbb78735dfb84ca4e70c58253fe8b2d2f7b973870fb0f41b93f, pages 8-11 (art. III pct. 30-37), art. XVIII on page 40",
       "url": "https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2026-09/NU-599-MF-2026_0.pdf",
+      "verified": false
+    },
+    {
+      "act": "Proiectul de lege pentru modificarea unor acte normative (privind simplificarea legislației fiscale și vamale), nr. 326 din 08.09.2026, inițiativa Guvernului (NU-599-MF-2026, decizia protocolară nr. 38.1/2026)",
+      "article": "art. III pct. 9 (Codul fiscal art. 33: alin. (1) „29700” devine „40020”, alin. (2) „34620” devine „40020”), pct. 4 (art. 15 lit. a): se adaugă gospodăriile țărănești, cota rămâne), pct. 10 (art. 35^2: denumirea și alin. (3)), pct. 38 (art. 108 alin. (9)); art. VII pct. 2 (Legea 489/1999 anexa nr. 1 pct. 1.1: 24% pentru toți angajatorii); art. XI (Legea 1593/2002 art. 3); art. XVIII alin. (1): în vigoare la 1 ianuarie 2027. Aprobat în prima lectură la 10.09.2026; read 2026-10-18 in the text registered in Parliament ('format editabil', served as PDF, SHA-256 52737d3fe6926cd11346686a78978a8cf98624d020088ade8be92850191d7667), pages 3, 34-36 and 41",
+      "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
+      "verified": false
+    },
+    {
+      "act": "Avizul Guvernului asupra amendamentelor la proiectul de lege pentru modificarea unor acte normative (privind simplificarea legislației fiscale și vamale), inițiativa legislativă nr. 326 din 8 septembrie 2026, aprobat în ședința Guvernului din 15 octombrie 2026 (decizia protocolară nr. 44.13/2026)",
+      "article": "pct. 10-13 (art. 33 alin. (2): 46 680 lei; scutirea pentru copii: 11 040 lei), pct. 25-29 și 31 (art. 96), pct. 43 (art. 108, avansuri: nu se susține), și completările propuse de Guvern (art. 15 lit. c) se abrogă; art. 96 alin. (2); art. 101^9 nou); read 2026-10-18 in the issue's part II PDF, SHA-256 2a097d628d43800b48473a6a2c2a0c3188c0c24ee6df899f11a08db95013f255, pages 16-34",
+      "publication": "Monitorul Oficial nr. 512-515, partea II, aviz nr. 144, 16.10.2026",
+      "url": "https://monitorul.gov.md/ro/monitor/3359",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 214/2024 pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală și vamală)",
+      "article": "art. II pct. 11-13 (Codul fiscal art. 33 alin. (1) și (2), art. 34 alin. (2), art. 35 alin. (1) și (2)) și pct. 26 (art. 88 alin. (1)), în vigoare de la 1 ianuarie 2025",
+      "publication": "Monitorul Oficial nr. 355-357, art. 545, 15.08.2024",
+      "url": "https://monitorul.gov.md/ro/monitor/2946",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 212/2023 pentru modificarea unor acte normative",
+      "article": "art. II pct. 7 (Codul fiscal art. 35^2 alin. (1)), în vigoare de la 1 ianuarie 2024",
+      "publication": "Monitorul Oficial nr. 297-301, art. 514, 2023",
+      "url": "https://monitorul.gov.md/ro/monitor/2758",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 697/2014 cu privire la aprobarea Regulamentului privind reținerea impozitului pe venit din salariu și din alte plăți efectuate de către patron în folosul angajatului",
+      "article": "pct. 9-10, 18 și 38 și fișa personală (coloanele 7.7-7.10), în redacția HG nr. 1029/2023 (Monitorul Oficial nr. 502-504, art. 1239, 2023) și HG nr. 901/2024 (Monitorul Oficial nr. 564-568, art. 1018, 2024)",
+      "url": "https://monitorul.gov.md/ro/monitor/2828",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "article": "anexa nr. 1 pct. 1.1, în redacția Legii nr. 60/2020, art. VI pct. 20, în vigoare de la 1 ianuarie 2021",
+      "publication": "Monitorul Oficial nr. 108-109, art. 186, 2020",
+      "url": "https://monitorul.gov.md/ro/monitor/2204",
+      "verified": false
+    },
+    {
+      "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
+      "article": "art. 4 alin. (1): prima procentuală de 9,0%; for 2026 only, carried over until the 2027 fund law is adopted",
+      "publication": "Monitorul Oficial nr. 659-661, art. 798, 2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3204",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 771/2025 privind stabilirea cuantumului salariului minim pe țară pentru anul 2026",
+      "article": "pct. 1: „Se stabilește, începând cu 1 ianuarie 2026, salariul minim pe țară în cuantum de 6300 de lei lunar pentru un program complet de lucru de 169 de ore (în medie pe lună)”; read 2026-10-18 in the issue's part II PDF, SHA-256 196afdf596e2900556f9f5f3eba630db5b675cc11d0651483801182907c3058a, page 49",
+      "publication": "Monitorul Oficial nr. 620-622, art. 783, 18.12.2025",
+      "url": "https://monitorul.gov.md/ro/monitor/3193",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "article": "cap. III, conturile 221, 224, 225, 242, 521, 523, 531, 533, 534, 611 și 713",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "verified": false
+    },
+    {
+      "act": "Ghid de integrare semiautomatizat SIA „e-Factura” (Serviciul Fiscal de Stat, 2025)",
+      "article": "calculul TVA pe rând (TotalTVA)",
+      "url": "https://efactura.sfs.md/Help/Ghid_integrare_Semi_Automatizata.pdf",
+      "verified": false
+    },
+    {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
+      "article": "art. 97 alin. (3), art. 100 alin. (1), art. 102, art. 128 alin. (1), citite la 17.10.2026; art. 111 alin. (1), art. 113 alin. (1), art. 117, art. 120 alin. (1) și art. 165, citite la 18.10.2026; textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025)",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 426/2004 privind aprobarea Modului de calculare a salariului mediu",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=119783&lang=ro",
+      "article": "anexa nr. 1 pct. 2-7, 10, 11, 12 și 14 subpct. 1) și 1^1); textul consolidat pe legis.md (ultima modificare HG nr. 685 din 27.12.2019, Monitorul Oficial nr. 400-406, art. 1023), citit la 18.10.2026 și comparat cu fiecare act de modificare din Monitorul Oficial",
+      "publication": "Monitorul Oficial nr. 73-76, art. 570, 07.05.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 289/2004 privind indemnizațiile pentru incapacitate temporară de muncă și alte prestații de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156689&lang=ro",
+      "article": "art. 4 alin. (2^1) și (3), art. 7 alin. (13) și (15), art. 12 alin. (2), art. 13 alin. (3); textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 168-170, art. 773, 10.09.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "article": "anexa nr. 3 pct. 3 și 19; textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 1-4, art. 2, 06.01.2000",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+      "article": "art. 3 (noțiunea „alte recompense”) și art. 6; textul consolidat pe legis.md (ultima modificare Legea nr. 318 din 29.12.2025), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 18-19, art. 57, 08.02.2003",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
+      "article": "art. 18 lit. c) și o), art. 20 lit. a), art. 36 alin. (8); textul consolidat pe legis.md (ultima modificare Legea nr. 112 din 11.06.2026, Monitorul Oficial nr. 277-279, art. 271), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
     }
   ],
@@ -50,7 +159,7 @@
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Bill pct. 4 adds peasant farms to art. 15 lit. a), so 12% instead of 7%. No explicit repeal of art. 15 lit. c) was seen: to be checked."
+      "note": "Bill art. III pct. 4 adds peasant farms to art. 15 lit. a), so 12% instead of 7%. The bill as registered does not repeal art. 15 lit. c); the Government's opinion of 15 October 2026 proposes repealing it (its own addition pct. 1). To be checked in the text adopted in second reading."
     },
     "tax.profit.undistributed_eligibility_ceiling": {
       "number": "200000000",
@@ -107,6 +216,321 @@
       "sourceIndex": 1,
       "confidence": "unverified",
       "note": "Art. 104: zero rate with the right to deduct. The bill (art. III pct. 37) changes what it covers, lit. b) from 1 April 2027 and a new lit. j) for books and periodicals, not the rate."
+    },
+    "tax.vat.line_rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 13,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: no act sets it and the bill does not touch it. VAT is computed per invoice line and rounded to two decimals (tax.vat.line_rounding_decimals). Half away from zero is ordinary commercial rounding; konta-efactura currently rounds half to even. The two must agree with what SIA e-Factura computes, to be confirmed on the first round trip with a test account."
+    },
+    "tax.vat.line_rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 13,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: lei and bani, so amounts on an invoice have two decimals. Nothing in the bill changes the currency's subdivision."
+    },
+    "tax.vat.advance_received_taxable": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch vat-advances): Codul fiscal art. 108 alin. (5), the supply's date is the invoice's or the payment's, whichever comes first, so VAT is due on an advance received. The bill touches art. 108 only at alin. (9) (art. III pct. 38, banks in liquidation), and the Government's opinion of 15 October 2026 (pct. 43) rejects a deputy's amendment to art. 108 for advances. Read on legis.md as amended by Law 112/2026, 17.10.2026."
+    },
+    "ledger.sales.receivable_account": {
+      "text": "221",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts (OMF 119/2013) is not a yearly act and the bill does not touch it. Chapter III: 221 Creanțe comerciale is debited for goods and services sold, in correspondence with 611 and 534."
+    },
+    "ledger.sales.revenue_account": {
+      "text": "611",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Chapter III: 611 Venituri din vînzări is credited for sales. The default for an invoice line; a line may name another revenue account or subaccount."
+    },
+    "ledger.sales.vat_account": {
+      "text": "534",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Chapter III: 534 Datorii față de buget is credited for VAT charged on sales (subaccount 5344 in the act)."
+    },
+    "ledger.purchases.payable_account": {
+      "text": "521",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Chapter III: 521 Datorii comerciale curente is credited as goods and services are received and debited as they are paid."
+    },
+    "ledger.purchases.vat_account": {
+      "text": "534",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged, and so is the open question. Chapter III prescribes neither choice: holding deductible VAT on 2252 and offsetting it against 5344 is the act's own path; debiting 534 (5344) directly, as the product does, is common practice. To be decided by the compliance owner."
+    },
+    "ledger.payments.bank_account": {
+      "text": "242",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Chapter III: 242 Conturi curente în monedă națională, debited for money received and credited for money paid out."
+    },
+    "ledger.advances.received_account": {
+      "text": "523",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch vat-advances): the chart of accounts is unchanged. Chapter III: 523 Avansuri primite curente is credited for advances received and debited when they are settled (5231 from Moldova, 5232 from abroad)."
+    },
+    "ledger.advances.paid_account": {
+      "text": "224",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch vat-advances): the chart of accounts is unchanged. Chapter III: 224 Avansuri acordate curente is debited for advances paid and credited when they are settled (2241-2244 by what the advance is for)."
+    },
+    "ledger.advances.received_vat_account": {
+      "text": "225",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch vat-advances): the chart of accounts is unchanged. Where the VAT due on an advance received waits until the supply: 225 Creanțe ale bugetului (2252, VAT), debited against ledger.sales.vat_account. The act lists the correspondence, not this use of it: usual practice, to be confirmed by the compliance owner."
+    },
+    "ledger.payroll.salaries_payable_account": {
+      "text": "5311",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Chapter III: 531 Datorii față de personal privind retribuirea muncii, subaccount 5311 Datorii salariale."
+    },
+    "ledger.payroll.social_insurance_account": {
+      "text": "5331",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Subaccount 5331 Datorii față de bugetul asigurărilor sociale de stat, for the employer's CNAS contribution."
+    },
+    "ledger.payroll.medical_insurance_account": {
+      "text": "5332",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Subaccount 5332 Datorii față de fondurile asigurării obligatorii de asistență medicală."
+    },
+    "ledger.payroll.income_tax_account": {
+      "text": "5342",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. Subaccount 5342 Datorii privind impozitul pe venit din salariu."
+    },
+    "ledger.payroll.expense_account": {
+      "text": "713",
+      "unit": "code",
+      "sourceIndex": 12,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: the chart of accounts is unchanged. The default expense for a salary and its CNAS contribution, administrative (713); each employee may name their own. A convenience, not a rule of the act."
+    },
+    "payroll.income_tax.rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Codul fiscal art. 15 lit. a), 12% of taxable income for individuals. The bill (art. III pct. 4) only adds peasant farms to lit. a) and keeps the rate; no amendment to it is backed in the Government's opinion."
+    },
+    "payroll.income_tax.personal_deduction_annual": {
+      "number": "40020",
+      "unit": "MDL/year",
+      "sourceIndex": 4,
+      "confidence": "unverified",
+      "note": "CHANGED by the bill: art. III pct. 9.1 replaces 29,700 by 40,020 in Codul fiscal art. 33 alin. (1), from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 29,700. Granted monthly as one twelfth (3,335) from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work only. The bill also sets the major exemption (alin. (2)) at 40,020; the Government's opinion of 15 October 2026 backs 46,680 for it instead and leaves alin. (1) at 40,020. Not adopted: second reading pending."
+    },
+    "payroll.income_tax.personal_deduction_income_cap": {
+      "number": "360000",
+      "unit": "MDL/year",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Codul fiscal art. 33 alin. (1), the exemption belongs to a resident whose annual taxable income is under 360,000. The bill changes only the amount in that paragraph ('cifrele „29700”'), not the cap. Art. 88 alin. (1): the employer need not track the loss of the right. The product's withdrawal of the year's exemption from the month pay here passes the cap is still to be decided by the compliance owner."
+    },
+    "payroll.income_tax.dependant_deduction_annual": {
+      "number": "9900",
+      "unit": "MDL/year",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Codul fiscal art. 35 alin. (1), 9,900 a year per dependant since 2025 (Law 214/2024). The bill as registered does not amend art. 35. The Government's opinion of 15 October 2026 (pct. 11-13) backs raising 'scutirea pentru copii' from 9,900 to 11,040, whether for every dependant or only children is not yet in a text: replace this when the second reading is published."
+    },
+    "payroll.income_tax.medical_premium_deductible": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 7,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Codul fiscal art. 35^2 alin. (1), added by Law 212/2023, allows deducting the compulsory health insurance premium paid by individuals. The bill (art. III pct. 10) renames art. 35^2 to cover resident individuals 'care nu desfășoară activitate de întreprinzător', which an employee is, and changes alin. (3); alin. (1) stays."
+    },
+    "payroll.income_tax.withholding_method": {
+      "text": "cumulative",
+      "unit": "text",
+      "sourceIndex": 8,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: HG 697/2014 pct. 38, as restated by HG 1029/2023, is a Government decision without a term and the bill does not touch it: taxable income and tax are computed cumulatively from the start of the year or from hiring. The open questions in md-2026 (refunds through payroll) stand."
+    },
+    "payroll.cnas.employer_rate": {
+      "number": "0.24",
+      "unit": "ratio",
+      "sourceIndex": 9,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 489/1999 annex 1 pct. 1.1, 24% for private-sector employers since 2021. The bill (art. VII pct. 2) rewrites pct. 1.1 to 24% for every employer, ending the 29% for budget and public-authority employers; for the employers the product serves the rate is the same either way. The 2027 social insurance budget law, which could restate it, is not in Parliament yet (bills up to nr. 374 of 9 October 2026 checked)."
+    },
+    "payroll.cnam.employee_rate": {
+      "number": "0.09",
+      "unit": "ratio",
+      "sourceIndex": 10,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 PROVISIONALLY: the premium is set each year by the fund law, 9.0% for 2026 by Law 321/2025 art. 4 alin. (1). The 2027 fund law is not in Parliament yet (bills up to nr. 374 of 9 October 2026 checked); bill 326 art. XI only drops a reference to art. 89 from Law 1593/2002 art. 3. Replace when the 2027 law is published."
+    },
+    "payroll.minimum_wage.monthly": {
+      "number": "6300",
+      "unit": "MDL/month",
+      "sourceIndex": 11,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 PROVISIONALLY: HG 771/2025 is titled 'pentru anul 2026', but its pct. 1 sets 6,300 'începând cu 1 ianuarie 2026' with no end date, so until a new decision it is the figure in force. The Government sets each year's minimum wage by decision under Law 1432/2000 art. 3, for 2026 in December 2025; the 2027 decision has not been looked for issue by issue. Replace it when published. The product reads this key with TryNumber, so it is optional to it."
+    },
+    "payroll.rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 8,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: no rounding rule was found in the acts read, and the bill sets none. Bani throughout, half away from zero, is our choice. To be confirmed by the compliance owner."
+    },
+    "payroll.rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 8,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: lei and bani, two decimals."
+    },
+    "payroll.proration.method": {
+      "text": "working_days",
+      "unit": "text",
+      "sourceIndex": 14,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-proration): a monthly salary for part of a month is the salary times the days worked over the month's working days from calendar/md-holidays.json. Codul muncii art. 128 alin. (1) and art. 97 alin. (3); no act prescribes working days over hours or calendar days, and nothing for 2027 changes that. Our choice, to be confirmed by the compliance owner."
+    },
+    "labour.working_time.daily_hours": {
+      "number": "8",
+      "unit": "hours",
+      "sourceIndex": 14,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-proration): Codul muncii art. 100 alin. (1), 8 hours a day within art. 95 alin. (2)'s 40 a week. The Labour Code is not a yearly act and the bill does not touch it."
+    },
+    "labour.working_time.pre_holiday_reduction_hours": {
+      "number": "1",
+      "unit": "hours",
+      "sourceIndex": 14,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-proration): Codul muncii art. 102 alin. (1), the working day before a non-working public holiday is shorter by at least one hour. The bill does not touch the Labour Code."
+    },
+    "payroll.sick.social_contribution": {
+      "text": "no",
+      "unit": "text",
+      "sourceIndex": 17,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): bill 326 art. VII amends Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3. Legea 489/1999 anexa nr. 3 pct. 19: no social contribution is calculated on 'indemnizaţia pentru incapacitate temporară de muncă', whoever pays it. Leave pay is not on the annex's list (pct. 3 even names unused-leave compensation as subject), so it carries the contribution as salary does."
+    },
+    "payroll.sick.medical_premium": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 18,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): bill 326 art. XI only drops '89,' from the exceptions in Law 1593/2002 art. 3 (art. 89 of the Fiscal Code is repealed by the same bill), leaving art. 20 among them, and its art. III pct. 7 amends art. 20 only at lit. p^2), z^10), z^11), z^18) and z^22), not lit. a). Legea 1593/2002 art. 6 computes the premium on salary and 'alte recompense', which art. 3 defines as any other sum the employer pays its employee except the income of Codul fiscal art. 20, 89, 90 and 90^1. Art. 20 lit. a) exempts social insurance benefits paid from the social insurance budget; the employer's first days are paid from its own means, so the premium applies. Our reading, for the compliance owner."
+    },
+    "payroll.sick.income_tax": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 19,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): bill 326 art. III pct. 7 amends art. 20 only at lit. p^2), z^10), z^11), z^18) and z^22), not lit. a); art. 18 and art. 36 alin. (8) are not touched. Codul fiscal art. 20 lit. a) leaves out of gross income only social insurance benefits 'achitate din bugetul asigurărilor sociale de stat'; the employer's first days are its own payment to its employee (art. 18 lit. c), o)), which it deducts (art. 36 alin. (8)). So they are taxed with the month's salary. Our reading, for the compliance owner."
+    },
+    "payroll.average_earnings.method": {
+      "text": "three_months",
+      "unit": "text",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): HG 426/2004 is a Government decision without a term and bill 326 does not touch it; no amendment for 2027 was looked for in the gazette. HG 426/2004 anexa 1 pct. 5 last alineat (as amended by HG 428/2007) and pct. 10: the 3 calendar months before the month of the event (de la data de 1 pînă la data de 1); per working day, the earnings of pct. 3 over the days actually worked, leave, sick days and their pay left out; per calendar day, that times the scheduled working days over the calendar days less art. 111's holidays of the same period. A month with no work stays in the period (pct. 10 last alineat). Somebody employed less than 3 months: the period is the time worked (pct. 5, pct. 11 al. 1). The 12-month period of pct. 5 al. 2 (agriculture, teachers, piece work paid at completion, varying part time) and the seasonal one are not modelled: the product knows only this method."
+    },
+    "payroll.average_earnings.reference_months": {
+      "number": "3",
+      "unit": "months",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): HG 426/2004, not touched by bill 326. HG 426/2004 anexa 1 pct. 5 last alineat: 'ultimele 3 luni calendaristice de lucru premergătoare evenimentului de care depinde plata respectivă (de la data de 1 pînă la data de 1)'. The event is the first day of the leave or of the incapacity."
+    },
+    "payroll.average_earnings.lookback_months": {
+      "number": "12",
+      "unit": "months",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): HG 426/2004, not touched by bill 326. HG 426/2004 anexa 1 pct. 11 al. 2: with no earnings at all in the 3 months, the average comes from 'ultimele 3 luni din cele 12 luni premergătoare evenimentului de plată, în care ei au avut zile efectiv lucrate şi au avut cîştig'."
+    },
+    "payroll.average_earnings.calendar_days_per_month": {
+      "number": "29.4",
+      "unit": "days",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): HG 426/2004, not touched by bill 326. If annual leave comes to be counted in working days from 2027 (see payroll.leave.days_basis), the per-day basis of the average may change with it. HG 426/2004 anexa 1 pct. 7: '29,4 zile – numărul mediu de zile calendaristice pe lună'. Used when no earnings exist to average (hired in the month of the event, or none in the 12 months): pct. 11 al. 4 then bases the average on the monthly salary, and pct. 14 subpt. 2) turns a calendar-day average into a month by 29,4, so the product divides the monthly salary by 29,4. That division is our reading of al. 4, for the compliance owner. Pct. 12 also divides periodic bonuses by it; the product does not tell periodic bonuses from monthly ones yet."
+    },
+    "payroll.average_earnings.rounding": {
+      "text": "final_amount",
+      "unit": "text",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): the act is silent and this is our choice; nothing for 2027 changes that. HG 426/2004 says nothing on rounding (the original annex and its nine amending acts read). The averages are kept exact and only the amount paid is rounded, by payroll.rounding. Professional examples (contabilsef.md, 06.12.2010) round the coefficient to 4 decimals and each average to 2, which differs by about 2 bani a leave: question for the compliance owner."
+    },
+    "payroll.leave.days_basis": {
+      "text": "calendar_days_excluding_holidays",
+      "unit": "text",
+      "sourceIndex": 14,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): Codul muncii art. 113 alin. (1) as in force on 18 October 2026; bill 326 does not touch the Labour Code. WATCH: the Ministry of Labour's draft to count annual leave in working days (22 at least, paid per working day) from 1 January 2027 was not law on 18 October 2026 (reported by the payroll-leave session; the draft was not read here). If it is adopted, this key and the average's per-day basis change for 2027 and this value is wrong from that date. Annual leave is counted, and paid, in calendar days less the non-working public holidays of art. 111 that fall inside it, whatever day of the week they fall on: Codul muncii art. 113 alin. (1); HG 426/2004 anexa 1 pct. 6 subpct. 1) and pct. 14 subpct. 1) pay leave per calendar day 'la numărul zilelor de concediu exprimat în zile calendaristice'. A local patron saint's day (art. 111 alin. (1) lit. j)) is not subtracted: it holds only in its locality. The Ministry of Labour's draft to count leave in working days from 2027 was not law on 18.10.2026."
+    },
+    "payroll.leave.pay_month": {
+      "text": "leave_start_month",
+      "unit": "text",
+      "sourceIndex": 14,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): Codul muncii art. 117 alin. (3), not touched by bill 326. Codul muncii art. 117 alin. (3), as consolidated on legis.md (read 18.10.2026): leave pay is paid 'cu cel puțin 3 zile calendaristice înainte de începerea concediului sau la o dată agreată de părți, dar nu mai târziu de data achitării salariului pentru luna în care a fost acordat concediul respectiv'. The whole leave's pay is therefore computed in the payroll of the month the leave starts, including days that fall in the next month, and taxed then (HG 697/2014 pct. 36: when directed to payment). How CNAS splits the contribution by the months the leave covers on IPC21 (Ordin CNAS 31-A/2026 pct. 8.1) is for the IPC21 work. Our reading, for the compliance owner."
+    },
+    "payroll.leave.study_share": {
+      "number": "0.75",
+      "unit": "ratio",
+      "sourceIndex": 15,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): HG 426/2004 pct. 14 subpct. 1), not touched by bill 326. HG 426/2004 anexa 1 pct. 14 subpt. 1), completed by HG 1025/2007: 'În cazul concediilor de studii, rezultatul căpătat se corectează la cota de menținere a salariului mediu – 75 %'."
+    },
+    "payroll.sick.employer_days_per_case": {
+      "number": "5",
+      "unit": "days",
+      "sourceIndex": 16,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): Bill 326 art. XIII rewords Law 289/2004 only ('se plătesc' becomes 'se finanțează' in art. 4 alin. (2^1), 'plătite' becomes 'finanțate' in art. 13 alin. (3)-(4)) and the Government's opinion on the amendments says nothing on it. Legea 289/2004 art. 4 alin. (2^1) lit. a): 'primele cinci zile calendaristice de incapacitate temporară de muncă se plătesc din mijloacele angajatorului'; from the sixth day the social insurance budget pays (lit. b)), outside the employer's payroll. Not for tuberculosis, AIDS, cancer, a risk of losing a pregnancy or a registered pregnancy, paid by the budget from the first day (alin. (3)), nor for days of unpaid leave (art. 12 alin. (2))."
+    },
+    "payroll.sick.employer_days_per_year": {
+      "number": "15",
+      "unit": "days",
+      "sourceIndex": 16,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): Bill 326 art. XIII rewords Law 289/2004 only ('se plătesc' becomes 'se finanțează' in art. 4 alin. (2^1), 'plătite' becomes 'finanțate' in art. 13 alin. (3)-(4)) and the Government's opinion on the amendments says nothing on it. Legea 289/2004 art. 4 alin. (2^1) lit. a): 'însă nu mai mult de 15 zile cumulative pe parcursul unui an calendaristic în cazul mai multor perioade de incapacitate temporară de muncă'. The product counts the employer's days of the year in which each incapacity starts."
+    },
+    "payroll.sick.employer_share": {
+      "number": "0.75",
+      "unit": "ratio",
+      "sourceIndex": 16,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026 (branch payroll-leave): Bill 326 art. XIII rewords Law 289/2004 only ('se plătesc' becomes 'se finanțează' in art. 4 alin. (2^1), 'plătite' becomes 'finanțate' in art. 13 alin. (3)-(4)) and the Government's opinion on the amendments says nothing on it; the 75% stays. Legea 289/2004 art. 13 alin. (3): 'în proporție de 75% din salariul mediu al angajatului, determinat în modul stabilit de Guvern', with art. 7 alin. (15); HG 426/2004 anexa 1 pct. 14 subpct. 1^1) (HG 685/2019): the calendar-day average of pct. 8 and 10 times the days of incapacity, at most 5, 'recalculat la cota de menținere a salariului mediu al angajatului – 75%'. The insured-income cap of art. 7 alin. (3) concerns the budget's base, not this one."
     }
   }
 }
