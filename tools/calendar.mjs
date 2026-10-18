@@ -17,6 +17,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import process from "node:process";
+import { pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 
 export const root = resolve(import.meta.dirname, "..");
@@ -273,7 +274,7 @@ export async function expand({ from, to, dir } = {}) {
   return { from, to, years, days, deadlines, files: loaded.files };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { values } = parseArgs({
     options: {
       from: { type: "string", default: `${new Date().getUTCFullYear()}-01-01` },
