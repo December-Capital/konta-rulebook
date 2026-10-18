@@ -309,6 +309,26 @@ for (const { file, chart } of charts) {
   const twice = codes.find((code, index) => codes.indexOf(code) !== index);
   if (twice) fail(file, `code ${twice} appears twice.`);
 
+  // Names in Russian are all or nothing, so a print never mixes languages, and each comes from a
+  // source the chart lists. The act prints class and group names in capitals in both languages,
+  // so a name that changes case lands on the wrong level of the tree.
+  const nodes = chart.classes.flatMap((cls) => {
+    const accounts = [...(cls.groups ?? []).flatMap((g) => g.accounts), ...(cls.accounts ?? [])];
+    return [cls, ...(cls.groups ?? []), ...accounts, ...accounts.flatMap((a) => a.subaccounts ?? [])];
+  });
+  const ru = chart.translations?.ru;
+  for (const index of ru?.sourceIndexes ?? []) {
+    if (!sources[index]) fail(file, `translations.ru cites source ${index}, which the chart does not list.`);
+  }
+  for (const node of nodes) {
+    if (ru && !node.nameRu) fail(file, `${node.code} has no nameRu, but translations.ru says every name has one.`);
+    if (!ru && node.nameRu) fail(file, `${node.code} has a nameRu, but the chart lists no translations.ru.`);
+    const capitals = (name) => name === name.toUpperCase();
+    if (node.nameRu && capitals(node.name) !== capitals(node.nameRu)) {
+      fail(file, `${node.code}: "${node.name}" and "${node.nameRu}" differ in case, so one is on the wrong level.`);
+    }
+  }
+
   if (status === "approved" && !sources.every((s) => s.verified === true)) {
     fail(file, "approved chart has sources not marked verified.");
   }

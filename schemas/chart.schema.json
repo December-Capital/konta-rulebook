@@ -75,6 +75,34 @@
         "$ref": "ruleset.schema.json#/properties/sources/items"
       }
     },
+    "translations": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Where the names in another language come from. A language listed here has a name on every class, group, account and subaccount (nameRu for ru); one not listed has none.",
+      "properties": {
+        "ru": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceIndexes"
+          ],
+          "properties": {
+            "sourceIndexes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "description": "The sources holding the Russian text: the act that states the names, then each amendment applied to them."
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
     "closing": {
       "type": "object",
       "additionalProperties": false,
@@ -195,6 +223,10 @@
         "name": {
           "$ref": "#/$defs/name"
         },
+        "nameRu": {
+          "$ref": "#/$defs/name",
+          "description": "The name in the act's Russian text, as published in Monitorul Oficial's Russian edition. Present on every node or on none, as translations.ru says."
+        },
         "section": {
           "enum": [
             "bilanț",
@@ -264,6 +296,10 @@
         "name": {
           "$ref": "#/$defs/name"
         },
+        "nameRu": {
+          "$ref": "#/$defs/name",
+          "description": "The name in the act's Russian text, as published in Monitorul Oficial's Russian edition. Present on every node or on none, as translations.ru says."
+        },
         "accounts": {
           "type": "array",
           "minItems": 1,
@@ -290,6 +326,10 @@
         },
         "name": {
           "$ref": "#/$defs/name"
+        },
+        "nameRu": {
+          "$ref": "#/$defs/name",
+          "description": "The name in the act's Russian text, as published in Monitorul Oficial's Russian edition. Present on every node or on none, as translations.ru says."
         },
         "nature": {
           "enum": [
@@ -361,6 +401,10 @@
         },
         "name": {
           "$ref": "#/$defs/name"
+        },
+        "nameRu": {
+          "$ref": "#/$defs/name",
+          "description": "The name in the act's Russian text, as published in Monitorul Oficial's Russian edition. Present on every node or on none, as translations.ru says."
         },
         "note": {
           "type": "string"
