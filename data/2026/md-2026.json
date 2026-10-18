@@ -10,7 +10,7 @@
   "sources": [
     {
       "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
-      "url": "https://www.legis.md/cautare/getResults?doc_id=79291&lang=ro",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
       "verified": false
     },
     {
@@ -130,6 +130,48 @@
       "act": "Ordinul Serviciului Fiscal de Stat nr. 645/2018 privind aprobarea Instrucțiunii cu privire la modul de selectare a contribuabililor obligați să aplice facturile fiscale electronice",
       "article": "criteriile a)-h); criteriul a): livrări de cel puțin 500 mii lei lunar fără active materiale sau umane",
       "publication": "Monitorul Oficial nr. 448-460, art. 1762, 2018",
+      "verified": false
+    },
+    {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
+      "article": "art. 97 alin. (3), art. 100 alin. (1), art. 102, art. 128 alin. (1), citite la 17.10.2026; art. 111 alin. (1), art. 113 alin. (1), art. 117, art. 120 alin. (1) și art. 165, citite la 18.10.2026; textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025)",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 426/2004 privind aprobarea Modului de calculare a salariului mediu",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=119783&lang=ro",
+      "article": "anexa nr. 1 pct. 2-7, 10, 11, 12 și 14 subpct. 1) și 1^1); textul consolidat pe legis.md (ultima modificare HG nr. 685 din 27.12.2019, Monitorul Oficial nr. 400-406, art. 1023), citit la 18.10.2026 și comparat cu fiecare act de modificare din Monitorul Oficial",
+      "publication": "Monitorul Oficial nr. 73-76, art. 570, 07.05.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 289/2004 privind indemnizațiile pentru incapacitate temporară de muncă și alte prestații de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156689&lang=ro",
+      "article": "art. 4 alin. (2^1) și (3), art. 7 alin. (13) și (15), art. 12 alin. (2), art. 13 alin. (3); textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 168-170, art. 773, 10.09.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "article": "anexa nr. 3 pct. 3 și 19; textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 1-4, art. 2, 06.01.2000",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro",
+      "article": "art. 3 (noțiunea „alte recompense”) și art. 6; textul consolidat pe legis.md (ultima modificare Legea nr. 318 din 29.12.2025), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 18-19, art. 57, 08.02.2003",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
+      "article": "art. 18 lit. c) și o), art. 20 lit. a), art. 36 alin. (8); textul consolidat pe legis.md (ultima modificare Legea nr. 112 din 11.06.2026, Monitorul Oficial nr. 277-279, art. 271), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
     }
   ],
@@ -514,6 +556,132 @@
       "sourceIndex": 0,
       "confidence": "unverified",
       "note": "Codul fiscal art. 108 alin. (5): 'Dacă factura fiscală este eliberată sau plata este primită până la momentul efectuării livrării, data livrării se consideră data eliberării facturii fiscale sau data primirii plăţii, în dependenţă de ce are loc mai înainte.' So VAT is due on an advance received, at the supply's rate. Read on legis.md in the version as amended by Law 112/2026 (in force 25.06.2026), 17.10.2026. Alin. (6)-(8) set other dates for regular supplies, leasing and services settled by acts of acceptance, not modelled. The buyer's deduction on an advance paid is not modelled either."
+    },
+    "labour.working_time.daily_hours": {
+      "number": "8",
+      "unit": "hours",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 100 alin. (1): 'Durata zilnică normală a timpului de muncă constituie 8 ore', within art. 95 alin. (2)'s 40 hours a week. Shorter days for minors, harmful conditions and disability (art. 96, art. 100 alin. (2)-(4)) are not modelled. A month's norm in hours is this times its working days, less payroll's pre-holiday reduction."
+    },
+    "labour.working_time.pre_holiday_reduction_hours": {
+      "number": "1",
+      "unit": "hours",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 102 alin. (1): the working day before a non-working public holiday 'se reduce cu cel puţin o oră' for everybody but those already on reduced time (art. 96) or part time (art. 97). At least one hour: alin. (3) leaves the exact length to the collective agreement, the internal rules or the employer's order, which a company cannot set in Konta yet. Alin. (2): a transferred eve keeps the reduction."
+    },
+    "payroll.proration.method": {
+      "text": "working_days",
+      "unit": "text",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "A monthly salary for part of a month (hired or leaving mid-month, unpaid leave) is the salary times the days worked over the month's working days from calendar/md-holidays.json. Codul muncii art. 128 alin. (1) pays salary for work done and art. 97 alin. (3) pays part time 'proporţional timpului lucrat'; no act read prescribes working days rather than hours or calendar days for an incomplete month. Working days is our choice, the usual practice: to be confirmed by the compliance owner."
+    },
+    "labour.leave.annual_minimum_days": {
+      "number": "28",
+      "unit": "days",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 113 alin. (1): 'un concediu de odihnă plătit, cu o durată minimă de 28 de zile calendaristice, cu excepţia zilelor de sărbătoare nelucrătoare'. Alin. (2) and art. 121 allow longer leave by organic law or for harmful conditions, minors and severe sight disability (at least 4 more days). The product does not keep a balance of leave owed yet."
+    },
+    "payroll.leave.days_basis": {
+      "text": "calendar_days_excluding_holidays",
+      "unit": "text",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Annual leave is counted, and paid, in calendar days less the non-working public holidays of art. 111 that fall inside it, whatever day of the week they fall on: Codul muncii art. 113 alin. (1); HG 426/2004 anexa 1 pct. 6 subpct. 1) and pct. 14 subpct. 1) pay leave per calendar day 'la numărul zilelor de concediu exprimat în zile calendaristice'. A local patron saint's day (art. 111 alin. (1) lit. j)) is not subtracted: it holds only in its locality. The Ministry of Labour's draft to count leave in working days from 2027 was not law on 18.10.2026."
+    },
+    "payroll.leave.pay_month": {
+      "text": "leave_start_month",
+      "unit": "text",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 117 alin. (3), as consolidated on legis.md (read 18.10.2026): leave pay is paid 'cu cel puțin 3 zile calendaristice înainte de începerea concediului sau la o dată agreată de părți, dar nu mai târziu de data achitării salariului pentru luna în care a fost acordat concediul respectiv'. The whole leave's pay is therefore computed in the payroll of the month the leave starts, including days that fall in the next month, and taxed then (HG 697/2014 pct. 36: when directed to payment). How CNAS splits the contribution by the months the leave covers on IPC21 (Ordin CNAS 31-A/2026 pct. 8.1) is for the IPC21 work. Our reading, for the compliance owner."
+    },
+    "payroll.average_earnings.method": {
+      "text": "three_months",
+      "unit": "text",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 5 last alineat (as amended by HG 428/2007) and pct. 10: the 3 calendar months before the month of the event (de la data de 1 pînă la data de 1); per working day, the earnings of pct. 3 over the days actually worked, leave, sick days and their pay left out; per calendar day, that times the scheduled working days over the calendar days less art. 111's holidays of the same period. A month with no work stays in the period (pct. 10 last alineat). Somebody employed less than 3 months: the period is the time worked (pct. 5, pct. 11 al. 1). The 12-month period of pct. 5 al. 2 (agriculture, teachers, piece work paid at completion, varying part time) and the seasonal one are not modelled: the product knows only this method."
+    },
+    "payroll.average_earnings.reference_months": {
+      "number": "3",
+      "unit": "months",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 5 last alineat: 'ultimele 3 luni calendaristice de lucru premergătoare evenimentului de care depinde plata respectivă (de la data de 1 pînă la data de 1)'. The event is the first day of the leave or of the incapacity."
+    },
+    "payroll.average_earnings.lookback_months": {
+      "number": "12",
+      "unit": "months",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 11 al. 2: with no earnings at all in the 3 months, the average comes from 'ultimele 3 luni din cele 12 luni premergătoare evenimentului de plată, în care ei au avut zile efectiv lucrate şi au avut cîştig'."
+    },
+    "payroll.average_earnings.calendar_days_per_month": {
+      "number": "29.4",
+      "unit": "days",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 7: '29,4 zile – numărul mediu de zile calendaristice pe lună'. Used when no earnings exist to average (hired in the month of the event, or none in the 12 months): pct. 11 al. 4 then bases the average on the monthly salary, and pct. 14 subpt. 2) turns a calendar-day average into a month by 29,4, so the product divides the monthly salary by 29,4. That division is our reading of al. 4, for the compliance owner. Pct. 12 also divides periodic bonuses by it; the product does not tell periodic bonuses from monthly ones yet."
+    },
+    "payroll.average_earnings.rounding": {
+      "text": "final_amount",
+      "unit": "text",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 says nothing on rounding (the original annex and its nine amending acts read). The averages are kept exact and only the amount paid is rounded, by payroll.rounding. Professional examples (contabilsef.md, 06.12.2010) round the coefficient to 4 decimals and each average to 2, which differs by about 2 bani a leave: question for the compliance owner."
+    },
+    "payroll.leave.study_share": {
+      "number": "0.75",
+      "unit": "ratio",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 14 subpt. 1), completed by HG 1025/2007: 'În cazul concediilor de studii, rezultatul căpătat se corectează la cota de menținere a salariului mediu – 75 %'."
+    },
+    "payroll.sick.employer_days_per_case": {
+      "number": "5",
+      "unit": "days",
+      "sourceIndex": 22,
+      "confidence": "unverified",
+      "note": "Legea 289/2004 art. 4 alin. (2^1) lit. a): 'primele cinci zile calendaristice de incapacitate temporară de muncă se plătesc din mijloacele angajatorului'; from the sixth day the social insurance budget pays (lit. b)), outside the employer's payroll. Not for tuberculosis, AIDS, cancer, a risk of losing a pregnancy or a registered pregnancy, paid by the budget from the first day (alin. (3)), nor for days of unpaid leave (art. 12 alin. (2))."
+    },
+    "payroll.sick.employer_days_per_year": {
+      "number": "15",
+      "unit": "days",
+      "sourceIndex": 22,
+      "confidence": "unverified",
+      "note": "Legea 289/2004 art. 4 alin. (2^1) lit. a): 'însă nu mai mult de 15 zile cumulative pe parcursul unui an calendaristic în cazul mai multor perioade de incapacitate temporară de muncă'. The product counts the employer's days of the year in which each incapacity starts."
+    },
+    "payroll.sick.employer_share": {
+      "number": "0.75",
+      "unit": "ratio",
+      "sourceIndex": 22,
+      "confidence": "unverified",
+      "note": "Legea 289/2004 art. 13 alin. (3): 'în proporție de 75% din salariul mediu al angajatului, determinat în modul stabilit de Guvern', with art. 7 alin. (15); HG 426/2004 anexa 1 pct. 14 subpct. 1^1) (HG 685/2019): the calendar-day average of pct. 8 and 10 times the days of incapacity, at most 5, 'recalculat la cota de menținere a salariului mediu al angajatului – 75%'. The insured-income cap of art. 7 alin. (3) concerns the budget's base, not this one."
+    },
+    "payroll.sick.social_contribution": {
+      "text": "no",
+      "unit": "text",
+      "sourceIndex": 23,
+      "confidence": "unverified",
+      "note": "Legea 489/1999 anexa nr. 3 pct. 19: no social contribution is calculated on 'indemnizaţia pentru incapacitate temporară de muncă', whoever pays it. Leave pay is not on the annex's list (pct. 3 even names unused-leave compensation as subject), so it carries the contribution as salary does."
+    },
+    "payroll.sick.medical_premium": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 24,
+      "confidence": "unverified",
+      "note": "Legea 1593/2002 art. 6 computes the premium on salary and 'alte recompense', which art. 3 defines as any other sum the employer pays its employee except the income of Codul fiscal art. 20, 89, 90 and 90^1. Art. 20 lit. a) exempts social insurance benefits paid from the social insurance budget; the employer's first days are paid from its own means, so the premium applies. Our reading, for the compliance owner."
+    },
+    "payroll.sick.income_tax": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 25,
+      "confidence": "unverified",
+      "note": "Codul fiscal art. 20 lit. a) leaves out of gross income only social insurance benefits 'achitate din bugetul asigurărilor sociale de stat'; the employer's first days are its own payment to its employee (art. 18 lit. c), o)), which it deducts (art. 36 alin. (8)). So they are taxed with the month's salary. Our reading, for the compliance owner."
     }
   }
 }
