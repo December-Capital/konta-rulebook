@@ -180,6 +180,13 @@
       "article": "art. 33 alin. (1) și (2), art. 34 alin. (2) și (3), art. 35 alin. (1); textul consolidat pe legis.md, citit la 22.10.2026 în redacțiile în vigoare la 01.01.2026 (doc_id 149766, ultima modificare Legea nr. 318 din 29.12.2025), la 25.06.2026 (doc_id 155071, ultima modificare Legea nr. 112 din 11.06.2026) și la 01.01.2027 (doc_id 152862, ultima modificare Legea nr. 187 din 10.07.2025, în vigoare la 01.01.2027): același text în toate trei",
       "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
+    },
+    {
+      "act": "Legea nr. 34 din 29.02.2024 privind efectuarea decontărilor în numerar și pentru modificarea unor acte normative",
+      "article": "art. 5 alin. (1) lit. a), b), i); art. 7 alin. (1), (3); textul consolidat în vigoare de la 01.04.2025 (modificat prin LP311/2024 și LP55/2025), citit pe legis.md la 22.10.2026",
+      "publication": "Monitorul Oficial nr. 86-88, art. 129, 01.03.2024",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=146596&lang=ro",
+      "verified": false
     }
   ],
   "values": {
@@ -689,6 +696,55 @@
       "sourceIndex": 25,
       "confidence": "unverified",
       "note": "Codul fiscal art. 20 lit. a) leaves out of gross income only social insurance benefits 'achitate din bugetul asigurărilor sociale de stat'; the employer's first days are its own payment to its employee (art. 18 lit. c), o)), which it deducts (art. 36 alin. (8)). So they are taxed with the month's salary. Our reading, for the compliance owner."
+    },
+    "ledger.cash.account": {
+      "text": "241",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III, account 241 (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 31, read 22.10.2026): 'Contul 241 “Casa” este destinat generalizării informaţiei privind existenţa şi mişcarea numerarului nelegat şi legat în casierie în monedă naţională şi valută străină.' It is debited for cash received 'în corespondenţă cu creditul conturilor: 141, 142, 161, 162, 221, 223, 224, 226, 231, 234, 241, 242, 243, 244, 245, 251, 252, 313, 314, 412, 423, 425, 512, 523, 534, 537, 611, 612, 622, 623, 832 etc.' and credited for cash paid out 'în corespondenţă cu debitul conturilor: 141, 142, 162, 224, 226, 241, 242, 243, 244, 245, 251, 252, 315, 412, 423, 512, 523, 531, 532, 536, 544, 712, 713, 714, 722, 723 etc.' (521, the supplier, is not named for cash paid out, as it is for 242; the list ends in 'etc.'). The account of a cash receipt or payment order and of the cash book; a cash order may name a subaccount the company keeps (2411 Casa în monedă națională)."
+    },
+    "ledger.cash.accountable_persons_account": {
+      "text": "2261",
+      "unit": "code",
+      "sourceIndex": 6,
+      "confidence": "unverified",
+      "note": "Chapter III, account 226 Creanțe ale personalului (the same PDF, page 29, read 22.10.2026): debited 'în corespondenţă cu creditul conturilor: 241, 242, 243, 424, 535, 544, 612, 622 etc.' and credited 'în corespondenţă cu debitul conturilor: 111, 121, 132, 211, 217, 241, 531, 532, 712, 713, 714, 722 etc.'; subaccount 2261 Creanțe ale titularilor de avans (chapter II). Cash given to an accountable person (Law 34/2024 art. 7: for at most 30 days) debits it against the cash account; cash they return credits it."
+    },
+    "cash.limits.payments_to_entities_monthly": {
+      "number": "100000",
+      "unit": "MDL/month",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Legea 34/2024 art. 5 alin. (1) lit. a), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'a) să efectueze, în raport cu alte persoane juridice sau persoane fizice care desfășoară activitate de întreprinzător și/sau profesională în sectorul justiției sau în domeniul sănătății, plăți în numerar în sumă ce nu depășește cumulativ 100000 de lei lunar. Limitarea sumei respective nu se aplică pentru depunerea de numerar în conturile deschise la prestatorii de servicii de plată;' The law does not say whether 'cumulativ' adds up the payments to each recipient or to all of them; read literally, all of them. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
+    },
+    "cash.limits.payments_to_individuals_monthly": {
+      "number": "100000",
+      "unit": "MDL/month",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Legea 34/2024 art. 5 alin. (1) lit. b), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'b) să efectueze plăți în numerar în favoarea unei persoane fizice care nu desfășoară activitate de întreprinzător în sumă ce nu depășește cumulativ 100000 de lei lunar, cu excepțiile specificate la lit. c)–h);' The higher or yearly limits of lit. c)-h) (scrap, packaging, farm produce, dividends, loans) are not encoded. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
+    },
+    "cash.limits.receipt_from_individual_per_payment": {
+      "number": "100000",
+      "unit": "MDL",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Legea 34/2024 art. 5 alin. (1) lit. i), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'i) să încaseze plăți în numerar de la o persoană fizică care nu desfășoară activitate de întreprinzător, în sumă ce nu depășește 100000 de lei pentru o plată, cu excepția situațiilor prevăzute la alin. (2) din prezentul articol.' Per payment, not cumulative. Alin. (2) sets 100 000 a year per client for the professions of art. 2 alin. (1) lit. e), not encoded. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
+    },
+    "cash.advances.settlement_days_max": {
+      "number": "30",
+      "unit": "days",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Legea 34/2024 art. 7 alin. (1), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): '(1) Pentru cheltuielile operaționale și de gospodărire, persoanele specificate la art. 2 alin. (1) lit. a)–e) eliberează numerar spre decontare în termenele stabilite de conducătorii acestora, care însă nu vor depăși 30 de zile, cu excepția cheltuielilor pentru deplasările peste hotarele Republicii Moldova.' Business trips abroad are excepted. Not read by the product yet: it does not follow when an accountable person's cash is due back."
+    },
+    "cash.advances.return_working_days": {
+      "number": "5",
+      "unit": "working_days",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Legea 34/2024 art. 7 alin. (3), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): '(3) Numerarul eliberat spre decontare în condițiile alin. (1) și neutilizat trebuie să fie restituit în casieria entității în termen de 5 zile lucrătoare după expirarea termenului pentru care a fost eliberat.' Not read by the product yet: it does not follow when an accountable person's cash is due back."
     }
   }
 }

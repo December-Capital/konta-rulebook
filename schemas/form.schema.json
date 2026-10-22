@@ -30,7 +30,10 @@
     "form": {
       "type": "string",
       "enum": [
-        "factura_fiscala"
+        "factura_fiscala",
+        "cash_receipt_order",
+        "cash_payment_order",
+        "cash_book"
       ]
     },
     "jurisdiction": {
@@ -139,6 +142,31 @@
         }
       }
     },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Who prescribes the layout. Absent means the act does, as for the factură fiscală. 'entity' means no act in force prescribes the document's form, and the entity draws it up itself from the mandatory elements the act lists: the product prints the notice so nobody takes it for a statutory form.",
+      "required": [
+        "prescribedBy",
+        "source",
+        "notice"
+      ],
+      "properties": {
+        "prescribedBy": {
+          "type": "string",
+          "enum": [
+            "act",
+            "entity"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/citation"
+        },
+        "notice": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
     "fields": {
       "type": "array",
       "minItems": 1,
@@ -193,7 +221,7 @@
     },
     "columns": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -207,7 +235,7 @@
         "properties": {
           "code": {
             "type": "string",
-            "pattern": "^10\\.[0-9]{1,2}$"
+            "pattern": "^[0-9]+(\\.[0-9]{1,2})?$"
           },
           "id": {
             "type": "string",
@@ -263,7 +291,7 @@
     },
     "totals": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -371,7 +399,6 @@
       "required": [
         "sourceIndex",
         "article",
-        "page",
         "quote"
       ],
       "properties": {
@@ -385,7 +412,8 @@
         },
         "page": {
           "type": "integer",
-          "minimum": 1
+          "minimum": 1,
+          "description": "The physical page of the publication read. Left out for a consolidated text read on legis.md, which has no pages; the citation's article then says which version was read."
         },
         "quote": {
           "type": "string",

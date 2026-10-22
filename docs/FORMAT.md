@@ -40,6 +40,7 @@ schemas/chart.schema.json      the contract for a chart of accounts
 classifiers/sfs-efactura-2026.json  e-Factura's units of measure and VAT rate codes, from SFS's workbook
 schemas/classifier.schema.json the contract for a classifier
 forms/md-factura-fiscala-2026.json  the factură fiscală's layout (OMF 118/2017 as amended), what a print shows
+forms/md-cash-*-2026.json      the cash orders and the cash book: forms the entity draws up (Law 287/2017 art. 11, 15)
 schemas/form.schema.json       the contract for a document form
 calendar/md-holidays.json      the weekend, the Labour Code's public holidays, each year's transfers of rest days
 calendar/md-deadlines.json     filing and payment deadlines, who they apply to, the rule for a non-working day
@@ -175,6 +176,22 @@ Instrucțiunea's sentence behind each, with its page. The transport rows and col
 not encoded. `tools/validate-forms.mjs` refuses a citation of a source the form does not list, an id
 twice, columns out of the act's order, a total or the reverse-charge mention naming a column the form
 lacks, and a required language it may not be printed in.
+
+Some documents have no form in any act in force, only a list of what they must contain. The cash
+orders (`md-cash-receipt-order-2026`, `md-cash-payment-order-2026`) and the cash book
+(`md-cash-book-2026`) are such: the norms of HG 764/1992 that named them were abrogated by HG
+326/2021 with nothing in their place, and the Ministry of Finance has approved no typified form for
+them. Law 287/2017 lets an entity draw up its own primary documents (art. 11 alin. (4)) and
+registers (art. 15 alin. (2)) as long as they carry the mandatory elements of art. 11 alin. (7) and
+art. 15 alin. (3). Such a form says so in `layout`: `prescribedBy` is `entity`, `source` cites the
+article that allows it, and `notice` is printed on the document so nobody takes it for a statutory
+form. Each field still cites the sentence that makes it mandatory; a field the act does not require
+(the accounts, the attachments) is `required: false` and cites art. 11 alin. (8). Without `layout`
+the act prescribes the form, as for the factură fiscală. Columns are numbered as the form numbers
+them: `10.1`-`10.9` there, plain `1`-`5` in the cash book.
+
+A citation's `page` is the physical page of the PDF named in its source. A consolidated text read on
+legis.md has no pages, so `page` is left out and the citation's `article` names the version read.
 
 To read by hand: the Instrucțiune approved by HG 294/1998 (pct. 10 of OMF 118's Instrucțiune refers
 to it for the mandatory indicators) and Codul fiscal art. 117; and the consolidated text on legis.md,

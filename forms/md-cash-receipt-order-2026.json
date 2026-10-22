@@ -1,0 +1,261 @@
+{
+  "$schema": "../schemas/form.schema.json",
+  "id": "md-cash-receipt-order-2026",
+  "form": "cash_receipt_order",
+  "jurisdiction": "MD",
+  "title": {
+    "ro": "DISPOZIȚIE DE ÎNCASARE A NUMERARULUI",
+    "ru": "ПРИХОДНЫЙ КАССОВЫЙ ОРДЕР"
+  },
+  "effectiveFrom": "2021-12-19",
+  "effectiveTo": null,
+  "publishedOn": "2026-10-22",
+  "status": "draft",
+  "notes": "DRAFT. No act in force prescribes this document's form. The Normele pentru efectuarea operațiunilor de casă în economia națională (HG 764/1992), which named the 'dispoziţii de încasări' and 'dispoziţii de plată' (pct. 12-13), the cash book ('registrul de casă', pct. 18) and the register of cash orders (pct. 21), and whose pct. 11 left the standard forms to the statistics department with the Ministry of Finance, were abrogated by HG 326/2021 pct. 3 (in force 19.12.2021), with nothing in their place. The Ministry of Finance has approved no typified form for them: a legis.md search of titles containing 'formularelor tipizate' (140 acts, 22.10.2026) lists none for cash; a search for 'operațiunilor de casă' finds only HG 764/1992, its amendments and the National Bank's acts for banks. Law 287/2017 art. 11 alin. (4) lets the entity draw up its own primary documents, with the mandatory elements of alin. (7) and others it needs (alin. (8)); art. 15 alin. (2) the same for registers, with the elements of alin. (3). This form is that: every field cites the sentence that makes it mandatory, or alin. (8) where the entity adds it. Cash settlements themselves are governed by Law 34/2024 (in force 01.04.2025): the limits of art. 5 (in the rule sets as cash.limits.*) and the conditions of art. 7, of which alin. (2) says what a payment document names. Every amendment found: legis.md lists versions of Law 287/2017 from 12.12.2018, 01.01.2019, 20.04.2020, 01.01.2021, 01.01.2024, 16.06.2024, 01.01.2025 and 01.01.2027; art. 11 and 15 are the same in all of them since alin. (7^1) of art. 11 was introduced by LP302/2018 (in force 12.12.2018), apart from spelling in the 2027 version. Law 34/2024 has versions from 01.01.2025 and 01.04.2025: art. 7 is the same in both; LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), art. 6 lit. d) and added art. 11 alin. (1^1), and art. 11 alin. (1) moved the entry into force from 1 January to 1 April 2025. Art. 11 alin. (14) forbids corrections in documents that justify cash operations: a posted order is never changed, it is cancelled. The chitanță the old norms tore off a receipt order is not encoded: no act in force requires it. Not checked by a licensed accountant.",
+  "sources": [
+    {
+      "act": "Legea contabilității și raportării financiare nr. 287 din 15.12.2017",
+      "publication": "Monitorul Oficial nr. 1-6, art. 22, 05.01.2018",
+      "article": "art. 11 și 15, textul consolidat în vigoare de la 01.01.2025 (LP320/2023), legis.md doc_id=140124, citit 22.10.2026; versiunea de la 01.01.2027 (LP86/2026, doc_id=154725) are același text la art. 11 și 15, în afară de ortografie (sînt/sunt)",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 34 din 29.02.2024 privind efectuarea decontărilor în numerar și pentru modificarea unor acte normative",
+      "publication": "Monitorul Oficial nr. 86-88, art. 129, 01.03.2024; modificată prin LP311/2024 (MO nr. 556-559/27.12.2024, art. 770) și LP55/2025 (MO nr. 154-156/27.03.2025, art. 169)",
+      "article": "art. 5 și 7, textul consolidat în vigoare de la 01.04.2025, legis.md doc_id=146596, citit 22.10.2026",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=146596&lang=ro",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 326 din 10.11.2021 cu privire la modificarea unor hotărâri ale Guvernului și abrogarea unei hotărâri de Guvern",
+      "publication": "Monitorul Oficial nr. 280-284, art. 605, 19.11.2021; în vigoare 19.12.2021",
+      "article": "pct. 3, legis.md doc_id=128641, citit 22.10.2026",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=128641&lang=ro",
+      "verified": false
+    }
+  ],
+  "series": {
+    "assignedBy": "entity",
+    "source": {
+      "sourceIndex": 0,
+      "article": "art. 11 alin. (7) lit. a), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+      "quote": "a) denumirea şi numărul documentului;"
+    }
+  },
+  "languages": {
+    "required": "ro",
+    "allowed": [
+      "ro",
+      "ru"
+    ],
+    "source": {
+      "sourceIndex": 0,
+      "article": "art. 11 alin. (11), the law's only sentence on the language of primary documents (it names Romanian, English and Russian); Romanian is printed always, Russian under it when asked; consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+      "quote": "(11) Documentele primare primite din străinătate și întocmite în altă limbă decît română, engleză sau rusă sînt traduse în limba română."
+    }
+  },
+  "layout": {
+    "prescribedBy": "entity",
+    "source": {
+      "sourceIndex": 0,
+      "article": "art. 11 alin. (4), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+      "quote": "(4) Entitatea utilizează formulare tipizate de documente primare aprobate de Ministerul Finanţelor și alte autorități publice sau poate elabora și utiliza formulare de documente primare, aprobate de conducerea acesteia, cu respectarea prevederilor alin. (7) și (8)."
+    },
+    "notice": {
+      "ro": "Formular elaborat de entitate în temeiul art. 11 alin. (4) din Legea contabilității și raportării financiare nr. 287/2017. Niciun act în vigoare nu stabilește forma acestui document.",
+      "ru": "Форма разработана предприятием на основании ч. (4) ст. 11 Закона о бухгалтерском учете и финансовой отчетности № 287/2017. Ни один действующий акт не устанавливает форму этого документа."
+    }
+  },
+  "fields": [
+    {
+      "id": "number",
+      "code": "",
+      "label": {
+        "ro": "Nr.",
+        "ru": "№"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. a), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "a) denumirea şi numărul documentului;"
+      }
+    },
+    {
+      "id": "date",
+      "code": "",
+      "label": {
+        "ro": "Data",
+        "ru": "Дата"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. b), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "b) data întocmirii documentului;"
+      }
+    },
+    {
+      "id": "entity",
+      "code": "",
+      "label": {
+        "ro": "Entitatea",
+        "ru": "Организация"
+      },
+      "required": true,
+      "parts": [
+        "name",
+        "legalAddress",
+        "fiscalCode"
+      ],
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. c), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "c) denumirea, adresa, IDNO (codul fiscal) al entităţii din numele căreia este întocmit documentul;"
+      }
+    },
+    {
+      "id": "counterparty",
+      "code": "",
+      "label": {
+        "ro": "Primit de la",
+        "ru": "Принято от"
+      },
+      "required": true,
+      "parts": [
+        "name",
+        "legalAddress",
+        "fiscalCode"
+      ],
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. d); alin. (10): not mandatory for a natural person who is a citizen; consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "d) denumirea, adresa, IDNO (codul fiscal) al destinatarului documentului, iar pentru persoanele fizice – IDNP (codul personal);"
+      }
+    },
+    {
+      "id": "basis",
+      "code": "",
+      "label": {
+        "ro": "Temeiul",
+        "ru": "Основание"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. e), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "e) conţinutul faptelor economice;"
+      }
+    },
+    {
+      "id": "cashAccount",
+      "code": "",
+      "label": {
+        "ro": "Contul de casă",
+        "ru": "Счёт кассы"
+      },
+      "required": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (8), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "(8) Suplimentar elementelor prevăzute la alin. (7), documentele primare pot conține și alte elemente, în funcție de prevederile actelor normative și necesitățile informaționale ale entității."
+      }
+    },
+    {
+      "id": "counterAccount",
+      "code": "",
+      "label": {
+        "ro": "Contul corespondent",
+        "ru": "Корреспондирующий счёт"
+      },
+      "required": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (8), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "(8) Suplimentar elementelor prevăzute la alin. (7), documentele primare pot conține și alte elemente, în funcție de prevederile actelor normative și necesitățile informaționale ale entității."
+      }
+    },
+    {
+      "id": "amount",
+      "code": "",
+      "label": {
+        "ro": "Suma",
+        "ru": "Сумма"
+      },
+      "required": true,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. f), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "f) etaloanele cantitative şi valorice în care sînt exprimate faptele economice;"
+      }
+    },
+    {
+      "id": "attachments",
+      "code": "",
+      "label": {
+        "ro": "Anexă",
+        "ru": "Приложение"
+      },
+      "required": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (8), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "(8) Suplimentar elementelor prevăzute la alin. (7), documentele primare pot conține și alte elemente, în funcție de prevederile actelor normative și necesitățile informaționale ale entității."
+      }
+    }
+  ],
+  "columns": [],
+  "totals": [],
+  "signatures": [
+    {
+      "code": "",
+      "id": "head",
+      "label": {
+        "ro": "Conducătorul",
+        "ru": "Руководитель"
+      },
+      "for": [],
+      "stamp": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (13), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "(13) Documentele de casă, de plată şi cele privind decontările pot fi semnate unilateral, de către conducătorul entităţii, ori de două persoane cu drept de semnătură, prima semnătură aparţinînd conducătorului sau altei persoane împuternicite, iar a doua – contabilului-şef sau altei persoane împuternicite."
+      }
+    },
+    {
+      "code": "",
+      "id": "chiefAccountant",
+      "label": {
+        "ro": "Contabil-șef",
+        "ru": "Главный бухгалтер"
+      },
+      "for": [],
+      "stamp": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (13), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "(13) Documentele de casă, de plată şi cele privind decontările pot fi semnate unilateral, de către conducătorul entităţii, ori de două persoane cu drept de semnătură, prima semnătură aparţinînd conducătorului sau altei persoane împuternicite, iar a doua – contabilului-şef sau altei persoane împuternicite."
+      }
+    },
+    {
+      "code": "",
+      "id": "cashier",
+      "label": {
+        "ro": "Casier",
+        "ru": "Кассир"
+      },
+      "for": [],
+      "stamp": false,
+      "source": {
+        "sourceIndex": 0,
+        "article": "art. 11 alin. (7) lit. g), consolidated text in force from 01.01.2025 on legis.md (doc_id=140124), read 22.10.2026; no pages",
+        "quote": "g) funcţiile, numele, prenumele şi semnăturile persoanelor responsabile de efectuarea (producerea) faptelor economice."
+      }
+    }
+  ],
+  "signatureCaption": {
+    "ro": "Funcția, numele, prenumele și semnătura",
+    "ru": "Должность, фамилия, имя и подпись"
+  }
+}
