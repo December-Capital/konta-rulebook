@@ -173,6 +173,20 @@
       "article": "art. 18 lit. c) și o), art. 20 lit. a), art. 36 alin. (8); textul consolidat pe legis.md (ultima modificare Legea nr. 112 din 11.06.2026, Monitorul Oficial nr. 277-279, art. 271), citit la 18.10.2026",
       "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Diferențe de curs valutar și de sumă”",
+      "article": "pct. 4 (elemente monetare), 6, 9, 10, 11, 12, 13, 14 și anexa 1; read 2026-10-22 in the Ministry of Finance's consolidated PDF of the standards (Last-Modified 2022-07-11, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), pages 195-203; also SNC „Prezentarea situațiilor financiare” pct. 161, page 19",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "article": "cap. II, subconturile 6226 și 7224; cap. III, conturile 241, 243, 622 și 722; read 2026-10-22 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 13, 15, 31-32, 53 and 56",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "verified": false
     }
   ],
   "values": {
@@ -682,6 +696,41 @@
       "sourceIndex": 25,
       "confidence": "unverified",
       "note": "Codul fiscal art. 20 lit. a) leaves out of gross income only social insurance benefits 'achitate din bugetul asigurărilor sociale de stat'; the employer's first days are its own payment to its employee (art. 18 lit. c), o)), which it deducts (art. 36 alin. (8)). So they are taxed with the month's salary. Our reading, for the compliance owner."
+    },
+    "ledger.fx.gain_account": {
+      "text": "6226",
+      "unit": "code",
+      "sourceIndex": 27,
+      "confidence": "unverified",
+      "note": "Cap. II: subaccount 6226 Venituri din diferențe de curs valutar, under 622 Venituri financiare; cap. III credits 622 in correspondence with the debit of 221, 223, 226, 231, 234, 241, 243, 511, 512, 521, 522 and others. SNC Diferențe de curs valutar și de sumă pct. 14 with pct. 9: a favourable difference from revaluing monetary items is current income, raising cash and receivables or lowering liabilities; SNC Prezentarea situațiilor financiare pct. 161 counts it as financial income. A company may post to its own subaccount of 6226 instead."
+    },
+    "ledger.fx.loss_account": {
+      "text": "7224",
+      "unit": "code",
+      "sourceIndex": 27,
+      "confidence": "unverified",
+      "note": "Cap. II: subaccount 7224 Cheltuieli din diferențe de curs valutar, under 722 Cheltuieli financiare; cap. III debits 722 in correspondence with the credit of 221, 223, 226, 231-234, 241-244, 511, 512, 521, 522 and others. SNC Diferențe de curs valutar și de sumă pct. 14 with pct. 10: an unfavourable difference is a current expense, lowering cash and receivables or raising liabilities; SNC Prezentarea situațiilor financiare pct. 161 counts it as a financial expense."
+    },
+    "ledger.fx.monetary_accounts": {
+      "text": "1413,1414,1422,1423,161,162,221,223,226,231,233,234,241,243,244,245,2513,2514,2522,2523,411,412,511,512,521,522,544",
+      "unit": "text",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "The accounts (and every subaccount under them) whose balances in a foreign currency are monetary items, kept in lei and in the currency (SNC pct. 6) and revalued at the official BNM rate of the reporting date (pct. 11), which may be every month end by the company's accounting policy (pct. 13). Pct. 4 defines monetary items as assets and liabilities in a foreign currency to be received or paid; pct. 11 names cash, receivables, payables and financial investments, except advances given or received for assets and services (224, 163, 523, left out) and shares and holdings (1411, 1412, 1421, 2511, 2512, 2521, left out). Pct. 12: non-monetary items keep the rate of their first recognition. The list is our reading of the chart against pct. 11, for the compliance owner. Pct. 22: receivables and payables in conventional units between residents (diferențe de sumă) are not revalued; nothing in the books tells them apart yet, so the person posting a revaluation leaves them out."
+    },
+    "ledger.fx.rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "How the lei equivalent of a foreign-currency amount (amount times the official rate, which BNM sets to four decimals) is rounded, on a line and in a revaluation. The SNC gives no rule: its examples (pct. 9-15, anexa 1) work in whole lei. Bani, half away from zero, as on an invoice line (tax.vat.line_rounding); to be confirmed by the compliance owner."
+    },
+    "ledger.fx.rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 26,
+      "confidence": "unverified",
+      "note": "Lei and bani."
     }
   }
 }
