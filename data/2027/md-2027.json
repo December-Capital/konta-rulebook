@@ -6,7 +6,7 @@
   "effectiveTo": null,
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'). Status read on parlament.md on 2026-10-18: passed in first reading on 10 September 2026; status 'Lectura a doua', the Economy, Budget and Finance Committee met on it for the second reading on 8 October 2026; no plenary vote in second reading yet; not published in Monitorul Oficial. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) backs raising the major personal exemption to 46,680 (the bill says 40,020) and the exemption for children from 9,900 to 11,040, keeping wheat, maize and sunflower at 8% VAT until 1 January 2028 with a reverse charge, and repealing art. 15 lit. c); none of that is voted, so none of it is encoded, and the figures below may still change. Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the bill: 18% profit tax for section K, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, the vice tax. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it.",
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'). Status read on parlament.md on 2026-10-18: passed in first reading on 10 September 2026; status 'Lectura a doua', the Economy, Budget and Finance Committee met on it for the second reading on 8 October 2026; no plenary vote in second reading yet; not published in Monitorul Oficial. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) backs raising the major personal exemption to 46,680 (the bill says 40,020) and the exemption for children from 9,900 to 11,040, keeping wheat, maize and sunflower at 8% VAT until 1 January 2028 with a reverse charge, and repealing art. 15 lit. c); none of that is voted. The Economy, Budget and Finance Committee's report for the second and third readings, published on parlament.md on 21 October 2026, adopts the major exemption at 46,680 and the children's at 11,040; the major exemption is encoded from it (read 2026-10-22), the rest of the opinion is not, and the figures below may still change. Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the bill: 18% profit tax for section K, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, the vice tax. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it.",
   "sources": [
     {
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
@@ -135,6 +135,19 @@
       "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
       "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
       "article": "art. 18 lit. c) și o), art. 20 lit. a), art. 36 alin. (8); textul consolidat pe legis.md (ultima modificare Legea nr. 112 din 11.06.2026, Monitorul Oficial nr. 277-279, art. 271), citit la 18.10.2026",
+      "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
+      "verified": false
+    },
+    {
+      "act": "Raportul Comisiei pentru economie, buget și finanțe (CEB-06 nr. 209, octombrie 2026) asupra proiectului de lege pentru modificarea unor acte normative (privind simplificarea legislației fiscale și vamale), nr. 326 din 08.09.2026, pentru lecturile a doua și a treia, cu anexa „Sinteza rezultatelor examinării amendamentelor, propunerilor şi obiecţiilor”",
+      "article": "Sinteza, p. 47 (amendamentul dlui C. Cuiumju la art. III pct. 9 subpct. 9.2: „34620” se substituie cu „46680”; avizul Guvernului: se susține; rezultatul: se susține), p. 51 (amendamentul dnei A. Cutasevici, 46 650: se susține în condițiile avizului Guvernului, la 46 680), p. 53-58 (amendamentele dnei L. Adamciuc, art. 34 alin. (2) „21 780” devine „29 348”, și dnei L. Iaconi, „21780” devine „25200”: susținute parțial, numai prin majorarea scutirii pentru copii la 11 040; art. 34 rămâne neschimbat). Raportul propune adoptarea în lecturile a doua și a treia (6 voturi pentru, 3 abțineri, 2 împotrivă). Citite la 22.10.2026 pe parlament.md, în documentele publicate la 21.10.2026: raportul (PDF scanat, SHA-256 4d3dd7ddac1e0c3f96e3aca95d4244177461e5125bc6fb9ca53e323a00a5468e) și sinteza (451 de pagini, SHA-256 4bfe17b7417198adbc8282b4c40c55fa667554f485084b9bc1a8423d1c2e386f); statutul proiectului: „Lectura a doua”, fără vot în plen",
+      "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
+      "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
+      "article": "art. 33 alin. (1) și (2), art. 34 alin. (2) și (3), art. 35 alin. (1); textul consolidat pe legis.md, citit la 22.10.2026 în redacțiile în vigoare la 01.01.2026 (doc_id 149766, ultima modificare Legea nr. 318 din 29.12.2025), la 25.06.2026 (doc_id 155071, ultima modificare Legea nr. 112 din 11.06.2026) și la 01.01.2027 (doc_id 152862, ultima modificare Legea nr. 187 din 10.07.2025, în vigoare la 01.01.2027): același text în toate trei",
       "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
     }
@@ -348,7 +361,7 @@
       "unit": "MDL/year",
       "sourceIndex": 4,
       "confidence": "unverified",
-      "note": "CHANGED by the bill: art. III pct. 9.1 replaces 29,700 by 40,020 in Codul fiscal art. 33 alin. (1), from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 29,700. Granted monthly as one twelfth (3,335) from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work only. The bill also sets the major exemption (alin. (2)) at 40,020; the Government's opinion of 15 October 2026 backs 46,680 for it instead and leaves alin. (1) at 40,020. Not adopted: second reading pending."
+      "note": "CHANGED by the bill: art. III pct. 9.1 replaces 29,700 by 40,020 in Codul fiscal art. 33 alin. (1), from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 29,700. Granted monthly as one twelfth (3,335) from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work only. The bill also sets the major exemption (alin. (2)) at 40,020; the Government's opinion of 15 October 2026 backs 46,680 for it instead and leaves alin. (1) at 40,020, and the committee's report for the second and third readings (October 2026) does the same: payroll.income_tax.major_personal_deduction_annual. Not adopted: second reading pending."
     },
     "payroll.income_tax.personal_deduction_income_cap": {
       "number": "360000",
@@ -531,6 +544,20 @@
       "sourceIndex": 16,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-leave): Bill 326 art. XIII rewords Law 289/2004 only ('se plătesc' becomes 'se finanțează' in art. 4 alin. (2^1), 'plătite' becomes 'finanțate' in art. 13 alin. (3)-(4)) and the Government's opinion on the amendments says nothing on it; the 75% stays. Legea 289/2004 art. 13 alin. (3): 'în proporție de 75% din salariul mediu al angajatului, determinat în modul stabilit de Guvern', with art. 7 alin. (15); HG 426/2004 anexa 1 pct. 14 subpct. 1^1) (HG 685/2019): the calendar-day average of pct. 8 and 10 times the days of incapacity, at most 5, 'recalculat la cota de menținere a salariului mediu al angajatului – 75%'. The insured-income cap of art. 7 alin. (3) concerns the budget's base, not this one."
+    },
+    "payroll.income_tax.major_personal_deduction_annual": {
+      "number": "46680",
+      "unit": "MDL/year",
+      "sourceIndex": 20,
+      "confidence": "unverified",
+      "note": "PROVISIONAL, from bill 326 as the committee reports it for the second and third readings. The bill as registered (art. III pct. 9.2) replaces 34,620 by 40,020 in Codul fiscal art. 33 alin. (2), the same figure as the ordinary exemption; the Government's opinion of 15 October 2026 (pct. 10) backs 46,680 instead, and the Economy, Budget and Finance Committee's report of October 2026 adopts it (Cuiumju's amendment, supported; Cutasevici's 46,650 supported at 46,680) and proposes the bill for the second and third readings. Not voted in plenary, not published. One twelfth is 3,890. In force from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 34,620. Replace when the law is published."
+    },
+    "payroll.income_tax.spouse_deduction_annual": {
+      "number": "21780",
+      "unit": "MDL/year",
+      "sourceIndex": 21,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Codul fiscal art. 34 alin. (2), 21,780 a year since 2025 (Law 214/2024), read on legis.md on 22.10.2026, the same in the version in force on 1 January 2027. Bill 326 as registered does not amend art. 34; two deputies' amendments would raise it (L. Adamciuc to 29,348, L. Iaconi to 25,200), and the Government's opinion and the committee's report of October 2026 support them only for the children's exemption (11,040), so art. 34 stays as it is in the text proposed for the second and third readings. Re-read when the law is published."
     }
   }
 }

@@ -173,6 +173,13 @@
       "article": "art. 18 lit. c) și o), art. 20 lit. a), art. 36 alin. (8); textul consolidat pe legis.md (ultima modificare Legea nr. 112 din 11.06.2026, Monitorul Oficial nr. 277-279, art. 271), citit la 18.10.2026",
       "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
       "verified": false
+    },
+    {
+      "act": "Codul fiscal al Republicii Moldova nr. 1163/1997",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155071&lang=ro",
+      "article": "art. 33 alin. (1) și (2), art. 34 alin. (2) și (3), art. 35 alin. (1); textul consolidat pe legis.md, citit la 22.10.2026 în redacțiile în vigoare la 01.01.2026 (doc_id 149766, ultima modificare Legea nr. 318 din 29.12.2025), la 25.06.2026 (doc_id 155071, ultima modificare Legea nr. 112 din 11.06.2026) și la 01.01.2027 (doc_id 152862, ultima modificare Legea nr. 187 din 10.07.2025, în vigoare la 01.01.2027): același text în toate trei",
+      "publication": "Monitorul Oficial nr. 62, art. 522, 18.09.1997",
+      "verified": false
     }
   ],
   "values": {
@@ -497,16 +504,16 @@
     "payroll.income_tax.major_personal_deduction_annual": {
       "number": "34620",
       "unit": "MDL/year",
-      "sourceIndex": 12,
+      "sourceIndex": 26,
       "confidence": "unverified",
-      "note": "Scutirea personală majoră (art. 33 alin. (2)), for the categories that paragraph lists, in place of the ordinary one: 34,620 since 2025 (Law 214/2024 replaced 31,500). Not used by the product yet."
+      "note": "Scutirea personală majoră, Codul fiscal art. 33 alin. (2), read on legis.md on 22.10.2026: 'Suma scutirii personale, stabilită la alin.(1), va constitui 34620 lei pe an pentru orice persoană care:' lit. a)-f): actinic illness from the Chernobyl accident, or a disability causally linked to it; the parent or spouse of a participant fallen or missing in the fighting for Moldova's territorial integrity and independence or in Afghanistan; a disability from that fighting; a war disability, a congenital or childhood disability, a severe or accentuated disability; a pensioner who was a victim of political repression, since rehabilitated. It is the personal exemption of alin. (1) at a higher amount, so it is granted in place of the ordinary one and under the same condition, a year's taxable income under payroll.income_tax.personal_deduction_income_cap. 34,620 since 2025 (Law 214/2024 replaced 31,500); the same figure in the versions in force on 1 January 2026, 25 June 2026 and 1 January 2027. The product grants it from the month the employee asks for it from (HG 697/2014 pct. 18, as the personal exemption), in the months it is owed in place of the ordinary amount, and withdraws it with the personal exemption above the cap."
     },
     "payroll.income_tax.spouse_deduction_annual": {
       "number": "21780",
       "unit": "MDL/year",
-      "sourceIndex": 12,
+      "sourceIndex": 26,
       "confidence": "unverified",
-      "note": "Art. 34 alin. (2), the spouse's exemption in the case that paragraph covers: 21,780 since 2025 (Law 214/2024 replaced 19,800). Which case it is has to be read in the consolidated text. Not used by the product yet."
+      "note": "Codul fiscal art. 34 alin. (2), read on legis.md on 22.10.2026: 'Persoana fizică rezidentă aflată în relaţii de căsătorie cu orice persoană specificată la art.33 alin.(2) are dreptul la o scutire suplimentară în sumă de 21780 lei anual, cu condiţia că soţia (soţul) nu beneficiază de scutire personală.' Alin. (1), a spouse exemption for everybody, is abrogated. Alin. (3): it applies 'din luna următoare lunii în care au apărut circumstanțele necesare'. 21,780 since 2025 (Law 214/2024 replaced 19,800); the same figure in the versions in force on 1 January 2026, 25 June 2026 and 1 January 2027. Art. 34 does not repeat the 360,000 condition of art. 33 alin. (1), so the product keeps this exemption above the cap, as it keeps the dependant exemption: to be confirmed by the compliance owner."
     },
     "payroll.income_tax.dependant_deduction_disability_annual": {
       "number": "21780",
