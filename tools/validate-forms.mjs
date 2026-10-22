@@ -1,7 +1,7 @@
 /**
  * Validates every document form in forms/ against schemas/form.schema.json, then what a JSON
- * Schema cannot say: every citation's source exists, field and column ids are unique, columns are
- * in the act's order, a total and the reverse-charge mention name columns the form has, the
+ * Schema cannot say: every citation's source exists (the layout's too), field and column ids are
+ * unique, columns are in the act's order, a total and the reverse-charge mention name columns the form has, the
  * required language is one it may be printed in, and an approved form carries nothing unverified.
  * Called from tools/validate.mjs.
  */
@@ -9,10 +9,12 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join, relative } from "node:path";
 
+// A column's code is the act's number: 10.1 to 10.12 on the factură fiscală, 1 to 5 on a form
+// whose columns are numbered plainly. A plain number sorts before its own decimals.
 const order = (code) => code.split(".").map(Number);
 const before = (a, b) => {
   const [x, y] = [order(a), order(b)];
-  return x[0] < y[0] || (x[0] === y[0] && x[1] < y[1]);
+  return x[0] < y[0] || (x[0] === y[0] && (x[1] ?? -1) < (y[1] ?? -1));
 };
 
 export async function validateForms({ root, ajv, fail, warn }) {
@@ -54,6 +56,7 @@ export async function validateForms({ root, ajv, fail, warn }) {
       form.series.source,
       form.series.selfPrinting,
       form.languages.source,
+      form.layout?.source,
       form.zeroRate?.source,
       form.reverseCharge?.source,
       ...form.fields.map((f) => f.source),
