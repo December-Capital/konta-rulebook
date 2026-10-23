@@ -185,6 +185,17 @@
       "readIn": "act",
       "readOn": "2026-10-15",
       "verified": false
+    },
+    {
+      "act": "Legea pentru modificarea unor acte normative (simplificarea legislației fiscale și vamale), nr. 247 din 22.10.2026, adoptată de Parlament în lectura a doua (proiectul nr. 326 din 08.09.2026)",
+      "article": "art. III pct. 10 (Codul fiscal art. 33 alin. (1) și (2)), pct. 11 (art. 35 alin. (1)), pct. 29 (art. 92^1 alin. (1)), pct. 34 (art. 96 alin. (2) pct. 2) lit. d)); art. IV (Legea nr. 1164/1997 art. 24 alin. (38)); art. XVIII alin. (1)",
+      "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
+      "cite": { "ro": "Legea 247/2026 (adoptată, nepublicată)", "ru": "Закон 247/2026 (принят, не опубликован)", "en": "Law 247/2026 (adopted, not yet published)" },
+      "quote": "10. Articolul 33: la alineatul (1), cifrele „29700” se substituie cu cifrele „40020”; la alineatul (2), cifrele „34620” se substituie cu cifrele „46680”. 11. La articolul 35 alineatul (1), cifrele „9900” se substituie cu cifrele „11040”. [...] se aplică o taxă de gestionare în cuantum de 12 lei. [...] în limita unui volum de până la 150 m³ pentru fiecare lună, pentru fiecare punct de consum aferent bunurilor cu destinație locativă [...] pentru perioada fiscală 2027, persoanele juridice care desfășoară activități financiare și de asigurări prevăzute în secțiunea K a Clasificatorului activităților din economia Moldovei aplică impozitul pe venit în mărime de 18 % din venitul impozabil. [...] prezenta lege intră în vigoare la 1 ianuarie 2027, cu excepția: [...] e) art. III pct. 34 [...] care intră în vigoare la 1 aprilie 2027",
+      "readIn": "act",
+      "readOn": "2026-10-24",
+      "note": "The text Parliament adopted on 22 October 2026 ('Proiect de act normativ final' on the bill's page, PDF SHA-256 e7d6c24e25f663a2014c211e1ed0a627d42f2ed2b62c04f2afb9cb9a00bcb495), not yet promulgated: not in Monitorul Oficial up to nr. 524-527 of 23.10.2026. Every change from it is 'bill' until it is published.",
+      "verified": false
     }
   ],
   "changes": [
@@ -413,13 +424,79 @@
       "recordedOn": "2026-10-15",
       "topic": "threshold",
       "title": { "ro": "Scutirea personală anuală", "ru": "Годовое персональное освобождение", "en": "Annual personal exemption" },
-      "detail": { "ro": "Proiectul aduce și scutirea personală majoră la 40 020 lei; în avizul din 15 octombrie 2026 Guvernul susține 46 680 lei pentru cea majoră.", "ru": "Проект поднимает до 40 020 леев и повышенное персональное освобождение; в заключении от 15 октября 2026 года Правительство поддерживает для повышенного 46 680 леев.", "en": "The bill brings the major personal exemption to 40,020 lei too; in its opinion of 15 October 2026 the Government backs 46,680 lei for the major one." },
+      "detail": { "ro": "Codul fiscal art. 33 alin. (1). Legea adoptată la 22 octombrie 2026, încă nepublicată în Monitorul Oficial.", "ru": "Налоговый кодекс, ст. 33 ч. (1). Закон принят 22 октября 2026 года, ещё не опубликован в Monitorul Oficial.", "en": "Fiscal Code art. 33 alin. (1). The law was adopted on 22 October 2026, not yet published in Monitorul Oficial." },
       "key": "payroll.income_tax.personal_deduction_annual",
       "before": "29700",
       "after": "40020",
       "unit": "MDL/year",
       "state": "bill",
-      "sourceIndex": 14
+      "sourceIndex": 16
+    },
+    {
+      "id": "major-personal-exemption-2027",
+      "effectiveFrom": "2027-01-01",
+      "recordedOn": "2026-10-24",
+      "topic": "threshold",
+      "title": { "ro": "Scutirea personală majoră anuală", "ru": "Годовое повышенное персональное освобождение", "en": "Annual major personal exemption" },
+      "detail": { "ro": "Codul fiscal art. 33 alin. (2). Proiectul spunea 40 020 lei; Parlamentul a adoptat 46 680 lei la 22 octombrie 2026, încă nepublicat în Monitorul Oficial.", "ru": "Налоговый кодекс, ст. 33 ч. (2). В проекте было 40 020 леев; Парламент принял 46 680 леев 22 октября 2026 года, закон ещё не опубликован в Monitorul Oficial.", "en": "Fiscal Code art. 33 alin. (2). The bill said 40,020 lei; Parliament adopted 46,680 lei on 22 October 2026, not yet published in Monitorul Oficial." },
+      "key": "payroll.income_tax.major_personal_deduction_annual",
+      "before": "34620",
+      "after": "46680",
+      "unit": "MDL/year",
+      "state": "bill",
+      "sourceIndex": 16
+    },
+    {
+      "id": "dependant-exemption-2027",
+      "effectiveFrom": "2027-01-01",
+      "recordedOn": "2026-10-24",
+      "topic": "threshold",
+      "title": { "ro": "Scutirea anuală pentru persoana întreținută", "ru": "Годовое освобождение на иждивенца", "en": "Annual exemption per dependant" },
+      "detail": { "ro": "Codul fiscal art. 35 alin. (1); cea pentru o persoană întreținută cu dizabilitate severă sau accentuată nu se schimbă. Legea adoptată la 22 octombrie 2026, încă nepublicată în Monitorul Oficial.", "ru": "Налоговый кодекс, ст. 35 ч. (1); освобождение на иждивенца с тяжёлой или выраженной инвалидностью не меняется. Закон принят 22 октября 2026 года, ещё не опубликован в Monitorul Oficial.", "en": "Fiscal Code art. 35 alin. (1); the amount for a dependant with a severe or accentuated disability does not change. The law was adopted on 22 October 2026, not yet published in Monitorul Oficial." },
+      "key": "payroll.income_tax.dependant_deduction_annual",
+      "before": "9900",
+      "after": "11040",
+      "unit": "MDL/year",
+      "state": "bill",
+      "sourceIndex": 16
+    },
+    {
+      "id": "profit-tax-section-k-2027",
+      "effectiveFrom": "2027-01-01",
+      "recordedOn": "2026-10-24",
+      "topic": "rate",
+      "title": { "ro": "Impozitul pe venit pentru activitățile financiare și de asigurări", "ru": "Налог на доход для финансовой и страховой деятельности", "en": "Income tax for financial and insurance activities" },
+      "detail": { "ro": "Doar pentru perioada fiscală 2027, persoanele juridice din secțiunea K a CAEM: 18% în loc de 12% (Legea 1164/1997 art. 24 alin. (38)). Legea adoptată la 22 octombrie 2026, încă nepublicată în Monitorul Oficial.", "ru": "Только за налоговый период 2027 года, юридические лица секции K CAEM: 18% вместо 12% (Закон 1164/1997, ст. 24 ч. (38)). Закон принят 22 октября 2026 года, ещё не опубликован в Monitorul Oficial.", "en": "For the fiscal period 2027 only, legal entities in section K of CAEM: 18% instead of 12% (Law 1164/1997 art. 24 alin. (38)). The law was adopted on 22 October 2026, not yet published in Monitorul Oficial." },
+      "key": "tax.profit.section_k_rate",
+      "before": "0.12",
+      "after": "0.18",
+      "unit": "ratio",
+      "state": "bill",
+      "sourceIndex": 16
+    },
+    {
+      "id": "postal-parcel-fee-2027",
+      "effectiveFrom": "2027-01-01",
+      "recordedOn": "2026-10-24",
+      "topic": "other",
+      "title": { "ro": "Taxa de gestionare a coletelor din vânzări la distanță", "ru": "Сбор за обработку посылок дистанционной торговли", "en": "Handling fee on parcels from distance sales" },
+      "detail": { "ro": "Codul fiscal art. 92^1: 12 lei pentru fiecare trimitere poștală importată din vânzări la distanță, plătită de destinatar și încasată de furnizorul serviciului poștal. Legea adoptată la 22 octombrie 2026, încă nepublicată în Monitorul Oficial.", "ru": "Налоговый кодекс, ст. 92^1: 12 леев за каждое импортированное почтовое отправление дистанционной торговли, платит получатель, взимает почтовый оператор. Закон принят 22 октября 2026 года, ещё не опубликован в Monitorul Oficial.", "en": "Fiscal Code art. 92^1: 12 lei for each imported postal item from a distance sale, paid by the recipient and collected by the postal provider. The law was adopted on 22 October 2026, not yet published in Monitorul Oficial." },
+      "key": "tax.postal_parcel.handling_fee",
+      "after": "12",
+      "unit": "MDL",
+      "state": "bill",
+      "sourceIndex": 16
+    },
+    {
+      "id": "vat-gas-cap-2027-04",
+      "effectiveFrom": "2027-04-01",
+      "recordedOn": "2026-10-24",
+      "topic": "rate",
+      "title": { "ro": "TVA de 8% la gazele naturale, până la 150 m³ pe lună", "ru": "НДС 8% на природный газ, до 150 м³ в месяц", "en": "8% VAT on natural gas, up to 150 m³ a month" },
+      "detail": { "ro": "Codul fiscal art. 96 alin. (2) pct. 2) lit. d): cota de 8% rămâne doar pentru gazele livrate consumatorilor finali, până la 150 m³ pe lună pentru fiecare punct de consum al unei locuințe; restul la cota standard. Legea adoptată la 22 octombrie 2026, încă nepublicată în Monitorul Oficial.", "ru": "Налоговый кодекс, ст. 96 ч. (2) п. 2) лит. d): ставка 8% остаётся только для газа, поставляемого конечным потребителям, до 150 м³ в месяц на каждую точку потребления жилья; остальное по стандартной ставке. Закон принят 22 октября 2026 года, ещё не опубликован в Monitorul Oficial.", "en": "Fiscal Code art. 96 alin. (2) pct. 2) lit. d): the 8% rate stays only for gas delivered to final consumers, up to 150 m³ a month for each point of consumption of a dwelling; the rest at the standard rate. The law was adopted on 22 October 2026, not yet published in Monitorul Oficial." },
+      "key": "tax.vat.reduced_rate_gas_monthly_cap_m3",
+      "state": "bill",
+      "sourceIndex": 16
     }
   ]
 }

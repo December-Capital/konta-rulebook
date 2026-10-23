@@ -3,10 +3,10 @@
   "id": "md-2027",
   "jurisdiction": "MD",
   "effectiveFrom": "2027-01-01",
-  "effectiveTo": null,
+  "effectiveTo": "2027-12-31",
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'). Status read on parlament.md on 2026-10-18: passed in first reading on 10 September 2026; status 'Lectura a doua', the Economy, Budget and Finance Committee met on it for the second reading on 8 October 2026; no plenary vote in second reading yet; not published in Monitorul Oficial. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) backs raising the major personal exemption to 46,680 (the bill says 40,020) and the exemption for children from 9,900 to 11,040, keeping wheat, maize and sunflower at 8% VAT until 1 January 2028 with a reverse charge, and repealing art. 15 lit. c); none of that is voted. The Economy, Budget and Finance Committee's report for the second and third readings, published on parlament.md on 21 October 2026, adopts the major exemption at 46,680 and the children's at 11,040; the major exemption is encoded from it (read 2026-10-22), the rest of the opinion is not, and the figures below may still change. Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay; the cash register's keys of branch cash-register added on 2026-10-22). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the bill: 18% profit tax for section K, gas at 8% only up to 150 m3 a month from 1 April 2027, parcels, the vice tax. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it. Fixed assets (assets.*, tax.depreciation.*, ledger.assets.*) were added on 2026-10-22 for konta's fixed-assets branch, carried over from md-2026: the bill amends neither Codul fiscal art. 26^1 nor art. 28, and the regulation (HG 704/2019), the catalogue (HG 941/2020), the standard and the chart are not acts it touches.",
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'), passed in first reading on 10 September 2026 and adopted in second reading on 22 October 2026 as Law nr. 247 (parlament.md, read 2026-10-24). Not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026, so every value marked `provisional` says what replaces it, and figures may still differ from the law as published. The adopted text (sources, the last entry) was read on 2026-10-24 for the values citing it: the personal exemption 40,020, the major exemption 46,680 and the dependant's 11,040 (art. 33 and 35), the VAT rates of art. 96, peasant farms at 12% with art. 15 lit. c) repealed, 18% profit tax for section K in 2027 (Law 1164/1997 art. 24 alin. (38)), the 12-lei handling fee per imported parcel (art. 92^1), and the gas limit for the 8% rate from 1 April 2027, which is in md-2027.2. The values still citing the bill (dividends, the undistributed-profit regime) were not compared with the adopted text clause by clause. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) and the Economy, Budget and Finance Committee's report for the second and third readings (parlament.md, 21 October 2026) led to the figures adopted. Ends 2027-12-31, as md-2026 ends with its year, so that a set for 2028 is asked for in time (the product's readiness check reads every key 60 days ahead). Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay; the cash register's keys of branch cash-register added on 2026-10-22). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the law: the vice tax, the special VAT regime for distance sales (title III chapter 10, from 1 November 2026), the excise annexes. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it. Fixed assets (assets.*, tax.depreciation.*, ledger.assets.*) were added on 2026-10-22 for konta's fixed-assets branch, carried over from md-2026: the bill amends neither Codul fiscal art. 26^1 nor art. 28, and the regulation (HG 704/2019), the catalogue (HG 941/2020), the standard and the chart are not acts it touches.",
   "sources": [
     {
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
@@ -205,6 +205,12 @@
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
+    },
+    {
+      "act": "Legea pentru modificarea unor acte normative (simplificarea legislației fiscale și vamale), nr. 247 din 22.10.2026, adoptată de Parlament în lectura a doua (proiectul nr. 326 din 08.09.2026)",
+      "article": "art. III pct. 4 (Codul fiscal art. 15: lit. a) completată cu gospodăriile țărănești, lit. c) abrogată), pct. 10 (art. 33: alin. (1) „29700” devine „40020”, alin. (2) „34620” devine „46680”), pct. 11 (art. 35 alin. (1): „9900” devine „11040”), pct. 29 (art. 92^1 alin. (1): taxa de gestionare de 12 lei pentru fiecare trimitere poștală care face obiectul vânzării la distanță de mărfuri importate), pct. 33 (art. 96 în redacție nouă), pct. 34 (art. 96 alin. (2) pct. 2) lit. d): gazele naturale livrate consumatorilor finali, până la 150 m³ pe lună pentru fiecare punct de consum aferent bunurilor cu destinație locativă); art. IV (Legea nr. 1164/1997 art. 24 alin. (38): 18% pentru perioada fiscală 2027, secțiunea K a CAEM); art. VII pct. 2 (Legea nr. 489/1999 anexa nr. 1 pct. 1.1: 24% pentru toți angajații); art. XVIII alin. (1): în vigoare la 1 ianuarie 2027, cu excepțiile de la lit. a)-f) (pct. 45, regimul special al vânzării la distanță, la 1 noiembrie 2026; pct. 34 la 1 aprilie 2027; art. 96 alin. (2) pct. 1) lit. f) la 1 ianuarie 2028); read 2026-10-24 in the final text Parliament published with the bill („Proiect redactat (nr. 326/2026)”, „Proiect de act normativ final”, served by parlament.md as a PDF, SHA-256 e7d6c24e25f663a2014c211e1ed0a627d42f2ed2b62c04f2afb9cb9a00bcb495), pages 2-3, 7-8, 10-12, 41-42 and 51. Adopted on 22 October 2026 (parlament.md: 'Statutul: Adoptat', 'Numărul adoptat: 247/22.10.2026'); not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026",
+      "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
+      "verified": false
     }
   ],
   "values": {
@@ -213,28 +219,39 @@
       "unit": "ratio",
       "sourceIndex": 1,
       "confidence": "unverified",
-      "note": "Art. 15 lit. b) untouched by the bill. Its art. IV would set 18% for 2027 for legal entities in section K (financial and insurance activities), by derogation in Law 1164/1997 art. 24 alin. (38); not encoded."
+      "note": "Art. 15 lit. b) untouched by Law 247/2026. Its art. IV sets 18% for 2027 for legal entities in section K (financial and insurance activities), by derogation in Law 1164/1997 art. 24 alin. (38): tax.profit.section_k_rate."
+    },
+    "tax.profit.section_k_rate": {
+      "number": "0.18",
+      "unit": "ratio",
+      "sourceIndex": 30,
+      "confidence": "unverified",
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Law 1164/1997 art. 24 alin. (38), added by Law 247/2026 art. IV: 'Prin derogare de la prevederile art. 15 lit. b) din Codul fiscal nr. 1163/1997, pentru perioada fiscală 2027, persoanele juridice care desfășoară activități financiare și de asigurări prevăzute în secțiunea K a Clasificatorului activităților din economia Moldovei aplică impozitul pe venit în mărime de 18 % din venitul impozabil.' For the fiscal period 2027 only; tax.profit.standard_rate otherwise. The same law (art. III pct. 9 and 24) calls financial and insurance activities section L of CAEM Rev. 2.1 elsewhere, as Rev. 2.1 numbers them, while art. IV says section K without naming the revision: which section a company's code falls in is for the compliance owner. Not read by the product: it computes no profit tax."
     },
     "tax.dividend.rate": {
       "number": "0.08",
       "unit": "ratio",
       "sourceIndex": 0,
       "confidence": "unverified",
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
       "note": "Bill, art. 90^1 alin. (3^1) lit. b) (and art. 91 alin. (1) lit. c) for non-residents): 8% on dividends from profits generated from 2027 onwards; 6% stays for earlier profits. A profit-vintage rule, not a payment-date rule: the engine must resolve the rate from the year the profit arose."
     },
     "tax.gospodarie_tarneasca.rate": {
       "number": "0.12",
       "unit": "ratio",
-      "sourceIndex": 0,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Bill art. III pct. 4 adds peasant farms to art. 15 lit. a), so 12% instead of 7%. The bill as registered does not repeal art. 15 lit. c); the Government's opinion of 15 October 2026 proposes repealing it (its own addition pct. 1). To be checked in the text adopted in second reading."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Law 247/2026 art. III pct. 4 adds peasant farms to art. 15 lit. a) and repeals lit. c), so 12% instead of 7%."
     },
     "tax.profit.undistributed_eligibility_ceiling": {
       "number": "200000000",
       "unit": "MDL",
       "sourceIndex": 0,
       "confidence": "unverified",
-      "note": "Bill: at most 249 employees and annual turnover or total assets of up to 200 million lei, up from 100 million (Law 318/2025 for 2026). The 249-employee condition is not encoded."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Bill: at most 249 employees and annual turnover or total assets of up to 200 million lei, up from 100 million (Law 318/2025 for 2026); the same in Law 247/2026 as adopted (art. III pct. 24, art. 87 alin. (12)). The 249-employee condition is not encoded."
     },
     "classification.caem.revision": {
       "text": "2.1",
@@ -255,28 +272,32 @@
       "unit": "date",
       "sourceIndex": 0,
       "confidence": "unverified",
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
       "note": "A deferral, not a zero rate. Bill: new art. 87 alin. (1^2), tax on profit earned in 2027-2029 is paid by the 25th of the month after the month dividends are paid; art. 84 alin. (6) changes 2023-2026 to 2023-2029."
     },
     "tax.vat.standard_rate": {
       "number": "0.20",
       "unit": "ratio",
-      "sourceIndex": 3,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Art. 96 alin. (1) as the bill rewrites it: 20%, as in 2026. The bill is not adopted."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Art. 96 alin. (1) as Law 247/2026 (art. III pct. 33) rewrites it: 20%, as in 2026."
     },
     "tax.vat.higher_reduced_rate": {
       "number": "0.12",
       "unit": "ratio",
-      "sourceIndex": 3,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Art. 96 alin. (2) pct. 1) as the bill rewrites it, the higher of two reduced rates: (a) food, prepared or not, with services allowing its immediate consumption, in activities under section I of CAEM (HoReCa); (b) accommodation in a hotel, motel, guest house, camping, holiday village or camp, under section I of CAEM; (c) livestock, crop and horticultural produce in natural form at the tariff positions listed; (d) fresh fruit at 080840000 and 081030. (a) and (b) are 8% until then: Law 212/2023 art. II pct. 22 replaced 12% by 8% at art. 96 lit. b), dashes eight and nine, from 10 August 2023 (Monitorul Oficial nr. 297-301, art. 514). Which goods and services a line is, the person entering it decides; the product offers the rate, it does not classify. The bill is not adopted."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Art. 96 alin. (2) pct. 1) as Law 247/2026 (art. III pct. 33) rewrites it, the higher of two reduced rates: (a) food, prepared or not, with services allowing its immediate consumption, in activities under section I of CAEM (HoReCa); (b) accommodation in a hotel, motel, guest house, camping, holiday village or camp, under section I of CAEM; (c) livestock, crop and horticultural produce in natural form at the tariff positions listed; (d) fresh fruit at 080840000 and 081030; (e) milk and dairy products at 0402 and 0403 produced and delivered in Moldova; (f) wheat, maize, sunflower and the other cereals and oilseeds at 1001-1005, 1007, 1201, 1205 and 120600, only from 1 January 2028 (art. XVIII alin. (1) lit. f)); until then they are at tax.vat.reduced_rate (pct. 2) lit. g)). (a) and (b) are 8% until 2027: Law 212/2023 art. II pct. 22 replaced 12% by 8% at art. 96 lit. b), dashes eight and nine, from 10 August 2023 (Monitorul Oficial nr. 297-301, art. 514). Which goods and services a line is, the person entering it decides; the product offers the rate, it does not classify."
     },
     "tax.vat.reduced_rate": {
       "number": "0.08",
       "unit": "ratio",
-      "sourceIndex": 3,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Art. 96 alin. (2) pct. 2) as the bill rewrites it: bread and the listed dairy products, medicines and medical alcohol, medical devices and disinfectants at the positions listed, natural and liquefied gas with its transport and distribution, solid biofuel, listed fresh vegetables and fruit, eggs, chicken meat, and hygiene goods. From 1 April 2027 (pct. 31) gas only to final consumers, up to 150 m3 a month per dwelling's point of consumption; that scope is not encoded. The bill is not adopted."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Art. 96 alin. (2) pct. 2) as Law 247/2026 (art. III pct. 33) rewrites it: (a) bread at 190590300 and milk and dairy at 0401, 0405 and 040610500; (b) medicines and medical alcohol; (c) medical devices, consumables, diagnostics and disinfectants at the positions listed; (d) natural gas imported or delivered, liquefied gas at 2711, and gas transport and distribution; (e) solid biofuel; (f) the fresh vegetables and fruit listed; (g) the cereals and oilseeds at 1001-1005, 1007, 1201, 1205 and 120600, until 31 December 2027 (repealed from 1 January 2028, art. XVIII alin. (1) lit. f)); (h) goods at 060210 and 060220; (i) the listed hygiene goods. The bill's eggs and chicken meat are not in the adopted list. From 1 April 2027 (pct. 34, art. XVIII alin. (1) lit. e)) lit. d) becomes natural gas delivered to final consumers only, up to tax.vat.reduced_rate_gas_monthly_cap_m3 a month per dwelling's point of consumption (md-2027.2); import, liquefied gas and transport and distribution leave the 8% list then."
     },
     "tax.vat.zero_rate": {
       "number": "0",
@@ -414,9 +435,10 @@
     "payroll.income_tax.personal_deduction_annual": {
       "number": "40020",
       "unit": "MDL/year",
-      "sourceIndex": 4,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "CHANGED by the bill: art. III pct. 9.1 replaces 29,700 by 40,020 in Codul fiscal art. 33 alin. (1), from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 29,700. Granted monthly as one twelfth (3,335) from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work only. The bill also sets the major exemption (alin. (2)) at 40,020; the Government's opinion of 15 October 2026 backs 46,680 for it instead and leaves alin. (1) at 40,020, and the committee's report for the second and third readings (October 2026) does the same: payroll.income_tax.major_personal_deduction_annual. Not adopted: second reading pending."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "CHANGED: Law 247/2026 art. III pct. 10 replaces 29,700 by 40,020 in Codul fiscal art. 33 alin. (1), from 1 January 2027 (art. XVIII alin. (1)), as the bill did (its pct. 9.1). md-2026 has 29,700. Granted monthly as one twelfth (3,335) from the month after the employee asks for it (HG 697/2014 pct. 18), at one place of work only. The same point sets the major exemption (alin. (2)) at 46,680: payroll.income_tax.major_personal_deduction_annual."
     },
     "payroll.income_tax.personal_deduction_income_cap": {
       "number": "360000",
@@ -426,11 +448,12 @@
       "note": "Carried over unchanged from md-2026: Codul fiscal art. 33 alin. (1), the exemption belongs to a resident whose annual taxable income is under 360,000. The bill changes only the amount in that paragraph ('cifrele „29700”'), not the cap. Art. 88 alin. (1): the employer need not track the loss of the right. The product's withdrawal of the year's exemption from the month pay here passes the cap is still to be decided by the compliance owner."
     },
     "payroll.income_tax.dependant_deduction_annual": {
-      "number": "9900",
+      "number": "11040",
       "unit": "MDL/year",
-      "sourceIndex": 6,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Carried over unchanged from md-2026: Codul fiscal art. 35 alin. (1), 9,900 a year per dependant since 2025 (Law 214/2024). The bill as registered does not amend art. 35. The Government's opinion of 15 October 2026 (pct. 11-13) backs raising 'scutirea pentru copii' from 9,900 to 11,040, whether for every dependant or only children is not yet in a text: replace this when the second reading is published."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "CHANGED: Law 247/2026 art. III pct. 11 replaces 9,900 by 11,040 in Codul fiscal art. 35 alin. (1) ('La articolul 35 alineatul (1), cifrele „9900” se substituie cu cifrele „11040”'), from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 9,900 (Law 214/2024). The bill as registered did not amend art. 35; the Government's opinion of 15 October 2026 (pct. 11-13) and the committee's report for the second and third readings backed it as the exemption 'pentru copii', and Parliament's press release of 22 October 2026 says 'scutirea pentru copii va crește de la 9 900 de lei la 11 040 de lei'. The text changes the figure in alin. (1), which is the exemption for every dependant (persoană întreținută), not for children only; the higher amount for a dependant with a severe or accentuated disability (payroll.income_tax.dependant_deduction_disability_annual where carried, 21,780 in md-2026) is not touched. One twelfth is 920."
     },
     "payroll.income_tax.medical_premium_deductible": {
       "text": "yes",
@@ -451,13 +474,15 @@
       "unit": "ratio",
       "sourceIndex": 9,
       "confidence": "unverified",
-      "note": "Carried over unchanged from md-2026: Law 489/1999 annex 1 pct. 1.1, 24% for private-sector employers since 2021. The bill (art. VII pct. 2) rewrites pct. 1.1 to 24% for every employer, ending the 29% for budget and public-authority employers; for the employers the product serves the rate is the same either way. The 2027 social insurance budget law, which could restate it, is not in Parliament yet (bills up to nr. 374 of 9 October 2026 checked)."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial, and the state social insurance budget law for 2027 (Legea bugetului asigurărilor sociale de stat pe anul 2027), not yet adopted, which may restate it: re-read in both once published.",
+      "note": "Carried over unchanged from md-2026: Law 489/1999 annex 1 pct. 1.1, 24% for private-sector employers since 2021. The bill (art. VII pct. 2) rewrites pct. 1.1 to 24% for every employer, ending the 29% for budget and public-authority employers, and Law 247/2026 as adopted keeps it (art. VII pct. 2); for the employers the product serves the rate is the same either way. The 2027 social insurance budget law, which could restate it, is not in Parliament yet (bills up to nr. 374 of 9 October 2026 checked)."
     },
     "payroll.cnam.employee_rate": {
       "number": "0.09",
       "unit": "ratio",
       "sourceIndex": 10,
       "confidence": "unverified",
+      "provisional": "The law on the compulsory health insurance funds for 2027 (Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2027), once published: its art. 4 alin. (1).",
       "note": "Carried over unchanged from md-2026 PROVISIONALLY: the premium is set each year by the fund law, 9.0% for 2026 by Law 321/2025 art. 4 alin. (1). The 2027 fund law is not in Parliament yet (bills up to nr. 374 of 9 October 2026 checked); bill 326 art. XI only drops a reference to art. 89 from Law 1593/2002 art. 3. Replace when the 2027 law is published."
     },
     "payroll.minimum_wage.monthly": {
@@ -465,6 +490,7 @@
       "unit": "MDL/month",
       "sourceIndex": 11,
       "confidence": "unverified",
+      "provisional": "The Government's decision on the minimum wage from 1 January 2027, usually published in December (HG 771/2025 was published on 18 December 2025).",
       "note": "Carried over unchanged from md-2026 PROVISIONALLY: HG 771/2025 is titled 'pentru anul 2026', but its pct. 1 sets 6,300 'începând cu 1 ianuarie 2026' with no end date, so until a new decision it is the figure in force. The Government sets each year's minimum wage by decision under Law 1432/2000 art. 3, for 2026 in December 2025; the 2027 decision has not been looked for issue by issue. Replace it when published. The product reads this key with TryNumber, so it is optional to it."
     },
     "payroll.rounding": {
@@ -603,9 +629,10 @@
     "payroll.income_tax.major_personal_deduction_annual": {
       "number": "46680",
       "unit": "MDL/year",
-      "sourceIndex": 20,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "PROVISIONAL, from bill 326 as the committee reports it for the second and third readings. The bill as registered (art. III pct. 9.2) replaces 34,620 by 40,020 in Codul fiscal art. 33 alin. (2), the same figure as the ordinary exemption; the Government's opinion of 15 October 2026 (pct. 10) backs 46,680 instead, and the Economy, Budget and Finance Committee's report of October 2026 adopts it (Cuiumju's amendment, supported; Cutasevici's 46,650 supported at 46,680) and proposes the bill for the second and third readings. Not voted in plenary, not published. One twelfth is 3,890. In force from 1 January 2027 (art. XVIII alin. (1)). md-2026 has 34,620. Replace when the law is published."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "CHANGED: Law 247/2026 art. III pct. 10 replaces 34,620 by 46,680 in Codul fiscal art. 33 alin. (2), from 1 January 2027 (art. XVIII alin. (1)). The bill as registered (its pct. 9.2) said 40,020, the same figure as the ordinary exemption; the Government's opinion of 15 October 2026 (pct. 10) backed 46,680 and the Economy, Budget and Finance Committee's report for the second and third readings adopted it (Cuiumju's amendment, supported; Cutasevici's 46,650 supported at 46,680), as Parliament voted on 22 October 2026. One twelfth is 3,890. md-2026 has 34,620."
     },
     "payroll.income_tax.spouse_deduction_annual": {
       "number": "21780",
@@ -837,6 +864,14 @@
       "sourceIndex": 20,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch bnm-rates): the chart of accounts and the SNC are unchanged by the bill. Lei and bani."
+    },
+    "tax.postal_parcel.handling_fee": {
+      "number": "12",
+      "unit": "MDL",
+      "sourceIndex": 30,
+      "confidence": "unverified",
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Codul fiscal art. 92^1 alin. (1), in the new title II^1 added by Law 247/2026 art. III pct. 29: 'Pentru fiecare trimitere poștală care face obiectul vânzării la distanță de mărfuri importate [...] se aplică o taxă de gestionare în cuantum de 12 lei.' Per parcel, paid by the recipient (alin. (2)), collected by the delivery or postal provider as a condition of handing the parcel over (alin. (3)-(4)) and paid over by the last day of the next month (alin. (5)). In force from 1 January 2027: pct. 29 is not among art. XVIII alin. (1)'s exceptions. The special VAT regime for distance sales of imported goods it refers to (title III chapter 10, pct. 45) starts on 1 November 2026 (art. XVIII alin. (1) lit. d)), and Parliament's press release of 22 October 2026 puts the 12 lei from 1 November too; the text says 1 January 2027, to be confirmed in the law as published. Not read by the product: a company in Konta pays it only as a postal provider, which it does not handle."
     }
   }
 }
