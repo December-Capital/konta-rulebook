@@ -105,6 +105,15 @@ December decision on the minimum wage. It is the exception to the rule above: th
 exists today (the bill, the text Parliament adopted, last year's act). An approved set may hold
 none, and `npm run validate` counts them in each set.
 
+**A figure carried into the next year rests on the same act.** `sourceIndex` is a position, so when a
+merge appends one branch's sources after another's, that branch's values can end up citing a
+different act with every index still valid (it happened in October 2026 to 60 values). For two sets
+that follow each other (one starts the day after the other ends), the validator requires a value
+with the same figure in both to cite the same act. Where the act really changed (a law rewrote the
+article and restated the figure), the later value says why in `citationChanged`. The check cannot see
+a value that exists in one year only, or one that drifted the same way in both: when you merge sets,
+also read each moved value's citation.
+
 ## The chart of accounts
 
 `charts/` holds the *Planul general de conturi contabile* (OMF 119/2013) as published, one file per

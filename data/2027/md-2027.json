@@ -279,6 +279,7 @@
       "unit": "ratio",
       "sourceIndex": 1,
       "confidence": "unverified",
+      "citationChanged": "md-2026 cites Law 77/2016 on IT parks through MITP's page, while its own note names Codul fiscal art. 370 alin. (1), which sets the 7%; this set cites the Code.",
       "note": "Art. 370 alin. (1) untouched by the bill. Law 415/2023 art. 15 alin. (4) lets residents keep working under the rules in force until 2035 inclusive if the rules change: a grandfathering right, not a fixed rate."
     },
     "tax.profit.undistributed_deferral_until": {
@@ -294,6 +295,7 @@
       "unit": "ratio",
       "sourceIndex": 30,
       "confidence": "unverified",
+      "citationChanged": "Law 247/2026 art. III pct. 33 rewrites Codul fiscal art. 96 from 1 January 2027 and restates the rate.",
       "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
       "note": "Art. 96 alin. (1) as Law 247/2026 (art. III pct. 33) rewrites it: 20%, as in 2026."
     },
@@ -310,6 +312,7 @@
       "unit": "ratio",
       "sourceIndex": 30,
       "confidence": "unverified",
+      "citationChanged": "Law 247/2026 art. III pct. 33 rewrites Codul fiscal art. 96 from 1 January 2027 and restates the rate.",
       "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
       "note": "Art. 96 alin. (2) pct. 2) as Law 247/2026 (art. III pct. 33) rewrites it: (a) bread at 190590300 and milk and dairy at 0401, 0405 and 040610500; (b) medicines and medical alcohol; (c) medical devices, consumables, diagnostics and disinfectants at the positions listed; (d) natural gas imported or delivered, liquefied gas at 2711, and gas transport and distribution; (e) solid biofuel; (f) the fresh vegetables and fruit listed; (g) the cereals and oilseeds at 1001-1005, 1007, 1201, 1205 and 120600, until 31 December 2027 (repealed from 1 January 2028, art. XVIII alin. (1) lit. f)); (h) goods at 060210 and 060220; (i) the listed hygiene goods. The bill's eggs and chicken meat are not in the adopted list. From 1 April 2027 (pct. 34, art. XVIII alin. (1) lit. e)) lit. d) becomes natural gas delivered to final consumers only, up to tax.vat.reduced_rate_gas_monthly_cap_m3 a month per dwelling's point of consumption (md-2027.2); import, liquefied gas and transport and distribution leave the 8% list then."
     },

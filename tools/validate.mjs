@@ -181,6 +181,42 @@ for (let i = 0; i < sets.length; i += 1) {
   }
 }
 
+// A value carried into the next year unchanged rests on the same act as the year before. Sources
+// are cited by position, so a merge that appends one set's sources at another position makes its
+// values cite the wrong act without breaking any index; this is how that shows. Where the act
+// really changed (the law rewrote the article and restated the figure), `citationChanged` says so.
+const dayAfter = (date) => {
+  const at = new Date(`${date}T00:00:00Z`);
+  at.setUTCDate(at.getUTCDate() + 1);
+  return at.toISOString().slice(0, 10);
+};
+const actOf = (ruleSet, value) => ruleSet.sources[value.sourceIndex]?.act.replace(/\s+/g, " ").trim();
+
+for (const before of sets) {
+  if (!before.ruleSet.effectiveTo) continue;
+  for (const after of sets) {
+    if (
+      after.ruleSet.jurisdiction !== before.ruleSet.jurisdiction ||
+      after.ruleSet.effectiveFrom !== dayAfter(before.ruleSet.effectiveTo)
+    ) {
+      continue;
+    }
+    for (const [key, value] of Object.entries(after.ruleSet.values)) {
+      const earlier = before.ruleSet.values[key];
+      if (!earlier || (earlier.number ?? earlier.text) !== (value.number ?? value.text)) continue;
+      const was = actOf(before.ruleSet, earlier);
+      const now = actOf(after.ruleSet, value);
+      if (was && now && was !== now && !value.citationChanged) {
+        fail(
+          after.file,
+          `${key} is ${value.number ?? value.text} as in ${before.ruleSet.id}, which cites ${was}, but it cites ${now}. ` +
+            `Point sourceIndex at the same act, or say in citationChanged why the act changed.`,
+        );
+      }
+    }
+  }
+}
+
 const ids = sets.map((s) => s.ruleSet.id);
 const duplicateId = ids.find((id, index) => ids.indexOf(id) !== index);
 if (duplicateId) {

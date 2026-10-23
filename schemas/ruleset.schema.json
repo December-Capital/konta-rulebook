@@ -137,6 +137,11 @@
             "default": "unverified",
             "description": "'verified' means a human read the cited act. Only verified values may appear in an approved set."
           },
+          "citationChanged": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Why this value cites another act than the same figure in the set just before it, for example a law that rewrote the article and restated the figure. Without it the validator requires the same act."
+          },
           "provisional": {
             "type": "string",
             "minLength": 1,
