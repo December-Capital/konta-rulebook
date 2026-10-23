@@ -122,7 +122,8 @@
               "count",
               "code",
               "text",
-              "date"
+              "date",
+              "m3/month"
             ]
           },
           "sourceIndex": {
@@ -135,6 +136,11 @@
             "enum": ["verified", "unverified"],
             "default": "unverified",
             "description": "'verified' means a human read the cited act. Only verified values may appear in an approved set."
+          },
+          "provisional": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Set when the value is known to be standing in for one not yet published: what replaces it, for example the law once published in Monitorul Oficial, or the next year's budget law. An approved set holds none."
           },
           "note": {
             "type": "string"

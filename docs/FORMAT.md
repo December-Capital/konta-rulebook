@@ -35,6 +35,7 @@ schemas/ruleset.schema.json    the contract
 data/2026/md-2026.json         the year's base set
 data/2026/md-2026.2.json       a sparse amendment: only the keys that changed mid-year
 data/2027/md-2027.json
+data/2027/md-2027.2.json       from 1 April 2027: the gas limit for the 8% VAT rate
 charts/md-pgcc-2020.json       Planul general de conturi contabile, in force from 1 January 2020
 schemas/chart.schema.json      the contract for a chart of accounts
 classifiers/sfs-efactura-2026.json  e-Factura's units of measure and VAT rate codes, from SFS's workbook
@@ -97,6 +98,12 @@ Ratios are fractions: `0.12`, never `12`.
 
 **Nothing enters without a citation.** `sourceIndex` points into the set's own `sources`, and the
 validator checks it resolves. A value nobody can trace to a published act does not belong here.
+
+**A value standing in for one not yet published says what replaces it.** `provisional` is that
+sentence: a law adopted but not yet in Monitorul Oficial, next year's fund law, the Government's
+December decision on the minimum wage. It is the exception to the rule above: the value cites what
+exists today (the bill, the text Parliament adopted, last year's act). An approved set may hold
+none, and `npm run validate` counts them in each set.
 
 ## The chart of accounts
 
@@ -328,9 +335,9 @@ Recorded rather than guessed at. Resolving them is Phase 0 work.
 | --- | --- |
 | Is a universal B2B e-Factura mandate coming, and when? | No Moldovan legal act found for the widely reported 1 October 2026 date. The obligation today reaches only B2G, supplies to agents without fiscal relations with the budget system, and a risk-based list of roughly 69 entities. |
 | Is the VAT refund ceiling really 70% for e-Factura and MEV users? | Reported by secondary sources, absent from the Ministry of Finance summary of the 2026 changes. It is the strongest positive incentive to adopt e-Factura. |
-| Final 2027 figures | `md-2027` follows bill nr. 326 of 8 September 2026 as passed in first reading (10 September). On 18 October 2026 it awaited the plenary vote in second reading; the Government's opinion on the amendments (Monitorul Oficial nr. 512-515, 16 October 2026) backs 46,680 for the major personal exemption and 11,040 for children, not yet encoded. Re-read the set against the law when it is published. |
+| Final 2027 figures | Bill nr. 326 of 8 September 2026 was adopted in second reading on 22 October 2026 as Law nr. 247; on 24 October it was not yet in Monitorul Oficial (read up to nr. 524-527 of 23 October). `md-2027` and `md-2027.2` follow the text Parliament adopted for the personal (40,020), major (46,680) and dependant (11,040) exemptions, the VAT rates, 18% for section K in 2027, the 12-lei parcel fee and the gas limit from 1 April 2027, each `provisional`. Re-read the sets against the law when it is published, and the values still citing the bill clause by clause. |
 | How does SIA e-Factura round VAT per line? | `tax.vat.line_rounding` says half away from zero; konta-efactura rounds half to even. They must agree with the platform; confirm on the first test round trip. |
-| The 2027 values that come from acts not yet adopted | `md-2027` carries every key the product reads, so documents and payroll dated 2027 are no longer refused. It changes only what the bill changes (the VAT rates of art. 96, the personal exemption at 40,020); the rest is carried over from `md-2026` with a note saying why. Two are carried over only provisionally: the CNAM premium (9%, the 2027 fund law is not in Parliament yet) and the minimum wage (6,300, until the Government sets the 2027 one, usually in December). |
+| The 2027 values that come from acts not yet adopted | `md-2027` carries every key the product reads, so documents and payroll dated 2027 are no longer refused. It changes only what the law changes; the rest is carried over from `md-2026` with a note saying why. Three are carried over only provisionally: the CNAM premium (9%, the 2027 fund law is not in Parliament yet), the CNAS rate (24%, with the 2027 social insurance budget law) and the minimum wage (6,300, until the Government sets the 2027 one, usually in December). `npm run validate` counts what is `provisional`. |
 
 ## Licence
 

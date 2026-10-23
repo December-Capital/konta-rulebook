@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/ruleset.schema.json",
+  "id": "md-2027.2",
+  "jurisdiction": "MD",
+  "effectiveFrom": "2027-04-01",
+  "effectiveTo": "2027-12-31",
+  "publishedOn": "2026-10-24",
+  "status": "draft",
+  "notes": "DRAFT and PROVISIONAL, a sparse amendment to md-2027 from 1 April 2027: Law 247/2026 art. III pct. 34 limits the 8% VAT rate on natural gas to gas delivered to final consumers, up to 150 m³ a month per dwelling's point of consumption (art. XVIII alin. (1) lit. e)). Adopted by Parliament on 22 October 2026, not in Monitorul Oficial up to nr. 524-527 of 23 October 2026. Every other key falls through to md-2027.",
+  "sources": [
+    {
+      "act": "Legea pentru modificarea unor acte normative (simplificarea legislației fiscale și vamale), nr. 247 din 22.10.2026, adoptată de Parlament în lectura a doua (proiectul nr. 326 din 08.09.2026)",
+      "article": "art. III pct. 34 (Codul fiscal art. 96 alin. (2) pct. 2) lit. d): „la livrarea pe teritoriul Republicii Moldova a gazelor naturale livrate consumatorilor finali, în limita unui volum de până la 150 m³ pentru fiecare lună, pentru fiecare punct de consum aferent bunurilor cu destinație locativă, inclusiv caselor de vacanță, indiferent de subiectul în a cărui gestiune se află acestea”), în vigoare la 1 aprilie 2027 (art. XVIII alin. (1) lit. e)); read 2026-10-24 in the final text Parliament published with the bill („Proiect redactat (nr. 326/2026)”, „Proiect de act normativ final”, served by parlament.md as a PDF, SHA-256 e7d6c24e25f663a2014c211e1ed0a627d42f2ed2b62c04f2afb9cb9a00bcb495), pages 12 and 51. The bill as registered had the same limit (its art. III pct. 31). Adopted on 22 October 2026; not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026",
+      "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
+      "verified": false
+    }
+  ],
+  "values": {
+    "tax.vat.reduced_rate_gas_monthly_cap_m3": {
+      "number": "150",
+      "unit": "m3/month",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Art. 96 alin. (2) pct. 2) lit. d) as Law 247/2026 art. III pct. 34 rewrites it from 1 April 2027: the 8% rate (tax.vat.reduced_rate) applies to natural gas delivered to final consumers up to 150 m³ each month for each point of consumption of a dwelling, holiday homes included, whoever manages it; gas beyond it, and gas to anyone else, at tax.vat.standard_rate. Import, liquefied gas and gas transport and distribution leave the 8% list from that day. Parliament's press release of 22 October 2026 says the same ('cota redusă TVA de 8% pentru un consum lunar de până la 150 m³ per punct de consum'). Data the product does not read yet: applying it needs to know that a line is natural gas, that the buyer is a final consumer, the point of consumption and its dwelling status, and the month's volume per point, and the product has no goods classification and no metering; the person entering the line chooses the rate."
+    }
+  }
+}

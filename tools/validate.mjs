@@ -131,6 +131,11 @@ for (const { file, ruleSet } of sets) {
       }
     }
 
+    // A provisional value stands in for one not yet published; it can never be approved.
+    if (status === "approved" && value.provisional) {
+      fail(file, `${key} is provisional (${value.provisional}), but the set is approved.`);
+    }
+
     // An approved set may only contain values a human has actually checked.
     if (status === "approved" && value.confidence !== "verified") {
       fail(file, `${key} is unverified, but the set is approved. Verify it or keep the set draft.`);
@@ -143,6 +148,11 @@ for (const { file, ruleSet } of sets) {
 
   if (status === "draft") {
     warn(file, "status is draft — this set cannot be used to produce a filing.");
+  }
+
+  const provisional = Object.values(values).filter((value) => value.provisional).length;
+  if (provisional > 0) {
+    warn(file, `${provisional} of ${Object.keys(values).length} value(s) provisional: each says what replaces it.`);
   }
 }
 
