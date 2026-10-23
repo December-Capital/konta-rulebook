@@ -67,7 +67,7 @@
       "verified": false
     },
     {
-      "act": "Hotărârea Guvernului nr. 771/2025 cu privire la cuantumul salariului minim pe țară",
+      "act": "Hotărârea Guvernului nr. 771/2025 privind stabilirea cuantumului salariului minim pe țară pentru anul 2026",
       "article": "pct. 1",
       "publication": "Monitorul Oficial nr. 620-622, art. 783, 18.12.2025",
       "url": "https://monitorul.gov.md/ro/monitor/3193",
@@ -762,210 +762,210 @@
     "cash.limits.payments_to_entities_monthly": {
       "number": "100000",
       "unit": "MDL/month",
-      "sourceIndex": 26,
+      "sourceIndex": 27,
       "confidence": "unverified",
       "note": "Legea 34/2024 art. 5 alin. (1) lit. a), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'a) să efectueze, în raport cu alte persoane juridice sau persoane fizice care desfășoară activitate de întreprinzător și/sau profesională în sectorul justiției sau în domeniul sănătății, plăți în numerar în sumă ce nu depășește cumulativ 100000 de lei lunar. Limitarea sumei respective nu se aplică pentru depunerea de numerar în conturile deschise la prestatorii de servicii de plată;' The law does not say whether 'cumulativ' adds up the payments to each recipient or to all of them; read literally, all of them. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
     },
     "cash.limits.payments_to_individuals_monthly": {
       "number": "100000",
       "unit": "MDL/month",
-      "sourceIndex": 26,
+      "sourceIndex": 27,
       "confidence": "unverified",
       "note": "Legea 34/2024 art. 5 alin. (1) lit. b), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'b) să efectueze plăți în numerar în favoarea unei persoane fizice care nu desfășoară activitate de întreprinzător în sumă ce nu depășește cumulativ 100000 de lei lunar, cu excepțiile specificate la lit. c)–h);' The higher or yearly limits of lit. c)-h) (scrap, packaging, farm produce, dividends, loans) are not encoded. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
     },
     "cash.limits.receipt_from_individual_per_payment": {
       "number": "100000",
       "unit": "MDL",
-      "sourceIndex": 26,
+      "sourceIndex": 27,
       "confidence": "unverified",
       "note": "Legea 34/2024 art. 5 alin. (1) lit. i), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): 'i) să încaseze plăți în numerar de la o persoană fizică care nu desfășoară activitate de întreprinzător, în sumă ce nu depășește 100000 de lei pentru o plată, cu excepția situațiilor prevăzute la alin. (2) din prezentul articol.' Per payment, not cumulative. Alin. (2) sets 100 000 a year per client for the professions of art. 2 alin. (1) lit. e), not encoded. Not read by the product yet: applying it needs to know whether a partner is a person or an entity, which the partner list does not record."
     },
     "cash.advances.settlement_days_max": {
       "number": "30",
       "unit": "days",
-      "sourceIndex": 26,
+      "sourceIndex": 27,
       "confidence": "unverified",
       "note": "Legea 34/2024 art. 7 alin. (1), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): '(1) Pentru cheltuielile operaționale și de gospodărire, persoanele specificate la art. 2 alin. (1) lit. a)–e) eliberează numerar spre decontare în termenele stabilite de conducătorii acestora, care însă nu vor depăși 30 de zile, cu excepția cheltuielilor pentru deplasările peste hotarele Republicii Moldova.' Business trips abroad are excepted. Not read by the product yet: it does not follow when an accountable person's cash is due back."
     },
     "cash.advances.return_working_days": {
       "number": "5",
       "unit": "working_days",
-      "sourceIndex": 26,
+      "sourceIndex": 27,
       "confidence": "unverified",
       "note": "Legea 34/2024 art. 7 alin. (3), read on legis.md 22.10.2026 in the text in force from 01.04.2025 (LP55/2025 rewrote art. 5 alin. (1) lit. e) and f), not these words): '(3) Numerarul eliberat spre decontare în condițiile alin. (1) și neutilizat trebuie să fie restituit în casieria entității în termen de 5 zile lucrătoare după expirarea termenului pentru care a fost eliberat.' Not read by the product yet: it does not follow when an accountable person's cash is due back."
     },
     "assets.fixed.value_threshold": {
       "number": "12000",
       "unit": "MDL",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (2): a fixed asset for depreciation in tax purposes is property whose useful life is over a year and whose value exceeds 12000 lei; HG 704/2019 pct. 3 and 4 refer to the same ceiling. The SNC's definition of 'mijloace fixe' takes this fiscal ceiling or the entity's own materiality threshold set in its accounting policies, so in the books it is the default, not a rule: below it an item is a low-value item (SNC Stocuri, not read here), unless the company's policy says otherwise."
     },
     "assets.fixed.useful_life_over_months": {
       "number": "12",
       "unit": "months",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (2) and HG 704/2019 pct. 4: a period of use of more than one year. The SNC's 'imobilizări' are held for more than a year too. A useful life must exceed this."
     },
     "assets.depreciation.methods": {
       "text": "straight_line,units_of_production,diminishing_balance",
       "unit": "text",
-      "sourceIndex": 29,
+      "sourceIndex": 31,
       "confidence": "unverified",
       "note": "SNC Imobilizări necorporale și corporale pct. 22: 'metoda liniară, metoda unităților de producție, metoda de diminuare a soldului', each described in pct. 23-25; pct. 26: the entity chooses and states it in its accounting policies. The same methods for intangible assets (the section on intangibles refers back to pct. 22-25)."
     },
     "assets.depreciation.diminishing_balance_max_factor": {
       "number": "2",
       "unit": "count",
-      "sourceIndex": 29,
+      "sourceIndex": 31,
       "confidence": "unverified",
       "note": "SNC pct. 25: the diminishing balance method applies a fixed rate that may be increased, under the accounting policies, at most twice the straight-line rate; the increased rate applies to the cost in the first period, to the carrying amount at the end of the previous period after that, and the last period takes the carrying amount down to the residual value."
     },
     "assets.depreciation.start": {
       "text": "month_after_commissioning",
       "unit": "text",
-      "sourceIndex": 29,
+      "sourceIndex": 31,
       "confidence": "unverified",
       "note": "SNC pct. 28: depreciation is calculated, as the accounting policies say, from the date the asset is put into use or from the first day of the month after; it stops at the date of the end of the useful life or of disposal, or from the first day of the month after. Encoded is the second option, which is also the tax rule (Codul fiscal art. 26^1 alin. (6), HG 704/2019 pct. 13): the month after commissioning is the first month depreciated, and the month of disposal is the last. The first option (from the day itself) is not encoded."
     },
     "tax.depreciation.method": {
       "text": "straight_line",
       "unit": "text",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (6): depreciation for tax purposes uses the straight-line method, per asset (alin. (5)); alin. (7): the rate is 100% over the useful life set by the Government. HG 704/2019 pct. 12 and 14: computed for the year in proportion to the months in use, A = [(V × Na) / 12] × D. The useful life is the one set in accounting, never under the minimum of the catalogue's interval (HG 941/2020 pct. 9), or the producer's (pct. 13). There are no tax categories with rates any more: the five property categories of the former art. 26 survive only in HG 704/2019's transitional provisions (pct. 39-42)."
     },
     "tax.depreciation.start": {
       "text": "month_after_commissioning",
       "unit": "text",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (6) and HG 704/2019 pct. 13: from the month after the one in which the asset is put into use; the last month is that of the end of the useful life, of taking out of use, or of disposal."
     },
     "tax.depreciation.accelerated_first_year_cap": {
       "number": "0.50",
       "unit": "ratio",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (6^1) lit. a) and HG 704/2019 pct. 16^4: an entity may use accelerated depreciation in the asset's first year of use, up to 50% of its cost; lit. b): later years divide the undepreciated value by the remaining useful life. The first year is 12 consecutive months of the useful life (pct. 16^4, as HG 901/2024 wrote it)."
     },
     "tax.depreciation.accelerated_excluded_caem_section": {
       "text": "K",
       "unit": "code",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (6^1): accelerated depreciation is not open to financial and insurance/reinsurance activities, section K of CAEM."
     },
     "tax.depreciation.revaluation_recognised": {
       "text": "no",
       "unit": "text",
-      "sourceIndex": 26,
+      "sourceIndex": 28,
       "confidence": "unverified",
       "note": "Codul fiscal art. 26^1 alin. (15): revaluation and impairment differences of fixed assets are not recognised for tax purposes; the tax value stays the entry value (HG 704/2019 pct. 15-16)."
     },
     "tax.depreciation.unamortised_deductible_on_write_off": {
       "text": "no",
       "unit": "text",
-      "sourceIndex": 27,
+      "sourceIndex": 29,
       "confidence": "unverified",
       "note": "HG 704/2019 pct. 36: on a forced disposal or a write-off before the end of the useful life the undepreciated value for tax purposes is not deductible (save up to insurance compensation that is taxable income). On a sale the tax result is the proceeds less the undepreciated value (pct. 33); the undepreciated value is that of the entry value less tax depreciation up to and including the month of disposal (pct. 32)."
     },
     "ledger.assets.tangible.depreciation_accounts": {
       "text": "1231=1241,1232=1242,1233=1243,1234=1244,1235=1245,1236=1246,1237=1247,1238=1248,1239=1249",
       "unit": "text",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Each asset account the register accepts for a tangible asset, '=' the account its depreciation is credited to. Chapter II pairs 1231 'Clădiri' with 1241 'Amortizarea clădirilor'; 1232 'Construcții speciale' with 1242 'Amortizarea construcțiilor speciale'; 1233 'Mașini, utilaje și instalații tehnice' with 1243 'Amortizarea mașinilor, utilajelor și instalațiilor tehnice'; 1234 'Mijloace de transport' with 1244 'Amortizarea mijloacelor de transport'; 1235 'Inventar și mobilier' with 1245 'Amortizarea inventarului și mobilierului'; 1236 'Costuri ulterioare aferente obiectelor neînregistrate în bilanț' with 1246 'Amortizarea costurilor ulterioare aferente obiectelor neînregistrate în bilanț'; 1237 'Mijloace fixe primite în leasing financiar' with 1247 'Amortizarea mijloacelor fixe primite în leasing financiar'; 1238 'Mijloace fixe primite în gestiune economică' with 1248 'Amortizarea mijloacelor fixe primite în gestiune economică'; 1239 'Alte mijloace fixe' with 1249 'Amortizarea altor mijloace fixe'. Chapter III: 124 is a contra (pasiv, rectificativ) account credited with the depreciation of the assets in 123, and debited with the depreciation of an asset leaving, in correspondence with 123."
     },
     "ledger.assets.intangible.depreciation_accounts": {
       "text": "1121=1131,1122=1132,1123=1133,1124=1134",
       "unit": "text",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Each asset account the register accepts for a intangible asset, '=' the account its depreciation is credited to. Chapter II pairs 1121 'Concesiuni, licențe și mărci' with 1131 'Amortizarea concesiunilor, licențelor și mărcilor'; 1122 'Drepturi de autor și titluri de protecție' with 1132 'Amortizarea drepturilor de autor și titlurilor de protecție'; 1123 'Programe informatice' with 1133 'Amortizarea programelor informatice'; 1124 'Alte imobilizări necorporale' with 1134 'Amortizarea altor imobilizări necorporale'. Chapter III: 113 is a contra (pasiv, rectificativ) account credited with the depreciation of the assets in 112, and debited with the depreciation of an asset leaving, in correspondence with 112."
     },
     "assets.depreciation.rounding": {
       "text": "half_away_from_zero",
       "unit": "text",
-      "sourceIndex": 29,
+      "sourceIndex": 31,
       "confidence": "unverified",
       "note": "Neither the standard nor HG 704/2019 says how a month's depreciation is rounded; the standard's examples are in whole lei and HG 704/2019 pct. 14 computes the year as [(V x Na) / 12] x D. Each month is rounded to the ban, half away from zero, and the last month of the useful life takes whatever is left down to the residual value, so the total is exact. Our choice, the usual practice: to be confirmed by the compliance owner."
     },
     "assets.depreciation.rounding_decimals": {
       "number": "2",
       "unit": "count",
-      "sourceIndex": 29,
+      "sourceIndex": 31,
       "confidence": "unverified",
       "note": "To the ban; see assets.depreciation.rounding. Our choice, to be confirmed by the compliance owner."
     },
     "ledger.assets.expense_account": {
       "text": "7132",
       "unit": "code",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "The default account debited with the monthly depreciation: 7132 'Cheltuieli privind amortizarea, întreținerea și reparația activelor imobilizate cu destinație administrativă'. Chapter III credits 124 and 113 in correspondence with 712, 713, 811, 821 and others, so each asset names its own; the default is a convenience, as ledger.payroll.expense_account is."
     },
     "ledger.assets.disposal_expense_account.tangible": {
       "text": "7212",
       "unit": "code",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Chapter III: 721 'Cheltuieli cu active imobilizate' is debited with the expenses of disposing of long-term assets, in correspondence with 123 and 124 among others; 7212 'Valoarea contabilă și cheltuielile aferente imobilizărilor corporale ieșite'. The SNC (pct. 33, examples 8 and 9) writes the carrying amount of an asset sold or scrapped off to current expenses."
     },
     "ledger.assets.disposal_expense_account.intangible": {
       "text": "7211",
       "unit": "code",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Chapter III: 721 is debited in correspondence with 112 among others; 7211 'Valoarea contabilă și cheltuielile aferente imobilizărilor necorporale ieșite'."
     },
     "ledger.assets.disposal_income_account.tangible": {
       "text": "6212",
       "unit": "code",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Chapter III: 621 'Venituri din operațiuni cu active imobilizate' is credited with the income from disposing of long-term assets in correspondence with 221, 234 and others; 6212 'Venituri din ieșirea imobilizărilor corporale'. SNC pct. 35: the proceeds are a receivable and current income. The revenue account of a sales invoice line that sells a fixed asset."
     },
     "ledger.assets.disposal_income_account.intangible": {
       "text": "6211",
       "unit": "code",
-      "sourceIndex": 30,
+      "sourceIndex": 32,
       "confidence": "unverified",
       "note": "Chapter III: 621, subaccount 6211 'Venituri din ieșirea imobilizărilor necorporale'. The revenue account of a sales invoice line that sells an intangible asset."
     },
     "ledger.fx.gain_account": {
       "text": "6226",
       "unit": "code",
-      "sourceIndex": 27,
+      "sourceIndex": 34,
       "confidence": "unverified",
       "note": "Cap. II: subaccount 6226 Venituri din diferențe de curs valutar, under 622 Venituri financiare; cap. III credits 622 in correspondence with the debit of 221, 223, 226, 231, 234, 241, 243, 511, 512, 521, 522 and others. SNC Diferențe de curs valutar și de sumă pct. 14 with pct. 9: a favourable difference from revaluing monetary items is current income, raising cash and receivables or lowering liabilities; SNC Prezentarea situațiilor financiare pct. 161 counts it as financial income. A company may post to its own subaccount of 6226 instead."
     },
     "ledger.fx.loss_account": {
       "text": "7224",
       "unit": "code",
-      "sourceIndex": 27,
+      "sourceIndex": 34,
       "confidence": "unverified",
       "note": "Cap. II: subaccount 7224 Cheltuieli din diferențe de curs valutar, under 722 Cheltuieli financiare; cap. III debits 722 in correspondence with the credit of 221, 223, 226, 231-234, 241-244, 511, 512, 521, 522 and others. SNC Diferențe de curs valutar și de sumă pct. 14 with pct. 10: an unfavourable difference is a current expense, lowering cash and receivables or raising liabilities; SNC Prezentarea situațiilor financiare pct. 161 counts it as a financial expense."
     },
     "ledger.fx.monetary_accounts": {
       "text": "1413,1414,1422,1423,161,162,221,223,226,231,233,234,241,243,244,245,2513,2514,2522,2523,411,412,511,512,521,522,544",
       "unit": "text",
-      "sourceIndex": 26,
+      "sourceIndex": 33,
       "confidence": "unverified",
       "note": "The accounts (and every subaccount under them) whose balances in a foreign currency are monetary items, kept in lei and in the currency (SNC pct. 6) and revalued at the official BNM rate of the reporting date (pct. 11), which may be every month end by the company's accounting policy (pct. 13). Pct. 4 defines monetary items as assets and liabilities in a foreign currency to be received or paid; pct. 11 names cash, receivables, payables and financial investments, except advances given or received for assets and services (224, 163, 523, left out) and shares and holdings (1411, 1412, 1421, 2511, 2512, 2521, left out). Pct. 12: non-monetary items keep the rate of their first recognition. The list is our reading of the chart against pct. 11, for the compliance owner. Pct. 22: receivables and payables in conventional units between residents (diferențe de sumă) are not revalued; nothing in the books tells them apart yet, so the person posting a revaluation leaves them out."
     },
     "ledger.fx.rounding": {
       "text": "half_away_from_zero",
       "unit": "text",
-      "sourceIndex": 26,
+      "sourceIndex": 33,
       "confidence": "unverified",
       "note": "How the lei equivalent of a foreign-currency amount (amount times the official rate, which BNM sets to four decimals) is rounded, on a line and in a revaluation. The SNC gives no rule: its examples (pct. 9-15, anexa 1) work in whole lei. Bani, half away from zero, as on an invoice line (tax.vat.line_rounding); to be confirmed by the compliance owner."
     },
     "ledger.fx.rounding_decimals": {
       "number": "2",
       "unit": "count",
-      "sourceIndex": 26,
+      "sourceIndex": 33,
       "confidence": "unverified",
       "note": "Lei and bani."
     }
