@@ -6,7 +6,7 @@
   "effectiveTo": "2027-12-31",
   "publishedOn": "2026-09-26",
   "status": "draft",
-  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'), passed in first reading on 10 September 2026 and adopted in second reading on 22 October 2026 as Law nr. 247 (parlament.md, read 2026-10-24). Not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026, so every value marked `provisional` says what replaces it, and figures may still differ from the law as published. The adopted text (sources, the last entry) was read on 2026-10-24 for the values citing it: the personal exemption 40,020, the major exemption 46,680 and the dependant's 11,040 (art. 33 and 35), the VAT rates of art. 96, peasant farms at 12% with art. 15 lit. c) repealed, 18% profit tax for section K in 2027 (Law 1164/1997 art. 24 alin. (38)), the 12-lei handling fee per imported parcel (art. 92^1), and the gas limit for the 8% rate from 1 April 2027, which is in md-2027.2. The values still citing the bill (dividends, the undistributed-profit regime) were not compared with the adopted text clause by clause. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) and the Economy, Budget and Finance Committee's report for the second and third readings (parlament.md, 21 October 2026) led to the figures adopted. Ends 2027-12-31, as md-2026 ends with its year, so that a set for 2028 is asked for in time (the product's readiness check reads every key 60 days ahead). Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay; the cash register's keys of branch cash-register added on 2026-10-22). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the law: the vice tax, the special VAT regime for distance sales (title III chapter 10, from 1 November 2026), the excise annexes. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it. Fixed assets (assets.*, tax.depreciation.*, ledger.assets.*) were added on 2026-10-22 for konta's fixed-assets branch, carried over from md-2026: the bill amends neither Codul fiscal art. 26^1 nor art. 28, and the regulation (HG 704/2019), the catalogue (HG 941/2020), the standard and the chart are not acts it touches. The keys for invoices and payments in a foreign currency (ledger.fx.initial_rate_date, ledger.fx.settlement_rate_date, ledger.fx.invoice_conversion, tax.vat.foreign_currency_rate_date, ledger.payments.currency_bank_account) were added on 2026-10-24 for konta's foreign-currency-documents branch, carried over from md-2026: the Fiscal Code in force from 01.01.2027 keeps art. 21 alin. (3), art. 97 and art. 108 as they are today.",
+  "notes": "DRAFT, and additionally PROVISIONAL. It follows the Government's bill on the 2027 fiscal and customs policy (NU-599-MF-2026), registered in Parliament as bill nr. 326 of 8 September 2026 ('privind simplificarea legislației fiscale și vamale'), passed in first reading on 10 September 2026 and adopted in second reading on 22 October 2026 as Law nr. 247 (parlament.md, read 2026-10-24). Not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026, so every value marked `provisional` says what replaces it, and figures may still differ from the law as published. The adopted text (sources, the last entry) was read on 2026-10-24 for the values citing it: the personal exemption 40,020, the major exemption 46,680 and the dependant's 11,040 (art. 33 and 35), the VAT rates of art. 96, peasant farms at 12% with art. 15 lit. c) repealed, 18% profit tax for section K in 2027 (Law 1164/1997 art. 24 alin. (38)), the 12-lei handling fee per imported parcel (art. 92^1), and the gas limit for the 8% rate from 1 April 2027, which is in md-2027.2. The values still citing the bill (dividends, the undistributed-profit regime) were not compared with the adopted text clause by clause. The Government's opinion on the deputies' amendments (approved 15 October 2026, Monitorul Oficial nr. 512-515 of 16 October 2026, part II, aviz 144) and the Economy, Budget and Finance Committee's report for the second and third readings (parlament.md, 21 October 2026) led to the figures adopted. Ends 2027-12-31, as md-2026 ends with its year, so that a set for 2028 is asked for in time (the product's readiness check reads every key 60 days ahead). Every key the product reads for invoices, payments, advances and payroll is here (checked on 2026-10-18 against konta main and the branches books-advances and payroll-timesheets, including payroll-timesheets' leave and sick pay; the cash register's keys of branch cash-register added on 2026-10-22). A value the bill changes cites the bill. A value the bill leaves alone is carried over from md-2026 explicitly, citing the act it stands on, with a note saying so and why; the figures that are reset each year by an act not yet adopted (the CNAM premium in the 2027 fund law, the minimum wage by Government decision) are carried over provisionally and must be replaced when those acts appear. Not encoded from the law: the vice tax, the special VAT regime for distance sales (title III chapter 10, from 1 November 2026), the excise annexes. The June 2026 consultation draft differed; what it alone carried (3% for independent activity, closing new registrations of individual enterprises and peasant farms) was dropped from the bill and removed here on 2026-10-11. Do not file from it. Fixed assets (assets.*, tax.depreciation.*, ledger.assets.*) were added on 2026-10-22 for konta's fixed-assets branch, carried over from md-2026: the bill amends neither Codul fiscal art. 26^1 nor art. 28, and the regulation (HG 704/2019), the catalogue (HG 941/2020), the standard and the chart are not acts it touches. The adopted Law 247/2026 does amend art. 26^1 alin. (6^1) (art. III pct. 9): accelerated depreciation's excluded CAEM section becomes L of Rev. 2.1, read 2026-10-24 for konta's fixed-assets-2 branch, with the revaluation, impairment and accelerated-depreciation keys added beside the others the same day. The keys for invoices and payments in a foreign currency (ledger.fx.initial_rate_date, ledger.fx.settlement_rate_date, ledger.fx.invoice_conversion, tax.vat.foreign_currency_rate_date, ledger.payments.currency_bank_account) were added on 2026-10-24 for konta's foreign-currency-documents branch, carried over from md-2026: the Fiscal Code in force from 01.01.2027 keeps art. 21 alin. (3), art. 97 and art. 108 as they are today.",
   "sources": [
     {
       "act": "Proiectul legii pentru modificarea unor acte normative (politica fiscală și vamală pentru 2027), NU-599-MF-2026, aprobat de Guvern la 8.09.2026",
@@ -208,7 +208,7 @@
     },
     {
       "act": "Legea pentru modificarea unor acte normative (simplificarea legislației fiscale și vamale), nr. 247 din 22.10.2026, adoptată de Parlament în lectura a doua (proiectul nr. 326 din 08.09.2026)",
-      "article": "art. III pct. 4 (Codul fiscal art. 15: lit. a) completată cu gospodăriile țărănești, lit. c) abrogată), pct. 10 (art. 33: alin. (1) „29700” devine „40020”, alin. (2) „34620” devine „46680”), pct. 11 (art. 35 alin. (1): „9900” devine „11040”), pct. 29 (art. 92^1 alin. (1): taxa de gestionare de 12 lei pentru fiecare trimitere poștală care face obiectul vânzării la distanță de mărfuri importate), pct. 33 (art. 96 în redacție nouă), pct. 34 (art. 96 alin. (2) pct. 2) lit. d): gazele naturale livrate consumatorilor finali, până la 150 m³ pe lună pentru fiecare punct de consum aferent bunurilor cu destinație locativă); art. IV (Legea nr. 1164/1997 art. 24 alin. (38): 18% pentru perioada fiscală 2027, secțiunea K a CAEM); art. VII pct. 2 (Legea nr. 489/1999 anexa nr. 1 pct. 1.1: 24% pentru toți angajații); art. XVIII alin. (1): în vigoare la 1 ianuarie 2027, cu excepțiile de la lit. a)-f) (pct. 45, regimul special al vânzării la distanță, la 1 noiembrie 2026; pct. 34 la 1 aprilie 2027; art. 96 alin. (2) pct. 1) lit. f) la 1 ianuarie 2028); read 2026-10-24 in the final text Parliament published with the bill („Proiect redactat (nr. 326/2026)”, „Proiect de act normativ final”, served by parlament.md as a PDF, SHA-256 e7d6c24e25f663a2014c211e1ed0a627d42f2ed2b62c04f2afb9cb9a00bcb495), pages 2-3, 7-8, 10-12, 41-42 and 51. Adopted on 22 October 2026 (parlament.md: 'Statutul: Adoptat', 'Numărul adoptat: 247/22.10.2026'); not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026",
+      "article": "art. III pct. 4 (Codul fiscal art. 15: lit. a) completată cu gospodăriile țărănești, lit. c) abrogată), pct. 9 (art. 26^1 alin. (6^1): secțiunea K devine secțiunea L a CAEM Rev.2.1), pct. 10 (art. 33: alin. (1) „29700” devine „40020”, alin. (2) „34620” devine „46680”), pct. 11 (art. 35 alin. (1): „9900” devine „11040”), pct. 29 (art. 92^1 alin. (1): taxa de gestionare de 12 lei pentru fiecare trimitere poștală care face obiectul vânzării la distanță de mărfuri importate), pct. 33 (art. 96 în redacție nouă), pct. 34 (art. 96 alin. (2) pct. 2) lit. d): gazele naturale livrate consumatorilor finali, până la 150 m³ pe lună pentru fiecare punct de consum aferent bunurilor cu destinație locativă); art. IV (Legea nr. 1164/1997 art. 24 alin. (38): 18% pentru perioada fiscală 2027, secțiunea K a CAEM); art. VII pct. 2 (Legea nr. 489/1999 anexa nr. 1 pct. 1.1: 24% pentru toți angajații); art. XVIII alin. (1): în vigoare la 1 ianuarie 2027, cu excepțiile de la lit. a)-f) (pct. 45, regimul special al vânzării la distanță, la 1 noiembrie 2026; pct. 34 la 1 aprilie 2027; art. 96 alin. (2) pct. 1) lit. f) la 1 ianuarie 2028); read 2026-10-24 in the final text Parliament published with the bill („Proiect redactat (nr. 326/2026)”, „Proiect de act normativ final”, served by parlament.md as a PDF, SHA-256 e7d6c24e25f663a2014c211e1ed0a627d42f2ed2b62c04f2afb9cb9a00bcb495), pages 2-3, 7-8, 10-12, 41-42 and 51. Adopted on 22 October 2026 (parlament.md: 'Statutul: Adoptat', 'Numărul adoptat: 247/22.10.2026'); not promulgated: not in Monitorul Oficial up to nr. 524-527 of 23 October 2026",
       "url": "https://www.parlament.md/material-details-md.nspx?param=92a0dc21-6c29-4b31-aef9-9957dbd7a3fb",
       "verified": false
     },
@@ -224,6 +224,20 @@
       "url": "https://www.legis.md/cautare/getResults?lang=ro&doc_id=119580",
       "article": "Instrucțiunea, pct. 14)-18) ale completării (coloanele 10.4 „Preţ unitar fără TVA, lei”, 10.5 „Valoarea totală fără TVA, lei”, 10.7 „Suma totală a TVA, lei” și 10.8 „Valoarea mărfurilor/activelor, serviciilor, lei”) și pct. 2 subpct. 3) (prețul de achiziție recalculat în lei la cursul oficial al datei vămuirii); textul consolidat pe legis.md (ultima modificare OMF170 din 16.12.19), citit la 24.10.2026",
       "publication": "Monitorul Oficial nr. 340-351, art. 1750, 2017",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Imobilizări necorporale și corporale” și SNC „Deprecierea activelor”",
+      "article": "SNC „Imobilizări necorporale și corporale”: pct. 4 (durata de utilizare, valoarea contabilă), 16, 17, 18-18^9 (modelul reevaluării), 19, 22, 24 (metoda unităților de producție, exemplul 4), 29 și 32, paginile 46-55; SNC „Deprecierea activelor”: pct. 4, 5, 23-25, 29 și 34-40, paginile 86-94; read 2026-10-24 in the Ministry of Finance's consolidated PDF of the standards (Last-Modified 2022-07-11, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), which carries OMF 73/2022, the last amendment legis.md lists for the order (doc_id 131868, checked 2026-10-24)",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "article": "cap. II, conturile 114, 129, 332 și 343 și subconturile 6215, 6217, 7215 și 7218; cap. III, conturile 114, 123, 129, 343, 621 și 721; read 2026-10-24 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 4, 9, 13-14, 17, 19-21, 40, 52 and 56",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
     }
   ],
@@ -764,11 +778,12 @@
       "note": "Carried over unchanged from md-2026: bill nr. 326 (NU-599-MF-2026, Government text, pages 1-42 read on 2026-10-22) amends no part of Codul fiscal art. 26^1 or 28, and the regulation, the catalogue and the standard are not acts the bill touches. Codul fiscal art. 26^1 alin. (6^1) lit. a) and HG 704/2019 pct. 16^4: an entity may use accelerated depreciation in the asset's first year of use, up to 50% of its cost; lit. b): later years divide the undepreciated value by the remaining useful life. The first year is 12 consecutive months of the useful life (pct. 16^4, as HG 901/2024 wrote it)."
     },
     "tax.depreciation.accelerated_excluded_caem_section": {
-      "text": "K",
+      "text": "L",
       "unit": "code",
-      "sourceIndex": 23,
+      "sourceIndex": 30,
       "confidence": "unverified",
-      "note": "Carried over unchanged from md-2026: bill nr. 326 (NU-599-MF-2026, Government text, pages 1-42 read on 2026-10-22) amends no part of Codul fiscal art. 26^1 or 28, and the regulation, the catalogue and the standard are not acts the bill touches. Codul fiscal art. 26^1 alin. (6^1): accelerated depreciation is not open to financial and insurance/reinsurance activities, section K of CAEM."
+      "provisional": "Law 247/2026 as adopted on 22 October 2026, not yet in Monitorul Oficial: re-read in the law as published.",
+      "note": "Codul fiscal art. 26^1 alin. (6^1) as Law 247/2026 art. III pct. 9 amends it from 1 January 2027 (art. XVIII alin. (1)): 'K din Clasificatorul activităților din economia Moldovei' becomes 'L din Clasificatorul activităților din economia Moldovei (CAEM Rev.2.1)', so accelerated depreciation is not open to financial and insurance activities as Rev. 2.1 numbers them, section L. HG 704/2019 pct. 16^4 still says section K: the Code prevails. Which section a company's activities fall in is the company's (the product holds no CAEM classifier): the register shows the section and leaves the choice to the person."
     },
     "tax.depreciation.revaluation_recognised": {
       "text": "no",
@@ -924,6 +939,90 @@
       "sourceIndex": 29,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026: the version of the Fiscal Code in force from 01.01.2027 (doc_id 152862) has the same art. 97 and art. 21 alin. (3) as today; bill 326 was not read for these articles; the SNC and the chart are unchanged by it. Chapter III: 243 Conturi curente în valută străină, debited for foreign currency received and credited for foreign currency paid out, kept in lei and in the currency. The default account of a payment in a foreign currency; a company may name its own subaccount instead. A monetary account (ledger.fx.monetary_accounts)."
+    },
+    "assets.revaluation.kinds": {
+      "text": "tangible",
+      "unit": "text",
+      "sourceIndex": 33,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 17: intangible and tangible assets are measured after recognition on the cost model; pct. 18: under the accounting policies, tangible assets may be measured on the revaluation model. Only tangible assets (the register's 123 accounts) may be revalued; an intangible asset is impaired, never revalued."
+    },
+    "assets.revaluation.methods": {
+      "text": "restate,eliminate",
+      "unit": "text",
+      "sourceIndex": 33,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 18^4: the carrying amount is brought to the revalued amount either 1) by restating the cost (from market prices or in proportion to the change in carrying amount) and adjusting the accumulated depreciation so that cost less depreciation is the carrying amount after impairment ('restate'), or 2) by eliminating the accumulated depreciation against the cost ('eliminate'). The adjustment of depreciation counts towards the surplus or decrease (pct. 18^6)."
+    },
+    "assets.revaluation.class": {
+      "text": "asset_account",
+      "unit": "text",
+      "sourceIndex": 33,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 18: the revaluation model applies to every object of the class the revalued object belongs to, a class being a group of assets of the same nature and similar use; its examples are land, buildings, special constructions, machines, equipment and technical installations, means of transport, inventory and furniture, other fixed assets, which are the names of the chart's subaccounts 1231-1235 and 1239. A class is taken to be the asset account (our reading, to be confirmed by the compliance owner). Pct. 18^9: a fully depreciated object may be revalued apart from its class, with a new useful life for the period it is still expected to be used."
+    },
+    "ledger.assets.revaluation_reserve_account": {
+      "text": "343",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. Chapter III: 343 'Rezerve din reevaluare' (pasiv) holds the revaluation surplus, credited in correspondence with 123 and 124 among others and debited, for a decrease or its write-off, in correspondence with 123, 124, 332 and others; chapter III of 129 debits 343 for an impairment of a revalued asset. SNC Imobilizări pct. 18^6 1): the surplus is recognised in equity as revaluation reserves; Deprecierea pct. 25: an impairment of a revalued asset first reduces its surplus."
+    },
+    "ledger.assets.revaluation_realised_account": {
+      "text": "332",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 18^7 and 32: the whole surplus of an object is transferred directly to retained earnings (profitul nerepartizat) when it leaves. Chapter III: 343 is debited in correspondence with 332 'Profit nerepartizat (pierdere neacoperită) al anilor precedenți'."
+    },
+    "ledger.assets.revaluation_decrease_account": {
+      "text": "7218",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 18^6 2): a revaluation decrease is a current expense, save the part a surplus of the same object absorbs. Which expense or income account the act does not say: chapter III credits 123 in correspondence with 714, 721 and others and debits it in correspondence with 612, 621 and others, and names no subaccount for a revaluation. 7218 'Alte cheltuieli cu active imobilizate' is our reading, to be confirmed by the compliance owner; 7215 is kept for impairment losses, which the standards treat apart."
+    },
+    "ledger.assets.revaluation_increase_account": {
+      "text": "6217",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Imobilizări pct. 18^6 1): the part of a surplus that offsets a decrease of the same object charged to expenses before is current income. Which expense or income account the act does not say: chapter III credits 123 in correspondence with 714, 721 and others and debits it in correspondence with 612, 621 and others, and names no subaccount for a revaluation. 6217 'Alte venituri din operațiuni cu active imobilizate' is our reading, to be confirmed by the compliance owner."
+    },
+    "ledger.assets.tangible.impairment_account": {
+      "text": "129",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. Chapter III: 129 'Deprecierea mijloacelor fixe' (pasiv, rectificativ) is credited with impairment losses of fixed assets in use in correspondence with 343, 721 and others, and debited with their write-off or reversal in correspondence with 123, 343, 621 and others. SNC Deprecierea pct. 23: impairment losses are kept on a separate account."
+    },
+    "ledger.assets.intangible.impairment_account": {
+      "text": "114",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. Chapter III: 114 'Deprecierea imobilizărilor necorporale' (pasiv, rectificativ) is credited with impairment losses in correspondence with 331 and 721, and debited with their write-off or reversal in correspondence with 111, 112, 621 and others."
+    },
+    "ledger.assets.impairment_loss_account": {
+      "text": "7215",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Deprecierea pct. 24 and 25: an impairment loss is a current expense (for a revalued asset, the part its surplus does not absorb). Chapter III: 721 'Cheltuieli cu active imobilizate' takes the impairment losses of long-term assets, debited in correspondence with 114 and 129 among others; chapter II names subaccount 7215 'Pierderi din deprecierea activelor imobilizate'."
+    },
+    "ledger.assets.impairment_reversal_account": {
+      "text": "6215",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. SNC Deprecierea pct. 38 and 39: the reversal of an impairment loss is current income (for a revalued asset, up to the loss charged to expenses before; the rest is surplus). Chapter III: 621 is credited with income from reversing impairment losses in correspondence with 114 and 129 among others; chapter II names subaccount 6215 'Venituri din reluarea pierderilor din deprecierea activelor imobilizate'."
+    },
+    "tax.depreciation.accelerated_first_year_months": {
+      "number": "12",
+      "unit": "months",
+      "sourceIndex": 24,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. HG 704/2019 pct. 16^4, last paragraph (as HG 901/2024 wrote it): for the accelerated depreciation of subpct. 1), the first year of use is 12 consecutive months of the asset's useful life. Codul fiscal art. 26^1 alin. (6^1) lit. a) caps the first year at tax.depreciation.accelerated_first_year_cap of the entry cost; lit. b) divides what is left by the remaining useful life. How the first year's amount falls on its months the acts do not say beyond pct. 12 (tax depreciation is computed in proportion to the months in use): it is spread evenly over the twelve months."
     }
   }
 }
