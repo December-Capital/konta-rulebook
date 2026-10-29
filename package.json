@@ -41,6 +41,6 @@
     "contabilitate"
   ],
   "devDependencies": {
-    "nodemailer": "^10.1.7"
+    "nodemailer": "^10.2.1"
   }
 }
