@@ -239,6 +239,20 @@
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "article": "cap. II, subconturile 5111, 5115, 5116, 5121, 5122, 5124, 5125, 5126 și 7221; cap. III, conturile 511, 512 și 722; read 2026-10-30 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 10, 15, 45 and 56",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Capital propriu și datorii”",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "article": "pct. 41-43 (datorii financiare: principalul, dobînzile) și exemplul 12; read 2026-10-30 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), page 135",
+      "verified": false
     }
   ],
   "values": {
@@ -1058,6 +1072,34 @@
       "sourceIndex": 24,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. HG 704/2019 pct. 16^4, last paragraph (as HG 901/2024 wrote it): for the accelerated depreciation of subpct. 1), the first year of use is 12 consecutive months of the asset's useful life. Codul fiscal art. 26^1 alin. (6^1) lit. a) caps the first year at tax.depreciation.accelerated_first_year_cap of the entry cost; lit. b) divides what is left by the remaining useful life. How the first year's amount falls on its months the acts do not say beyond pct. 12 (tax depreciation is computed in proportion to the months in use): it is spread evenly over the twelve months."
+    },
+    "ledger.loans.accounts": {
+      "text": "5111=5116,5115=5116,5121=5126,5122=5126,5124=5126,5125=5126",
+      "unit": "text",
+      "sourceIndex": 35,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Each account a short-term loan's principal may be kept on, '=' the subaccount its interest is accrued to. Chapter II (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 10): under 511 'Credite bancare pe termen scurt', 5111 'Credite bancare în monedă națională', 5115 'Alte credite bancare pe termen scurt' and 5116 'Dobînzi aferente creditelor bancare'; under 512 'Împrumuturi pe termen scurt', 5121 'Împrumuturi de la părți neafiliate', 5122 'Împrumuturi de la părți afiliate', 5124 'Împrumuturi de la personalul entității', 5125 'Alte împrumuturi pe termen scurt' and 5126 'Dobînzi aferente împrumuturilor'. Chapter III (page 45): 511 is credited 'în corespondenţă cu debitul conturilor: 111, 121, 131, 215, 242, 243, 411, 521, 522, 544, 714, 722 etc.' and debited for 'rambursarea/diminuarea creditelor bancare pe termen scurt în corespondenţă cu creditul conturilor: 242, 243, 244, 612, 622 etc.'; 512 likewise, with 241 among both lists. Left out: 5112 and 5114 (in a currency; the product's loans are in lei), 5113 and 5114 (overdue: a credit moves there, it is not taken there), 5123 (bonds issued, not a loan contract)."
+    },
+    "ledger.loans.interest_expense_account": {
+      "text": "7221",
+      "unit": "code",
+      "sourceIndex": 35,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 15): 7221 'Cheltuieli privind dobînzile', under 722 'Cheltuieli financiare'. Chapter III (page 56): 722 is debited for 'recunoaşterea cheltuielilor financiare pe parcursul perioadei de gestiune în corespondenţă cu creditul conturilor: ... 511, 512, 521, 522 ...'. The interest a loan accrues: 7221 debited, the loan's interest subaccount (ledger.loans.accounts) credited."
+    },
+    "ledger.loans.interest_rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 36,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. SNC „Capital propriu și datorii” pct. 43 (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6, page 135): 'Datoriile aferente dobînzilor se recunosc pe măsura calculării lor conform condiţiilor contractuale şi se înregistrează ca majorare a cheltuielilor curente ... şi majorare a datoriilor'. The standard says when, not how the figure is rounded; its example 12 works in whole lei. The interest due by a day is kept exact (each day's end-of-day balance times the rate over the contract's day basis) and rounded once, to the ban, half away from zero; what is accrued is what is due by then less what was accrued before, so no rounding is carried from month to month. Our choice, as for depreciation (assets.depreciation.rounding): to be confirmed by the compliance owner."
+    },
+    "ledger.loans.interest_rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 36,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. To the ban; see ledger.loans.interest_rounding. Our choice, to be confirmed by the compliance owner."
     }
   }
 }
