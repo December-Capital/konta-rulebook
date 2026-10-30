@@ -224,14 +224,14 @@
     },
     {
       "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Diferențe de curs valutar și de sumă”",
-      "article": "pct. 4 (elemente monetare), 6, 9, 10, 11, 12, 13, 14 și anexa 1; read 2026-10-22 in the Ministry of Finance's consolidated PDF of the standards (Last-Modified 2022-07-11, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), pages 195-203; also SNC „Prezentarea situațiilor financiare” pct. 161, page 19; pct. 5, 7, 8, 15 and 17-26 (diferențe de sumă) with examples 1-3 and 5-7 read 2026-10-24 in the same PDF, pages 195-200",
+      "article": "pct. 4 (elemente monetare), 6, 9, 10, 11, 12, 13, 14 și anexa 1; read 2026-10-22 in the Ministry of Finance's consolidated PDF of the standards (Last-Modified 2022-07-11, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), pages 195-203; also SNC „Prezentarea situațiilor financiare” pct. 161, page 19; pct. 5, 7, 8, 15 and 17-26 (diferențe de sumă) with examples 1-3 and 5-7 read 2026-10-24 in the same PDF, pages 195-200; SNC „Prezentarea situațiilor financiare” pct. 137, page 16, and SNC „Cheltuieli” anexa 4 pct. 9^1, page 169, read 2026-10-30 in the same PDF",
       "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
       "verified": false
     },
     {
       "act": "Ordinul Ministrului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
-      "article": "cap. II, subconturile 6226 și 7224; cap. III, conturile 241, 243, 245, 622 și 722; read 2026-10-22 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 13, 15, 31-32, 53 and 56",
+      "article": "cap. II, subconturile 6127, 6226, 7147 și 7224; cap. III, conturile 234, 241, 242, 243, 245, 612, 622, 714 și 722; read 2026-10-22 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 12-15, 30-32, 51, 53, 54 and 56",
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
@@ -787,6 +787,13 @@
       "confidence": "unverified",
       "note": "Chapter III, account 226 Creanțe ale personalului (the same PDF, page 29, read 22.10.2026): debited 'în corespondenţă cu creditul conturilor: 241, 242, 243, 424, 535, 544, 612, 622 etc.' and credited 'în corespondenţă cu debitul conturilor: 111, 121, 132, 211, 217, 241, 531, 532, 712, 713, 714, 722 etc.'; subaccount 2261 Creanțe ale titularilor de avans (chapter II). Cash given to an accountable person (Law 34/2024 art. 7: for at most 30 days) debits it against the cash account; cash they return credits it."
     },
+    "ledger.cash.in_transit_account": {
+      "text": "245",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Chapter III, account 245 (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 32, read 29.10.2026): 'Contul 245 “Transferuri de numerar în expediţie” este destinat generalizării informaţiei privind existenţa şi mişcarea numerarului depus în casieriile băncilor, oficiilor poştale sau transmis încasatorilor pentru înregistrarea ulterioară în conturi curente'; it is debited 'în corespondenţă cu creditul conturilor: 226, 234, 241, 532, 612 etc.' and credited 'în corespondenţă cu debitul conturilor: 242, 243, 244, 714 etc.'; account 242 (page 31) is debited in correspondence with the credit of 245. The account a cash payment order to the bank posts to (cash leaves the till: 245 debited, 241 credited) and a bank statement's deposit line clears (242 debited, 245 credited), so a deposit that never arrived, or arrived for another amount, stays on it. Cash drawn from the bank does not pass through it: 242 is credited in correspondence with the debit of 241 directly (page 31), and 245 is not among the accounts 242 is credited to."
+    },
     "cash.limits.payments_to_entities_monthly": {
       "number": "100000",
       "unit": "MDL/month",
@@ -1031,6 +1038,27 @@
       "sourceIndex": 34,
       "confidence": "unverified",
       "note": "Chapter III: 243 Conturi curente în valută străină, debited for foreign currency received and credited for foreign currency paid out, kept in lei and in the currency. The default account of a payment in a foreign currency; a company may name its own subaccount instead. A monetary account (ledger.fx.monetary_accounts)."
+    },
+    "ledger.fx.exchange_account": {
+      "text": "234",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Chapter III (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, read 30.10.2026): account 234 'Alte creanţe curente' (PDF page 30) is credited 'în corespondenţă cu debitul conturilor: 241, 242, 243, 714, 722 etc.' and debited in correspondence with the credit of 534, 612, 621, 622; account 242 (page 31) is credited in correspondence with the debit of 234 and debited in correspondence with the credit of 234; account 243 (page 31) is debited in correspondence with the credit of 234 and credited in correspondence with the debit of 234. The account a purchase or sale of foreign currency at the bank's rate is settled through: lei paid for currency bought (234 debited, 242 credited), the currency received at the official rate (243 debited, 234 credited), and the difference between the two rates to 7147 or 6127 (ledger.fx.exchange_loss_account, ledger.fx.exchange_gain_account); for currency sold, the reverse. Nothing stays on it once a purchase or sale is settled."
+    },
+    "ledger.fx.exchange_gain_account": {
+      "text": "6127",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Chapter II (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 12): subaccount 6127 'Venituri aferente diferenţelor favorabile dintre cursul oficial al BNM şi cursul de cumpărare-vînzare a valutei străine', under 612 'Alte venituri din activitatea operaţională', which chapter III (page 51) credits in correspondence with the debit of 234 among others. SNC „Prezentarea situațiilor financiare” pct. 137 (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6, page 16): row 040 'Alte venituri din activitatea operaţională' includes 'diferenţele favorabile dintre cursul oficial al BNM şi cursul de cumpărare/vînzare a valutei străine utilizate în activitatea operaţională'. Where a currency bought or sold at the bank's rate leaves a favourable difference against the official rate of the day. Not an exchange difference (6226): SNC „Diferențe de curs valutar și de sumă” pct. 4 keeps that term for recalculating at different official rates."
+    },
+    "ledger.fx.exchange_loss_account": {
+      "text": "7147",
+      "unit": "code",
+      "sourceIndex": 34,
+      "confidence": "unverified",
+      "note": "Chapter II (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 14): subaccount 7147 'Cheltuieli aferente diferenţelor nefavorabile dintre cursul oficial al BNM şi cursul de cumpărare-vînzare a valutei străine', under 714 'Alte cheltuieli din activitatea operaţională', which chapter III (page 54) debits in correspondence with the credit of 234 among others. SNC „Cheltuieli” anexa 4 pct. 9^1 (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6, page 169), among the other operating expenses: 'Diferenţele nefavorabile dintre cursul oficial al Băncii Naţionale a Moldovei şi cursul de cumpărare/vînzare a valutei străine.' Where a currency bought or sold at the bank's rate leaves an unfavourable difference against the official rate of the day; not an exchange difference (7224)."
     },
     "ledger.transit.accounts": {
       "text": "245",
