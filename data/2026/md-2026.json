@@ -293,6 +293,27 @@
       "verified": false
     },
     {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
+      "article": "art. 68 alin. (1)-(2), art. 113 alin. (1), art. 113^1, art. 114, art. 118 alin. (4^1) și (5), art. 119, art. 128 alin. (1), art. 143 alin. (1) și art. 148 alin. (4), citite la 01.11.2026; textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025)",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 426/2004 privind aprobarea Modului de calculare a salariului mediu",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=119783&lang=ro",
+      "article": "anexa nr. 1 pct. 2, 4, 5, 6 subpct. 1), 10, 11 și 14 subpct. 1); textul consolidat pe legis.md (ultima modificare HG nr. 685 din 27.12.2019, Monitorul Oficial nr. 400-406, art. 1023), citit la 01.11.2026",
+      "publication": "Monitorul Oficial nr. 73-76, art. 570, 07.05.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "article": "anexa nr. 3 pct. 3; textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 01.11.2026",
+      "publication": "Monitorul Oficial nr. 1-4, art. 2, 06.01.2000",
+      "verified": false
+    },
+    {
       "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
@@ -1270,73 +1291,108 @@
       "confidence": "unverified",
       "note": "To the ban; see ledger.prepaid.rounding. Our choice, to be confirmed by the compliance owner."
     },
+    "payroll.proration.salary_change": {
+      "text": "working_days_per_salary",
+      "unit": "text",
+      "sourceIndex": 43,
+      "confidence": "unverified",
+      "note": "A salary changed from a day inside a month (Codul muncii art. 68: an additional agreement to the contract, art. 49 alin. (1)'s salary clause) is prorated by working days: the working days worked before that day at the old monthly salary, those from it at the new one, each over the month's working days from calendar/md-holidays.json, as payroll.proration.method prorates a part month. Art. 128 alin. (1) pays the salary of the contract for the work done; no act read says how a month split between two salaries is paid, so this is the owner's decision of 2026-10-31 and the usual practice, for the compliance owner. A timesheet typed short of the calendar in such a month does not say under which salary the days were missed: the product asks for those days as absences, which have dates."
+    },
+    "payroll.leave.compensation.method": {
+      "text": "average_per_calendar_day",
+      "unit": "text",
+      "sourceIndex": 44,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 2 applies the average salary to 'plata compensaţiei pentru concediul nefolosit'; pct. 6 subpct. 1) takes it per calendar day for the compensation; pct. 14 subpct. 1): the compensation is 'înmulţirea salariului mediu pe o zi calendaristică, calculat în corespundere cu prevederile punctelor 8, 9 şi 10 ... la numărul zilelor de concediu exprimat în zile calendaristice'. So the same three-month average as leave pay (payroll.average_earnings.*), the event being the end of the contract: the 3 months before the month it ends (pct. 5 last alineat, pct. 10, 11). Pct. 4 leaves 'compensaţia pentru concediul nefolosit' out of the earnings any later average is taken from. Pct. 5's seasonal workers (the season, up to 6 months) and contracts of up to 2 months are not modelled."
+    },
+    "payroll.leave.compensation.pay_month": {
+      "text": "termination_month",
+      "unit": "text",
+      "sourceIndex": 43,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 119 alin. (1): when the individual labour contract ends, 'salariatul are dreptul la compensarea tuturor concediilor de odihnă anuale nefolosite'; art. 118 alin. (5) allows money for unused leave only then. Art. 143 alin. (1) lit. a) pays everything owed on the day of release ('în ziua eliberării'), lit. c) at the latest with the salary of the month the contract ended. The compensation is therefore computed in the payroll of the month of the last day of employment, with that month's salary. Suspension (art. 119 alin. (1)'s cases of art. 76-78) also gives the right; the product knows only the end of a contract."
+    },
+    "payroll.leave.compensation.accrual": {
+      "text": "working_year_calendar_days",
+      "unit": "text",
+      "sourceIndex": 43,
+      "confidence": "unverified",
+      "note": "The unused days the product proposes: labour.leave.annual_minimum_days for each working year, which art. 113^1 alin. (1) counts as 12 calendar months from the day of hiring, and for the last, incomplete one the same days in proportion to its calendar days worked (to the last day of employment, inclusive) over its calendar days; less the annual leave the company recorded in Konta for the employee (in leave days, payroll.leave.days_basis). Art. 119 alin. (1) compensates 'toate concediile ... nefolosite' and art. 148 alin. (4) speaks of leave days 'fără acoperire' when somebody leaves before the end of a working year whose leave they used, which reads as leave earned in proportion to the working year; no act read says how the proportion is counted (calendar days, months, rounding of a part month). Calendar days, and the days rounded as payroll amounts are (payroll.rounding, payroll.rounding_decimals), are our choice, for the compliance owner. Not modelled, so the person types the days instead: art. 114 alin. (2)'s periods left out of the seniority (unpaid leave over 14 days, unexcused absence, childcare leave to 4 years, suspension), longer leave by law, contract or art. 121, and leave taken before the company kept its payroll in Konta. Leave used beyond what was earned gives no compensation and nothing is withheld here (art. 148 alin. (4) lets the employer withhold it, except in the cases it lists)."
+    },
+    "payroll.leave.compensation.social_contribution": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 45,
+      "confidence": "unverified",
+      "note": "Legea 489/1999 anexa nr. 3 pct. 3 leaves out of the contribution 'sumele compensatorii (cheltuielile de deplasare în interes de serviciu, compensarea prejudiciului cauzat angajaţilor prin mutilare ...), cu excepţia compensaţiei pentru concediul nefolosit în caz de concediere': the compensation on dismissal carries the social contribution, as salary does. The product taxes it with the month's salary (income tax and the medical premium on the month's gross, as leave pay), so this is the one treatment it knows."
+    },
     "ledger.inventory.stock_accounts": {
       "text": "211,217",
       "unit": "text",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter III, group 21 „Stocuri” (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF pages 25-27): 'Contul 211 “Materiale” este destinat generalizării informaţiei privind existenţa şi mişcarea materiilor prime, materialelor de bază, pieselor de schimb, combustibilului, ambalajelor, anvelopelor şi acumulatoarelor procurate separat de mijloace de transport, materialelor cu destinaţia agricolă, materialelor transmise temporar terţilor şi altor materiale.' and 'Contul 217 “Mărfuri” este destinat generalizării informaţiei privind existenţa şi mişcarea bunurilor procurate în vederea revînzării, produselor transmise spre vînzare magazinelor proprii, bunurilor imobiliare deţinute pentru vînzare, mărfurilor transmise temporar terţilor.' Their subaccounts are chapter II's 2111-2119 and 2171-2174 (page 6). The accounts, and their subaccounts, an item of stock is kept on, in quantity and value (SNC „Stocuri” pct. 10). 212, 213, 215 and 216 (biological assets, small-value objects with their wear on 214, work in progress, the company's own products) are left out until the product keeps them."
     },
     "ledger.inventory.costing_method": {
       "text": "weighted_average_after_each_receipt",
       "unit": "text",
-      "sourceIndex": 44,
+      "sourceIndex": 47,
       "confidence": "unverified",
       "note": "SNC „Stocuri” (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6): pct. 33 (page 115) lets stock leaving be valued by specific identification, FIFO, the weighted average cost or LIFO, and pct. 34 leaves the choice to each entity's accounting policies. Pct. 37 (page 116): 'Metoda costului mediu ponderat presupune calcularea costului fiecărui element de stocuri pe baza mediei ponderate a costurilor soldurilor elementelor similare de stocuri la începutul perioadei şi a costurilor elementelor similare fabricate sau achiziţionate în cursul perioadei de gestiune. Costul mediu ponderat poate fi calculat după fiecare intrare a stocurilor, la sfîrşitul perioadei de gestiune sau în alt mod stabilit de politicile contabile ale entităţii.' Anexa 3 (pages 122-123) works the average after each receipt. That is the one method the product keeps: the cost of what leaves is the item's value over its quantity at that moment, all warehouses together. A rule set naming another method is refused by the product until it implements it."
     },
     "ledger.inventory.cost_rounding": {
       "text": "half_away_from_zero",
       "unit": "text",
-      "sourceIndex": 44,
+      "sourceIndex": 47,
       "confidence": "unverified",
       "note": "SNC „Stocuri” anexa 3 (page 123) rounds the unit cost to three decimals and multiplies it by the quantity (15 October: 11800 kg × 19,731 lei/kg = 232825,8 lei), which leaves on the account what the rounding of the unit cost does not take. The product rounds once, to the ban, half away from zero: what leaves is the value on hand times the quantity leaving over the quantity on hand, and the last of an item takes its whole remaining value, so no value is left without a quantity. Our choice, as for depreciation, to be confirmed by the compliance owner; the domain test holds the example's averages (19,875, 19,731, 20,990, 21,044 lei/kg) and quantities."
     },
     "ledger.inventory.cost_rounding_decimals": {
       "number": "2",
       "unit": "count",
-      "sourceIndex": 44,
+      "sourceIndex": 47,
       "confidence": "unverified",
       "note": "To the ban; see ledger.inventory.cost_rounding. Our choice, to be confirmed by the compliance owner."
     },
     "ledger.inventory.cost_of_sales_accounts": {
       "text": "217=7112,211=7141",
       "unit": "text",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter III (PDF pages 26-27 and 54): 'În debitul contului 711 “Costul vînzărilor” se înregistrează costul vînzărilor recunoscut pe parcursul perioadei de gestiune în corespondenţă cu creditul conturilor: 216, 217, 261, 811, 812 etc.', and 217 is credited against '121, 123, 711, 712, 713, 714, 722, 723, 831, 833 etc.'; chapter II's 7112 is 'Valoarea contabilă a mărfurilor vîndute' (page 13). 211 is credited against '111, 121, 122, 125, 131, 712, 713, 714, 721, 723, 811, 812, 821, 833 etc.', not 711: materials sold are 'altor active circulante ieşite', chapter II's 7141 'Valoarea contabilă şi cheltuielile aferente altor active circulante ieşite' (page 14). Each stock account '=' the account the carrying value of what is sold from it is debited to, when a posted sales invoice's line takes it out (SNC „Stocuri” pct. 42, page 117)."
     },
     "ledger.inventory.issue_accounts": {
       "text": "211=712|713|714|721|723|811|812|821,217=712|713|714|722|723",
       "unit": "text",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter III (PDF pages 26-27): 211 is credited 'în corespondenţă cu debitul conturilor: 111, 121, 122, 125, 131, 712, 713, 714, 721, 723, 811, 812, 821, 833 etc.' and 217 'în corespondenţă cu debitul conturilor: 121, 123, 711, 712, 713, 714, 722, 723, 831, 833 etc.' Each stock account '=' the expense and cost accounts (classes 7 and 8), separated by '|', stock consumed or given out may be issued to, or one of their subaccounts (SNC „Stocuri” pct. 32 and 42, pages 115 and 117). Left out: 711 (a sale goes through the sales invoice and ledger.inventory.cost_of_sales_accounts), the assets it may be capitalised into (111, 121, 122, 123, 125, 131) and 831/833, until the product does those; the lists' etc. until an act names another."
     },
     "ledger.inventory.shortage_expense_account": {
       "text": "7144",
       "unit": "code",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter II (PDF page 14): 7144 'Cheltuieli privind lipsurile şi pierderile din deteriorarea activelor imobilizate şi circulante', under 714, which chapter III debits 'în corespondenţă cu creditul conturilor: 111, 112, 121, 122, 123, 125, 141, 142, 151, 211, 213, 214, 215, 216, 217, ...' (page 54); 211 and 217 are credited against 714 (pages 26-27). SNC „Cheltuieli” pct. 7 subpct. 1) (the standards' PDF, page 157): 'valoarea contabilă a stocurilor depistate lipsă la inventariere se înregistrează ca majorare a cheltuielilor curente şi diminuare a activelor', and its example 4 (page 158) expenses 12,500 lei of goods found missing. A stocktake's shortage, at its carrying value by ledger.inventory.costing_method, is expensed here whether or not anyone is charged for it."
     },
     "ledger.inventory.damage_receivable_account": {
       "text": "2262",
       "unit": "code",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter II (PDF page 7): 2262 'Creanţe privind recuperarea prejudiciului material', under 226 'Creanţe ale personalului', which chapter III debits 'în corespondenţă cu creditul conturilor: 241, 242, 243, 424, 535, 544, 612, 622 etc.' (page 29). SNC „Creanţe şi investiţii financiare” pct. 32 (the standards' PDF, page 101): 'Creanţele personalului privind recuperarea prejudiciului material se contabilizează ca majorare concomitentă a creanţelor şi veniturilor sau datoriilor curente.' What the person responsible for a shortage is charged, as the stocktake's act says, is their debt here. The standard's alternative, deferred income for what is recovered in later periods, is left out."
     },
     "ledger.inventory.damage_income_account": {
       "text": "6123",
       "unit": "code",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter II (PDF page 12): 6123 'Venituri din recuperarea prejudiciului material', under 612, which chapter III credits 'în corespondenţă cu debitul conturilor: ..., 211, 212, 213, 215, 216, 217, 221, 223, 226, ...' (page 51). SNC „Prezentarea situaţiilor financiare” pct. 137 (the standards' PDF, page 16) counts 'recuperarea prejudiciului material cauzat entităţii' in other operating income, and its example 4 'calcularea prejudiciului material cauzat entităţii de către persoana vinovată – 7290 lei'. The income of what a person is charged for a shortage, against ledger.inventory.damage_receivable_account."
     },
     "ledger.inventory.surplus_income_account": {
       "text": "6124",
       "unit": "code",
-      "sourceIndex": 43,
+      "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter II (PDF page 12): 6124 'Venituri din plusurile de active imobilizate şi circulante constatate la inventariere', under 612, credited against 211 and 217 among others (page 51); 211 and 217 are debited against 612 (pages 26-27). SNC „Prezentarea situaţiilor financiare” pct. 137, example 4 (page 16): 'constatarea plusurilor de mărfuri la inventariere – 1200 lei', other operating income. A stocktake's surplus is taken in at the item's average cost at that moment, or, where nothing is on hand to average, at the unit value the act gives: our choice, the standards name no value for a surplus, to be confirmed by the compliance owner."
     }
