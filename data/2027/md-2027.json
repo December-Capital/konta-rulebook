@@ -267,6 +267,20 @@
       "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
       "article": "pct. 8 (cheltuieli anticipate) și exemplul 1; read 2026-10-31 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), page 157",
       "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "article": "cap. II, subconturile 2111-2119, 2171-2174, 2262, 6123, 6124, 7112, 7141 și 7144; cap. III, grupa 21 și conturile 211, 217, 226, 612, 711 și 714; read 2026-11-01 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 6-7, 12-14, 25-27, 29, 51 și 53-54",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Stocuri”",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "article": "pct. 10, 15, 32-34, 37, 42 și anexa 3 (modul de aplicare a metodei costului mediu ponderat); read 2026-11-01 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), pages 112-117 și 122-123",
+      "verified": false
     }
   ],
   "values": {
@@ -1163,6 +1177,76 @@
       "sourceIndex": 38,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. To the ban; see ledger.prepaid.rounding. Our choice, to be confirmed by the compliance owner."
+    },
+    "ledger.inventory.stock_accounts": {
+      "text": "211,217",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter III, group 21 „Stocuri” (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF pages 25-27): 'Contul 211 “Materiale” este destinat generalizării informaţiei privind existenţa şi mişcarea materiilor prime, materialelor de bază, pieselor de schimb, combustibilului, ambalajelor, anvelopelor şi acumulatoarelor procurate separat de mijloace de transport, materialelor cu destinaţia agricolă, materialelor transmise temporar terţilor şi altor materiale.' and 'Contul 217 “Mărfuri” este destinat generalizării informaţiei privind existenţa şi mişcarea bunurilor procurate în vederea revînzării, produselor transmise spre vînzare magazinelor proprii, bunurilor imobiliare deţinute pentru vînzare, mărfurilor transmise temporar terţilor.' Their subaccounts are chapter II's 2111-2119 and 2171-2174 (page 6). The accounts, and their subaccounts, an item of stock is kept on, in quantity and value (SNC „Stocuri” pct. 10). 212, 213, 215 and 216 (biological assets, small-value objects with their wear on 214, work in progress, the company's own products) are left out until the product keeps them."
+    },
+    "ledger.inventory.costing_method": {
+      "text": "weighted_average_after_each_receipt",
+      "unit": "text",
+      "sourceIndex": 40,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. SNC „Stocuri” (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6): pct. 33 (page 115) lets stock leaving be valued by specific identification, FIFO, the weighted average cost or LIFO, and pct. 34 leaves the choice to each entity's accounting policies. Pct. 37 (page 116): 'Metoda costului mediu ponderat presupune calcularea costului fiecărui element de stocuri pe baza mediei ponderate a costurilor soldurilor elementelor similare de stocuri la începutul perioadei şi a costurilor elementelor similare fabricate sau achiziţionate în cursul perioadei de gestiune. Costul mediu ponderat poate fi calculat după fiecare intrare a stocurilor, la sfîrşitul perioadei de gestiune sau în alt mod stabilit de politicile contabile ale entităţii.' Anexa 3 (pages 122-123) works the average after each receipt. That is the one method the product keeps: the cost of what leaves is the item's value over its quantity at that moment, all warehouses together. A rule set naming another method is refused by the product until it implements it."
+    },
+    "ledger.inventory.cost_rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 40,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. SNC „Stocuri” anexa 3 (page 123) rounds the unit cost to three decimals and multiplies it by the quantity (15 October: 11800 kg × 19,731 lei/kg = 232825,8 lei), which leaves on the account what the rounding of the unit cost does not take. The product rounds once, to the ban, half away from zero: what leaves is the value on hand times the quantity leaving over the quantity on hand, and the last of an item takes its whole remaining value, so no value is left without a quantity. Our choice, as for depreciation, to be confirmed by the compliance owner; the domain test holds the example's averages (19,875, 19,731, 20,990, 21,044 lei/kg) and quantities."
+    },
+    "ledger.inventory.cost_rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 40,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. To the ban; see ledger.inventory.cost_rounding. Our choice, to be confirmed by the compliance owner."
+    },
+    "ledger.inventory.cost_of_sales_accounts": {
+      "text": "217=7112,211=7141",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter III (PDF pages 26-27 and 54): 'În debitul contului 711 “Costul vînzărilor” se înregistrează costul vînzărilor recunoscut pe parcursul perioadei de gestiune în corespondenţă cu creditul conturilor: 216, 217, 261, 811, 812 etc.', and 217 is credited against '121, 123, 711, 712, 713, 714, 722, 723, 831, 833 etc.'; chapter II's 7112 is 'Valoarea contabilă a mărfurilor vîndute' (page 13). 211 is credited against '111, 121, 122, 125, 131, 712, 713, 714, 721, 723, 811, 812, 821, 833 etc.', not 711: materials sold are 'altor active circulante ieşite', chapter II's 7141 'Valoarea contabilă şi cheltuielile aferente altor active circulante ieşite' (page 14). Each stock account '=' the account the carrying value of what is sold from it is debited to, when a posted sales invoice's line takes it out (SNC „Stocuri” pct. 42, page 117)."
+    },
+    "ledger.inventory.issue_accounts": {
+      "text": "211=712|713|714|721|723|811|812|821,217=712|713|714|722|723",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter III (PDF pages 26-27): 211 is credited 'în corespondenţă cu debitul conturilor: 111, 121, 122, 125, 131, 712, 713, 714, 721, 723, 811, 812, 821, 833 etc.' and 217 'în corespondenţă cu debitul conturilor: 121, 123, 711, 712, 713, 714, 722, 723, 831, 833 etc.' Each stock account '=' the expense and cost accounts (classes 7 and 8), separated by '|', stock consumed or given out may be issued to, or one of their subaccounts (SNC „Stocuri” pct. 32 and 42, pages 115 and 117). Left out: 711 (a sale goes through the sales invoice and ledger.inventory.cost_of_sales_accounts), the assets it may be capitalised into (111, 121, 122, 123, 125, 131) and 831/833, until the product does those; the lists' etc. until an act names another."
+    },
+    "ledger.inventory.shortage_expense_account": {
+      "text": "7144",
+      "unit": "code",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 14): 7144 'Cheltuieli privind lipsurile şi pierderile din deteriorarea activelor imobilizate şi circulante', under 714, which chapter III debits 'în corespondenţă cu creditul conturilor: 111, 112, 121, 122, 123, 125, 141, 142, 151, 211, 213, 214, 215, 216, 217, ...' (page 54); 211 and 217 are credited against 714 (pages 26-27). SNC „Cheltuieli” pct. 7 subpct. 1) (the standards' PDF, page 157): 'valoarea contabilă a stocurilor depistate lipsă la inventariere se înregistrează ca majorare a cheltuielilor curente şi diminuare a activelor', and its example 4 (page 158) expenses 12,500 lei of goods found missing. A stocktake's shortage, at its carrying value by ledger.inventory.costing_method, is expensed here whether or not anyone is charged for it."
+    },
+    "ledger.inventory.damage_receivable_account": {
+      "text": "2262",
+      "unit": "code",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 7): 2262 'Creanţe privind recuperarea prejudiciului material', under 226 'Creanţe ale personalului', which chapter III debits 'în corespondenţă cu creditul conturilor: 241, 242, 243, 424, 535, 544, 612, 622 etc.' (page 29). SNC „Creanţe şi investiţii financiare” pct. 32 (the standards' PDF, page 101): 'Creanţele personalului privind recuperarea prejudiciului material se contabilizează ca majorare concomitentă a creanţelor şi veniturilor sau datoriilor curente.' What the person responsible for a shortage is charged, as the stocktake's act says, is their debt here. The standard's alternative, deferred income for what is recovered in later periods, is left out."
+    },
+    "ledger.inventory.damage_income_account": {
+      "text": "6123",
+      "unit": "code",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 12): 6123 'Venituri din recuperarea prejudiciului material', under 612, which chapter III credits 'în corespondenţă cu debitul conturilor: ..., 211, 212, 213, 215, 216, 217, 221, 223, 226, ...' (page 51). SNC „Prezentarea situaţiilor financiare” pct. 137 (the standards' PDF, page 16) counts 'recuperarea prejudiciului material cauzat entităţii' in other operating income, and its example 4 'calcularea prejudiciului material cauzat entităţii de către persoana vinovată – 7290 lei'. The income of what a person is charged for a shortage, against ledger.inventory.damage_receivable_account."
+    },
+    "ledger.inventory.surplus_income_account": {
+      "text": "6124",
+      "unit": "code",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 12): 6124 'Venituri din plusurile de active imobilizate şi circulante constatate la inventariere', under 612, credited against 211 and 217 among others (page 51); 211 and 217 are debited against 612 (pages 26-27). SNC „Prezentarea situaţiilor financiare” pct. 137, example 4 (page 16): 'constatarea plusurilor de mărfuri la inventariere – 1200 lei', other operating income. A stocktake's surplus is taken in at the item's average cost at that moment, or, where nothing is on hand to average, at the unit value the act gives: our choice, the standards name no value for a surplus, to be confirmed by the compliance owner."
     }
   }
 }
