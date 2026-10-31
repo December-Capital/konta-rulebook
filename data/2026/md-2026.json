@@ -263,6 +263,27 @@
       "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
       "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
       "verified": false
+    },
+    {
+      "act": "Codul muncii al Republicii Moldova nr. 154/2003",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
+      "article": "art. 68 alin. (1)-(2), art. 113 alin. (1), art. 113^1, art. 114, art. 118 alin. (4^1) și (5), art. 119, art. 128 alin. (1), art. 143 alin. (1) și art. 148 alin. (4), citite la 01.11.2026; textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025)",
+      "publication": "Monitorul Oficial nr. 159-162, art. 648, 29.07.2003",
+      "verified": false
+    },
+    {
+      "act": "Hotărârea Guvernului nr. 426/2004 privind aprobarea Modului de calculare a salariului mediu",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=119783&lang=ro",
+      "article": "anexa nr. 1 pct. 2, 4, 5, 6 subpct. 1), 10, 11 și 14 subpct. 1); textul consolidat pe legis.md (ultima modificare HG nr. 685 din 27.12.2019, Monitorul Oficial nr. 400-406, art. 1023), citit la 01.11.2026",
+      "publication": "Monitorul Oficial nr. 73-76, art. 570, 07.05.2004",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 489/1999 privind sistemul public de asigurări sociale",
+      "url": "https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro",
+      "article": "anexa nr. 3 pct. 3; textul consolidat pe legis.md (ultima modificare Legea nr. 201 din 03.09.2026, Monitorul Oficial nr. 494-497, art. 519), citit la 01.11.2026",
+      "publication": "Monitorul Oficial nr. 1-4, art. 2, 06.01.2000",
+      "verified": false
     }
   ],
   "values": {
@@ -1171,6 +1192,41 @@
       "sourceIndex": 29,
       "confidence": "unverified",
       "note": "HG 704/2019 pct. 16^4, last paragraph (as HG 901/2024 wrote it): for the accelerated depreciation of subpct. 1), the first year of use is 12 consecutive months of the asset's useful life. Codul fiscal art. 26^1 alin. (6^1) lit. a) caps the first year at tax.depreciation.accelerated_first_year_cap of the entry cost; lit. b) divides what is left by the remaining useful life. How the first year's amount falls on its months the acts do not say beyond pct. 12 (tax depreciation is computed in proportion to the months in use): it is spread evenly over the twelve months."
+    },
+    "payroll.proration.salary_change": {
+      "text": "working_days_per_salary",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "A salary changed from a day inside a month (Codul muncii art. 68: an additional agreement to the contract, art. 49 alin. (1)'s salary clause) is prorated by working days: the working days worked before that day at the old monthly salary, those from it at the new one, each over the month's working days from calendar/md-holidays.json, as payroll.proration.method prorates a part month. Art. 128 alin. (1) pays the salary of the contract for the work done; no act read says how a month split between two salaries is paid, so this is the owner's decision of 2026-10-31 and the usual practice, for the compliance owner. A timesheet typed short of the calendar in such a month does not say under which salary the days were missed: the product asks for those days as absences, which have dates."
+    },
+    "payroll.leave.compensation.method": {
+      "text": "average_per_calendar_day",
+      "unit": "text",
+      "sourceIndex": 40,
+      "confidence": "unverified",
+      "note": "HG 426/2004 anexa 1 pct. 2 applies the average salary to 'plata compensaţiei pentru concediul nefolosit'; pct. 6 subpct. 1) takes it per calendar day for the compensation; pct. 14 subpct. 1): the compensation is 'înmulţirea salariului mediu pe o zi calendaristică, calculat în corespundere cu prevederile punctelor 8, 9 şi 10 ... la numărul zilelor de concediu exprimat în zile calendaristice'. So the same three-month average as leave pay (payroll.average_earnings.*), the event being the end of the contract: the 3 months before the month it ends (pct. 5 last alineat, pct. 10, 11). Pct. 4 leaves 'compensaţia pentru concediul nefolosit' out of the earnings any later average is taken from. Pct. 5's seasonal workers (the season, up to 6 months) and contracts of up to 2 months are not modelled."
+    },
+    "payroll.leave.compensation.pay_month": {
+      "text": "termination_month",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "Codul muncii art. 119 alin. (1): when the individual labour contract ends, 'salariatul are dreptul la compensarea tuturor concediilor de odihnă anuale nefolosite'; art. 118 alin. (5) allows money for unused leave only then. Art. 143 alin. (1) lit. a) pays everything owed on the day of release ('în ziua eliberării'), lit. c) at the latest with the salary of the month the contract ended. The compensation is therefore computed in the payroll of the month of the last day of employment, with that month's salary. Suspension (art. 119 alin. (1)'s cases of art. 76-78) also gives the right; the product knows only the end of a contract."
+    },
+    "payroll.leave.compensation.accrual": {
+      "text": "working_year_calendar_days",
+      "unit": "text",
+      "sourceIndex": 39,
+      "confidence": "unverified",
+      "note": "The unused days the product proposes: labour.leave.annual_minimum_days for each working year, which art. 113^1 alin. (1) counts as 12 calendar months from the day of hiring, and for the last, incomplete one the same days in proportion to its calendar days worked (to the last day of employment, inclusive) over its calendar days; less the annual leave the company recorded in Konta for the employee (in leave days, payroll.leave.days_basis). Art. 119 alin. (1) compensates 'toate concediile ... nefolosite' and art. 148 alin. (4) speaks of leave days 'fără acoperire' when somebody leaves before the end of a working year whose leave they used, which reads as leave earned in proportion to the working year; no act read says how the proportion is counted (calendar days, months, rounding of a part month). Calendar days, and the days rounded as payroll amounts are (payroll.rounding, payroll.rounding_decimals), are our choice, for the compliance owner. Not modelled, so the person types the days instead: art. 114 alin. (2)'s periods left out of the seniority (unpaid leave over 14 days, unexcused absence, childcare leave to 4 years, suspension), longer leave by law, contract or art. 121, and leave taken before the company kept its payroll in Konta. Leave used beyond what was earned gives no compensation and nothing is withheld here (art. 148 alin. (4) lets the employer withhold it, except in the cases it lists)."
+    },
+    "payroll.leave.compensation.social_contribution": {
+      "text": "yes",
+      "unit": "text",
+      "sourceIndex": 41,
+      "confidence": "unverified",
+      "note": "Legea 489/1999 anexa nr. 3 pct. 3 leaves out of the contribution 'sumele compensatorii (cheltuielile de deplasare în interes de serviciu, compensarea prejudiciului cauzat angajaţilor prin mutilare ...), cu excepţia compensaţiei pentru concediul nefolosit în caz de concediere': the compensation on dismissal carries the social contribution, as salary does. The product taxes it with the month's salary (income tax and the medical premium on the month's gross, as leave pay), so this is the one treatment it knows."
     }
   }
 }
