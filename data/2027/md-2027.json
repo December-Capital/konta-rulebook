@@ -241,6 +241,34 @@
       "verified": false
     },
     {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "article": "cap. II, subconturile 5111, 5115, 5116, 5121, 5122, 5124, 5125, 5126 și 7221; cap. III, conturile 511, 512 și 722; read 2026-10-30 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), pages 10, 15, 45 and 56",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Capital propriu și datorii”",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "article": "pct. 41-43 (datorii financiare: principalul, dobînzile) și exemplul 12; read 2026-10-30 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), page 135",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministerului Finanțelor nr. 119 din 06.08.2013 privind aprobarea Planului general de conturi contabile",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Planul%20general%20de%20conturi%20contabile.pdf",
+      "publication": "Monitorul Oficial nr. 233-237, art. 1534, 22.10.2013",
+      "article": "cap. III, contul 261; read 2026-10-31 in the ministry's PDF (SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab), page 34",
+      "verified": false
+    },
+    {
+      "act": "Ordinul Ministrului Finanțelor nr. 118 din 06.08.2013 privind aprobarea Standardelor Naționale de Contabilitate: SNC „Cheltuieli”",
+      "url": "https://mf.gov.md/sites/default/files/legislatie/Standardele%20Na%C8%9Bionale%20de%20Contabilitate%20aprobate%20prin%20ordinul%20nr.%20118%20din%2006.08.2013.pdf",
+      "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
+      "article": "pct. 8 (cheltuieli anticipate) și exemplul 1; read 2026-10-31 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), page 157",
+      "verified": false
+    },
+    {
       "act": "Codul muncii al Republicii Moldova nr. 154/2003",
       "url": "https://www.legis.md/cautare/getResults?doc_id=150204&lang=ro",
       "article": "art. 68 alin. (1)-(2), art. 113 alin. (1), art. 113^1, art. 114, art. 118 alin. (4^1) și (5), art. 119, art. 128 alin. (1), art. 143 alin. (1) și art. 148 alin. (4), citite la 01.11.2026; textul consolidat pe legis.md (ultima modificare HCC9 din 22.07.2025)",
@@ -1101,45 +1129,101 @@
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026: Law 247/2026 touches neither the standards, the chart nor HG 704/2019. HG 704/2019 pct. 16^4, last paragraph (as HG 901/2024 wrote it): for the accelerated depreciation of subpct. 1), the first year of use is 12 consecutive months of the asset's useful life. Codul fiscal art. 26^1 alin. (6^1) lit. a) caps the first year at tax.depreciation.accelerated_first_year_cap of the entry cost; lit. b) divides what is left by the remaining useful life. How the first year's amount falls on its months the acts do not say beyond pct. 12 (tax depreciation is computed in proportion to the months in use): it is spread evenly over the twelve months."
     },
+    "ledger.loans.accounts": {
+      "text": "5111=5116,5115=5116,5121=5126,5122=5126,5124=5126,5125=5126",
+      "unit": "text",
+      "sourceIndex": 35,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Each account a short-term loan's principal may be kept on, '=' the subaccount its interest is accrued to. Chapter II (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 10): under 511 'Credite bancare pe termen scurt', 5111 'Credite bancare în monedă națională', 5115 'Alte credite bancare pe termen scurt' and 5116 'Dobînzi aferente creditelor bancare'; under 512 'Împrumuturi pe termen scurt', 5121 'Împrumuturi de la părți neafiliate', 5122 'Împrumuturi de la părți afiliate', 5124 'Împrumuturi de la personalul entității', 5125 'Alte împrumuturi pe termen scurt' and 5126 'Dobînzi aferente împrumuturilor'. Chapter III (page 45): 511 is credited 'în corespondenţă cu debitul conturilor: 111, 121, 131, 215, 242, 243, 411, 521, 522, 544, 714, 722 etc.' and debited for 'rambursarea/diminuarea creditelor bancare pe termen scurt în corespondenţă cu creditul conturilor: 242, 243, 244, 612, 622 etc.'; 512 likewise, with 241 among both lists. Left out: 5112 and 5114 (in a currency; the product's loans are in lei), 5113 and 5114 (overdue: a credit moves there, it is not taken there), 5123 (bonds issued, not a loan contract)."
+    },
+    "ledger.loans.interest_expense_account": {
+      "text": "7221",
+      "unit": "code",
+      "sourceIndex": 35,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 15): 7221 'Cheltuieli privind dobînzile', under 722 'Cheltuieli financiare'. Chapter III (page 56): 722 is debited for 'recunoaşterea cheltuielilor financiare pe parcursul perioadei de gestiune în corespondenţă cu creditul conturilor: ... 511, 512, 521, 522 ...'. The interest a loan accrues: 7221 debited, the loan's interest subaccount (ledger.loans.accounts) credited."
+    },
+    "ledger.loans.interest_rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 36,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. SNC „Capital propriu și datorii” pct. 43 (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6, page 135): 'Datoriile aferente dobînzilor se recunosc pe măsura calculării lor conform condiţiilor contractuale şi se înregistrează ca majorare a cheltuielilor curente ... şi majorare a datoriilor'. The standard says when, not how the figure is rounded; its example 12 works in whole lei. The interest due by a day is kept exact (each day's end-of-day balance times the rate over the contract's day basis) and rounded once, to the ban, half away from zero; what is accrued is what is due by then less what was accrued before, so no rounding is carried from month to month. Our choice, as for depreciation (assets.depreciation.rounding): to be confirmed by the compliance owner."
+    },
+    "ledger.loans.interest_rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 36,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. To the ban; see ledger.loans.interest_rounding. Our choice, to be confirmed by the compliance owner."
+    },
+    "ledger.prepaid.account": {
+      "text": "261",
+      "unit": "code",
+      "sourceIndex": 37,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter III, account 261 (the Ministry of Finance's consolidated PDF of OMF 119/2013, SHA-256 0b2271eb4477f8fa4af660a227669629c9162651c99d1f144feb9b6eb64764ab, PDF page 34): 'Contul 261 “Cheltuieli anticipate curente” este destinat generalizării informaţiei privind existenţa şi modificarea cheltuielilor suportate în perioada de gestiune curentă şi care urmează a fi trecute la costurile şi cheltuielile perioadelor viitoare în decurs de pînă la un an.' It is debited 'în corespondenţă cu creditul conturilor: 113, 124, 171, 211, 213, 214, 226, 531, 532, 533, 544 etc.' (a supplier's invoice, 521, is not in the list, and the list ends in etc.: the supplier invoice line debited to 261 is the case the plan names) and credited 'în corespondenţă cu debitul conturilor: 712, 713, 714, 721, 811, 812, 821 etc.' The account a supplier invoice line for a cost of later months is debited to, and spread from."
+    },
+    "ledger.prepaid.expense_accounts": {
+      "text": "712,713,714,721,811,812,821",
+      "unit": "text",
+      "sourceIndex": 37,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter III, account 261 (PDF page 34): its credit is 'decontarea/diminuarea cheltuielilor anticipate curente în corespondenţă cu debitul conturilor: 712, 713, 714, 721, 811, 812, 821 etc.' The accounts, and their subaccounts, a prepaid cost may be spread to; the list's etc. is left out until an act names another."
+    },
+    "ledger.prepaid.rounding": {
+      "text": "half_away_from_zero",
+      "unit": "text",
+      "sourceIndex": 38,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. SNC „Cheltuieli” pct. 8 (the Ministry of Finance's consolidated PDF of the standards, SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6, page 157): 'Pe măsura survenirii perioadelor corespunzătoare, cheltuielile anticipate se decontează la cheltuielile curente prin metoda liniară sau prin altă metodă stabilită de entitate.' Its example 1 spreads a 12-month CASCO policy of 15,600 lei bought on 10 November evenly: 2,600 for November and December, [(15600 lei : 12 luni) × 2 luni], the month it starts counting whole. What is due by a month is the amount times the months begun over the months, rounded once; a month spreads what is due by it less what was spread before, so the last month leaves nothing. Rounded to the ban, half away from zero: our choice, as for depreciation, to be confirmed by the compliance owner."
+    },
+    "ledger.prepaid.rounding_decimals": {
+      "number": "2",
+      "unit": "count",
+      "sourceIndex": 38,
+      "confidence": "unverified",
+      "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. To the ban; see ledger.prepaid.rounding. Our choice, to be confirmed by the compliance owner."
+    },
     "labour.leave.annual_minimum_days": {
       "number": "28",
       "unit": "days",
-      "sourceIndex": 35,
+      "sourceIndex": 39,
       "confidence": "unverified",
       "note": "Codul muncii art. 113 alin. (1), as consolidated on legis.md on 01.11.2026 (last amendment HCC9 of 22.07.2025): 'un concediu de odihnă plătit, cu o durată minimă de 28 de zile calendaristice, cu excepţia zilelor de sărbătoare nelucrătoare'. The Labour Code is not a yearly act. WATCH: the Ministry of Labour's draft to count annual leave in working days from 1 January 2027 (see payroll.leave.days_basis) was not law on 01.11.2026; if it is adopted, this value and its unit change for 2027. Alin. (2) and art. 121 allow longer leave by organic law or for harmful conditions, minors and severe sight disability (at least 4 more days)."
     },
     "payroll.proration.salary_change": {
       "text": "working_days_per_salary",
       "unit": "text",
-      "sourceIndex": 35,
+      "sourceIndex": 39,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-history): the Labour Code and HG 426/2004 are not yearly acts, and the payroll-leave branch found bill 326 amending Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3 (payroll.sick.social_contribution); no 2027 text was read for this branch. A salary changed from a day inside a month (Codul muncii art. 68: an additional agreement to the contract, art. 49 alin. (1)'s salary clause) is prorated by working days: the working days worked before that day at the old monthly salary, those from it at the new one, each over the month's working days from calendar/md-holidays.json, as payroll.proration.method prorates a part month. Art. 128 alin. (1) pays the salary of the contract for the work done; no act read says how a month split between two salaries is paid, so this is the owner's decision of 2026-10-31 and the usual practice, for the compliance owner. A timesheet typed short of the calendar in such a month does not say under which salary the days were missed: the product asks for those days as absences, which have dates."
     },
     "payroll.leave.compensation.method": {
       "text": "average_per_calendar_day",
       "unit": "text",
-      "sourceIndex": 36,
+      "sourceIndex": 40,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-history): the Labour Code and HG 426/2004 are not yearly acts, and the payroll-leave branch found bill 326 amending Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3 (payroll.sick.social_contribution); no 2027 text was read for this branch. HG 426/2004 anexa 1 pct. 2 applies the average salary to 'plata compensaţiei pentru concediul nefolosit'; pct. 6 subpct. 1) takes it per calendar day for the compensation; pct. 14 subpct. 1): the compensation is 'înmulţirea salariului mediu pe o zi calendaristică, calculat în corespundere cu prevederile punctelor 8, 9 şi 10 ... la numărul zilelor de concediu exprimat în zile calendaristice'. So the same three-month average as leave pay (payroll.average_earnings.*), the event being the end of the contract: the 3 months before the month it ends (pct. 5 last alineat, pct. 10, 11). Pct. 4 leaves 'compensaţia pentru concediul nefolosit' out of the earnings any later average is taken from. Pct. 5's seasonal workers (the season, up to 6 months) and contracts of up to 2 months are not modelled."
     },
     "payroll.leave.compensation.pay_month": {
       "text": "termination_month",
       "unit": "text",
-      "sourceIndex": 35,
+      "sourceIndex": 39,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-history): the Labour Code and HG 426/2004 are not yearly acts, and the payroll-leave branch found bill 326 amending Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3 (payroll.sick.social_contribution); no 2027 text was read for this branch. Codul muncii art. 119 alin. (1): when the individual labour contract ends, 'salariatul are dreptul la compensarea tuturor concediilor de odihnă anuale nefolosite'; art. 118 alin. (5) allows money for unused leave only then. Art. 143 alin. (1) lit. a) pays everything owed on the day of release ('în ziua eliberării'), lit. c) at the latest with the salary of the month the contract ended. The compensation is therefore computed in the payroll of the month of the last day of employment, with that month's salary. Suspension (art. 119 alin. (1)'s cases of art. 76-78) also gives the right; the product knows only the end of a contract."
     },
     "payroll.leave.compensation.accrual": {
       "text": "working_year_calendar_days",
       "unit": "text",
-      "sourceIndex": 35,
+      "sourceIndex": 39,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-history): the Labour Code and HG 426/2004 are not yearly acts, and the payroll-leave branch found bill 326 amending Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3 (payroll.sick.social_contribution); no 2027 text was read for this branch. The unused days the product proposes: labour.leave.annual_minimum_days for each working year, which art. 113^1 alin. (1) counts as 12 calendar months from the day of hiring, and for the last, incomplete one the same days in proportion to its calendar days worked (to the last day of employment, inclusive) over its calendar days; less the annual leave the company recorded in Konta for the employee (in leave days, payroll.leave.days_basis). Art. 119 alin. (1) compensates 'toate concediile ... nefolosite' and art. 148 alin. (4) speaks of leave days 'fără acoperire' when somebody leaves before the end of a working year whose leave they used, which reads as leave earned in proportion to the working year; no act read says how the proportion is counted (calendar days, months, rounding of a part month). Calendar days, and the days rounded as payroll amounts are (payroll.rounding, payroll.rounding_decimals), are our choice, for the compliance owner. Not modelled, so the person types the days instead: art. 114 alin. (2)'s periods left out of the seniority (unpaid leave over 14 days, unexcused absence, childcare leave to 4 years, suspension), longer leave by law, contract or art. 121, and leave taken before the company kept its payroll in Konta. Leave used beyond what was earned gives no compensation and nothing is withheld here (art. 148 alin. (4) lets the employer withhold it, except in the cases it lists)."
     },
     "payroll.leave.compensation.social_contribution": {
       "text": "yes",
       "unit": "text",
-      "sourceIndex": 37,
+      "sourceIndex": 41,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026 (branch payroll-history): the Labour Code and HG 426/2004 are not yearly acts, and the payroll-leave branch found bill 326 amending Law 489/1999 only at art. 49 and annex 1 pct. 1.1, not annex 3 (payroll.sick.social_contribution); no 2027 text was read for this branch. Legea 489/1999 anexa nr. 3 pct. 3 leaves out of the contribution 'sumele compensatorii (cheltuielile de deplasare în interes de serviciu, compensarea prejudiciului cauzat angajaţilor prin mutilare ...), cu excepţia compensaţiei pentru concediul nefolosit în caz de concediere': the compensation on dismissal carries the social contribution, as salary does. The product taxes it with the month's salary (income tax and the medical premium on the month's gross, as leave pay), so this is the one treatment it knows."
     }
