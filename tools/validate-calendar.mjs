@@ -86,7 +86,13 @@ export async function validateCalendar({ root, ajv, sets, fail, warn }) {
         cite(`year ${year}`, entry.sourceIndex);
         for (const t of entry.transfers) {
           cite(`transfer ${t.restDay}`, t.sourceIndex);
-          if (String(parts(t.restDay).year) !== year && String(parts(t.workDay).year) !== year) {
+          // The engine reads a year's transfers only for dates in that year (daysOff in
+          // calendar.mjs), so a transfer across years would lose one of its two days.
+          const restYear = String(parts(t.restDay).year);
+          const workYear = String(parts(t.workDay).year);
+          if (restYear !== workYear) {
+            fail(file, `transfer ${t.restDay} -> ${t.workDay} crosses years; the calendar cannot read it.`);
+          } else if (restYear !== year) {
             fail(file, `transfer ${t.restDay} -> ${t.workDay} is listed under ${year}.`);
           }
           // A transfer turns a working day into a rest day and pays it back on a day that was
