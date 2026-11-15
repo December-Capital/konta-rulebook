@@ -171,7 +171,13 @@ function decode(html) {
       const combining = { acute: "́", grave: "̀", circ: "̂", uml: "̈", tilde: "̃", cedil: "̧", caron: "̌", breve: "̆" };
       return (letter + combining[mark.toLowerCase()]).normalize("NFC");
     })
-    .replace(/&#(\d+);/g, (m, code) => String.fromCodePoint(Number(code)));
+    .replace(/&#(\d+);/g, (m, code) => {
+      // A page may carry a numeric entity that is not a code point (above 0x10FFFF, or a lone
+      // surrogate). fromCodePoint would throw and abort the whole pass; keep the text as it is.
+      const n = Number(code);
+      if (!Number.isInteger(n) || n < 0 || n > 0x10ffff || (n >= 0xd800 && n <= 0xdfff)) return m;
+      return String.fromCodePoint(n);
+    });
 }
 
 function textOf(html) {
@@ -417,6 +423,9 @@ async function mail(text) {
     port: Number(env.Konta__Email__Smtp__Port),
     // The API's MailKit names: SslOnConnect is implicit TLS; StartTls upgrades a plain connection.
     secure: security === "sslonconnect",
+    // nodemailer's STARTTLS is opportunistic: a server, or someone in between, that does not offer
+    // it would get the password in the clear. Insist on the upgrade when StartTls is configured.
+    requireTLS: security === "starttls",
     auth: { user: from, pass: env.Konta__Email__General__Password },
   });
   await transport.sendMail({
