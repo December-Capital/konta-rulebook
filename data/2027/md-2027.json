@@ -1317,6 +1317,20 @@
       "sourceIndex": 42,
       "confidence": "unverified",
       "note": "Carried over unchanged from md-2026: neither bill 326 nor Law 247/2026 touches the chart or the standards. Chapter II (PDF page 12): 6124 'Venituri din plusurile de active imobilizate şi circulante constatate la inventariere', under 612, credited against 211 and 217 among others (page 51); 211 and 217 are debited against 612 (pages 26-27). SNC „Prezentarea situaţiilor financiare” pct. 137, example 4 (page 16): 'constatarea plusurilor de mărfuri la inventariere – 1200 lei', other operating income. A stocktake's surplus is taken in at the item's average cost at that moment, or, where nothing is on hand to average, at the unit value the act gives: our choice, the standards name no value for a surplus, to be confirmed by the compliance owner."
+    },
+    "tax.income.entrepreneur_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 1,
+      "confidence": "unverified",
+      "note": "Carried over from md-2026: Codul fiscal art. 15 lit. a), 12% for individual entrepreneurs; Law 247/2026 leaves the rate and adds peasant farms to the letter. Data only."
+    },
+    "tax.income.peasant_farm_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 30,
+      "confidence": "unverified",
+      "note": "Law 247/2026 art. III pct. 4: peasant farms join art. 15 lit. a) at 12% and lit. c) (7%) is repealed, from 1 January 2027. Data only. The founder fixed CNAS and CNAM amounts for 2027 are not here: the 2027 BASS and FAOAM laws are not adopted (2026-11-22)."
     }
   }
 }
