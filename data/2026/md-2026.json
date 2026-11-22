@@ -326,6 +326,32 @@
       "publication": "Monitorul Oficial nr. 177-181, art. 1224, 16.08.2013",
       "article": "pct. 10, 15, 32-38, 37^1, 42, anexa 2 (metoda FIFO), anexa 3 (modul de aplicare a metodei costului mediu ponderat) și anexa 3^1 (metoda LIFO); pct. 33-38 and the anexe 2 and 3^1 read 2026-11-22, the rest 2026-11-01 in the Ministry of Finance's consolidated PDF of the standards (SHA-256 6adc273e062ea08cf529f9112ddcc7ead59a4ab2d584014fd40aed64026850c6), pages 112-117 și 122-123",
       "verified": false
+    },
+    {
+      "act": "Legea bugetului asigurărilor sociale de stat pe anul 2026 nr. 320 din 29.12.2025",
+      "article": "art. 3 alin. (1): taxa fixă anuală pentru plătitorii de la pct. 1.6, 1.7 și 1.8 din anexa nr. 1 la Legea nr. 489/1999; read 2026-11-22 in the Monitorul Oficial PDF",
+      "publication": "Monitorul Oficial nr. 659-661, art. 796, 2025",
+      "url": "https://monitorul.gov.md/ro/monitorul/view/pdf/3204/part/1",
+      "verified": false
+    },
+    {
+      "act": "Legea fondurilor asigurării obligatorii de asistență medicală pe anul 2026 nr. 321/2025",
+      "article": "art. 4 alin. (2) (prima în sumă fixă, 12 636 lei) și alin. (3) (2 527 lei pentru persoanele de la pct. 1, 3 și 4 din anexa nr. 2 la Legea nr. 1593/2002 care achită în termenul stabilit la art. 22 alin. (1)); read 2026-11-22 in the Monitorul Oficial PDF",
+      "publication": "Monitorul Oficial nr. 659-661, art. 798, 2025",
+      "url": "https://monitorul.gov.md/ro/monitorul/view/pdf/3204/part/1",
+      "verified": false
+    },
+    {
+      "act": "Legea nr. 1593/2002 cu privire la mărimea, modul și termenele de achitare a primelor de asigurare obligatorie de asistență medicală",
+      "article": "art. 22 alin. (1), as CNAM states it: „Termenul limită legal de achitare a primei în sumă fixă în mod individual este 31 martie”; the act itself not read (legis.md refuses automated requests)",
+      "url": "https://cnam.md/statut-aoam/",
+      "verified": false
+    },
+    {
+      "act": "Serviciul Fiscal de Stat, „Date informative privind cotele impozitului pe venit – 2026” (set de date deschise), restating Codul fiscal art. 15",
+      "article": "„Pentru persoanele fizice şi întreprinderile individuale – Cota impozitului pe venit 12%”; gospodăriile țărănești (de fermier) 7% (art. 15 lit. c)); read 2026-11-22",
+      "url": "https://dataset.gov.md/dataset/3b62a100-a630-402e-b7e9-97ac19e3e39f/resource/5ec69b54-4639-45a7-91d5-10be7d27dbb8/download/anul-2026-2.pdf",
+      "verified": false
     }
   ],
   "values": {
@@ -1402,6 +1428,48 @@
       "sourceIndex": 46,
       "confidence": "unverified",
       "note": "Chapter II (PDF page 12): 6124 'Venituri din plusurile de active imobilizate şi circulante constatate la inventariere', under 612, credited against 211 and 217 among others (page 51); 211 and 217 are debited against 612 (pages 26-27). SNC „Prezentarea situaţiilor financiare” pct. 137, example 4 (page 16): 'constatarea plusurilor de mărfuri la inventariere – 1200 lei', other operating income. A stocktake's surplus is taken in at the item's average cost at that moment, or, where nothing is on hand to average, at the unit value the act gives: our choice, the standards name no value for a surplus, to be confirmed by the compliance owner."
+    },
+    "tax.income.entrepreneur_rate": {
+      "number": "0.12",
+      "unit": "ratio",
+      "sourceIndex": 0,
+      "confidence": "unverified",
+      "note": "Codul fiscal art. 15 lit. a): income tax on the taxable income of an individual entrepreneur (ÎI), as SFS's 2026 rates dataset states it (cited for the peasant farm rate); the tax is the founder's, divided among founders (UNIF25 annex 5, Order SFS 300/2025 pct. 46). The Code's own text not read on legis.md. Data only: no product computes it yet (UNIF25 and VEN12 wait on the form engine)."
+    },
+    "tax.income.peasant_farm_rate": {
+      "number": "0.07",
+      "unit": "ratio",
+      "sourceIndex": 51,
+      "confidence": "unverified",
+      "note": "Codul fiscal art. 15 lit. c): 7% for gospodăriile țărănești (de fermier) in 2026, as SFS's 2026 rates dataset states it. Law 247/2026 repeals lit. c) from 1 January 2027 (md-2027). Data only."
+    },
+    "founder.cnas.fixed_annual": {
+      "number": "22878",
+      "unit": "MDL/year",
+      "sourceIndex": 48,
+      "confidence": "unverified",
+      "note": "Legea BASS 2026 art. 3 alin. (1): 'taxa fixă anuală … pentru plătitorii specificați la pct. 1.6, 1.7 și 1.8 din anexa nr. 1 la Legea nr. 489/1999 … se stabilește în mărime de 22878 de lei.' Founders of an individual enterprise or a peasant farm are pct. 1.6 (as CNAS states it; annex 1 itself not read). Paid at least 1/12 a month (CNAS, CTAS Cahul 2026) by the 25th of the next month (CNAS's 2024 text; the calendar's cnas_fixed_monthly); not owed by pensioners, persons with disabilities or founders employed under an individual labour contract (SFS). Law 211/2026 amended Law 320/2025's totals and annexes, not, as far as read, this article."
+    },
+    "founder.cnam.fixed_premium": {
+      "number": "12636",
+      "unit": "MDL/year",
+      "sourceIndex": 49,
+      "confidence": "unverified",
+      "note": "Legea FAOAM 2026 art. 4 alin. (2): the compulsory health insurance premium in a fixed sum, 12 636 lei, which a founder of an individual enterprise who pays after the term owes (CNAM). A founder insured as an employee does not owe it (SFS BGPF 36.1.1.3)."
+    },
+    "founder.cnam.fixed_premium_on_time": {
+      "number": "2527",
+      "unit": "MDL/year",
+      "sourceIndex": 49,
+      "confidence": "unverified",
+      "note": "Legea FAOAM 2026 art. 4 alin. (3): persons at pct. 1, 3 and 4 of annex 2 to Law 1593/2002 who pay within the term of art. 22 alin. (1) pay 2 527 lei; CNAM names founders of individual enterprises among them, paid with the founder's IDNP, not the enterprise's IDNO. A founder registered after the term pays within 30 days, in proportion to the days left in the year (Law 1593/2002 art. 23 alin. (1), as CNAM answered it); whether the reduction applies then is not settled and is left to the compliance owner."
+    },
+    "founder.cnam.on_time_until": {
+      "text": "--03-31",
+      "unit": "date",
+      "sourceIndex": 50,
+      "confidence": "unverified",
+      "note": "Law 1593/2002 art. 22 alin. (1), as CNAM states it: the fixed premium is paid individually by 31 March of the year; the calendar's cnam_fixed_premium."
     }
   }
 }
