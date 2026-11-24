@@ -260,7 +260,7 @@
       "effectiveFrom": "2026-01-01",
       "recordedOn": "2026-09-26",
       "topic": "abrogation",
-      "title": { "ro": "Deducerea TVA de pe o factură pe hârtie de la un furnizor obligat la e-Factura nu se mai pierde", "ru": "Вычет НДС по бумажному счёту-фактуре от поставщика, обязанного применять e-Factura, больше не теряется", "en": "VAT on a paper invoice from a supplier obliged to use e-Factura is deductible again" },
+      "title": { "ro": "Deducerea TVA de pe o factură pe hârtie de la un furnizor obligat la e-Factura nu se mai pierde", "ru": "Вычет НДС по бумажной налоговой накладной от поставщика, обязанного применять e-Factura, больше не теряется", "en": "VAT on a paper invoice from a supplier obliged to use e-Factura is deductible again" },
       "detail": { "ro": "Art. 102 alin. (18) din Codul fiscal este abrogat.", "ru": "Ч. (18) ст. 102 Налогового кодекса отменена.", "en": "Art. 102(18) of the Fiscal Code is repealed." },
       "state": "law",
       "sourceIndex": 4
